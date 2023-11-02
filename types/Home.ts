@@ -3,6 +3,10 @@ export type Home = {
   _createdAt: Date;
   title: string;
   slug: string;
-  image: string;
-  intro: string;
+  heroImage: string;
+  heroText: string;
+  introText: string;
+  partnersLinkImage: string;
+  projectsLinkImage: string;
+  wikiLinkImage: string;
 }

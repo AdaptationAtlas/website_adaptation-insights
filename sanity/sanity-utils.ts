@@ -65,8 +65,12 @@ export async function getHomeContent(slug: string): Promise<Home> {
   return client.fetch(
     groq`*[_type == "home" && _id == "home"][0] {
       title,
-      intro,
-      'image': image.asset->url
+      heroText,
+      introText,
+      'heroImage': heroImage.asset->url,
+      'partnersLinkImage': partnersLinkImage.asset->url,
+      'projectsLinkImage': projectsLinkImage.asset->url,
+      'wikiLinkImage': wikiLinkImage.asset->url
     }`
   )
 }

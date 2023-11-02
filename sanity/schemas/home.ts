@@ -20,8 +20,8 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'image',
-      title: 'Intro image',
+      name: 'heroImage',
+      title: 'Hero image',
       type: 'image',
       options: {
         hotspot: true,
@@ -35,9 +35,59 @@ export default defineType({
       ]
     }),
     defineField({
-      name: 'intro',
-      title: 'Intro',
+      name: 'heroText',
+      title: 'Hero text',
       type: 'text',
+    }),
+    defineField({
+      name: 'introText',
+      title: 'Intro text',
+      type: 'text',
+    }),
+    defineField({
+      name: 'partnersLinkImage',
+      title: 'Partners link image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt text',
+          type: 'string',
+        }
+      ]
+    }),
+    defineField({
+      name: 'projectsLinkImage',
+      title: 'Projects link image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt text',
+          type: 'string',
+        }
+      ]
+    }),
+    defineField({
+      name: 'wikiLinkImage',
+      title: 'Wiki link image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt text',
+          type: 'string',
+        }
+      ]
     }),
   ],
 })

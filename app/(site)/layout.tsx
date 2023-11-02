@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { JetBrains_Mono } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
-const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'] })
+const openSans = Open_Sans({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -9,8 +9,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <body className={jetBrainsMono.className}>
-      <header className='flex items-center justify-between px-8 py-6'>
+    <body className={`${openSans.className} text-black`}>
+      <header className='absolute top-0 left-0 right-0 flex items-center justify-between px-8 py-6 z-50'>
         <Link href='/'>
           <h1 className='text-white text-xl font-bold uppercase hover:underline transition-colors'>Adaptation Insights</h1>
         </Link>
@@ -20,7 +20,11 @@ export default function RootLayout({
           <Link href='/about' className="hover:underline">About</Link>
         </div>
       </header>
-      <main className='max-w-3xl mx-auto px-8 py-10'>{children}</main>
+      <main className='block'>{children}</main>
+      <footer className='flex justify-between w-full p-5'>
+        <p>© 2023 CGIAR</p>
+        <p>Share</p>
+      </footer>
     </body>
   )
 }
