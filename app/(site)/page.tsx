@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { getHomeContent, getProjects } from '@/sanity/sanity-utils'
-import { BiArrowBack } from 'react-icons/bi';
+import { BiArrowBack } from 'react-icons/bi'
 
 // Reference:
 // YouTube: Personal Website with Next.js 13, Sanity.io, TailwindCSS, and TypeScript: https://www.youtube.com/watch?v=OcTPaUfay5I
