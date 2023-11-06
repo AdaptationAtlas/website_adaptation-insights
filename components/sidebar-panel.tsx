@@ -1,4 +1,6 @@
-import { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
+import { formatNumberCommas } from '@/lib/utils'
+import Switch from '@/components/ui/switch'
 
 type Props = {
   page: string;
@@ -45,12 +47,24 @@ const testData = [
 ]
 
 const SidebarPanel = ({ page, slug }: Props) => {
+  const [viewByBudget, setViewByBudget] = useState(false)
   return (
     <div className='w-[415px] min-h-screen bg-off-white border-r border-grey-100'>
       <header className='p-5'>
         <p className='uppercase text-sm'>Explore {page}</p>
+        <Switch
+          viewByBudget={viewByBudget}
+          setViewByBudget={setViewByBudget}
+          label=''
+          options={['Partners', 'Projects']}
+        />
         <p className='text-lg mb-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
-        <span className='uppercase text-sm'>View projects by</span>
+        <Switch
+          viewByBudget={viewByBudget}
+          setViewByBudget={setViewByBudget}
+          label='View projects by'
+          options={['Beneficiaries', 'Budget']}
+        />
         <span className='uppercase text-sm'>During</span>
       </header>
       <div>
@@ -63,7 +77,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
             return (
               <div key={project.id} className='px-5 my-5'>
                 <h3 className='uppercase text-xs'>Project budget</h3>
-                <p className='text-5xl font-bold'>{project.budget}</p>
+                <p className='text-5xl font-bold'>${formatNumberCommas(project.budget)}</p>
                 <p className='text-sm'>{project.title}</p>
               </div>
             )
