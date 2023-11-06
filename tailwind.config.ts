@@ -9,10 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'lcd-blue': '#2F39FF',
-        'crt-green': '#12ED42',
-        'crt-green-2': '#6BF575',
-        'crt-red': '#FB3F37'
+        'cgiar-green': '#2E7636',
+        'alliance-blue': '#009ADB',
+        'cgiar-gold': '#FFC84F',
+        'cgiar-dark-gold': '#E9B034',
+        'gender-red': '#EC5A47',
+        'gender-dark-red': '#DA4532',
+        'tropical-teal': '#387B94',
+        'project-burgundy': '#B4436C',
+        'environment-green': '#73B959',
+        'off-white': '#FCFCFC',
+        'grey': {
+          100: '#EBEBEB'
+        }
       }
     },
   },

@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import SidebarPanel from '@/components/sidebar-panel'
 
 type Props = {
   params: { catchAll: string[] }
@@ -8,13 +9,10 @@ type Props = {
 
 const MapPage = ({ params }: Props) => {
   const [page, slug] = params.catchAll; // get the page and slug from catchAll params
-  console.log(page)
-  console.log(slug)
 
   return (
-    <div>
-      <h1 className='map-page'>Page: {page}</h1>
-      <h2>Slug: {slug}</h2>
+    <div className='min-h-screen'>
+      <SidebarPanel page={page} slug={slug} />
     </div>
   )
 }

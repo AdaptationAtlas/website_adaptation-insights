@@ -6,7 +6,7 @@ type Props = {
 
 const Map = ({ children }: Props) => {
   return (
-    <div className='map'>{children}</div>
+    <div className='min-h-screen'>{children}</div>
   )
 }
 
