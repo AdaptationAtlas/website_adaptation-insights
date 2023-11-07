@@ -1,6 +1,10 @@
-import React, { ReactNode, useState } from 'react';
+'use client'
+
+import React, { ReactNode, useState, useEffect } from 'react';
 import { formatNumberCommas } from '@/lib/utils'
 import Switch from '@/components/ui/switch'
+import { useRouter, usePathname } from 'next/navigation';
+import Router from "next/router";
 
 type Props = {
   page: string;
@@ -47,16 +51,34 @@ const testData = [
 ]
 
 const SidebarPanel = ({ page, slug }: Props) => {
+  const router = useRouter()
+  const pathname = usePathname()
   const [viewByBudget, setViewByBudget] = useState(false)
   const [viewProjects, setViewProjects] = useState(false)
+
+  // Reference: How to make Radix UI Tabs URL based in NextJS
+  // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
+  // TODO - consider using query parameters here to test for performance
+
+  const handleSwitchToggle = (checked: boolean) => {
+    const view = checked ? '/projects' : '/partners';
+    setViewProjects(checked)
+    router.push(view)
+  }
+
+  // if the query parameter changes, update the state
+  React.useEffect(() => {
+    const view = (pathname == '/projects') ? true : false;
+    setViewProjects(view)
+  }, [pathname])
 
   return (
     <div className='w-[415px] min-h-screen bg-off-white border-r border-grey-100'>
       <header className='p-5'>
-        <p className='uppercase text-sm mb-2'>Explore</p>
+        <p className='uppercase text-sm mb-2'>Explore {page}</p>
         <Switch
           switchToggled={viewProjects}
-          setSwitchToggled={setViewProjects}
+          setSwitchToggled={handleSwitchToggle}
           label={''}
           options={['Partners', 'Projects']}
           isLarge={true}
