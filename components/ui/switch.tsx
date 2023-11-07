@@ -3,36 +3,52 @@ import * as SwitchPrimitive from '@radix-ui/react-switch'
 import classNames from 'classnames'
 
 type Props = {
-  viewByBudget: boolean
-  setViewByBudget: React.Dispatch<boolean>
+  switchToggled: boolean
+  setSwitchToggled: React.Dispatch<boolean>
   label: string
   options: string[]
+  isLarge: boolean
 }
 
-const Switch = ({ viewByBudget, setViewByBudget, label, options }: Props) => {
+const Switch = ({ switchToggled, setSwitchToggled, label, options, isLarge }: Props) => {
   const onViewByToggle = (checked: boolean) => {
-    setViewByBudget(checked)
+    setSwitchToggled(checked)
   }
+
+  // Define class names for large and small sizes
+  const switchClass = isLarge ? 'w-[35px] h-[22px]' : 'w-[22px] h-[14px]';
+  const thumbClass = isLarge ? 'w-[16px] h-[16px] translate-x-[3px] data-[state=checked]:translate-x-[16px]' : 'w-[10px] h-[10px] translate-x-[2px] data-[state=checked]:translate-x-[10px]';
+  const labelClass = isLarge ? 'text-[20px]' : 'text-sm';
+
   return (
     <form>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <label className='pr-5' htmlFor='view-projects-by' style={{ paddingRight: 15 }}>
-          {label}
-        </label>
+        {label &&
+          <label className='pr-5' style={{ paddingRight: 15 }}>
+            {label}
+          </label>
+        }
         <span className={classNames(
-          'uppercase text-sm',
-          { 'font-bold': !viewByBudget }
+          labelClass,
+          'uppercase text-black',
+          { 'text-grey-300': switchToggled }
         )}>{options[0]}</span>
         <SwitchPrimitive.Root
-          className='w-[42px] h-[25px] mx-2 bg-black rounded-full relative outline-none cursor-pointer'
-          id='view-projects-by'
+          className={classNames(
+            switchClass,
+            'mx-2 bg-grey-200 rounded-full relative outline-none cursor-pointer'
+          )}
           onCheckedChange={onViewByToggle}
         >
-          <SwitchPrimitive.Thumb className='block w-[21px] h-[21px] bg-white rounded-full transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[19px]' />
+          <SwitchPrimitive.Thumb className={classNames(
+            thumbClass,
+            'block bg-black rounded-full transition-transform duration-100 will-change-transform'
+          )} />
         </SwitchPrimitive.Root>
         <span className={classNames(
-          'uppercase text-sm',
-          { 'font-bold': viewByBudget }
+          labelClass,
+          'uppercase text-black',
+          { 'text-grey-300': !switchToggled }
         )}>{options[1]}</span>
       </div>
     </form>

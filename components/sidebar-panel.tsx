@@ -48,22 +48,26 @@ const testData = [
 
 const SidebarPanel = ({ page, slug }: Props) => {
   const [viewByBudget, setViewByBudget] = useState(false)
+  const [viewProjects, setViewProjects] = useState(false)
+
   return (
     <div className='w-[415px] min-h-screen bg-off-white border-r border-grey-100'>
       <header className='p-5'>
-        <p className='uppercase text-sm'>Explore {page}</p>
+        <p className='uppercase text-sm mb-2'>Explore</p>
         <Switch
-          viewByBudget={viewByBudget}
-          setViewByBudget={setViewByBudget}
-          label=''
+          switchToggled={viewProjects}
+          setSwitchToggled={setViewProjects}
+          label={''}
           options={['Partners', 'Projects']}
+          isLarge={true}
         />
-        <p className='text-lg mb-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
+        <p className='text-lg mt-3 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
         <Switch
-          viewByBudget={viewByBudget}
-          setViewByBudget={setViewByBudget}
-          label='View projects by'
+          switchToggled={viewByBudget}
+          setSwitchToggled={setViewByBudget}
+          label={'View projects by'}
           options={['Beneficiaries', 'Budget']}
+          isLarge={false}
         />
         <span className='uppercase text-sm'>During</span>
       </header>

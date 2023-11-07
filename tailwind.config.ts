@@ -20,7 +20,9 @@ const config: Config = {
         'environment-green': '#73B959',
         'off-white': '#FCFCFC',
         'grey': {
-          100: '#EBEBEB'
+          100: '#EBEBEB',
+          200: '#E9E9E9',
+          300: '#B7B6B6'
         }
       }
     },
