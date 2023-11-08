@@ -9,9 +9,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <body className={`${openSans.className} text-black min-h-screen`}>
+    <body className={`${openSans.className} text-black`}>
       <Header />
-      <main className='min-h-screen mt-[54px]'>{children}</main>
+      <main>{children}</main>
       <footer className='flex justify-between w-full p-5'>
         <p>© 2023 CGIAR</p>
         <p>Share</p>

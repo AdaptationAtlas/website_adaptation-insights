@@ -4,8 +4,9 @@ import React, { useState, useEffect } from 'react'
 import { formatNumberCommas } from '@/lib/utils'
 import Switch from '@/components/ui/switch'
 import { useRouter, usePathname } from 'next/navigation'
-import Router from "next/router";
+// import Router from "next/router"
 import { testProjects, testActors } from '@/lib/test-data'
+import SelectMenu from '@/components/ui/select'
 
 type Props = {
   page: string;
@@ -36,7 +37,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
   }, [pathname])
 
   return (
-    <div className='w-[415px] min-h-screen bg-off-white border-r border-grey-100'>
+    <div className='w-[415px] bg-off-white border-r border-grey-100'>
       <header className='p-5'>
         <p className='uppercase text-sm mb-2'>Explore {page}</p>
         <Switch
@@ -55,18 +56,21 @@ const SidebarPanel = ({ page, slug }: Props) => {
           isLarge={false}
         />
         {viewProjects &&
-          <div className='flex justify-between px-5 py-5'>
+          <div className='flex justify-between px-5 py-5 relative'>
             <span className='uppercase text-sm'>During</span>
+            <SelectMenu />
           </div>
         }
         {viewProjects && viewByBudget &&
           <div className='flex justify-between px-5 py-5'>
             <span className='uppercase text-sm'>Currency</span>
+            <SelectMenu />
           </div>
         }
         {!viewProjects && viewByBudget &&
           <div className='flex justify-between px-5 py-5'>
             <span className='uppercase text-sm'>Currency</span>
+            <SelectMenu />
           </div>
         }
       </header>
@@ -74,12 +78,14 @@ const SidebarPanel = ({ page, slug }: Props) => {
         {viewProjects &&
           <div className='flex justify-between px-5 py-5'>
             <p className='uppercase'>All countries</p>
+            <SelectMenu />
             <p className='uppercase'>200 of 200 projects</p>
           </div>
         }
         {!viewProjects &&
           <div className='flex justify-between px-5 py-5'>
             <p className='uppercase'>All partners</p>
+            <SelectMenu />
             <p className='uppercase'>200 of 200 partners</p>
           </div>
         }

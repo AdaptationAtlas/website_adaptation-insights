@@ -11,7 +11,7 @@ const MapPage = ({ params }: Props) => {
   const [page, slug] = params.catchAll; // get the page and slug from catchAll params
 
   return (
-    <div className='min-h-screen'>
+    <div className='block'>
       <SidebarPanel page={page} slug={slug} />
     </div>
   )
