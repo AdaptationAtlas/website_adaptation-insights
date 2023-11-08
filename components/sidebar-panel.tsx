@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { formatNumberCommas } from '@/lib/utils'
 import Switch from '@/components/ui/switch'
+import SidebarList from '@/components/sidebar-list'
 import { useRouter, usePathname } from 'next/navigation'
 // import Router from "next/router"
 import { testProjects, testActors } from '@/lib/test-data'
@@ -13,6 +13,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import actorsData from '@/public/data/actors.json'
+import projectsData from '@/public/data/projects.json'
+import networksData from '@/public/data/networks.json'
+
+console.log('actors', actorsData)
+console.log('projects', projectsData)
+console.log('networks', networksData)
 
 type Props = {
   page: string;
@@ -20,7 +27,6 @@ type Props = {
 };
 
 // TODO 11/8
-// 1. Style partners differently from projects
 // 2. Add detail panel component with transition
 // 3. Load updated data from Zach - data loading/handling
 // 4. Add data to project/partner lists
@@ -153,49 +159,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
             <p className='uppercase text-sm'>200 of 200 partners</p>
           </div>
         }
-        <div className='flex flex-col overflow-x-auto'>
-          {viewProjects && testProjects.map(project => {
-            // TODO - sort project list items by budget or beneficiaries
-            return (
-              <div key={project.projectCode} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
-                {viewByBudget &&
-                  <div>
-                    <h3 className='uppercase text-sm mb-1'>Budget</h3>
-                    <p className='text-5xl font-bold text-brand-light-green'>${formatNumberCommas(project.budget)}</p>
-                  </div>
-                }
-                {!viewByBudget &&
-                  <div>
-                    <h3 className='uppercase text-sm mb-1'>Beneficiaries</h3>
-                    {/* TODO - account for unspecified beneficiaries */}
-                    <p className='text-5xl font-bold text-brand-blue'>{formatNumberCommas(project.beneficiaries)}</p>
-                  </div>
-                }
-                <p className='text-base mt-3 text-ellipsis whitespace-nowrap overflow-hidden'>{project.title}</p>
-              </div>
-            )
-          })}
-          {!viewProjects && testActors.map(actor => {
-            // TODO - sort partner list items by budget or beneficiaries
-            return (
-              <div key={actor.actorCode} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
-                {viewByBudget &&
-                  <div className='max-w-[230px]'>
-                    <h3 className='uppercase text-sm mb-2'>${formatNumberCommas(actor.totalBudget)} Total budget</h3>
-                    <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.title}</h2>
-                  </div>
-                }
-                {!viewByBudget &&
-                  <div className='max-w-[230px]'>
-                    <h3 className='uppercase text-sm mb-2'>{formatNumberCommas(actor.totalBeneficiaries)} Total beneficiaries</h3>
-                    {/* TODO - account for unspecified beneficiaries */}
-                    <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.title}</h2>
-                  </div>
-                }
-              </div>
-            )
-          })}
-        </div>
+        <SidebarList viewProjects={viewProjects} viewByBudget={viewByBudget} actorsData={actorsData} projectsData={projectsData} />
       </div>
     </div>
   )
