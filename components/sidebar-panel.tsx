@@ -4,8 +4,6 @@ import React, { useState, useEffect } from 'react'
 import Switch from '@/components/ui/switch'
 import SidebarList from '@/components/sidebar-list'
 import { useRouter, usePathname } from 'next/navigation'
-// import Router from "next/router"
-import { testProjects, testActors } from '@/lib/test-data'
 import {
   Select,
   SelectContent,
@@ -28,8 +26,6 @@ type Props = {
 
 // TODO 11/8
 // 2. Add detail panel component with transition
-// 3. Load updated data from Zach - data loading/handling
-// 4. Add data to project/partner lists
 // 5. Add data to detail panels
 // 6. Style detail panels
 
