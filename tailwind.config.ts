@@ -9,16 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'cgiar-green': '#2E7636',
-        'alliance-blue': '#009ADB',
-        'cgiar-gold': '#FFC84F',
-        'cgiar-dark-gold': '#E9B034',
-        'gender-red': '#EC5A47',
-        'gender-dark-red': '#DA4532',
-        'tropical-teal': '#387B94',
-        'project-burgundy': '#B4436C',
-        'environment-green': '#73B959',
         'off-white': '#FCFCFC',
+        'brand': {
+          'green': '#2E7636',
+          'light-green': '#73B959',
+          'blue': '#009ADB',
+          'gold': '#FFC84F',
+          'dark-gold': '#E9B034',
+          'red': '#EC5A47',
+          'dark-red': '#DA4532',
+          'teal': '#387B94',
+          'burgundy': '#B4436C'
+        },
         'grey': {
           100: '#EBEBEB',
           200: '#E9E9E9',

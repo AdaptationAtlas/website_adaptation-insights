@@ -19,6 +19,14 @@ type Props = {
   slug: string;
 };
 
+// TODO 11/8
+// 1. Style partners differently from projects
+// 2. Add detail panel component with transition
+// 3. Load updated data from Zach - data loading/handling
+// 4. Add data to project/partner lists
+// 5. Add data to detail panels
+// 6. Style detail panels
+
 const SidebarPanel = ({ page, slug }: Props) => {
   const router = useRouter()
   const pathname = usePathname()
@@ -45,7 +53,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
       <header className='p-5'>
-        <p className='uppercase text-sm mb-2'>Explore {page}</p>
+        <p className='uppercase text-sm'>Explore</p>
         <Switch
           switchToggled={viewProjects}
           setSwitchToggled={handleSwitchToggle}
@@ -53,7 +61,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
           options={['Partners', 'Projects']}
           isLarge={true}
         />
-        <p className='text-lg mt-3 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
+        <p className='text-base mt-3 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
         <Switch
           switchToggled={viewByBudget}
           setSwitchToggled={setViewByBudget}
@@ -61,6 +69,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
           options={['Beneficiaries', 'Budget']}
           isLarge={false}
         />
+        {/* TODO - use "page" param instead of viewProjects for conditional rendering */}
         {viewProjects &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>During</span>
@@ -113,7 +122,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
       </header>
       <div>
         {viewProjects &&
-          <div className='flex justify-between items-center px-5 py-5'>
+          <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
             <Select>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="All countries" />
@@ -129,7 +138,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
           </div>
         }
         {!viewProjects &&
-          <div className='flex justify-between items-center px-5 py-5'>
+          <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
             <Select>
               <SelectTrigger className="w-[180px]">
                 <SelectValue placeholder="All partners" />
@@ -146,42 +155,43 @@ const SidebarPanel = ({ page, slug }: Props) => {
         }
         <div className='flex flex-col overflow-x-auto'>
           {viewProjects && testProjects.map(project => {
+            // TODO - sort project list items by budget or beneficiaries
             return (
-              <div key={project.projectCode} className='px-5 my-5'>
+              <div key={project.projectCode} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
                 {viewByBudget &&
                   <div>
-                    <h3 className='uppercase text-xs'>Project budget</h3>
-                    <p className='text-5xl font-bold'>${formatNumberCommas(project.budget)}</p>
+                    <h3 className='uppercase text-sm mb-1'>Budget</h3>
+                    <p className='text-5xl font-bold text-brand-light-green'>${formatNumberCommas(project.budget)}</p>
                   </div>
                 }
                 {!viewByBudget &&
                   <div>
-                    <h3 className='uppercase text-xs'>Project beneficiaries</h3>
+                    <h3 className='uppercase text-sm mb-1'>Beneficiaries</h3>
                     {/* TODO - account for unspecified beneficiaries */}
-                    <p className='text-5xl font-bold'>{formatNumberCommas(project.beneficiaries)}</p>
+                    <p className='text-5xl font-bold text-brand-blue'>{formatNumberCommas(project.beneficiaries)}</p>
                   </div>
                 }
-                <p className='text-sm'>{project.title}</p>
+                <p className='text-base mt-3 text-ellipsis whitespace-nowrap overflow-hidden'>{project.title}</p>
               </div>
             )
           })}
           {!viewProjects && testActors.map(actor => {
+            // TODO - sort partner list items by budget or beneficiaries
             return (
-              <div key={actor.actorCode} className='px-5 my-5'>
+              <div key={actor.actorCode} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
                 {viewByBudget &&
-                  <div>
-                    <h3 className='uppercase text-xs'>Total budget</h3>
-                    <p className='text-5xl font-bold'>${formatNumberCommas(actor.totalBudget)}</p>
+                  <div className='max-w-[230px]'>
+                    <h3 className='uppercase text-sm mb-2'>${formatNumberCommas(actor.totalBudget)} Total budget</h3>
+                    <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.title}</h2>
                   </div>
                 }
                 {!viewByBudget &&
-                  <div>
-                    <h3 className='uppercase text-xs'>Total beneficiaries</h3>
+                  <div className='max-w-[230px]'>
+                    <h3 className='uppercase text-sm mb-2'>{formatNumberCommas(actor.totalBeneficiaries)} Total beneficiaries</h3>
                     {/* TODO - account for unspecified beneficiaries */}
-                    <p className='text-5xl font-bold'>{formatNumberCommas(actor.totalBeneficiaries)}</p>
+                    <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.title}</h2>
                   </div>
                 }
-                <p className='text-sm'>{actor.title}</p>
               </div>
             )
           })}
