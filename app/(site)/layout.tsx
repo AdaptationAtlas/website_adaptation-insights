@@ -12,10 +12,6 @@ export default function RootLayout({
     <body className={`${openSans.className} text-black`}>
       <Header />
       <main>{children}</main>
-      <footer className='flex justify-between w-full p-5'>
-        <p>© 2023 CGIAR</p>
-        <p>Share</p>
-      </footer>
     </body>
   )
 }

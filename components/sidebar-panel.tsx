@@ -43,7 +43,7 @@ const SidebarPanel = ({ page, slug }: Props) => {
   }, [pathname])
 
   return (
-    <div className='w-[415px] bg-off-white border-r border-grey-100'>
+    <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
       <header className='p-5'>
         <p className='uppercase text-sm mb-2'>Explore {page}</p>
         <Switch
