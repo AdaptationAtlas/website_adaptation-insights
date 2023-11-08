@@ -23,10 +23,10 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, isLarge }: Pr
   }
 
   return (
-    <form>
+    <form className='py-2'>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {label &&
-          <label className='pr-5' style={{ paddingRight: 15 }}>
+          <label className='uppercase text-sm text-grey-700 pr-5' style={{ paddingRight: 15 }}>
             {label}
           </label>
         }
