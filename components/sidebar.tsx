@@ -36,18 +36,23 @@ const Sidebar = ({ page, slug }: Props) => {
   // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
   // TODO - consider using query parameters here to test for performance
   // TODO - try using next/router for better performance (what's the difference?)
+  // TODO - implement project/partner routing with entity deep links
+
+  // const handleSwitchToggle = (checked: boolean) => {
+  //   const view = checked ? '/projects' : '/partners';
+  //   setViewProjects(checked)
+  //   router.push(view)
+  // }
+
+  // // if the query parameter changes, update the state
+  // useEffect(() => {
+  //   const view = (pathname == '/projects') ? true : false;
+  //   setViewProjects(view)
+  // }, [pathname])
 
   const handleSwitchToggle = (checked: boolean) => {
-    const view = checked ? '/projects' : '/partners';
     setViewProjects(checked)
-    router.push(view)
   }
-
-  // if the query parameter changes, update the state
-  useEffect(() => {
-    const view = (pathname == '/projects') ? true : false;
-    setViewProjects(view)
-  }, [pathname])
 
   return (
     <div className='relative'>
