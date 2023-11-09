@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import SidebarNav from '@/components/sidebar-nav'
 import SidebarDetail from '@/components/sidebar-detail'
 import { useRouter, usePathname } from 'next/navigation'
+import { ActorData, ProjectData } from '@/types/sidebar.types'
 import actorsData from '@/public/data/actors.json'
 import projectsData from '@/public/data/projects.json'
 import networksData from '@/public/data/networks.json'
@@ -25,8 +26,11 @@ type Props = {
 const Sidebar = ({ page, slug }: Props) => {
   const router = useRouter()
   const pathname = usePathname()
-  const [viewByBudget, setViewByBudget] = useState(false)
-  const [viewProjects, setViewProjects] = useState(false)
+  const [viewByBudget, setViewByBudget] = useState<boolean>(false)
+  const [viewProjects, setViewProjects] = useState<boolean>(false)
+  const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
+  const [activeActor, setActiveActor] = useState<ActorData | null>(null)
+  const [activeProject, setActiveProject] = useState<ProjectData | null>(null)
 
   // Reference: How to make Radix UI Tabs URL based in NextJS
   // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
@@ -54,8 +58,25 @@ const Sidebar = ({ page, slug }: Props) => {
         viewByBudget={viewByBudget}
         setViewByBudget={setViewByBudget}
         handleSwitchToggle={handleSwitchToggle}
+        detailPanelActive={detailPanelActive}
+        setDetailPanelActive={setDetailPanelActive}
+        activeActor={activeActor}
+        setActiveActor={setActiveActor}
+        activeProject={activeProject}
+        setActiveProject={setActiveProject}
       />
-      <SidebarDetail />
+      <SidebarDetail
+        actorsData={actorsData}
+        projectsData={projectsData}
+        viewProjects={viewProjects}
+        viewByBudget={viewByBudget}
+        detailPanelActive={detailPanelActive}
+        setDetailPanelActive={setDetailPanelActive}
+        activeActor={activeActor}
+        setActiveActor={setActiveActor}
+        activeProject={activeProject}
+        setActiveProject={setActiveProject}
+      />
     </div>
   )
 }

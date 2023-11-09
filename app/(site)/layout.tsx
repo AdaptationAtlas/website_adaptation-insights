@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <body className={`${openSans.className} text-black`}>
+    <body className={`${openSans.className}`}>
       <Header />
       <main>{children}</main>
     </body>

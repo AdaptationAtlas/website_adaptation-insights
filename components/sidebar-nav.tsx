@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Switch from '@/components/ui/switch'
 import SidebarList from '@/components/sidebar-list'
 import { useRouter, usePathname } from 'next/navigation'
+import { ActorData, ProjectData } from '@/types/sidebar.types'
 import {
   Select,
   SelectContent,
@@ -18,15 +19,34 @@ import {
 // 6. Style detail panels
 
 type Props = {
-  actorsData: any
-  projectsData: any
-  viewProjects: any
-  viewByBudget: any
-  setViewByBudget: any
-  handleSwitchToggle: any
+  actorsData: ActorData[]
+  projectsData: ProjectData[]
+  viewProjects: boolean
+  viewByBudget: boolean
+  setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
+  handleSwitchToggle: (checked: boolean) => void
+  detailPanelActive: boolean
+  setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
+  activeActor: ActorData | null
+  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
+  activeProject: ProjectData | null
+  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
 }
 
-const SidebarNav = ({ actorsData, projectsData, viewProjects, viewByBudget, setViewByBudget, handleSwitchToggle }: Props) => {
+const SidebarNav = ({
+  actorsData,
+  projectsData,
+  viewProjects,
+  viewByBudget,
+  setViewByBudget,
+  handleSwitchToggle,
+  detailPanelActive,
+  setDetailPanelActive,
+  activeActor,
+  setActiveActor,
+  activeProject,
+  setActiveProject
+}: Props) => {
 
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
@@ -131,7 +151,18 @@ const SidebarNav = ({ actorsData, projectsData, viewProjects, viewByBudget, setV
             <p className='uppercase text-sm'>200 of 200 partners</p>
           </div>
         }
-        <SidebarList viewProjects={viewProjects} viewByBudget={viewByBudget} actorsData={actorsData} projectsData={projectsData} />
+        <SidebarList
+          viewProjects={viewProjects}
+          viewByBudget={viewByBudget}
+          actorsData={actorsData}
+          projectsData={projectsData}
+          detailPanelActive={detailPanelActive}
+          setDetailPanelActive={setDetailPanelActive}
+          activeActor={activeActor}
+          setActiveActor={setActiveActor}
+          activeProject={activeProject}
+          setActiveProject={setActiveProject}
+        />
       </div>
     </div>
   )
