@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import SidebarPanel from '@/components/sidebar-panel'
+import Sidebar from '@/components/sidebar'
 
 type Props = {
   params: { catchAll: string[] }
@@ -12,7 +12,7 @@ const MapPage = ({ params }: Props) => {
 
   return (
     <div className='block'>
-      <SidebarPanel page={page} slug={slug} />
+      <Sidebar page={page} slug={slug} />
     </div>
   )
 }

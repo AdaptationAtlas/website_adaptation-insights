@@ -11,46 +11,22 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import actorsData from '@/public/data/actors.json'
-import projectsData from '@/public/data/projects.json'
-import networksData from '@/public/data/networks.json'
-
-console.log('actors', actorsData)
-console.log('projects', projectsData)
-console.log('networks', networksData)
-
-type Props = {
-  page: string;
-  slug: string;
-};
 
 // TODO 11/8
 // 2. Add detail panel component with transition
 // 5. Add data to detail panels
 // 6. Style detail panels
 
-const SidebarPanel = ({ page, slug }: Props) => {
-  const router = useRouter()
-  const pathname = usePathname()
-  const [viewByBudget, setViewByBudget] = useState(false)
-  const [viewProjects, setViewProjects] = useState(false)
+type Props = {
+  actorsData: any
+  projectsData: any
+  viewProjects: any
+  viewByBudget: any
+  setViewByBudget: any
+  handleSwitchToggle: any
+}
 
-  // Reference: How to make Radix UI Tabs URL based in NextJS
-  // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
-  // TODO - consider using query parameters here to test for performance
-  // TODO - try using next/router for better performance (what's the difference?)
-
-  const handleSwitchToggle = (checked: boolean) => {
-    const view = checked ? '/projects' : '/partners';
-    setViewProjects(checked)
-    router.push(view)
-  }
-
-  // if the query parameter changes, update the state
-  useEffect(() => {
-    const view = (pathname == '/projects') ? true : false;
-    setViewProjects(view)
-  }, [pathname])
+const SidebarNav = ({ actorsData, projectsData, viewProjects, viewByBudget, setViewByBudget, handleSwitchToggle }: Props) => {
 
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
@@ -161,4 +137,4 @@ const SidebarPanel = ({ page, slug }: Props) => {
   )
 }
 
-export default SidebarPanel
+export default SidebarNav
