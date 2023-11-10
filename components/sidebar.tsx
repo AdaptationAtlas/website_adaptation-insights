@@ -5,13 +5,23 @@ import SidebarNav from '@/components/sidebar-nav'
 import SidebarDetail from '@/components/sidebar-detail'
 import { useRouter, usePathname } from 'next/navigation'
 import { ActorData, ProjectData } from '@/types/sidebar.types'
-import actorsData from '@/public/data/actors.json'
-import projectsData from '@/public/data/projects.json'
+import { orderBy } from 'lodash'
+import actorsDataRaw from '@/public/data/actors.json'
+import projectsDataRaw from '@/public/data/projects.json'
 import networksData from '@/public/data/networks.json'
+
+const actorsData = orderBy(actorsDataRaw, ['totalBudget'], ['desc'])
+const projectsData = orderBy(
+  projectsDataRaw,
+  [
+    (project) => project.beneficiaryNum === null, // false (0) for numbers, true (1) for nulls
+    'beneficiaryNum' // actual number for sorting
+  ],
+  ['asc', 'desc'] // first sort by the custom sorter ascending, then by beneficiaryNum descending
+);
 
 console.log('actors', actorsData)
 console.log('projects', projectsData)
-console.log('networks', networksData)
 
 type Props = {
   page: string;
