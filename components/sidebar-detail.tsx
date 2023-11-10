@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { ActorData, ProjectData } from '@/types/sidebar.types'
 import SidebarDetailActor from './sidebar-detail-actor'
 import SidebarDetailProject from './sidebar-detail-project'
+import { BiX } from 'react-icons/bi'
 
 type Props = {
   viewProjects: boolean
@@ -32,12 +33,16 @@ const SidebarDetail = ({
   setActiveProject
 }: Props) => {
   const detailPanelClass = (detailPanelActive) ? 'translate-x-[415px]' : 'translate-x-0'
+  const closeDetailPanel = () => {
+    setDetailPanelActive(false)
+  }
 
   return (
     <div className={classNames(
       detailPanelClass,
       'absolute z-30 top-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-200 will-change-transform'
     )}>
+      <button onClick={closeDetailPanel} className='absolute top-3 right-3 cursor-pointer scale-150'><BiX /></button>
       {!viewProjects &&
         <SidebarDetailActor
           viewProjects={viewProjects}

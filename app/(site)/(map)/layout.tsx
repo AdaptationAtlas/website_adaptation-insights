@@ -4,10 +4,10 @@ type Props = {
   children: ReactNode;
 };
 
-const Map = ({ children }: Props) => {
+const MapLayout = ({ children }: Props) => {
   return (
     <div className='block'>{children}</div>
   )
 }
 
-export default Map
+export default MapLayout
