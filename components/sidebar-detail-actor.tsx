@@ -18,18 +18,6 @@ type Props = {
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
 }
 
-// export type ActorData = {
-//   actorCode: string
-//   beneficiaryFlagMultiple: boolean | null
-//   collaborators: Collaborator[] | null
-//   email: string | null
-//   name: string
-//   projects: Project[] | null
-//   totalBeneficiaries: number | null
-//   totalBudget: number | null
-//   type: string | null
-// }
-
 const SidebarDetailActor = ({
   viewProjects,
   viewByBudget,
