@@ -2,14 +2,16 @@
 
 import React, { useState, useEffect } from 'react'
 import classNames from 'classnames'
-import { ActorData, ProjectData } from '@/types/sidebar.types'
+import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import { find } from 'lodash'
+import NetworkGraph from './network-graph'
 
 type Props = {
   viewProjects: boolean
   viewByBudget: boolean
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  networkData: NetworkData
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
   activeActor: ActorData | null
@@ -23,6 +25,7 @@ const SidebarDetailActor = ({
   viewByBudget,
   actorsData,
   projectsData,
+  networkData,
   detailPanelActive,
   setDetailPanelActive,
   activeActor,
@@ -32,12 +35,14 @@ const SidebarDetailActor = ({
 }: Props) => {
 
   // Utility function to look up project based on projectCode
+  // TODO - move this to utils
   const getProject = (projectCode: string) => {
     const project = find(projectsData, { 'projectCode': projectCode });
     return project;
   }
 
   // Utility function to look up actor based on actorCode
+  // TODO - move this to utils
   const getActor = (actorCode: string) => {
     const actor = find(actorsData, { 'actorCode': actorCode });
     return actor;
@@ -99,7 +104,13 @@ const SidebarDetailActor = ({
           <p>{actor?.name} works {collabProjectText} with {collabText}.</p>
         </div>
         <div className='mb-6'>
-          <p className='w-full h-48 flex items-center justify-center bg-grey-200'>Network Diagram</p>
+          <NetworkGraph
+            networkData={networkData}
+            actorsData={actorsData}
+            projectsData={projectsData}
+            width={374}
+            height={374}
+          />
         </div>
         <div>
           <ul className='flex items-center gap-5'>

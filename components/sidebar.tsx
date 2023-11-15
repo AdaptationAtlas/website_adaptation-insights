@@ -69,6 +69,7 @@ const Sidebar = ({ page, slug }: Props) => {
       <SidebarNav
         actorsData={actorsData}
         projectsData={projectsData}
+        networksData={networksData}
         viewProjects={viewProjects}
         viewByBudget={viewByBudget}
         setViewByBudget={setViewByBudget}
@@ -83,6 +84,7 @@ const Sidebar = ({ page, slug }: Props) => {
       <SidebarDetail
         actorsData={actorsData}
         projectsData={projectsData}
+        networksData={networksData}
         viewProjects={viewProjects}
         viewByBudget={viewByBudget}
         detailPanelActive={detailPanelActive}

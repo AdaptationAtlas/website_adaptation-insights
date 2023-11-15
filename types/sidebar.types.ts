@@ -1,15 +1,15 @@
 type Partner = {
-  actorCode: string,
+  actorCode: string
   type: string
 }
 
 type Collaborator = {
-  actorCode: string,
+  actorCode: string
   projectsShared: number
 }
 
 type Project = {
-  projectCode: string,
+  projectCode: string
   numCollaborators: number
 }
 
@@ -43,3 +43,25 @@ export type ProjectData = {
   targetedValueChains: string[] | null
   vulnerableGroups: string[] | null
 }
+
+type Node = {
+  id: string
+  group: string
+}
+
+type Link = {
+  source: string
+  target: string
+  type: string
+}
+
+type Network = {
+  nodes: Node[]
+  links: Link[]
+}
+
+export type NetworkData = {
+  actorCode: string
+  network: Network
+}
+

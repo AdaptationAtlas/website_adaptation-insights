@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Switch from '@/components/ui/switch'
 import SidebarList from '@/components/sidebar-list'
 import { useRouter, usePathname } from 'next/navigation'
-import { ActorData, ProjectData } from '@/types/sidebar.types'
+import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import {
   Select,
   SelectContent,
@@ -21,6 +21,7 @@ import {
 type Props = {
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  networksData: NetworkData[]
   viewProjects: boolean
   viewByBudget: boolean
   setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
@@ -36,6 +37,7 @@ type Props = {
 const SidebarNav = ({
   actorsData,
   projectsData,
+  networksData,
   viewProjects,
   viewByBudget,
   setViewByBudget,
@@ -156,6 +158,7 @@ const SidebarNav = ({
           viewByBudget={viewByBudget}
           actorsData={actorsData}
           projectsData={projectsData}
+          networksData={networksData}
           detailPanelActive={detailPanelActive}
           setDetailPanelActive={setDetailPanelActive}
           activeActor={activeActor}

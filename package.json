@@ -15,6 +15,7 @@
     "@types/geojson": "^7946.0.13",
     "@types/mapbox-gl": "^2.7.18",
     "classnames": "^2.3.2",
+    "d3": "^7.8.5",
     "dotenv": "^16.3.1",
     "lodash": "^4.17.21",
     "mapbox-gl": "^2.15.0",
@@ -22,6 +23,7 @@
     "next-sanity": "^5.5.10",
     "react": "^18",
     "react-dom": "^18",
+    "react-force-graph-2d": "^1.25.2",
     "react-icons": "^4.11.0",
     "react-map-gl": "^7.1.6",
     "sanity": "^3.19.0"

@@ -1,12 +1,15 @@
 import Link from 'next/link'
 import { formatNumberCommas } from '@/lib/utils'
-import { ActorData, ProjectData } from '@/types/sidebar.types'
+import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
+import NetworkGraph from './network-graph'
+import { find } from 'lodash'
 
 type Props = {
   viewProjects: boolean
   viewByBudget: boolean
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  networksData: NetworkData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
   activeActor: ActorData | null
@@ -20,6 +23,7 @@ const SidebarList = ({
   viewByBudget,
   actorsData,
   projectsData,
+  networksData,
   detailPanelActive,
   setDetailPanelActive,
   activeActor,
@@ -38,6 +42,12 @@ const SidebarList = ({
   const handleProjectSelect = (project: ProjectData) => {
     if (!detailPanelActive) { setDetailPanelActive(true) }
     setActiveProject(project)
+  }
+
+  // Utility function to look up project based on projectCode
+  const getNetwork = (actorCode: string) => {
+    const network = find(networksData, { 'actorCode': actorCode });
+    return network;
   }
 
   return (
@@ -65,24 +75,47 @@ const SidebarList = ({
           </div>
         )
       })}
-      {!viewProjects && actorsData.map(actor => {
+      {!viewProjects && actorsData.map((actor, index) => {
         // TODO - sort partner list items by budget or beneficiaries
         const budget = (actor.totalBudget) ? '$' + formatNumberCommas(actor.totalBudget) : 'Unspecified'
         const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(actor.totalBeneficiaries) : 'Unspecified'
+        const network = getNetwork(actor.actorCode)
 
         return (
           <div key={actor.actorCode} onClick={() => { handleActorSelect(actor) }} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
-            {viewByBudget &&
-              <div className='max-w-[230px]'>
-                <h3 className='uppercase text-sm mb-2'>{budget} Total budget</h3>
-                <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
+            {viewByBudget && network &&
+              <div className='flex items-center justify-between'>
+                <div className='max-w-[230px]'>
+                  <h3 className='uppercase text-sm mb-2'>{budget} Total budget</h3>
+                  <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
+                </div>
+                {index < 10 &&
+                  <NetworkGraph
+                    networkData={network}
+                    actorsData={actorsData}
+                    projectsData={projectsData}
+                    width={132}
+                    height={132}
+                  />
+                }
               </div>
             }
-            {!viewByBudget &&
-              <div className='max-w-[230px]'>
-                <h3 className='uppercase text-sm mb-2'>{beneficiaries} Total beneficiaries</h3>
-                {/* TODO - account for unspecified beneficiaries */}
-                <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
+            {!viewByBudget && network &&
+              <div className='flex items-center justify-between'>
+                <div className='max-w-[230px]'>
+                  <h3 className='uppercase text-sm mb-2'>{beneficiaries} Total beneficiaries</h3>
+                  {/* TODO - account for unspecified beneficiaries */}
+                  <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
+                </div>
+                {index < 10 &&
+                  <NetworkGraph
+                    networkData={network}
+                    actorsData={actorsData}
+                    projectsData={projectsData}
+                    width={132}
+                    height={132}
+                  />
+                }
               </div>
             }
           </div>
