@@ -35,6 +35,8 @@ const SidebarDetail = ({
   setActiveProject
 }: Props) => {
   const detailPanelClass = (detailPanelActive) ? 'translate-x-[415px]' : 'translate-x-0'
+
+  // TODO - consider moving this to utils
   const closeDetailPanel = () => {
     setDetailPanelActive(false)
   }

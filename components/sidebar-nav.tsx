@@ -50,6 +50,10 @@ const SidebarNav = ({
   setActiveProject
 }: Props) => {
 
+  // Store actor and project totals
+  const actorsTotal = actorsData?.length
+  const projectsTotal = projectsData?.length
+
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
       <header className='p-5'>
@@ -134,7 +138,7 @@ const SidebarNav = ({
                 <SelectItem value="Morocco">Morocco</SelectItem>
               </SelectContent>
             </Select>
-            <p className='uppercase text-sm'>200 of 200 projects</p>
+            <p className='uppercase text-sm'>{projectsTotal} of {projectsTotal} projects</p>
           </div>
         }
         {!viewProjects &&
@@ -150,7 +154,7 @@ const SidebarNav = ({
                 <SelectItem value="Dolore magna aliqua">Dolore magna aliqua</SelectItem>
               </SelectContent>
             </Select>
-            <p className='uppercase text-sm'>200 of 200 partners</p>
+            <p className='uppercase text-sm'>{actorsTotal} of {actorsTotal} partners</p>
           </div>
         }
         <SidebarList
