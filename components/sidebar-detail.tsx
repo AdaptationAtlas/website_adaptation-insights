@@ -1,9 +1,8 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import classNames from 'classnames'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
-import { find } from 'lodash'
 import SidebarDetailActor from './sidebar-detail-actor'
 import SidebarDetailProject from './sidebar-detail-project'
 import { BiX } from 'react-icons/bi'
@@ -40,14 +39,7 @@ const SidebarDetail = ({
     setDetailPanelActive(false)
   }
 
-  // Utility function to look up project based on projectCode
-  // TODO - move this to utils
-  const getNetwork = (actorCode: string) => {
-    const network = find(networksData, { 'actorCode': actorCode });
-    return network;
-  }
-
-  const network = activeActor ? getNetwork(activeActor.actorCode) : null;
+  const actorCode = activeActor ? activeActor.actorCode : null;
 
   return (
     <div className={classNames(
@@ -55,13 +47,14 @@ const SidebarDetail = ({
       'absolute z-30 top-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-200 will-change-transform'
     )}>
       <button onClick={closeDetailPanel} className='absolute top-3 right-3 cursor-pointer scale-150'><BiX /></button>
-      {!viewProjects && network &&
+      {!viewProjects && actorCode &&
         <SidebarDetailActor
           viewProjects={viewProjects}
           viewByBudget={viewByBudget}
+          actorCode={actorCode}
           actorsData={actorsData}
           projectsData={projectsData}
-          networkData={network}
+          networksData={networksData}
           detailPanelActive={detailPanelActive}
           setDetailPanelActive={setDetailPanelActive}
           activeActor={activeActor}

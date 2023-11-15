@@ -9,9 +9,10 @@ import NetworkGraph from './network-graph'
 type Props = {
   viewProjects: boolean
   viewByBudget: boolean
+  actorCode: string
   actorsData: ActorData[]
   projectsData: ProjectData[]
-  networkData: NetworkData
+  networksData: NetworkData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
   activeActor: ActorData | null
@@ -23,9 +24,10 @@ type Props = {
 const SidebarDetailActor = ({
   viewProjects,
   viewByBudget,
+  actorCode,
   actorsData,
   projectsData,
-  networkData,
+  networksData,
   detailPanelActive,
   setDetailPanelActive,
   activeActor,
@@ -105,11 +107,13 @@ const SidebarDetailActor = ({
         </div>
         <div className='mb-6'>
           <NetworkGraph
-            networkData={networkData}
+            actorCode={actorCode}
             actorsData={actorsData}
             projectsData={projectsData}
+            networksData={networksData}
             width={374}
             height={374}
+            type={'detail'}
           />
         </div>
         <div>
