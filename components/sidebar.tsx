@@ -84,6 +84,9 @@ const Sidebar = ({ page, slug, viewByBudget, setViewByBudget }: Props) => {
   const handleSwitchToggle = (checked: boolean) => {
     setViewProjects(checked)
     setDetailPanelActive(false)
+    // TODO - add a set timeout to account for panel transition
+    setActiveActor(null)
+    setActiveProject(null)
   }
 
   return (

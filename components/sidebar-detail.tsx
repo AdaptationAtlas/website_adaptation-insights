@@ -39,6 +39,9 @@ const SidebarDetail = ({
   // TODO - consider moving this to utils
   const closeDetailPanel = () => {
     setDetailPanelActive(false)
+    // TODO - add a set timeout to account for panel transition
+    setActiveActor(null)
+    setActiveProject(null)
   }
 
   const actorCode = activeActor ? activeActor.actorCode : null;

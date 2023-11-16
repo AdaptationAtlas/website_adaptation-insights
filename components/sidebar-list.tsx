@@ -3,7 +3,8 @@ import { formatNumberCommas } from '@/lib/utils'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
 import { interpolateColor } from '@/utils/color'
-import { minBy, maxBy } from 'lodash';
+import { minBy, maxBy } from 'lodash'
+import classNames from 'classnames'
 
 type Props = {
   viewProjects: boolean
@@ -64,7 +65,15 @@ const SidebarList = ({
         const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
 
         return (
-          <div key={project.projectCode} onClick={() => { handleProjectSelect(project) }} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
+          <div
+            key={project.projectCode}
+            onClick={() => { handleProjectSelect(project) }}
+            className={classNames(
+              'px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
+              'hover:border-b-brand-gold hover:border-t-brand-gold',
+              { 'bg-grey-lightest': project.projectCode === activeProject?.projectCode }
+            )}
+          >
             {viewByBudget &&
               <div>
                 <h3 className='uppercase text-sm mb-1'>Budget</h3>
@@ -88,7 +97,15 @@ const SidebarList = ({
         const maxWidth = (index < 10) ? 'max-w-[230px]' : 'max-w-[430px]'
 
         return (
-          <div key={actor.actorCode} onClick={() => { handleActorSelect(actor) }} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
+          <div
+            key={actor.actorCode}
+            onClick={() => { handleActorSelect(actor) }}
+            className={classNames(
+              'px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
+              'hover:border-b-brand-gold hover:border-t-brand-gold',
+              { 'bg-grey-lightest': actor.actorCode === activeActor?.actorCode }
+            )}
+          >
             {viewByBudget &&
               <div className='flex items-center justify-between'>
                 <div className={maxWidth}>

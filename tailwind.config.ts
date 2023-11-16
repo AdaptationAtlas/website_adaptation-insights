@@ -24,6 +24,7 @@ const config: Config = {
           'burgundy': '#B4436C'
         },
         'grey': {
+          'lightest': '#F6F6F6',
           100: '#EBEBEB',
           200: '#E9E9E9',
           300: '#B7B7B7',
