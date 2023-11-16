@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { ActorData, ProjectData } from '@/types/sidebar.types'
 import { find, filter } from 'lodash'
 import { formatNumberCommas } from '@/lib/utils'
+import { currentYear } from '@/utils/time'
 
 type Props = {
   viewProjects: boolean
@@ -34,9 +35,6 @@ const SidebarDetailProject = ({
 
   // Store active project for quick reference
   const project = activeProject
-
-  // Get the current year
-  const currentYear = new Date().getFullYear()
 
   // Utility function to look up project based on projectCode
   const getProject = (projectCode: string) => {
