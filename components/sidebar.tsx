@@ -23,17 +23,13 @@ const projectsData = orderBy(
 type Props = {
   page: string;
   slug: string;
+  viewByBudget: boolean
+  setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-// TODO 11/8
-// 2. Add detail panel component with transition
-// 5. Add data to detail panels
-// 6. Style detail panels
-
-const Sidebar = ({ page, slug }: Props) => {
+const Sidebar = ({ page, slug, viewByBudget, setViewByBudget }: Props) => {
   const router = useRouter()
   const pathname = usePathname()
-  const [viewByBudget, setViewByBudget] = useState<boolean>(false)
   const [viewProjects, setViewProjects] = useState<boolean>(false)
   const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
   const [activeActor, setActiveActor] = useState<ActorData | null>(null)
@@ -52,7 +48,6 @@ const Sidebar = ({ page, slug }: Props) => {
     setActorsData(sortedActorsData);
   }, [viewByBudget])
 
-  // Sort projects data by budget or beneficiaries
   // Sort projects data by budget or beneficiaries
   useEffect(() => {
     const sortedProjectsData = orderBy(

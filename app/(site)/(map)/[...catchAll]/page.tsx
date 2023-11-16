@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '@/components/sidebar'
 import Map from '@/components/map'
 
@@ -9,13 +9,14 @@ type Props = {
 }
 
 const MapPage = ({ params }: Props) => {
+  const [viewByBudget, setViewByBudget] = useState<boolean>(false)
   const [page, slug] = params.catchAll; // get the page and slug from catchAll params
 
   return (
     <div className='flex'>
-      <Sidebar page={page} slug={slug} />
+      <Sidebar page={page} slug={slug} viewByBudget={viewByBudget} setViewByBudget={setViewByBudget} />
       <div className='relative w-full h-[calc(100vh-56px)]'>
-        <Map />
+        <Map viewByBudget={viewByBudget} />
       </div>
     </div>
   )

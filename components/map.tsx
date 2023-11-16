@@ -2,34 +2,13 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import ReactMapGL, { Source, Layer, Popup } from 'react-map-gl'
 import type { CircleLayer } from 'react-map-gl'
 import { currentYear } from '@/utils/time'
+import { minBy, maxBy } from 'lodash'
+import { GeoJsonFeatureCollection } from '@/types/map.types'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
-const layerStyle: CircleLayer = {
-  id: 'point',
-  type: 'circle' as const, // Explicitly setting the type to 'circle'
-  paint: {
-    'circle-radius': [
-      'interpolate',
-      ['linear'],
-      ['zoom'],
-      2, 2, // At zoom level 2, circles will have a radius of 2
-      4, 3,
-      8, 6, // At zoom level 8, circles will have a radius of 6
-    ],
-    'circle-color': [
-      'case',
-      ['==', ['get', 'budgetEuroLog'], null], // Check if budgetEuroLog is null
-      '#636363', // Color for null values
-      // Interpolation for non-null values
-      ['interpolate',
-        ['linear'],
-        ['get', 'budgetEuroLog'],
-        1, '#73B959',
-        10, '#009ADB',
-      ]
-    ],
-  },
-};
+type Props = {
+  viewByBudget: boolean
+}
 
 type HoverInfo = {
   feature: any // Ideally, replace any with a more specific type
@@ -41,29 +20,79 @@ type HoverInfo = {
   numLocations: string | null
 } | null;
 
-function Map() {
-  const [locationData, setLocationData] = useState(null);
+function Map({ viewByBudget }: Props) {
+  const [locationData, setLocationData] = useState<GeoJsonFeatureCollection | null>(null);
   const [hoverInfo, setHoverInfo] = useState<HoverInfo>(null);
+  const [minBudgetLog, setMinBudgetLog] = useState<number | undefined | null>(null);
+  const [maxBudgetLog, setMaxBudgetLog] = useState<number | undefined | null>(null);
+  const [minBeneficiariesLog, setMinBeneficiariesLog] = useState<number | undefined | null>(null);
+  const [maxBeneficiariesLog, setMaxBeneficiariesLog] = useState<number | undefined | null>(null);
 
   useEffect(() => {
     /* global fetch */
-    fetch(
-      'data/locations_jittered_systematic.geojson'
-    )
+    fetch('data/locations_jittered_systematic.geojson')
       .then(resp => resp.json())
-      .then(json => setLocationData(json))
-      .catch(err => console.error('Could not load data', err)); // eslint-disable-line
+      .then((json: GeoJsonFeatureCollection) => {
+        setLocationData(json);
+
+        // Assuming budgetEuroLog and beneficiariesLog are directly inside properties
+        const features = json.features;
+        const minBudget = minBy(features, feature => feature.properties.budgetEuroLog)?.properties.budgetEuroLog;
+        const maxBudget = maxBy(features, feature => feature.properties.budgetEuroLog)?.properties.budgetEuroLog;
+        const minBeneficiaries = minBy(features, feature => feature.properties.beneficiaryNumLog)?.properties.beneficiaryNumLog;
+        const maxBeneficiaries = maxBy(features, feature => feature.properties.beneficiaryNumLog)?.properties.beneficiaryNumLog;
+
+        setMinBudgetLog(minBudget);
+        setMaxBudgetLog(maxBudget);
+        setMinBeneficiariesLog(minBeneficiaries);
+        setMaxBeneficiariesLog(maxBeneficiaries);
+      })
+      .catch(err => console.error('Could not load data', err));
   }, []);
 
   const data = useMemo(() => {
     return locationData;
   }, [locationData]);
 
+  const layerStyle: CircleLayer = useMemo(() => {
+    // Determine which fields and corresponding min/max values to use based on viewByBudget
+    const dataField = viewByBudget ? 'budgetEuroLog' : 'beneficiaryNumLog';
+    const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
+    const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
+
+    return {
+      id: 'point',
+      type: 'circle' as const,
+      paint: {
+        'circle-radius': [
+          'interpolate',
+          ['linear'],
+          ['zoom'],
+          2, 2,
+          4, 3,
+          8, 6,
+        ],
+        'circle-color': [
+          'case',
+          ['==', ['get', dataField], null],
+          '#636363', // Color for null values
+          ['interpolate',
+            ['linear'],
+            ['get', dataField],
+            minDataValue, '#73B959',
+            maxDataValue, '#009ADB',
+          ]
+        ],
+      },
+    };
+  }, [viewByBudget, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);
+
   const onHover = useCallback((event: any) => {
     const features = event.features;
     // Find the first feature within the "point" layer.
     const hoveredFeature = features && features.find((f: any) => f.layer.id === 'point');
     if (hoveredFeature && hoveredFeature.geometry && hoveredFeature.geometry.type === 'Point') {
+      console.log(hoveredFeature.properties)
       const coords = hoveredFeature.geometry.coordinates
       const dateEnd = hoveredFeature.properties.dateEnd
       const ongoing = (dateEnd && dateEnd <= currentYear) ? true : false
