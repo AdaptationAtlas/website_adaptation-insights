@@ -63,6 +63,7 @@ const SidebarNav = ({
           setSwitchToggled={handleSwitchToggle}
           label={''}
           options={['Partners', 'Projects']}
+          colors={true}
           isLarge={true}
         />
         <p className='text-base mt-3 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
@@ -71,6 +72,7 @@ const SidebarNav = ({
           setSwitchToggled={setViewByBudget}
           label={'View by'}
           options={['Beneficiaries', 'Budget']}
+          colors={false}
           isLarge={false}
         />
         {/* TODO - use "page" param instead of viewProjects for conditional rendering */}

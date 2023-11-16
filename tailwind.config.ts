@@ -16,9 +16,11 @@ const config: Config = {
           'blue': '#009ADB',
           'gold': '#FFC84F',
           'dark-gold': '#E9B034',
+          'light-gold': '#F5E4BD',
           'red': '#EC5A47',
           'dark-red': '#DA4532',
           'teal': '#387B94',
+          'light-teal': '#BCD0D7',
           'burgundy': '#B4436C'
         },
         'grey': {

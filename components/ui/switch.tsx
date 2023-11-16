@@ -9,10 +9,11 @@ type Props = {
   setSwitchToggled: (checked: boolean) => void
   label: string
   options: string[]
+  colors: boolean
   isLarge: boolean
 }
 
-const Switch = ({ switchToggled, setSwitchToggled, label, options, isLarge }: Props) => {
+const Switch = ({ switchToggled, setSwitchToggled, label, options, colors, isLarge }: Props) => {
   // Define class names for large and small sizes
   const switchClass = isLarge ? 'w-[35px] h-[22px]' : 'w-[22px] h-[14px]';
   const thumbClass = isLarge ? 'w-[16px] h-[16px] translate-x-[3px] data-[state=checked]:translate-x-[16px]' : 'w-[10px] h-[10px] translate-x-[2px] data-[state=checked]:translate-x-[10px]';
@@ -34,13 +35,16 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, isLarge }: Pr
           onClick={handleLabelClick} className={classNames(
             labelClass,
             'uppercase text-black cursor-pointer',
-            { 'text-grey-300': switchToggled }
+            { 'text-grey-300': switchToggled },
+            { 'text-brand-teal': colors && !switchToggled }
           )}>{options[0]}</span>
         <SwitchPrimitive.Root
           checked={switchToggled}
           className={classNames(
             switchClass,
-            'mx-2 bg-grey-200 rounded-full relative outline-none cursor-pointer'
+            'mx-2 bg-grey-200 rounded-full relative outline-none cursor-pointer',
+            { 'bg-brand-light-teal': colors && !switchToggled },
+            { 'bg-brand-light-gold': colors && switchToggled }
           )}
           onCheckedChange={setSwitchToggled}
         >
@@ -48,7 +52,9 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, isLarge }: Pr
             thumbClass,
             // TODO - add transition animation back into the switch component
             // 'block bg-black rounded-full transition-transform duration-100 will-change-transform'
-            'block bg-black rounded-full'
+            'block bg-black rounded-full',
+            { 'bg-brand-teal': colors && !switchToggled },
+            { 'bg-brand-dark-gold': colors && switchToggled }
           )} />
         </SwitchPrimitive.Root>
         <span
@@ -56,7 +62,8 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, isLarge }: Pr
           className={classNames(
             labelClass,
             'uppercase text-black cursor-pointer',
-            { 'text-grey-300': !switchToggled }
+            { 'text-grey-300': !switchToggled },
+            { 'text-brand-dark-gold': colors && switchToggled }
           )}>{options[1]}</span>
       </div>
     </form>
