@@ -13149,7 +13149,7 @@
     "beyondFarmAdaptations": ["Research and development", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
     "partners": [
       {
-        "actorCode": "GL016",
+        "actorCode": "GLO16",
         "type": "primary"
       },
       {
@@ -13632,6 +13632,2276 @@
       },
       {
         "actorCode": "LSO5",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L180",
+    "projectName": "Resilient Bamboo Agroforestry Project",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2016,
+    "maxEndDate": 2018,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Diversification (intercropping, rotation, integration)", "Soil management"],
+    "beyondFarmAdaptations": ["Input supply chains: seeds, seedlings, fertilizers, feeds", "Market access and value chain development", "Social capital (cooperatives, farmers groups)", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GHA57",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GHA57",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L181",
+    "projectName": "Village-based biological control of fall armyworm in Zambia",
+    "budget": 1090000,
+    "budgetCurrency": "AUD",
+    "budgetEuro": null,
+    "beneficiaryNum": 5000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Subnational",
+    "minStartDate": 2023,
+    "maxEndDate": 2026,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Pest and disease management"],
+    "beyondFarmAdaptations": ["Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO77",
+        "type": "primary"
+      },
+      {
+        "actorCode": "AUS2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO77",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZAM38",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZAM7",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L182",
+    "projectName": "Strengthening Adaptive Capacity of Extensive Livestock Systems for Food and Nutrition Security and Low-emissions Development in Eastern and Southern Africa",
+    "budget": 3050000,
+    "budgetCurrency": "AUD",
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2022,
+    "maxEndDate": 2026,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Livestock"],
+    "onFarmAdaptations": ["Pasture management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO6",
+        "type": "primary"
+      },
+      {
+        "actorCode": "AUS2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "DEU37",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO6",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON30",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO78",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L183",
+    "projectName": "Alien invasive fruit flies in Southern Africa",
+    "budget": 2803300,
+    "budgetCurrency": "AUD",
+    "budgetEuro": null,
+    "beneficiaryNum": 500000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2019,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": ["Women", "Youth"],
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Pest and disease management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO50",
+        "type": "primary"
+      },
+      {
+        "actorCode": "AUS2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "ZAM7",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZIM4",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L184",
+    "projectName": "Transforming smallholder irrigation into profitable and self-sustaining systems in southern Africa",
+    "budget": 4450000,
+    "budgetCurrency": "AUD",
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2017,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": ["Irrigation"],
+    "beyondFarmAdaptations": ["Irrigation systems", "Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "AUS3",
+        "type": "primary"
+      },
+      {
+        "actorCode": "AUS2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON30",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "TZA1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "AUS4",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO8",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L185",
+    "projectName": "Akuafoo Nkoosoo",
+    "budget": 2000000,
+    "budgetCurrency": "CHF",
+    "budgetEuro": 2109860,
+    "beneficiaryNum": 3000,
+    "beneficiaryFlagMultiple": true,
+    "projectScale": "Subnational",
+    "minStartDate": 2019,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Diversification (intercropping, rotation, integration)", "Multipurpose production systems (agroforestry, silvopastoral, aquasilviculture)", "Post-harvest management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CHE8",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GHA58",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CHE8",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CHE15",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO79",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "NLD9",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA6",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L186",
+    "projectName": "Sankofa Project",
+    "budget": 3500000,
+    "budgetCurrency": "CHF",
+    "budgetEuro": 3692255,
+    "beneficiaryNum": 2900,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Subnational",
+    "minStartDate": 2019,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Civil society organizations (incl. CBOs, NGOs)", "Farmers/pastoralists/producer groups", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Diversification (intercropping, rotation, integration)"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CHE8",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CHE8",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CHE16",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO80",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA59",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CHE17",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON31",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO81",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L187",
+    "projectName": "Enhancing food security and resilience in North Africa through improved seed systems and innovation platforms in wheat-based production systems",
+    "budget": 533400000,
+    "budgetCurrency": "CA",
+    "budgetEuro": null,
+    "beneficiaryNum": 10000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2022,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": ["Women"],
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)"],
+    "beyondFarmAdaptations": ["Input supply chains: seeds, seedlings, fertilizers, feeds", "Research and development"],
+    "partners": [
+      {
+        "actorCode": "GLO5",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO5",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L188",
+    "projectName": "Pan-African and transdisciplinary lens on the margins: Tackling the risks of extreme events",
+    "budget": 8116900,
+    "budgetCurrency": "CA",
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2023,
+    "maxEndDate": 2026,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Research and development", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "UK20",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CMR28",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "UK20",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L189",
+    "projectName": "adaptation of cocoa cooperatives in a context of climate change in Côte d’Ivoire",
+    "budget": 1121841,
+    "budgetCurrency": "CA",
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2022,
+    "maxEndDate": 2025,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": ["Women"],
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Multipurpose production systems (agroforestry, silvopastoral, aquasilviculture)"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Policy and agenda-setting influence", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "CON19",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CAN10",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CAN7",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L190",
+    "projectName": "Scaling-up climate-resilient rice production in West Africa",
+    "budget": 14000000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 13270880,
+    "beneficiaryNum": 153151,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2021,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Post-harvest management", "Soil management", "Water management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Market access and value chain development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "REG19",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO62",
+        "type": "funding"
+      }
+    ]
+  },
+  {
+    "projectCode": "L191",
+    "projectName": "Pest Risk Information SErvice",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2016,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": ["Pest and disease management"],
+    "beyondFarmAdaptations": ["Data and information systems (non-ag, non-climate)", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO77",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO77",
+        "type": "funding"
+      },
+      {
+        "actorCode": "UK21",
+        "type": "funding"
+      },
+      {
+        "actorCode": "ZAM7",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "KEN1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA2",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L192",
+    "projectName": "Using insects to improve smallholders livestock production and food security in West Africa",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2015,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": ["Feed management"],
+    "beyondFarmAdaptations": ["Research and development"],
+    "partners": [
+      {
+        "actorCode": "GLO77",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CHE6",
+        "type": "funding"
+      },
+      {
+        "actorCode": "BF15",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA60",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA27",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CHE18",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "BEN2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "BEN3",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L193",
+    "projectName": "Policy foundations, country dialogues, and analytics for food system transformative integrated policy in Rwanda, Malawi, and Ghana",
+    "budget": 1621825,
+    "budgetCurrency": "CA",
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2023,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Civil society organizations (incl. CBOs, NGOs)", "Policy makers/government", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Market access and value chain development", "Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "KEN5",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "USA12",
+        "type": "funding"
+      },
+      {
+        "actorCode": "KEN5",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO16",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "UK22",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "RWA5",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L194",
+    "projectName": "Globalization in a nutshell – Opportunities and risks for women shea producers in West Africa",
+    "budget": 462200,
+    "budgetCurrency": "CA",
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2022,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Policy makers/government"],
+    "vulnerableGroups": ["Women"],
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Finance (credit, loan, mobile payments systems)", "Insurance or other risk-management instruments", "Market access and value chain development", "Policy and agenda-setting influence", "Research and development", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "GLO11",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO11",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L195",
+    "projectName": "West African Climate Leadership Program for Women",
+    "budget": 598500,
+    "budgetCurrency": "CA",
+    "budgetEuro": null,
+    "beneficiaryNum": 18,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2023,
+    "maxEndDate": 2025,
+    "targetedBeneficiaries": ["Policy makers/government"],
+    "vulnerableGroups": ["Women"],
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CIV6",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CIV6",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON32",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "KEN6",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "TZA2",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L196",
+    "projectName": "Intégration des mesures d'adaptation au changement climatique dans la gestion concertée du complexe transfrontalier WAP",
+    "budget": 11536200,
+    "budgetCurrency": "USD",
+    "budgetEuro": 10935394.704,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2020,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry", "Agropastoral", "Crop", "Livestock", "Silvopastoral"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "REG19",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO62",
+        "type": "funding"
+      },
+      {
+        "actorCode": "BF88",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "BEN4",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L197",
+    "projectName": "Adaptation de l’Agriculture et de l’Élevage au Changement Climatique",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2019,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry", "Agropastoral", "Crop", "Livestock", "Silvopastoral"],
+    "onFarmAdaptations": ["Pasture management", "Pest and disease management", "Soil management", "Water harvesting"],
+    "beyondFarmAdaptations": ["Research and development"],
+    "partners": [
+      {
+        "actorCode": "MALI5",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NOR6",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI13",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI5",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L198",
+    "projectName": "Strengthening innovation support SERVices to enhance INNOVations for sustainable food production, ensuring rural population well-being and resilience, and reducing environmental degradation and resource depletion",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2018,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "FRA4",
+        "type": "primary"
+      },
+      {
+        "actorCode": "FRA17",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO3",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO41",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "FRA6",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "DEU8",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L199",
+    "projectName": "Cocoa crop improvement, farms and markets: A science-based approach to sustainably improving farmer food security in Ghana and Ivory Coast",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2017,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Multipurpose production systems (agroforestry, silvopastoral, aquasilviculture)"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Research and development"],
+    "partners": [
+      {
+        "actorCode": "NLD9",
+        "type": "primary"
+      },
+      {
+        "actorCode": "UK23",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO3",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CIV5",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "USA29",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L200",
+    "projectName": "Sustainable Technology Adaptation for Mali’s Pastoralists",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": 60000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Subnational",
+    "minStartDate": 2014,
+    "maxEndDate": 2018,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Livestock"],
+    "onFarmAdaptations": ["Pasture management"],
+    "beyondFarmAdaptations": ["Data and information systems (non-ag, non-climate)", "Insurance or other risk-management instruments", "Research and development", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "NLD1",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NLD5",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI45",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI5",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ES11",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "NLD4",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "USA30",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "MALI17",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L201",
+    "projectName": "Transforming Africa’s food system through low-cost insurance products",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": 150000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": null,
+    "maxEndDate": null,
+    "targetedBeneficiaries": null,
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": null,
+    "partners": [
+      {
+        "actorCode": "NLD30",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NLD5",
+        "type": "funding"
+      },
+      {
+        "actorCode": "NLD3",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "NLD9",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L202",
+    "projectName": "Sustainable Production of Cocoa in West Africa",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": 90000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2017,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": ["Multipurpose production systems (agroforestry, silvopastoral, aquasilviculture)", "Nutrient management", "Soil management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO3",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NLD9",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NOR2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CMR1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CIV5",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA45",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "NGA1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO7",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO39",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L203",
+    "projectName": "Climate smart coffee and cocoa: from theory to practice",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2017,
+    "maxEndDate": 2019,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agroforestry"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Policy and agenda-setting influence", "Research and development", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "GLO7",
+        "type": "primary"
+      },
+      {
+        "actorCode": "DEU2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO3",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO2",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L204",
+    "projectName": "Climate Smart Agricultural Technologies for improved Rural Livelihoods and Food Security in Mali",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": 20000,
+    "beneficiaryFlagMultiple": true,
+    "projectScale": "Subnational",
+    "minStartDate": 2018,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": ["Women", "Youth"],
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO3",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NOR2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO8",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L205",
+    "projectName": "CONSOLIDER LES FILIÈRES DE COMMERCE ÉQUITABLE EN AFRIQUE DE L’OUEST",
+    "budget": 11500000,
+    "budgetCurrency": "EUR",
+    "budgetEuro": 11500000,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2020,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Market access and value chain development"],
+    "partners": [
+      {
+        "actorCode": "FRA22",
+        "type": "primary"
+      },
+      {
+        "actorCode": "FRA17",
+        "type": "funding"
+      },
+      {
+        "actorCode": "FRA22",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "FRA16",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L206",
+    "projectName": "PROJET DE DEVELOPPEMENT AGRICOLE DANS LA ZONE DE SOUM",
+    "budget": 28980000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 27470721.6,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2017,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": ["Women"],
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)", "Irrigation"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Market access and value chain development", "Policy and agenda-setting influence", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "BF1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "SAU1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "REG22",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L207",
+    "projectName": "PROJET DE DEVELOPPEMENT AGRICOLE DE PENSA ET DE LIPTOUGOU",
+    "budget": 19340000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 18332772.8,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2016,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Irrigation", "Nutrient management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Irrigation systems"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "BF1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "SAU1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L208",
+    "projectName": "PROJET RESILIENCE ET SECURITE ALIMENTAIRE – PLATEAU CENTRAL",
+    "budget": 1070000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 1014274.4,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2017,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": ["Women", "Youth"],
+    "targetedValueChains": ["Agropastoral", "Crop", "Livestock"],
+    "onFarmAdaptations": ["Feed management", "Nutrient management", "Pasture management", "Soil management"],
+    "beyondFarmAdaptations": ["Finance (credit, loan, mobile payments systems)", "Input supply chains: seeds, seedlings, fertilizers, feeds"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "AUT2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "BF33",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L209",
+    "projectName": "PROJET DE RENFORCEMENT DE LA RESILIENCE DES POPULATIONS RURALES AUX EFFETS DES CHANGEMENTS CLIMATIQUES PAR L’AMELIORATION DE LA PRODUCTIVITE AGRICOLE",
+    "budget": 31798000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 30141960.16,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2017,
+    "maxEndDate": 2020,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Irrigation", "Manure management", "Soil management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Irrigation systems", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L210",
+    "projectName": "Développement d’un système rizicole durable en Afrique subsaharienne",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2017,
+    "maxEndDate": 2019,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Post-harvest management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Social capital (cooperatives, farmers groups)", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "funding"
+      },
+      {
+        "actorCode": "VEN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO15",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L211",
+    "projectName": "Projet de Promotion du Riz Local en République de Côte d’Ivoire",
+    "budget": 7525800,
+    "budgetCurrency": "USD",
+    "budgetEuro": 7133856.336,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2014,
+    "maxEndDate": 2020,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Finance (credit, loan, mobile payments systems)", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Market access and value chain development", "Policy and agenda-setting influence", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "JPN2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L212",
+    "projectName": "PROJET AMÉNAGEMENTS HYDRO-AGRICOLES DANS LES RÉGIONS DU HAUT SASSANDRA ET DU FROMAGER PHASE II",
+    "budget": 19395000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 18384908.4,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2012,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Irrigation", "Water harvesting"],
+    "beyondFarmAdaptations": ["Irrigation systems"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "SAU1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO15",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CIV9",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L213",
+    "projectName": "Savannah Zone Agricultural Productivity Improvement Project",
+    "budget": 48111000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 45605379.12,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2018,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Irrigation"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Irrigation systems", "Market access and value chain development"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CON3",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GHA30",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L214",
+    "projectName": "Sustainable Development of Rain-fed Lowland Rice Production, Phase 2",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2016,
+    "maxEndDate": 2021,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)", "Irrigation"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Irrigation systems", "Market access and value chain development", "Research and development"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "JPN2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GHA30",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L215",
+    "projectName": "Green Innovation Centres for the Agriculture and Food Sector",
+    "budget": 14474000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 13720194.08,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2015,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Irrigation", "Post-harvest management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Irrigation systems", "Market access and value chain development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "DEU10",
+        "type": "funding"
+      },
+      {
+        "actorCode": "EU1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "DEU2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L216",
+    "projectName": "Feed the Future Ghana Agricultural Development and Value Chain Enhancement Activity",
+    "budget": 38000000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 36020960,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2014,
+    "maxEndDate": 2020,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Finance (credit, loan, mobile payments systems)", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Market access and value chain development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GHA30",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CAN2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "USA1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L217",
+    "projectName": "Expansion of Community-Based Smallholder Irrigation Development Project",
+    "budget": 5430000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 5147205.6,
+    "beneficiaryNum": 19999,
+    "beneficiaryFlagMultiple": true,
+    "projectScale": "Subnational",
+    "minStartDate": 2019,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Irrigation"],
+    "beyondFarmAdaptations": ["Irrigation systems"],
+    "partners": [
+      {
+        "actorCode": "CON33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "ZAM20",
+        "type": "funding"
+      },
+      {
+        "actorCode": "JPN2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L218",
+    "projectName": "The Africa Integrated Climate Risk Management Programme",
+    "budget": 143300000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 135836936,
+    "beneficiaryNum": 6200000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2018,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Civil society organizations (incl. CBOs, NGOs)", "Farmers/pastoralists/producer groups", "Non-farming communities", "Policy makers/government", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop", "Livestock"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Data and information systems (non-ag, non-climate)", "Finance (credit, loan, mobile payments systems)", "Insurance or other risk-management instruments", "Market access and value chain development", "Policy and agenda-setting influence", "Research and development", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "GLO17",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO44",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO17",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON3",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CON34",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO16",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO18",
+        "type": "funding"
+      }
+    ]
+  },
+  {
+    "projectCode": "L219",
+    "projectName": "Climate Services for Increased Resilience in the Sahel",
+    "budget": 950000,
+    "budgetCurrency": "CHF",
+    "budgetEuro": 1002183.5,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2015,
+    "maxEndDate": -1,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "GLO64",
+        "type": "primary"
+      },
+      {
+        "actorCode": "USA1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "NOR7",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO64",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "NOR7",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO15",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "USA31",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON35",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L220",
+    "projectName": "Drought Tolerant Maize for Africa",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": 40000000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2006,
+    "maxEndDate": 2015,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO4",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO3",
+        "type": "primary"
+      },
+      {
+        "actorCode": "USA9",
+        "type": "funding"
+      },
+      {
+        "actorCode": "USA1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "USA32",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI5",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA27",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZAM38",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "AGO1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZAF1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "NGA2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "KEN6",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "UK24",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "BJ1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "MWI2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ET1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "KEN7",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "KEN1",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L221",
+    "projectName": "Planning for Drought Project",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": 20,
+    "beneficiaryFlagMultiple": true,
+    "projectScale": "Subnational",
+    "minStartDate": 2018,
+    "maxEndDate": 2020,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": ["Irrigation", "Water harvesting"],
+    "beyondFarmAdaptations": ["Irrigation systems", "Research and development", "Social capital (cooperatives, farmers groups)", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "GHA61",
+        "type": "primary"
+      },
+      {
+        "actorCode": "UK23",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CAN1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GHA51",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GHA62",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO8",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L222",
+    "projectName": "Agricultural Drought and Climate Smart Agriculture",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2016,
+    "maxEndDate": -1,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Research and development", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "UK25",
+        "type": "primary"
+      },
+      {
+        "actorCode": "UK3",
+        "type": "funding"
+      },
+      {
+        "actorCode": "UK25",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L223",
+    "projectName": "Cultivating Climate Resilience",
+    "budget": 742685,
+    "budgetCurrency": "USD",
+    "budgetEuro": 704005.9652,
+    "beneficiaryNum": 6000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Subnational",
+    "minStartDate": 2020,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GHA63",
+        "type": "primary"
+      },
+      {
+        "actorCode": "USA1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GHA63",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L224",
+    "projectName": "Enhancing crop productivity and climate resilience for Food and Nutrition Security in Mali",
+    "budget": 4270000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 4047618.4,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2020,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)"],
+    "beyondFarmAdaptations": ["Input supply chains: seeds, seedlings, fertilizers, feeds", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO8",
+        "type": "primary"
+      },
+      {
+        "actorCode": "NLD9",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO8",
+        "type": "funding"
+      },
+      {
+        "actorCode": "EU1",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI5",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L225",
+    "projectName": "Strengthening Climate Resilience in Mali",
+    "budget": 33000000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 31281360,
+    "beneficiaryNum": 5300000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "National",
+    "minStartDate": 2020,
+    "maxEndDate": 2025,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Insurance or other risk-management instruments", "Research and development", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "MALI22",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO18",
+        "type": "funding"
+      },
+      {
+        "actorCode": "MALI22",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "MALI20",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "REG4",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L226",
+    "projectName": "Coping with Drought and Climate Change in Zambia",
+    "budget": 208184,
+    "budgetCurrency": "EUR",
+    "budgetEuro": 208184,
+    "beneficiaryNum": 5700,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Subnational",
+    "minStartDate": 2020,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": ["Women"],
+    "targetedValueChains": ["Crop", "Livestock"],
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Market access and value chain development", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO19",
+        "type": "primary"
+      },
+      {
+        "actorCode": "DEU38",
+        "type": "funding"
+      },
+      {
+        "actorCode": "ZAM1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZAM20",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L227",
+    "projectName": "The Seeds for Resilience Project",
+    "budget": 20000000,
+    "budgetCurrency": "EUR",
+    "budgetEuro": 20000000,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2023,
+    "maxEndDate": 2028,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Genetic improvement (breeds, varieties)"],
+    "beyondFarmAdaptations": ["Data and information systems (non-ag, non-climate)", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "DEU39",
+        "type": "primary"
+      },
+      {
+        "actorCode": "DEU5",
+        "type": "funding"
+      },
+      {
+        "actorCode": "DEU39",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L228",
+    "projectName": "Cotton made in Africa and Healthy Soil: Sustainable Soil Management for Cotton Cultivation",
+    "budget": 2800000,
+    "budgetCurrency": "EUR",
+    "budgetEuro": 2800000,
+    "beneficiaryNum": 100000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2024,
+    "maxEndDate": -1,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Non-farming communities", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Manure management", "Soil management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "CHE19",
+        "type": "primary"
+      },
+      {
+        "actorCode": "DEU10",
+        "type": "funding"
+      },
+      {
+        "actorCode": "DEU2",
+        "type": "funding"
+      },
+      {
+        "actorCode": "CIV36",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "MOZ2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ZAM54",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L229",
+    "projectName": "Supporting the sustainable coton production in ivory coast chad and togo",
+    "budget": 2490000,
+    "budgetCurrency": "EUR",
+    "budgetEuro": 2490000,
+    "beneficiaryNum": 32500,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2021,
+    "maxEndDate": 2024,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop"],
+    "onFarmAdaptations": ["Nutrient management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO82",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO82",
+        "type": "funding"
+      },
+      {
+        "actorCode": "TCD1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "TGO4",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO83",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CIV37",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L230",
+    "projectName": "Fostering Sustainability and Resilience for Food Security in Sub-Saharan Africa",
+    "budget": 805341640,
+    "budgetCurrency": "USD",
+    "budgetEuro": 763399447.3888,
+    "beneficiaryNum": 3000000,
+    "beneficiaryFlagMultiple": false,
+    "projectScale": "Regional",
+    "minStartDate": 2015,
+    "maxEndDate": -1,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Policy makers/government", "Private sector"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Market access and value chain development", "Policy and agenda-setting influence"],
+    "partners": [
+      {
+        "actorCode": "GLO17",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO39",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO15",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO28",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO17",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO39",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "GLO15",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L231",
+    "projectName": "Promoting Climate-Smart Agriculture in West Africa",
+    "budget": 14000000,
+    "budgetCurrency": "USD",
+    "budgetEuro": 13270880,
+    "beneficiaryNum": 7300,
+    "beneficiaryFlagMultiple": true,
+    "projectScale": "Regional",
+    "minStartDate": 2018,
+    "maxEndDate": 2020,
+    "targetedBeneficiaries": ["Civil society organizations (incl. CBOs, NGOs)", "Farmers/pastoralists/producer groups", "Non-farming communities"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Social capital (cooperatives, farmers groups)", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "REG3",
+        "type": "primary"
+      },
+      {
+        "actorCode": "REG22",
+        "type": "funding"
+      },
+      {
+        "actorCode": "REG3",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L232",
+    "projectName": "Agriculture Transformation in Ghana",
+    "budget": 1822770,
+    "budgetCurrency": "GBP",
+    "budgetEuro": 2091282.2487,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2022,
+    "maxEndDate": 2025,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": null,
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Market access and value chain development", "Policy and agenda-setting influence", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "UK26",
+        "type": "primary"
+      },
+      {
+        "actorCode": "CON36",
+        "type": "primary"
+      },
+      {
+        "actorCode": "USA33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "UK24",
+        "type": "funding"
+      },
+      {
+        "actorCode": "UK26",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CON36",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "USA33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L233",
+    "projectName": "Feeding livestock cowpeas to boost climate change resilience",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Subnational",
+    "minStartDate": 2021,
+    "maxEndDate": -1,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Crop", "Livestock"],
+    "onFarmAdaptations": ["Feed management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Input supply chains: seeds, seedlings, fertilizers, feeds", "Market access and value chain development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "REG33",
+        "type": "primary"
+      },
+      {
+        "actorCode": "REG33",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L234",
+    "projectName": "Supporting Climate Change Adaptation for Communities Through Integrated Soil–Cropping–Livestock Production Systems",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2022,
+    "maxEndDate": -1,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Agropastoral", "Crop", "Livestock"],
+    "onFarmAdaptations": ["Diversification (intercropping, rotation, integration)", "Multipurpose production systems (agroforestry, silvopastoral, aquasilviculture)"],
+    "beyondFarmAdaptations": null,
+    "partners": [
+      {
+        "actorCode": "GLO84",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO84",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L235",
+    "projectName": "Strengthening Smallholder Livestock Systems for the Future Project",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2018,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Livestock"],
+    "onFarmAdaptations": ["Feed management"],
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO6",
+        "type": "primary"
+      },
+      {
+        "actorCode": "USA9",
+        "type": "funding"
+      },
+      {
+        "actorCode": "USA34",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ET2",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "ET1",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "BF3",
+        "type": "implementation"
+      },
+      {
+        "actorCode": "CAN9",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L236",
+    "projectName": "Climate Smart Digital Technologies for Agriculture and Food Security Pillar of the AAAP",
+    "budget": null,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2021,
+    "maxEndDate": 2022,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Livestock"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Agro-advisory or extension services", "Data and information systems (non-ag, non-climate)", "Research and development", "Training, awareness creation and knowledge sharing", "Weather information systems and early warning tools"],
+    "partners": [
+      {
+        "actorCode": "GLO6",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO49",
+        "type": "funding"
+      },
+      {
+        "actorCode": "GLO6",
+        "type": "implementation"
+      }
+    ]
+  },
+  {
+    "projectCode": "L237",
+    "projectName": "Scaling-up climate actions to enhance Nationally Determined Contributions and climate and livestock",
+    "budget": 500000,
+    "budgetCurrency": null,
+    "budgetEuro": null,
+    "beneficiaryNum": null,
+    "beneficiaryFlagMultiple": null,
+    "projectScale": "Regional",
+    "minStartDate": 2022,
+    "maxEndDate": 2023,
+    "targetedBeneficiaries": ["Farmers/pastoralists/producer groups", "Policy makers/government"],
+    "vulnerableGroups": null,
+    "targetedValueChains": ["Livestock"],
+    "onFarmAdaptations": null,
+    "beyondFarmAdaptations": ["Policy and agenda-setting influence", "Research and development", "Training, awareness creation and knowledge sharing"],
+    "partners": [
+      {
+        "actorCode": "GLO15",
+        "type": "primary"
+      },
+      {
+        "actorCode": "GLO15",
         "type": "implementation"
       }
     ]

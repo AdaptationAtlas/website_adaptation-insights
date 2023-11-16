@@ -10,9 +10,9 @@ const layerStyle: CircleLayer = {
       'interpolate',
       ['linear'],
       ['zoom'],
-      2, 2, // At zoom level 2, circles will have a radius of 2
-      4, 4,
-      8, 10, // At zoom level 8, circles will have a radius of 6
+      2, 1, // At zoom level 2, circles will have a radius of 2
+      4, 3,
+      8, 6, // At zoom level 8, circles will have a radius of 6
     ],
     'circle-color': [
       'case',
@@ -42,7 +42,7 @@ function Map() {
   useEffect(() => {
     /* global fetch */
     fetch(
-      'data/locations.geojson'
+      'data/locations_jittered_systematic.geojson'
     )
       .then(resp => resp.json())
       .then(json => setLocationData(json))
