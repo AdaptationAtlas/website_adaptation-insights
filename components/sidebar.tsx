@@ -53,19 +53,20 @@ const Sidebar = ({ page, slug }: Props) => {
   }, [viewByBudget])
 
   // Sort projects data by budget or beneficiaries
+  // Sort projects data by budget or beneficiaries
   useEffect(() => {
     const sortedProjectsData = orderBy(
       projectsDataRaw,
       [
-        // Use an array of functions for the iteratees to handle multiple conditions
-        (project) => project.budget === null, // false (0) for numbers, true (1) for nulls in budget
-        (project) => project.beneficiaryNum === null, // false (0) for numbers, true (1) for nulls in beneficiaryNum
+        // Check if budget is null only when sorting by budget
+        viewByBudget ? (project) => project.budget === null : (project) => project.beneficiaryNum === null,
         viewByBudget ? 'budget' : 'beneficiaryNum', // Choose field to sort by based on state
       ],
-      ['asc', 'asc', viewByBudget ? 'desc' : 'desc'] // Sort order: nulls last, then by the chosen field in the desired direction
+      [viewByBudget ? 'asc' : 'asc', viewByBudget ? 'desc' : 'desc'] // Adjust the sort order
     );
     setProjectsData(sortedProjectsData);
-  }, [viewByBudget])
+  }, [viewByBudget]);
+
 
   // Reference: How to make Radix UI Tabs URL based in NextJS
   // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn

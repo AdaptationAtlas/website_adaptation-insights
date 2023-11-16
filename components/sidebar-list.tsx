@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { formatNumberCommas } from '@/lib/utils'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
+import { interpolateColor } from '@/utils/color'
+import { minBy, maxBy } from 'lodash';
 
 type Props = {
   viewProjects: boolean
@@ -43,25 +45,36 @@ const SidebarList = ({
     setActiveProject(project)
   }
 
+  // Assuming projectsData is an array of projects
+  const maxBudget = maxBy(projectsData, 'budget')?.budget || 0;
+  const minBudget = minBy(projectsData, p => p.budget || Infinity)?.budget || 0;
+
+  const maxBeneficiaries = maxBy(projectsData, 'beneficiaryNum')?.beneficiaryNum || 0;
+  const minBeneficiaries = minBy(projectsData, p => p.beneficiaryNum || Infinity)?.beneficiaryNum || 0;
+
+
   return (
     <div className='flex flex-col overflow-x-auto'>
       {viewProjects && projectsData.map(project => {
-        // TODO - sort project list items by budget or beneficiaries
         const budget = (project.budget) ? '$' + formatNumberCommas(project.budget) : 'Unspecified'
         const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(project.beneficiaryNum) : 'Unspecified'
+        const colorBudget = project.budget ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
+        const colorBeneficiaries = project.beneficiaryNum ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
+        const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
+        const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
 
         return (
           <div key={project.projectCode} onClick={() => { handleProjectSelect(project) }} className='px-5 py-5 border-b border-b-grey-200 cursor-pointer'>
             {viewByBudget &&
               <div>
                 <h3 className='uppercase text-sm mb-1'>Budget</h3>
-                <p className='text-5xl font-bold text-brand-light-green'>{budget}</p>
+                <p className={`text-5xl uppercase ${classBudget}`} style={{ color: colorBudget }}>{budget}</p>
               </div>
             }
             {!viewByBudget &&
               <div>
                 <h3 className='uppercase text-sm mb-1'>Beneficiaries</h3>
-                <p className='text-5xl font-bold text-brand-blue'>{beneficiaries}</p>
+                <p className={`text-5xl uppercase ${classBeneficiaries}`} style={{ color: colorBeneficiaries }}>{beneficiaries}</p>
               </div>
             }
             <p className='text-base mt-3 text-ellipsis whitespace-nowrap overflow-hidden'>{project.projectName}</p>

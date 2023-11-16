@@ -24,7 +24,7 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, colors, isLar
   }
 
   return (
-    <form className='py-2'>
+    <form className='py-1'>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {label &&
           <label className='uppercase text-sm text-grey-700 pr-5' style={{ paddingRight: 15 }}>

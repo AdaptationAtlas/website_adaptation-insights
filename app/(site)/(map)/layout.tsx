@@ -6,7 +6,7 @@ type Props = {
 
 const MapLayout = ({ children }: Props) => {
   return (
-    <div className='block'>{children}</div>
+    <div className='overflow-hidden'>{children}</div>
   )
 }
 

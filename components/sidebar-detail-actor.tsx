@@ -100,30 +100,32 @@ const SidebarDetailActor = ({
         </ul>
       </div>
 
-      <div className='mb-10'>
-        <div className='mb-6'>
-          <h2 className='text-xl font-semibold mb-3'>Known Network</h2>
-          <p>{actor?.name} works {collabProjectText} with {collabText}.</p>
+      {projectCount > 0 &&
+        <div className='mb-10'>
+          <div className='mb-6'>
+            <h2 className='text-xl font-semibold mb-3'>Known Network</h2>
+            <p>{actor?.name} works {collabProjectText} with {collabText}.</p>
+          </div>
+          <div className='mb-6'>
+            <NetworkGraph
+              actorCode={actorCode}
+              actorsData={actorsData}
+              projectsData={projectsData}
+              networksData={networksData}
+              width={374}
+              height={374}
+              type={'detail'}
+            />
+          </div>
+          <div>
+            <ul className='flex items-center gap-5'>
+              <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-teal mr-1.5'></span>Selected Partner</li>
+              <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-red mr-1.5'></span>Collaborator</li>
+              <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-gold mr-1.5'></span>Project</li>
+            </ul>
+          </div>
         </div>
-        <div className='mb-6'>
-          <NetworkGraph
-            actorCode={actorCode}
-            actorsData={actorsData}
-            projectsData={projectsData}
-            networksData={networksData}
-            width={374}
-            height={374}
-            type={'detail'}
-          />
-        </div>
-        <div>
-          <ul className='flex items-center gap-5'>
-            <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-teal mr-1.5'></span>Selected Partner</li>
-            <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-red mr-1.5'></span>Collaborator</li>
-            <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-gold mr-1.5'></span>Project</li>
-          </ul>
-        </div>
-      </div>
+      }
 
       {(projectCount > 0) &&
         <div className='mb-8'>
