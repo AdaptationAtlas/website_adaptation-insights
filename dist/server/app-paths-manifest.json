@@ -1,1 +1,5 @@
-{}
+{
+  "/not-found": "app/not-found.js",
+  "/(site)/page": "app/(site)/page.js",
+  "/(site)/(map)/[...catchAll]/page": "app/(site)/(map)/[...catchAll]/page.js"
+}

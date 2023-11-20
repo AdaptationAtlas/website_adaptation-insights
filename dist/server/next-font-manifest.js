@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/nickharb/code/periscopic/ab-c/adaptation-insights-client/app/(site)/layout\":[\"static/media/ed347bcde018be70-s.p.woff2\"],\"/Users/nickharb/code/periscopic/ab-c/adaptation-insights-client/app/layout\":[\"static/media/ed347bcde018be70-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
