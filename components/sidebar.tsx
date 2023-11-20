@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import SidebarNav from '@/components/sidebar-nav'
 import SidebarDetail from '@/components/sidebar-detail'
 import { useRouter, usePathname } from 'next/navigation'

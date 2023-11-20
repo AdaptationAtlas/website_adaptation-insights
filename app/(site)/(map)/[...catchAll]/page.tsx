@@ -38,7 +38,7 @@ const MapPage = () => {
       .then(data => {
         const orderField = viewByBudget ? 'totalBudget' : 'totalBeneficiaries';
         const sortedActorsData = orderBy(
-          data,
+          actorsData,
           [orderField, 'name'], // Fallback to 'name' if you want to sort by name when values are equal
           ['desc', 'asc'] // Or any other order you prefer
         );
