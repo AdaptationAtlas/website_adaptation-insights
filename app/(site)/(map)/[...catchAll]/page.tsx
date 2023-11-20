@@ -36,8 +36,13 @@ const MapPage = () => {
     fetch('/data/actors.json')
       .then(response => response.json())
       .then(data => {
-        // You can apply orderBy or any other transformations here
-        setActorsData(data);
+        const orderField = viewByBudget ? 'totalBudget' : 'totalBeneficiaries';
+        const sortedActorsData = orderBy(
+          data,
+          [orderField, 'name'], // Fallback to 'name' if you want to sort by name when values are equal
+          ['desc', 'asc'] // Or any other order you prefer
+        );
+        setActorsData(sortedActorsData);
       });
 
     // Fetch projects data
