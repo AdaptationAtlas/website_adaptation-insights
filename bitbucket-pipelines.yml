@@ -7,7 +7,7 @@ clone:
   depth: 1
 pipelines:
   branches:
-    main:
+    develop:
       - step:
           name: Install and build ⚒️
           # cache node_modules for faster builds
