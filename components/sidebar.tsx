@@ -8,8 +8,6 @@ import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { orderBy } from 'lodash'
 
 type Props = {
-  page: string;
-  slug: string;
   viewByBudget: boolean
   setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
   actorsData: ActorData[]
@@ -24,8 +22,6 @@ type Props = {
 }
 
 const Sidebar = ({
-  page,
-  slug,
   viewByBudget,
   setViewByBudget,
   actorsData,

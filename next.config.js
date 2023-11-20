@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: "export",
-  distDir: "dist",
-  images: { unoptimized: true },
-};
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io', // accept images from sanity.io servers
+        port: '',
+      }
+    ]
+  }
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

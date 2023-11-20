@@ -6,9 +6,9 @@ import Map from '@/components/map'
 import { orderBy } from 'lodash'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 
-type Props = {
-  params: { catchAll: string[] }
-}
+// type Props = {
+//   params: { catchAll: string[] }
+// }
 
 // export async function generateStaticParams() {
 //   return [
@@ -17,7 +17,7 @@ type Props = {
 //   ];
 // }
 
-const MapPage = ({ params }: Props) => {
+const MapPage = () => {
   const [viewByBudget, setViewByBudget] = useState<boolean>(false)
   const [actorsData, setActorsData] = useState<ActorData[]>([])
   const [projectsData, setProjectsData] = useState<ProjectData[]>([])
@@ -26,8 +26,7 @@ const MapPage = ({ params }: Props) => {
   const [activeActor, setActiveActor] = useState<ActorData | null>(null)
   const [activeProject, setActiveProject] = useState<ProjectData | null>(null)
 
-  const [page, slug] = params.catchAll; // get the page and slug from catchAll params
-  console.log(page, slug)
+  // const [page, slug] = params.catchAll; // get the page and slug from catchAll params
 
   useEffect(() => {
     // Fetch actors data
@@ -90,8 +89,6 @@ const MapPage = ({ params }: Props) => {
   return (
     <div className='flex'>
       <Sidebar
-        page={page}
-        slug={slug}
         viewByBudget={viewByBudget}
         setViewByBudget={setViewByBudget}
         actorsData={actorsData}
