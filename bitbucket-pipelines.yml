@@ -15,8 +15,6 @@ pipelines:
             - node
           # install, build and deploy
           script:
-            # increase max memory heap
-            - export NODE_OPTIONS=--max_old_space_size=4096
             - npm --version
             - npm install
             - npm run build
@@ -45,8 +43,6 @@ pipelines:
     #         - node
     #       # install, build and deploy
     #       script:
-    #         # increase max memory heap
-    #         - export NODE_OPTIONS=--max_old_space_size=4096
     #         - npm --version
     #         - npm install
     #         - npm run build
