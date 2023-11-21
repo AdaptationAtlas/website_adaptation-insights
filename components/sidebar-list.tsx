@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { formatNumberCommas } from '@/lib/utils'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
-import { interpolateColor } from '@/utils/color'
+// import { interpolateColor } from '@/utils/color'
 import { minBy, maxBy } from 'lodash'
 import classNames from 'classnames'
 
@@ -59,8 +59,10 @@ const SidebarList = ({
       {viewProjects && projectsData.map(project => {
         const budget = (project.budget) ? '$' + formatNumberCommas(project.budget) : 'Unspecified'
         const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(project.beneficiaryNum) : 'Unspecified'
-        const colorBudget = (project.budget && project.budget !== undefined && project.budget !== null) ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
-        const colorBeneficiaries = (project.beneficiaryNum && project.beneficiaryNum !== undefined && project.beneficiaryNum !== null) ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
+        // const colorBudget = project.budget ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
+        // const colorBeneficiaries = project.beneficiaryNum ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
+        const colorBudget = project.budget ? '#73B959' : '#B7B7B7'
+        const colorBeneficiaries = project.beneficiaryNum ? '#009ADB' : '#B7B7B7'
         const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
         const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
 
