@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import SidebarNav from '@/components/sidebar-nav'
 import SidebarDetail from '@/components/sidebar-detail'
-import { useRouter, usePathname } from 'next/navigation'
+// import { useRouter, usePathname } from 'next/navigation'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { orderBy } from 'lodash'
 

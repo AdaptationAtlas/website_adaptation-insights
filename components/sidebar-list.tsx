@@ -57,8 +57,10 @@ const SidebarList = ({
   return (
     <div className='flex flex-col overflow-x-auto'>
       {viewProjects && projectsData.map(project => {
-        const budget = (project.budget) ? '$' + formatNumberCommas(project.budget) : 'Unspecified'
-        const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(project.beneficiaryNum) : 'Unspecified'
+        // const budget = (project.budget) ? '$' + formatNumberCommas(project.budget) : 'Unspecified'
+        // const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(project.beneficiaryNum) : 'Unspecified'
+        const budget = (project.budget) ? '$' + project.budget : 'Unspecified'
+        const beneficiaries = (project.beneficiaryNum) ? project.beneficiaryNum : 'Unspecified'
         const colorBudget = project.budget ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
         const colorBeneficiaries = project.beneficiaryNum ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
         const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
