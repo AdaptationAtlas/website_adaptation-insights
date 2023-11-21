@@ -1,8 +1,19 @@
 export function interpolateColor(value: number, minValue: number, maxValue: number, color1: string, color2: string, logScale: boolean): string {
-  // If using log scale convert values to a logarithmic scale
-  const logValue = Math.log(value || 1); // Avoid log(0) which is -Infinity
-  const logMin = Math.log(minValue || 1);
-  const logMax = Math.log(maxValue || 1);
+  if (isNaN(value) || isNaN(minValue) || isNaN(maxValue)) {
+    // Return a default color if any of the values are not valid numbers
+    return '#B7B7B7';
+  }
+
+  const safeLog = (val: number) => val <= 0 ? 0 : Math.log(val);
+
+  const logValue = safeLog(value);
+  const logMin = safeLog(minValue);
+  const logMax = safeLog(maxValue);
+
+  // Avoid division by zero
+  if (minValue === maxValue) {
+    return color1; // Return the start color as default
+  }
 
   // If log scale, calculate the ratio of the log-scaled number within the range
   // Otherwise, calculate the ratio of the number within the range
