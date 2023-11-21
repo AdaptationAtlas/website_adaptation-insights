@@ -5,6 +5,7 @@ import Switch from '@/components/ui/switch'
 import SidebarList from '@/components/sidebar-list'
 import { useRouter, usePathname } from 'next/navigation'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
+import { uniq } from 'lodash'
 import {
   Select,
   SelectContent,
@@ -12,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import { handleSelectedYear, handleSelectedCountry, handleSelectedType } from '@/utils/selectHandlers'
 
 // TODO 11/8
 // 2. Add detail panel component with transition
@@ -21,6 +23,8 @@ import {
 type Props = {
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  actorsRawData: ActorData[]
+  projectsRawData: ProjectData[]
   networksData: NetworkData[]
   viewProjects: boolean
   viewByBudget: boolean
@@ -32,11 +36,16 @@ type Props = {
   setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
   activeProject: ProjectData | null
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
+  setSelectedYear: React.Dispatch<React.SetStateAction<number | null>>
+  setSelectedCountry: React.Dispatch<React.SetStateAction<string | null>>
+  setSelectedType: React.Dispatch<React.SetStateAction<string | null>>
 }
 
 const SidebarNav = ({
   actorsData,
   projectsData,
+  actorsRawData,
+  projectsRawData,
   networksData,
   viewProjects,
   viewByBudget,
@@ -47,12 +56,28 @@ const SidebarNav = ({
   activeActor,
   setActiveActor,
   activeProject,
-  setActiveProject
+  setActiveProject,
+  setSelectedYear,
+  setSelectedCountry,
+  setSelectedType,
 }: Props) => {
 
   // Store actor and project totals
   const actorsTotal = actorsData?.length
   const projectsTotal = projectsData?.length
+
+  // Get unique values for years, countries and actor types
+  // TODO - combine the filter logic to allow for filter combinations like "projects in Ghana in 2012"
+  const uniqueProjectYears = uniq(
+    projectsRawData.flatMap(project => [project.minStartDate, project.maxEndDate])
+  ).sort()
+  const uniqueProjectCountries = uniq(projectsRawData.flatMap(project => project.projectScale)).sort() // TODO - replace this with country
+  const uniqueActorTypes = uniq(actorsRawData.flatMap(actor => actor.type)).sort()
+
+  // Now using the imported utility functions
+  const onSelectedYearChange = handleSelectedYear(setSelectedYear);
+  const onSelectedCountryChange = handleSelectedCountry(setSelectedCountry);
+  const onSelectedTypeChange = handleSelectedType(setSelectedType);
 
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
@@ -79,18 +104,20 @@ const SidebarNav = ({
         {viewProjects &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>During</span>
-            <Select>
+            <Select onValueChange={onSelectedYearChange}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="2023" />
+                <span className='truncate'>
+                  <SelectValue placeholder="2023" />
+                </span>
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="2017">2017</SelectItem>
-                <SelectItem value="2018">2018</SelectItem>
-                <SelectItem value="2019">2019</SelectItem>
-                <SelectItem value="2020">2020</SelectItem>
-                <SelectItem value="2021">2021</SelectItem>
-                <SelectItem value="2022">2022</SelectItem>
-                <SelectItem value="2023">2023</SelectItem>
+                <SelectItem value="all">All years</SelectItem>
+                {uniqueProjectYears && uniqueProjectYears.map((year, id) => {
+                  // Check if year is not -1 or null
+                  if (year !== -1 && year !== null) {
+                    return <SelectItem key={id} value={String(year)}>{year}</SelectItem>;
+                  }
+                })}
               </SelectContent>
             </Select>
           </div>
@@ -100,7 +127,9 @@ const SidebarNav = ({
             <span className='uppercase text-sm mr-4'>Currency</span>
             <Select>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="USD" />
+                <span className='truncate'>
+                  <SelectValue placeholder="USD" />
+                </span>
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="usd">USD</SelectItem>
@@ -115,7 +144,9 @@ const SidebarNav = ({
             <span className='uppercase text-sm mr-4'>Currency</span>
             <Select>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="USD" />
+                <span className='truncate'>
+                  <SelectValue placeholder="USD" />
+                </span>
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="usd">USD</SelectItem>
@@ -129,15 +160,19 @@ const SidebarNav = ({
       <div>
         {viewProjects &&
           <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
-            <Select>
+            <Select onValueChange={onSelectedCountryChange}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="All countries" />
+                <span className='truncate'>
+                  <SelectValue placeholder="All countries" />
+                </span>
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All countries</SelectItem>
-                <SelectItem value="Cameroon">Cameroon</SelectItem>
-                <SelectItem value="Ghana">Ghana</SelectItem>
-                <SelectItem value="Morocco">Morocco</SelectItem>
+                {uniqueProjectCountries.map((country, id) => {
+                  if (country) {
+                    return <SelectItem key={id} value={String(country)}>{country}</SelectItem>;
+                  }
+                })}
               </SelectContent>
             </Select>
             <p className='uppercase text-sm'>{projectsTotal} of {projectsTotal} projects</p>
@@ -145,15 +180,19 @@ const SidebarNav = ({
         }
         {!viewProjects &&
           <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
-            <Select>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="All partners" />
+            <Select onValueChange={onSelectedTypeChange}>
+              <SelectTrigger className="w-[180px] truncate text-left">
+                <span className='truncate'>
+                  <SelectValue placeholder="All partners" />
+                </span>
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All partners</SelectItem>
-                <SelectItem value="Lorem ipsum">Lorem ipsum</SelectItem>
-                <SelectItem value="Tempor incididunt">Tempor incididunt</SelectItem>
-                <SelectItem value="Dolore magna aliqua">Dolore magna aliqua</SelectItem>
+                {uniqueActorTypes.map((type, id) => {
+                  if (type) {
+                    return <SelectItem key={id} value={String(type)}>{type}</SelectItem>;
+                  }
+                })}
               </SelectContent>
             </Select>
             <p className='uppercase text-sm'>{actorsTotal} of {actorsTotal} partners</p>

@@ -8,31 +8,41 @@ import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { orderBy } from 'lodash'
 
 type Props = {
-  viewByBudget: boolean
-  setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  actorsRawData: ActorData[]
+  projectsRawData: ProjectData[]
   networksData: NetworkData[]
+  viewByBudget: boolean
+  setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
   viewProjects: boolean
   setViewProjects: React.Dispatch<React.SetStateAction<boolean>>
   activeActor: ActorData | null
   setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
   activeProject: ProjectData | null
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
+  setSelectedYear: React.Dispatch<React.SetStateAction<number | null>>
+  setSelectedCountry: React.Dispatch<React.SetStateAction<string | null>>
+  setSelectedType: React.Dispatch<React.SetStateAction<string | null>>
 }
 
 const Sidebar = ({
-  viewByBudget,
-  setViewByBudget,
   actorsData,
   projectsData,
+  actorsRawData,
+  projectsRawData,
   networksData,
+  viewByBudget,
+  setViewByBudget,
   viewProjects,
   setViewProjects,
   activeActor,
   setActiveActor,
   activeProject,
   setActiveProject,
+  setSelectedYear,
+  setSelectedCountry,
+  setSelectedType,
 }: Props) => {
   // const router = useRouter()
   // const pathname = usePathname()
@@ -69,6 +79,8 @@ const Sidebar = ({
       <SidebarNav
         actorsData={actorsData}
         projectsData={projectsData}
+        actorsRawData={actorsRawData}
+        projectsRawData={projectsRawData}
         networksData={networksData}
         viewProjects={viewProjects}
         viewByBudget={viewByBudget}
@@ -80,6 +92,9 @@ const Sidebar = ({
         setActiveActor={setActiveActor}
         activeProject={activeProject}
         setActiveProject={setActiveProject}
+        setSelectedYear={setSelectedYear}
+        setSelectedCountry={setSelectedCountry}
+        setSelectedType={setSelectedType}
       />
       <SidebarDetail
         actorsData={actorsData}
