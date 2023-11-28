@@ -15,11 +15,6 @@ import {
 } from "@/components/ui/select"
 import { handleSelectedYear, handleSelectedCountry, handleSelectedType } from '@/utils/selectHandlers'
 
-// TODO 11/8
-// 2. Add detail panel component with transition
-// 5. Add data to detail panels
-// 6. Style detail panels
-
 type Props = {
   actorsData: ActorData[]
   projectsData: ProjectData[]
@@ -27,18 +22,20 @@ type Props = {
   projectsRawData: ProjectData[]
   networksData: NetworkData[]
   viewProjects: boolean
+  viewProjectsDetail: boolean
+  setViewProjectsDetail: React.Dispatch<React.SetStateAction<boolean>>
   viewByBudget: boolean
   setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
   handleSwitchToggle: (checked: boolean) => void
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
-  activeActor: ActorData | null
-  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
-  activeProject: ProjectData | null
-  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
-  setSelectedYear: React.Dispatch<React.SetStateAction<number | null>>
-  setSelectedCountry: React.Dispatch<React.SetStateAction<string | null>>
-  setSelectedType: React.Dispatch<React.SetStateAction<string | null>>
+  activeActor: ActorData | null | undefined
+  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null | undefined>>
+  activeProject: ProjectData | null | undefined
+  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
+  setSelectedYear: React.Dispatch<React.SetStateAction<number | null | undefined>>
+  setSelectedCountry: React.Dispatch<React.SetStateAction<string | null | undefined>>
+  setSelectedType: React.Dispatch<React.SetStateAction<string | null | undefined>>
 }
 
 const SidebarNav = ({
@@ -48,6 +45,8 @@ const SidebarNav = ({
   projectsRawData,
   networksData,
   viewProjects,
+  viewProjectsDetail,
+  setViewProjectsDetail,
   viewByBudget,
   setViewByBudget,
   handleSwitchToggle,
@@ -200,6 +199,8 @@ const SidebarNav = ({
         }
         <SidebarList
           viewProjects={viewProjects}
+          viewProjectsDetail={viewProjectsDetail}
+          setViewProjectsDetail={setViewProjectsDetail}
           viewByBudget={viewByBudget}
           actorsData={actorsData}
           projectsData={projectsData}

@@ -8,20 +8,24 @@ import classNames from 'classnames'
 
 type Props = {
   viewProjects: boolean
+  viewProjectsDetail: boolean
+  setViewProjectsDetail: React.Dispatch<React.SetStateAction<boolean>>
   viewByBudget: boolean
   actorsData: ActorData[]
   projectsData: ProjectData[]
   networksData: NetworkData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
-  activeActor: ActorData | null
-  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
-  activeProject: ProjectData | null
-  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
+  activeActor: ActorData | null | undefined
+  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null | undefined>>
+  activeProject: ProjectData | null | undefined
+  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
 }
 
 const SidebarList = ({
   viewProjects,
+  viewProjectsDetail,
+  setViewProjectsDetail,
   viewByBudget,
   actorsData,
   projectsData,
@@ -37,12 +41,14 @@ const SidebarList = ({
   // Set active actor to selected list item
   const handleActorSelect = (actor: ActorData) => {
     if (!detailPanelActive) { setDetailPanelActive(true) }
+    if (viewProjectsDetail) { setViewProjectsDetail(false) }
     setActiveActor(actor)
   }
 
   // Set active project to selected list item
   const handleProjectSelect = (project: ProjectData) => {
     if (!detailPanelActive) { setDetailPanelActive(true) }
+    if (!viewProjectsDetail) { setViewProjectsDetail(true) }
     setActiveProject(project)
   }
 

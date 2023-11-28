@@ -8,6 +8,7 @@ import NetworkGraph from './network-graph'
 
 type Props = {
   viewProjects: boolean
+  setViewProjectsDetail: React.Dispatch<React.SetStateAction<boolean>>
   viewByBudget: boolean
   actorCode: string
   actorsData: ActorData[]
@@ -15,14 +16,16 @@ type Props = {
   networksData: NetworkData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
-  activeActor: ActorData | null
-  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
-  activeProject: ProjectData | null
-  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
+  activeActor: ActorData | null | undefined
+  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null | undefined>>
+  activeProject: ProjectData | null | undefined
+  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
+  scrollToTop: () => void
 }
 
 const SidebarDetailActor = ({
   viewProjects,
+  setViewProjectsDetail,
   viewByBudget,
   actorCode,
   actorsData,
@@ -33,7 +36,8 @@ const SidebarDetailActor = ({
   activeActor,
   setActiveActor,
   activeProject,
-  setActiveProject
+  setActiveProject,
+  scrollToTop,
 }: Props) => {
 
   // Utility function to look up project based on projectCode
@@ -75,6 +79,20 @@ const SidebarDetailActor = ({
   // Parse collaborator list
   const collaborators = actor?.collaborators
   const collabHeader = (collabCount && collabCount > 1) ? `${collabCount} known collaborators` : '1 known collaborator'
+
+  // Handle when the user selects a collaborator from the actor detail
+  const handleCollaboratorSelect = (actor: ActorData | undefined) => {
+    setViewProjectsDetail(false)
+    setActiveActor(actor)
+    scrollToTop()
+  }
+
+  // Handle when the user selects a project from the actor detail
+  const handleProjectSelect = (project: ProjectData | undefined) => {
+    setViewProjectsDetail(true)
+    setActiveProject(project)
+    scrollToTop()
+  }
 
   return (
     <div className='p-5'>
@@ -135,7 +153,7 @@ const SidebarDetailActor = ({
             const numCollaborators = project.numCollaborators
             const projectPlural = (numCollaborators > 1) ? 'collaborators' : 'collaborator'
             return (
-              <div key={project.projectCode} className='mb-7'>
+              <div key={project.projectCode} className='mb-7 cursor-pointer' onClick={() => handleProjectSelect(projectData)}>
                 <h4 className='font-semibold mb-2'>{projectData?.projectName}</h4>
                 {numCollaborators > 0 &&
                   <div className='flex items-center'>
@@ -161,7 +179,7 @@ const SidebarDetailActor = ({
             const projectsShared = collaborator.projectsShared
             const projectPlural = (projectsShared > 1) ? 'projects' : 'project'
             return (
-              <div key={collaborator.actorCode} className='mb-7'>
+              <div key={collaborator.actorCode} className='mb-7 cursor-pointer' onClick={() => handleCollaboratorSelect(collaboratorData)}>
                 <h4 className='font-semibold mb-2'>{collaboratorData?.name}</h4>
                 {projectsShared > 0 &&
                   <div className='flex items-center'>

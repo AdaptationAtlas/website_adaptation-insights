@@ -26,11 +26,11 @@ const MapPage = () => {
   const [projectsData, setProjectsData] = useState<ProjectData[]>([])
   const [networksData, setNetworksData] = useState<NetworkData[]>([])
   const [viewProjects, setViewProjects] = useState<boolean>(false)
-  const [activeActor, setActiveActor] = useState<ActorData | null>(null)
-  const [activeProject, setActiveProject] = useState<ProjectData | null>(null)
-  const [selectedYear, setSelectedYear] = useState<number | null>(null)
-  const [selectedCountry, setSelectedCountry] = useState<string | null>(null)
-  const [selectedType, setSelectedType] = useState<string | null>(null)
+  const [activeActor, setActiveActor] = useState<ActorData | null | undefined>(null)
+  const [activeProject, setActiveProject] = useState<ProjectData | null | undefined>(null)
+  const [selectedYear, setSelectedYear] = useState<number | null | undefined>(null)
+  const [selectedCountry, setSelectedCountry] = useState<string | null | undefined>(null)
+  const [selectedType, setSelectedType] = useState<string | null | undefined>(null)
 
   // // Selected year handler
   // const handleSelectedYear = (value: string) => {

@@ -9,19 +9,22 @@ import { currentYear } from '@/utils/time'
 
 type Props = {
   viewProjects: boolean
+  setViewProjectsDetail: React.Dispatch<React.SetStateAction<boolean>>
   viewByBudget: boolean
   actorsData: ActorData[]
   projectsData: ProjectData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
-  activeActor: ActorData | null
-  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
-  activeProject: ProjectData | null
-  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
+  activeActor: ActorData | null | undefined
+  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null | undefined>>
+  activeProject: ProjectData | null | undefined
+  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
+  scrollToTop: () => void
 }
 
 const SidebarDetailProject = ({
   viewProjects,
+  setViewProjectsDetail,
   viewByBudget,
   actorsData,
   projectsData,
@@ -30,7 +33,8 @@ const SidebarDetailProject = ({
   activeActor,
   setActiveActor,
   activeProject,
-  setActiveProject
+  setActiveProject,
+  scrollToTop,
 }: Props) => {
 
   // Store active project for quick reference
@@ -94,6 +98,13 @@ const SidebarDetailProject = ({
   const getPartnerPlural = (count: number) => {
     const plural = (count > 1) ? 'partners' : 'partner'
     return plural
+  }
+
+  // Handle when the user selects a partner from the project detail
+  const handleActorSelect = (actor: ActorData | undefined) => {
+    setViewProjectsDetail(false)
+    setActiveActor(actor)
+    scrollToTop()
   }
 
   return (
@@ -218,9 +229,10 @@ const SidebarDetailProject = ({
             <div className='mb-4'>
               <h3 className='text-sm font-semibold uppercase mb-1'>{primaryPartnerCount} project {getPartnerPlural(primaryPartnerCount)}</h3>
               <ul>
-                {primaryPartners && primaryPartners.map((partner) => (
-                  <li key={partner.actorCode} className='mb-1'>{getActor(partner.actorCode)?.name}</li>
-                ))}
+                {primaryPartners && primaryPartners.map((partner) => {
+                  const actor = getActor(partner.actorCode)
+                  return <li key={partner.actorCode} className='mb-1 cursor-pointer' onClick={() => handleActorSelect(actor)}>{getActor(partner.actorCode)?.name}</li>
+                })}
               </ul>
             </div>
           }

@@ -17,13 +17,13 @@ type Props = {
   setViewByBudget: React.Dispatch<React.SetStateAction<boolean>>
   viewProjects: boolean
   setViewProjects: React.Dispatch<React.SetStateAction<boolean>>
-  activeActor: ActorData | null
-  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null>>
-  activeProject: ProjectData | null
-  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null>>
-  setSelectedYear: React.Dispatch<React.SetStateAction<number | null>>
-  setSelectedCountry: React.Dispatch<React.SetStateAction<string | null>>
-  setSelectedType: React.Dispatch<React.SetStateAction<string | null>>
+  activeActor: ActorData | null | undefined
+  setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null | undefined>>
+  activeProject: ProjectData | null | undefined
+  setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
+  setSelectedYear: React.Dispatch<React.SetStateAction<number | null | undefined>>
+  setSelectedCountry: React.Dispatch<React.SetStateAction<string | null | undefined>>
+  setSelectedType: React.Dispatch<React.SetStateAction<string | null | undefined>>
 }
 
 const Sidebar = ({
@@ -47,6 +47,7 @@ const Sidebar = ({
   // const router = useRouter()
   // const pathname = usePathname()
   const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
+  const [viewProjectsDetail, setViewProjectsDetail] = useState<boolean>(false)
 
   // Reference: How to make Radix UI Tabs URL based in NextJS
   // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
@@ -83,6 +84,8 @@ const Sidebar = ({
         projectsRawData={projectsRawData}
         networksData={networksData}
         viewProjects={viewProjects}
+        viewProjectsDetail={viewProjectsDetail}
+        setViewProjectsDetail={setViewProjectsDetail}
         viewByBudget={viewByBudget}
         setViewByBudget={setViewByBudget}
         handleSwitchToggle={handleSwitchToggle}
@@ -101,6 +104,8 @@ const Sidebar = ({
         projectsData={projectsData}
         networksData={networksData}
         viewProjects={viewProjects}
+        viewProjectsDetail={viewProjectsDetail}
+        setViewProjectsDetail={setViewProjectsDetail}
         viewByBudget={viewByBudget}
         detailPanelActive={detailPanelActive}
         setDetailPanelActive={setDetailPanelActive}
