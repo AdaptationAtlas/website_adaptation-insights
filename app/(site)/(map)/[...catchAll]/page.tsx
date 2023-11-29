@@ -109,7 +109,10 @@ const MapPage = () => {
         setSelectedType={setSelectedType}
       />
       <div className='relative w-full h-[calc(100vh-56px)]'>
-        <Map viewByBudget={viewByBudget} />
+        <Map
+          viewByBudget={viewByBudget}
+          selectedCountry={selectedCountry}
+        />
       </div>
     </div>
   )

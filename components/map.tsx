@@ -8,6 +8,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 
 type Props = {
   viewByBudget: boolean
+  selectedCountry: string | null | undefined
 }
 
 type HoverInfo = {
@@ -20,7 +21,10 @@ type HoverInfo = {
   numLocations: string | null
 } | null;
 
-function Map({ viewByBudget }: Props) {
+function Map({
+  viewByBudget,
+  selectedCountry
+}: Props) {
   const [locationData, setLocationData] = useState<GeoJsonFeatureCollection | null>(null);
   const [hoverInfo, setHoverInfo] = useState<HoverInfo>(null);
   const [minBudgetLog, setMinBudgetLog] = useState<number | undefined | null>(null);
@@ -65,12 +69,23 @@ function Map({ viewByBudget }: Props) {
       type: 'circle' as const,
       paint: {
         'circle-radius': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          2, 2,
-          4, 3,
-          8, 6,
+          'interpolate', ['linear'], ['zoom'], // Interpolate the circle radius based on zoom level
+          2, // Zoom level 2
+          [
+            'case',
+            ['!', ['to-boolean', selectedCountry]], 2, // If selectedCountry is null or undefined, show circle
+            // Condition to check if projectScale matches selectedCountry
+            ['==', ['get', 'projectScale'], selectedCountry], 2, // If projectScale matches selectedCountry, show circle
+            0 // If false, set radius to 0 to hide circle
+          ],
+          8, // Zoom level 8
+          [
+            'case',
+            ['!', ['to-boolean', selectedCountry]], 6, // If selectedCountry is null or undefined, show circle
+            // Condition to check if projectScale matches selectedCountry
+            ['==', ['get', 'projectScale'], selectedCountry], 6, // If projectScale matches selectedCountry, show circle
+            0 // If false, set radius to 0 to hide circle
+          ],
         ],
         'circle-color': [
           'case',
@@ -85,7 +100,7 @@ function Map({ viewByBudget }: Props) {
         ],
       },
     };
-  }, [viewByBudget, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);
+  }, [viewByBudget, selectedCountry, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);
 
   const onHover = useCallback((event: any) => {
     const features = event.features;
