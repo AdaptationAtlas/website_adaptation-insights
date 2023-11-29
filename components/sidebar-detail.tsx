@@ -14,6 +14,8 @@ type Props = {
   viewByBudget: boolean
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  actorsRawData: ActorData[]
+  projectsRawData: ProjectData[]
   networksData: NetworkData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
@@ -30,6 +32,8 @@ const SidebarDetail = ({
   viewByBudget,
   actorsData,
   projectsData,
+  actorsRawData,
+  projectsRawData,
   networksData,
   detailPanelActive,
   setDetailPanelActive,
@@ -79,6 +83,8 @@ const SidebarDetail = ({
           actorCode={actorCode}
           actorsData={actorsData}
           projectsData={projectsData}
+          actorsRawData={actorsRawData}
+          projectsRawData={projectsRawData}
           networksData={networksData}
           detailPanelActive={detailPanelActive}
           setDetailPanelActive={setDetailPanelActive}
@@ -96,6 +102,8 @@ const SidebarDetail = ({
           viewByBudget={viewByBudget}
           actorsData={actorsData}
           projectsData={projectsData}
+          actorsRawData={actorsRawData}
+          projectsRawData={projectsRawData}
           detailPanelActive={detailPanelActive}
           setDetailPanelActive={setDetailPanelActive}
           activeActor={activeActor}

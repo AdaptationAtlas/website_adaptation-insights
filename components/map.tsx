@@ -92,7 +92,7 @@ function Map({ viewByBudget }: Props) {
     // Find the first feature within the "point" layer.
     const hoveredFeature = features && features.find((f: any) => f.layer.id === 'point');
     if (hoveredFeature && hoveredFeature.geometry && hoveredFeature.geometry.type === 'Point') {
-      console.log(hoveredFeature.properties)
+      // console.log(hoveredFeature.properties)
       const coords = hoveredFeature.geometry.coordinates
       const dateEnd = hoveredFeature.properties.dateEnd
       const ongoing = (dateEnd && dateEnd <= currentYear) ? true : false

@@ -13,6 +13,8 @@ type Props = {
   actorCode: string
   actorsData: ActorData[]
   projectsData: ProjectData[]
+  actorsRawData: ActorData[]
+  projectsRawData: ProjectData[]
   networksData: NetworkData[]
   detailPanelActive: boolean
   setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
@@ -30,6 +32,8 @@ const SidebarDetailActor = ({
   actorCode,
   actorsData,
   projectsData,
+  actorsRawData,
+  projectsRawData,
   networksData,
   detailPanelActive,
   setDetailPanelActive,
@@ -43,14 +47,14 @@ const SidebarDetailActor = ({
   // Utility function to look up project based on projectCode
   // TODO - move this to utils
   const getProject = (projectCode: string) => {
-    const project = find(projectsData, { 'projectCode': projectCode });
+    const project = find(projectsRawData, { 'projectCode': projectCode })
     return project;
   }
 
   // Utility function to look up actor based on actorCode
   // TODO - move this to utils
   const getActor = (actorCode: string) => {
-    const actor = find(actorsData, { 'actorCode': actorCode });
+    const actor = find(actorsRawData, { 'actorCode': actorCode })
     return actor;
   }
 

@@ -102,6 +102,8 @@ const Sidebar = ({
       <SidebarDetail
         actorsData={actorsData}
         projectsData={projectsData}
+        actorsRawData={actorsRawData}
+        projectsRawData={projectsRawData}
         networksData={networksData}
         viewProjects={viewProjects}
         viewProjectsDetail={viewProjectsDetail}
