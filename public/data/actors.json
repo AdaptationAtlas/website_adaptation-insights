@@ -497,12 +497,16 @@
     "name": "Ministere de l'Agriculture, Resources Animales et Halieutiques",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 246080032,
-    "totalBeneficiaries": 0,
+    "totalBudget": 286295260.2594,
+    "totalBeneficiaries": 100000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
         "actorCode": "BF32",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "GLO15",
         "projectsShared": 1
       },
       {
@@ -522,6 +526,10 @@
       {
         "projectCode": "L018",
         "numCollaborators": 4
+      },
+      {
+        "projectCode": "L240",
+        "numCollaborators": 1
       }
     ]
   },
@@ -941,7 +949,7 @@
     "name": "Government of Burkina Faso / Gouvernement du Burkina Faso",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 369369982.4,
+    "totalBudget": 556347202.4,
     "totalBeneficiaries": 327000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -966,11 +974,19 @@
         "projectsShared": 1
       },
       {
+        "actorCode": "MALI13",
+        "projectsShared": 1
+      },
+      {
         "actorCode": "NLD1",
         "projectsShared": 1
       },
       {
         "actorCode": "NLD3",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "REG1",
         "projectsShared": 1
       }
     ],
@@ -990,6 +1006,10 @@
       {
         "projectCode": "L069",
         "numCollaborators": 1
+      },
+      {
+        "projectCode": "L254",
+        "numCollaborators": 2
       }
     ]
   },
@@ -2002,6 +2022,80 @@
     "projects": []
   },
   {
+    "actorCode": "BF89",
+    "name": "Conseil nationale de l'agriculture biologique",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "BF90",
+    "name": "Association pour la Recherche et la Formation en Agroecologie",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "BF91",
+    "name": "Ministry of Environment and Sustainable Development",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 18391213.0159,
+    "totalBeneficiaries": 150000,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [
+      {
+        "actorCode": "GLO27",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L241",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L242",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "BF92",
+    "name": "WOUOL",
+    "type": "Producer/Farmer group",
+    "email": null,
+    "totalBudget": 3791680,
+    "totalBeneficiaries": 2500,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L243",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "BF93",
+    "name": "Fédération des Diéma Tin Tua",
+    "type": "Producer/Farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "BGD1",
     "name": "Green Delta Insurance Company",
     "type": "Private company",
@@ -2864,10 +2958,18 @@
     "name": "Ministere de l'Agriculture et des ressources animales",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 14218800,
+    "totalBudget": 574212019.2,
     "totalBeneficiaries": 250000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
+      {
+        "actorCode": "CIV38",
+        "projectsShared": 2
+      },
+      {
+        "actorCode": "CIV4",
+        "projectsShared": 1
+      },
       {
         "actorCode": "CON3",
         "projectsShared": 1
@@ -2881,6 +2983,14 @@
       {
         "projectCode": "L068",
         "numCollaborators": 2
+      },
+      {
+        "projectCode": "L262",
+        "numCollaborators": 2
+      },
+      {
+        "projectCode": "L273",
+        "numCollaborators": 1
       }
     ]
   },
@@ -3421,16 +3531,24 @@
     "name": "Ministere de l'Agriculture et du Developpement Rural",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 20187520,
+    "totalBudget": 300184129.6,
     "totalBeneficiaries": 60600,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
+      {
+        "actorCode": "CIV16",
+        "projectsShared": 1
+      },
       {
         "actorCode": "CIV31",
         "projectsShared": 1
       },
       {
         "actorCode": "CIV35",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "CIV38",
         "projectsShared": 1
       },
       {
@@ -3445,6 +3563,10 @@
       },
       {
         "projectCode": "L163",
+        "numCollaborators": 2
+      },
+      {
+        "projectCode": "L262",
         "numCollaborators": 2
       }
     ]
@@ -4117,6 +4239,51 @@
     "projects": []
   },
   {
+    "actorCode": "CIV38",
+    "name": "Ministry of commerce and industry",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 559993219.2,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [
+      {
+        "actorCode": "CIV16",
+        "projectsShared": 2
+      },
+      {
+        "actorCode": "CIV4",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L262",
+        "numCollaborators": 2
+      },
+      {
+        "projectCode": "L273",
+        "numCollaborators": 1
+      }
+    ]
+  },
+  {
+    "actorCode": "CIV39",
+    "name": "Ministry of finance",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 189584000,
+    "totalBeneficiaries": 800000,
+    "beneficiaryFlagMultiple": true,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L265",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
     "actorCode": "CMR1",
     "name": "Institut de Recherche Agricole pour le Developpement",
     "type": "Research Institution",
@@ -4252,11 +4419,16 @@
     "name": "Mission d'Etudes pour l'Aménagement et le Développement de la Région du Nord, Cameroon",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 247407120,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L266",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "CMR12",
@@ -4399,11 +4571,16 @@
     "name": "Ministry of the Economy, Planning and Regional Development",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 189584000,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L264",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "CMR8",
@@ -4621,6 +4798,33 @@
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
     "projects": []
+  },
+  {
+    "actorCode": "CMR29",
+    "name": "COPROTEV",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "CMR30",
+    "name": "Community Agriculture and Environmental Protection Association",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 500,
+    "beneficiaryFlagMultiple": true,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L280",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "COG1",
@@ -4962,8 +5166,8 @@
     "name": "African Development Bank",
     "type": "International finance institution",
     "email": null,
-    "totalBudget": 6049564782.0971,
-    "totalBeneficiaries": 189697010,
+    "totalBudget": 6073831534.0971,
+    "totalBeneficiaries": 190070710,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
       {
@@ -5000,7 +5204,7 @@
       },
       {
         "actorCode": "GLO44",
-        "projectsShared": 3
+        "projectsShared": 4
       },
       {
         "actorCode": "GLO49",
@@ -5090,6 +5294,10 @@
       },
       {
         "projectCode": "L075",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L245",
         "numCollaborators": 1
       }
     ]
@@ -5522,6 +5730,44 @@
     ]
   },
   {
+    "actorCode": "CON37",
+    "name": "Panafrican climate justice alliance",
+    "type": null,
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L255",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "CON38",
+    "name": "African water facility",
+    "type": "Banks and microfinance institutions",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "CON39",
+    "name": "SONED afrique",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "CZE1",
     "name": "People In Need",
     "type": "Development organization",
@@ -5603,7 +5849,7 @@
     "name": "Deutsche Gesellschaft fur Internationale Zusammenarbeit",
     "type": "Bilateral Development agency",
     "email": null,
-    "totalBudget": 970751120,
+    "totalBudget": 990251120,
     "totalBeneficiaries": 4061786,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -5651,6 +5897,10 @@
       },
       {
         "projectCode": "G054",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "G055",
         "numCollaborators": 0
       },
       {
@@ -6138,11 +6388,16 @@
     "name": "Univerity of kassel",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 171694,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L247",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "DEU22",
@@ -6394,6 +6649,17 @@
     ]
   },
   {
+    "actorCode": "DEU40",
+    "name": "The Institute for Social-Ecological Research",
+    "type": "Research Institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "DNK1",
     "name": "University of Copenhagen",
     "type": "Academic institution",
@@ -6430,6 +6696,17 @@
     "actorCode": "DNK4",
     "name": "Ahrus University",
     "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "DNK5",
+    "name": "Denmark Ministry of Foreign Affairs",
+    "type": "Government agency",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6652,6 +6929,17 @@
     "actorCode": "DZA11",
     "name": "CIRTA Club Semence",
     "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "DZA12",
+    "name": "Scientific and Technical Research Center on Arid Regions",
+    "type": "Research Institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6961,13 +7249,24 @@
     "projects": []
   },
   {
+    "actorCode": "ET3",
+    "name": "Echnoserve",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "EU1",
     "name": "European Union",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 608498100.1707,
-    "totalBeneficiaries": 14483500,
-    "beneficiaryFlagMultiple": false,
+    "totalBudget": 628498100.1707,
+    "totalBeneficiaries": 14483555,
+    "beneficiaryFlagMultiple": true,
     "collaborators": [
       {
         "actorCode": "BF12",
@@ -7429,6 +7728,10 @@
       },
       {
         "projectCode": "L106",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L246",
         "numCollaborators": 0
       }
     ]
@@ -8093,6 +8396,17 @@
   {
     "actorCode": "FIN5",
     "name": "Ministry of Foreign Affairs Finland",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "FIN6",
+    "name": "Government of Finland",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -10012,12 +10326,16 @@
     "name": "Government of Ghana",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 53766022.4,
-    "totalBeneficiaries": 5881,
+    "totalBudget": 246478158.4,
+    "totalBeneficiaries": 105881,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
         "actorCode": "GHA5",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "GHA64",
         "projectsShared": 1
       },
       {
@@ -10031,12 +10349,32 @@
       {
         "actorCode": "GLO28",
         "projectsShared": 1
+      },
+      {
+        "actorCode": "USA41",
+        "projectsShared": 1
       }
     ],
     "projects": [
       {
         "projectCode": "L002",
         "numCollaborators": 4
+      },
+      {
+        "projectCode": "L261",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L263",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L274",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L279",
+        "numCollaborators": 2
       }
     ]
   },
@@ -11138,6 +11476,72 @@
     ]
   },
   {
+    "actorCode": "GHA64",
+    "name": "Hen Mpoano",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [
+      {
+        "actorCode": "GHA15",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "USA40",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "USA41",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L277",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L279",
+        "numCollaborators": 2
+      }
+    ]
+  },
+  {
+    "actorCode": "GHA65",
+    "name": "Central & Western Fishmongers Improvement Association",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "GHA66",
+    "name": "Daasgift Quality Foundation",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "GHA67",
+    "name": "Development Action Association",
+    "type": "Advocacy organization/group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "GLO1",
     "name": "International Food Policy Research Institute",
     "type": "Research Institution",
@@ -11538,10 +11942,14 @@
     "name": "Food and Agriculture Organzation of the United Nations",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 1594626167.6318,
-    "totalBeneficiaries": 48075935,
+    "totalBudget": 1635045198.6912,
+    "totalBeneficiaries": 48176635,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
+      {
+        "actorCode": "BF2",
+        "projectsShared": 1
+      },
       {
         "actorCode": "CON15",
         "projectsShared": 1
@@ -11719,6 +12127,18 @@
       {
         "projectCode": "L237",
         "numCollaborators": 0
+      },
+      {
+        "projectCode": "L240",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L244",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L259",
+        "numCollaborators": 0
       }
     ]
   },
@@ -11727,7 +12147,7 @@
     "name": "World Food Program",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 164370644.6609,
+    "totalBudget": 202287444.6609,
     "totalBeneficiaries": 4412375,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11819,6 +12239,10 @@
       },
       {
         "projectCode": "L179",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L275",
         "numCollaborators": 0
       }
     ]
@@ -12308,7 +12732,7 @@
       },
       {
         "actorCode": "GLO3",
-        "projectsShared": 1
+        "projectsShared": 2
       },
       {
         "actorCode": "GLO4",
@@ -12391,6 +12815,10 @@
       {
         "projectCode": "L044",
         "numCollaborators": 8
+      },
+      {
+        "projectCode": "L258",
+        "numCollaborators": 1
       }
     ]
   },
@@ -12486,10 +12914,14 @@
     "name": "United Nations Development Program",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 197047495.516,
-    "totalBeneficiaries": 5358375,
+    "totalBudget": 215438708.5319,
+    "totalBeneficiaries": 5508375,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
+      {
+        "actorCode": "BF91",
+        "projectsShared": 1
+      },
       {
         "actorCode": "GLO15",
         "projectsShared": 1
@@ -12579,6 +13011,10 @@
       {
         "projectCode": "L169",
         "numCollaborators": 0
+      },
+      {
+        "projectCode": "L241",
+        "numCollaborators": 1
       }
     ]
   },
@@ -12733,7 +13169,7 @@
       },
       {
         "actorCode": "GLO2",
-        "projectsShared": 1
+        "projectsShared": 2
       },
       {
         "actorCode": "GLO4",
@@ -12795,6 +13231,10 @@
       },
       {
         "projectCode": "L220",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L258",
         "numCollaborators": 1
       }
     ]
@@ -13300,8 +13740,8 @@
     "name": "Green Climate Fund",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 1068797229.405,
-    "totalBeneficiaries": 170402000,
+    "totalBudget": 1093063981.405,
+    "totalBeneficiaries": 170775700,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
@@ -13314,7 +13754,7 @@
       },
       {
         "actorCode": "CON3",
-        "projectsShared": 3
+        "projectsShared": 4
       },
       {
         "actorCode": "EU1",
@@ -13424,6 +13864,10 @@
       },
       {
         "projectCode": "L017",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L245",
         "numCollaborators": 1
       }
     ]
@@ -13712,6 +14156,10 @@
       },
       {
         "projectCode": "L187",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L271",
         "numCollaborators": 0
       }
     ]
@@ -14943,6 +15391,37 @@
     ]
   },
   {
+    "actorCode": "GLO85",
+    "name": "Global Green Institute",
+    "type": "Intergovernmental organization",
+    "email": null,
+    "totalBudget": 1194323.2727,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L248",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L249",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "GLO86",
+    "name": "Regrow ag",
+    "type": "Other",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "GRC1",
     "name": "Q-Plan International",
     "type": "Private company",
@@ -15707,6 +16186,50 @@
     "projects": []
   },
   {
+    "actorCode": "KEN8",
+    "name": "Egeton university",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "KEN9",
+    "name": "Kenyatta Universiy",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "KEN10",
+    "name": "Masinde Muliro University of Science and Technology",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "KEN11",
+    "name": "Technical university of Kenya",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "KOR1",
     "name": "Korea international cooperation agency",
     "type": "Development organization",
@@ -16294,10 +16817,14 @@
     "name": "Gouvernement du Mali",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 4677985.2,
+    "totalBudget": 191655205.2,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
+      {
+        "actorCode": "BF32",
+        "projectsShared": 1
+      },
       {
         "actorCode": "CAN2",
         "projectsShared": 1
@@ -16317,12 +16844,20 @@
       {
         "actorCode": "MALI20",
         "projectsShared": 1
+      },
+      {
+        "actorCode": "REG1",
+        "projectsShared": 1
       }
     ],
     "projects": [
       {
         "projectCode": "L029",
         "numCollaborators": 5
+      },
+      {
+        "projectCode": "L254",
+        "numCollaborators": 2
       }
     ]
   },
@@ -16889,11 +17424,21 @@
     "name": "Ministry of Agriculture",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 61140840,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
-    "collaborators": [],
-    "projects": []
+    "collaborators": [
+      {
+        "actorCode": "MALI50",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L253",
+        "numCollaborators": 1
+      }
+    ]
   },
   {
     "actorCode": "MALI25",
@@ -17127,6 +17672,71 @@
     "projects": []
   },
   {
+    "actorCode": "MALI46",
+    "name": "Union des Sociétés Coopérative des Eleveurs de Tamani",
+    "type": "Producer/Farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "MALI47",
+    "name": "Union des Sociétés Coopérative des Eleveurs de Boidié",
+    "type": "Producer/Farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "MALI48",
+    "name": "Union des Sociétés Coopérative des Eleveurs de Dougoufé",
+    "type": "Producer/Farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "MALI49",
+    "name": "Union des Sociétés Coopérative des Eleveurs de Somo",
+    "type": "Producer/Farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "MALI50",
+    "name": "Ministry of Finance",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 61140840,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [
+      {
+        "actorCode": "MALI24",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L253",
+        "numCollaborators": 1
+      }
+    ]
+  },
+  {
     "actorCode": "MLT1",
     "name": "Malta College of Arts, Science and Technology",
     "type": "Academic institution",
@@ -17340,11 +17950,16 @@
     "name": "Agence pour le Developpement Agricole",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 0,
-    "totalBeneficiaries": 0,
+    "totalBudget": 46637664,
+    "totalBeneficiaries": 26000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L270",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "MOR22",
@@ -17582,7 +18197,7 @@
     "name": "Ministry of Agriculture, Maritime Fisheries, Rural Development and Water and Forests",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 438425440,
+    "totalBudget": 10379262480,
     "totalBeneficiaries": 994000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -17615,6 +18230,10 @@
       {
         "projectCode": "L067",
         "numCollaborators": 2
+      },
+      {
+        "projectCode": "L268",
+        "numCollaborators": 0
       }
     ]
   },
@@ -17811,11 +18430,16 @@
     "name": "Ministere de l'Economie et des Finances",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 0,
-    "totalBeneficiaries": 0,
+    "totalBudget": 189584000,
+    "totalBeneficiaries": 200000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L238",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "MOR41",
@@ -18032,6 +18656,17 @@
     "projects": []
   },
   {
+    "actorCode": "MWI3",
+    "name": "University of Malawi",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "NIC1",
     "name": "Fundacion Nicafrance",
     "type": "Development organization",
@@ -18143,6 +18778,17 @@
     "actorCode": "NGA2",
     "name": "obafemi awolowo university",
     "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "NGA3",
+    "name": "Nigeria's intitute of agriucltural research",
+    "type": "Research Institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18900,6 +19546,10 @@
       {
         "projectCode": "L224",
         "numCollaborators": 1
+      },
+      {
+        "projectCode": "L251",
+        "numCollaborators": 0
       }
     ]
   },
@@ -19267,12 +19917,16 @@
     "name": "Comité Inter-Etats de Lutte contre la Sécheresse dans le Sahel",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 665982392,
+    "totalBudget": 852959612,
     "totalBeneficiaries": 2070000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
         "actorCode": "BF1",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "BF32",
         "projectsShared": 1
       },
       {
@@ -19314,6 +19968,10 @@
       {
         "actorCode": "MALI12",
         "projectsShared": 2
+      },
+      {
+        "actorCode": "MALI13",
+        "projectsShared": 1
       },
       {
         "actorCode": "NIG1",
@@ -19364,6 +20022,10 @@
       {
         "projectCode": "L007",
         "numCollaborators": 4
+      },
+      {
+        "projectCode": "L254",
+        "numCollaborators": 2
       }
     ]
   },
@@ -20471,6 +21133,50 @@
     ]
   },
   {
+    "actorCode": "REG34",
+    "name": "Open Society Initiative for West Africa",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "REG35",
+    "name": "Waternet",
+    "type": "Research Institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "REG36",
+    "name": "One acre fund",
+    "type": "Foundation/ philanthropic organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "REG37",
+    "name": "Arab Fund for Economic and Social Development",
+    "type": "Banks and microfinance institutions",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "RWA1",
     "name": "Rwanda Agriculture and Animal Resource Development Board",
     "type": "Research Institution",
@@ -20897,6 +21603,17 @@
     "projects": []
   },
   {
+    "actorCode": "SWE7",
+    "name": "Hivos",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "TCD1",
     "name": "contontchad sn",
     "type": "Private company",
@@ -21134,6 +21851,17 @@
     "projects": []
   },
   {
+    "actorCode": "TZA3",
+    "name": "Tanzania agricultural research institute",
+    "type": "Research Institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "UGA1",
     "name": "Uganda Wildlife Authority",
     "type": "Government agency",
@@ -21205,7 +21933,7 @@
     "name": "International Institute for Environment and Development",
     "type": "Think tank",
     "email": null,
-    "totalBudget": 94916210,
+    "totalBudget": 95153210,
     "totalBeneficiaries": 40000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21238,6 +21966,10 @@
       {
         "projectCode": "L008",
         "numCollaborators": 2
+      },
+      {
+        "projectCode": "L269",
+        "numCollaborators": 0
       }
     ]
   },
@@ -21721,6 +22453,55 @@
         "numCollaborators": 2
       }
     ]
+  },
+  {
+    "actorCode": "UK27",
+    "name": "Eco Tree Co",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "UK28",
+    "name": "UK Research and Innovation",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "UK29",
+    "name": "university of southampton",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 270000000,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L250",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "UK30",
+    "name": "King’s College London",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
   },
   {
     "actorCode": "URY1",
@@ -22487,6 +23268,141 @@
     "projects": []
   },
   {
+    "actorCode": "USA35",
+    "name": "McKnight Foundation",
+    "type": "Foundation/ philanthropic organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "USA36",
+    "name": "lutherian world relief",
+    "type": "Foundation/ philanthropic organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 12274,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L252",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "USA37",
+    "name": "NASA Harvest",
+    "type": "Research Institution",
+    "email": null,
+    "totalBudget": 4739600,
+    "totalBeneficiaries": 8200,
+    "beneficiaryFlagMultiple": true,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L256",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L257",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "USA38",
+    "name": "University of Nebraska",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "USA39",
+    "name": "Rhode Island university",
+    "type": "Academic institution",
+    "email": null,
+    "totalBudget": 22750080,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L276",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "USA40",
+    "name": "Environmental Justice Foundation",
+    "type": "Foundation/ philanthropic organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [
+      {
+        "actorCode": "GHA64",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L277",
+        "numCollaborators": 1
+      },
+      {
+        "projectCode": "L278",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "USA41",
+    "name": "tetratech",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [
+      {
+        "actorCode": "GHA15",
+        "projectsShared": 1
+      },
+      {
+        "actorCode": "GHA64",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L279",
+        "numCollaborators": 2
+      }
+    ]
+  },
+  {
+    "actorCode": "USA42",
+    "name": "Global funds for women",
+    "type": "Foundation/ philanthropic organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "VEN1",
     "name": "Bolivarian republic of venezuela",
     "type": "Government agency",
@@ -22678,8 +23594,8 @@
     "name": "Ministry of Agriculture",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 136216104,
-    "totalBeneficiaries": 3001800,
+    "totalBudget": 174038112,
+    "totalBeneficiaries": 3061800,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
@@ -22715,6 +23631,10 @@
       {
         "projectCode": "L168",
         "numCollaborators": 1
+      },
+      {
+        "projectCode": "L272",
+        "numCollaborators": 0
       }
     ]
   },
@@ -23039,9 +23959,9 @@
     "name": "Government of Zambia",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 1353216845.1001,
-    "totalBeneficiaries": 4100000,
-    "beneficiaryFlagMultiple": false,
+    "totalBudget": 1354816845.1001,
+    "totalBeneficiaries": 4104800,
+    "beneficiaryFlagMultiple": true,
     "collaborators": [
       {
         "actorCode": "EU1",
@@ -23100,6 +24020,10 @@
       {
         "projectCode": "L034",
         "numCollaborators": 6
+      },
+      {
+        "projectCode": "L260",
+        "numCollaborators": 0
       }
     ]
   },
@@ -23285,6 +24209,22 @@
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
     "projects": []
+  },
+  {
+    "actorCode": "ZAM55",
+    "name": " Ministry of Green Economy and Environment",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 94792000,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L267",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "ZIM1",
@@ -23760,6 +24700,33 @@
   {
     "actorCode": "ZIM12",
     "name": "Zimbabwe Women's Bureau",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "ZIM13",
+    "name": "Ministry of Tourism, Environment, and Hospitality",
+    "type": "Government agency",
+    "email": null,
+    "totalBudget": 54445646.9149,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L239",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "ZIM14",
+    "name": "Zambezi society",
     "type": "Development organization",
     "email": null,
     "totalBudget": 0,

@@ -155,7 +155,7 @@ const SidebarDetailProject = ({
             {targetedBeneficiaryCount > 0 &&
               <ul>
                 {targetedBeneficiaries && targetedBeneficiaries.map((beneficiary) => (
-                  <li key={beneficiary} className='mb-1'>{beneficiary}</li>
+                  <li key={beneficiary.name} className='mb-1'>{beneficiary.name}</li>
                 ))}
               </ul>
             }
@@ -186,7 +186,7 @@ const SidebarDetailProject = ({
             <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>Targeted value chain</h3>
             <ul>
               {valueChains && valueChains.map((chain) => (
-                <li key={chain} className='mb-1'>{chain}</li>
+                <li key={chain.name} className='mb-1'>{chain.name}</li>
               ))}
             </ul>
           </div>
@@ -197,7 +197,7 @@ const SidebarDetailProject = ({
             <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>On the farm</h3>
             <ul>
               {onFarm && onFarm.map((adaptation) => (
-                <li key={adaptation} className='mb-1'>{adaptation}</li>
+                <li key={adaptation.name} className='mb-1'>{adaptation.name}</li>
               ))}
             </ul>
           </div>
@@ -208,7 +208,7 @@ const SidebarDetailProject = ({
             <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>Beyond the farm</h3>
             <ul>
               {beyondFarm && beyondFarm.map((adaptation) => (
-                <li key={adaptation} className='mb-1'>{adaptation}</li>
+                <li key={adaptation.name} className='mb-1'>{adaptation.name}</li>
               ))}
             </ul>
           </div>

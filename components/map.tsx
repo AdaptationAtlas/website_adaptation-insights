@@ -30,7 +30,7 @@ function Map({ viewByBudget }: Props) {
 
   useEffect(() => {
     /* global fetch */
-    fetch('data/locations_jittered_systematic.geojson')
+    fetch('data/locations_jitter_variable.geojson')
       .then(resp => resp.json())
       .then((json: GeoJsonFeatureCollection) => {
         setLocationData(json);

@@ -25,22 +25,42 @@ export type ActorData = {
   type: string | null
 }
 
+type TargetedBeneficiary = {
+  name: string,
+  freeResponse: boolean
+}
+
+type TargetedValueChains = {
+  name: string,
+  freeResponse: boolean
+}
+
+type OnFarmAdaptations = {
+  name: string,
+  freeResponse: boolean
+}
+
+type BeyondFarmAdaptations = {
+  name: string,
+  freeResponse: boolean
+}
+
 export type ProjectData = {
   beneficiaryFlagMultiple: boolean | null
   beneficiaryNum: number | null
-  beyondFarmAdaptations: string[] | null
+  beyondFarmAdaptations: BeyondFarmAdaptations[] | null
   budget: number | null
   budgetCurrency: string | null
   budgetEuro: number | null
   maxEndDate: number | null
   minStartDate: number | null
-  onFarmAdaptations: string[] | null
+  onFarmAdaptations: OnFarmAdaptations[] | null
   partners: Partner[] | null
   projectCode: string
   projectName: string
   projectScale: string | null
-  targetedBeneficiaries: string[] | null
-  targetedValueChains: string[] | null
+  targetedBeneficiaries: TargetedBeneficiary[] | null
+  targetedValueChains: TargetedValueChains[] | null
   vulnerableGroups: string[] | null
 }
 
