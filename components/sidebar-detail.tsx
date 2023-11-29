@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import SidebarDetailActor from './sidebar-detail-actor'
 import SidebarDetailProject from './sidebar-detail-project'
-import { BiX } from 'react-icons/bi'
+import { BiX, BiChevronLeft } from 'react-icons/bi'
 
 type Props = {
   viewProjects: boolean
@@ -64,6 +64,11 @@ const SidebarDetail = ({
     setActiveProject(null)
   }
 
+  // Handle the back to partner / back to project button
+  const handleBackButton = () => {
+    setViewProjectsDetail(!viewProjectsDetail)
+  }
+
   const actorCode = activeActor ? activeActor.actorCode : null;
 
   return (
@@ -74,7 +79,9 @@ const SidebarDetail = ({
         'absolute z-30 top-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-200 will-change-transform'
       )}
     >
-      <button onClick={closeDetailPanel} className='absolute top-3 right-3 cursor-pointer scale-150'><BiX /></button>
+      <button onClick={closeDetailPanel} className='absolute top-3 right-3 cursor-pointer'><BiX className='scale-150' /></button>
+      {(!viewProjects && viewProjectsDetail) && <button onClick={handleBackButton} className='mt-5 ml-4 mb-3 text-sm uppercase flex items-center cursor-pointer'><BiChevronLeft className='scale-150 mr-1' />Back to Partner</button> }
+      {(viewProjects && !viewProjectsDetail) && <button onClick={handleBackButton} className='mt-5 ml-4 mb-3 text-sm uppercase flex items-center cursor-pointer'><BiChevronLeft className='scale-150 mr-1' />Back to Project</button> }
       {!viewProjectsDetail && actorCode &&
         <SidebarDetailActor
           viewProjects={viewProjects}
