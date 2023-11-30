@@ -2,7 +2,7 @@
   {
     "actorCode": "AGO1",
     "name": "Agronomic research institute of Angola",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -24,7 +24,7 @@
   {
     "actorCode": "AUS2",
     "name": "Australian center for international agriculture research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -37,7 +37,7 @@
     "name": "Australian national university",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 2684729.1684,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -51,7 +51,7 @@
   {
     "actorCode": "AUS4",
     "name": "Commonwealth Scientific and Industrial Research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -89,7 +89,7 @@
   {
     "actorCode": "BDI1",
     "name": "Institut des Sciences Agronomiques du Burundi",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -100,7 +100,7 @@
   {
     "actorCode": "BEL1",
     "name": "Direction Générale de la Coopération au Développement Belge",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 1273688,
     "totalBeneficiaries": 0,
@@ -143,7 +143,7 @@
   {
     "actorCode": "BEL4",
     "name": "Flanders Research Institute for Agriculture, Fisheries and Food",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -176,7 +176,7 @@
   {
     "actorCode": "BEL7",
     "name": "Sciensano",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -220,7 +220,7 @@
   {
     "actorCode": "BEN2",
     "name": "Institut National des Recherches Agricoles du Bénin",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -242,7 +242,7 @@
   {
     "actorCode": "BEN4",
     "name": "Le Centre National de Gestion des Réserves de Faune",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -266,7 +266,7 @@
     "name": "Ministere de l'Agriculture et de l'Amenagement Hydraulique",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 216583796,
+    "totalBudget": 3052430141,
     "totalBeneficiaries": 70900,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -405,7 +405,7 @@
   },
   {
     "actorCode": "BF15",
-    "name": "Université Catholique d’Afrique de l’ouest-Unité Universitaire à Bobo",
+    "name": "Université Catholique d'Afrique de l'ouest-Unité Universitaire à Bobo",
     "type": "Academic institution",
     "email": null,
     "totalBudget": 0,
@@ -438,7 +438,7 @@
   },
   {
     "actorCode": "BF18",
-    "name": "Institut International d'Ingénierie de l’Eau et de l’Environnement",
+    "name": "Institut International d'Ingénierie de l'Eau et de l'Environnement",
     "type": "Academic institution",
     "email": null,
     "totalBudget": 0,
@@ -497,7 +497,7 @@
     "name": "Ministere de l'Agriculture, Resources Animales et Halieutiques",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 286295260.2594,
+    "totalBudget": 275331763.3953,
     "totalBeneficiaries": 100000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -535,10 +535,10 @@
   },
   {
     "actorCode": "BF20",
-    "name": "Secrétariat Permanent du Conseil National pour l’Environnement et le Développement Durable",
+    "name": "Secrétariat Permanent du Conseil National pour l'Environnement et le Développement Durable",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 6783199.9,
+    "totalBudget": 6706017.6319,
     "totalBeneficiaries": 300000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -579,7 +579,7 @@
   {
     "actorCode": "BF23",
     "name": "Union Nationale des Producteurs de Coton du Burkina",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 8500000,
     "totalBeneficiaries": 0,
@@ -651,8 +651,8 @@
   },
   {
     "actorCode": "BF24",
-    "name": "Chambre Nationale d’Agriculture",
-    "type": "Producer/Farmer group",
+    "name": "Chambre Nationale d'Agriculture",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -663,7 +663,7 @@
   {
     "actorCode": "BF25",
     "name": "Confédération Paysanne du Faso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 500000,
     "totalBeneficiaries": 0,
@@ -708,7 +708,7 @@
   {
     "actorCode": "BF27",
     "name": "Fonds National de la Recherche et de l'Innovation pour le Developpement",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -915,7 +915,7 @@
   {
     "actorCode": "BF30",
     "name": "Federation nationale des groupements Naam",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": "sidbeemeht@gmail.com",
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -949,7 +949,7 @@
     "name": "Government of Burkina Faso / Gouvernement du Burkina Faso",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 556347202.4,
+    "totalBudget": 535091011.4,
     "totalBeneficiaries": 327000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -1015,10 +1015,10 @@
   },
   {
     "actorCode": "BF33",
-    "name": "Ministère des Finances, de l’Economie et du Développement Burkina faso",
+    "name": "Ministère des Finances, de l'Economie et du Développement Burkina faso",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 29025800,
+    "totalBudget": 28027550,
     "totalBeneficiaries": 8000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -1057,7 +1057,7 @@
   {
     "actorCode": "BF34",
     "name": "Association pour le developpement communautaire et durable",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1068,7 +1068,7 @@
   {
     "actorCode": "BF35",
     "name": "Federation citoyenne des innitiatives pour le developpement de l'ex canton de Toudou",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1079,7 +1079,7 @@
   {
     "actorCode": "BF36",
     "name": "Fédération nationale de jeunes professionnels agricoles du Faso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1090,7 +1090,7 @@
   {
     "actorCode": "BF37",
     "name": "Reseau des organisations paysannes syndicales agricoles",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1101,7 +1101,7 @@
   {
     "actorCode": "BF38",
     "name": "Association Inter-zone pour le Développement en Milieu Rural",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1112,7 +1112,7 @@
   {
     "actorCode": "BF39",
     "name": "Coopérative de Prestation de Services Agricoles Coobsa burkina",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1203,7 +1203,7 @@
     "name": "Direction generale des amenagement hydrauliques et du developpement de l'irrigation",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 26067800,
+    "totalBudget": 25069550,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -1234,7 +1234,7 @@
   {
     "actorCode": "BF45",
     "name": "Union des Groupements pour la Commercialisation des Produits Agricoles de la Boucle du Mouhoun",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1289,7 +1289,7 @@
   {
     "actorCode": "BF5",
     "name": "Federation of Agricultural Professionals of Burkina",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1311,7 +1311,7 @@
   {
     "actorCode": "BF51",
     "name": "l'Association des Usagers de l'Eau de Lâ-Toden",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1442,7 +1442,7 @@
   {
     "actorCode": "BF62",
     "name": "Union Nationale des Mini Laiteries et des Producteurs du Lait du Burkina",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1453,7 +1453,7 @@
   {
     "actorCode": "BF63",
     "name": "Union Provinciale des Producteurs de Riz du Sanmatenga",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1464,7 +1464,7 @@
   {
     "actorCode": "BF64",
     "name": "Union des Etuveuses de Riz Wend Waoga de Louda",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1475,7 +1475,7 @@
   {
     "actorCode": "BF65",
     "name": "Union Nationale des Producteurs de Riz du Burkina Faso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1552,7 +1552,7 @@
   {
     "actorCode": "BF71",
     "name": "Rizerie Wend Konta",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1563,7 +1563,7 @@
   {
     "actorCode": "BF72",
     "name": "Rizerie Faso Malo",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1574,7 +1574,7 @@
   {
     "actorCode": "BF73",
     "name": "Rizerie WendYam de Bobo",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1584,8 +1584,8 @@
   },
   {
     "actorCode": "BF74",
-    "name": "Union Nationale des sociétés coopératives d’étuvage de riz du Burkina Faso",
-    "type": "Producer/Farmer group",
+    "name": "Union Nationale des sociétés coopératives d'étuvage de riz du Burkina Faso",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1596,7 +1596,7 @@
   {
     "actorCode": "BF75",
     "name": "Association Minim Song Panga",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 8500000,
     "totalBeneficiaries": 0,
@@ -1669,7 +1669,7 @@
   {
     "actorCode": "BF76",
     "name": "Diobass",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 8500000,
     "totalBeneficiaries": 0,
@@ -1742,7 +1742,7 @@
   {
     "actorCode": "BF77",
     "name": "Institut de recherche en sciences appliquees et technologiques",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 500000,
     "totalBeneficiaries": 0,
@@ -1787,7 +1787,7 @@
   {
     "actorCode": "BF78",
     "name": "Union nationale des producteurs d'oignon du burkina faso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 500000,
     "totalBeneficiaries": 0,
@@ -1831,8 +1831,8 @@
   },
   {
     "actorCode": "BF79",
-    "name": "Centre International de Recherche-Développement sur l’Elevage en zone Subhumide",
-    "type": "Research Institution",
+    "name": "Centre International de Recherche-Développement sur l'Elevage en zone Subhumide",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 120,
@@ -1915,7 +1915,7 @@
   {
     "actorCode": "BF81",
     "name": "Réseau Burkinabè des Initiatives Agroécologiques",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1926,7 +1926,7 @@
   {
     "actorCode": "BF82",
     "name": "OCADES Bobo Dioulasso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -1937,7 +1937,7 @@
   {
     "actorCode": "BF83",
     "name": "Scoeiete cooperative des femmes etuveuses de riz de la commune de Behia",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2002,7 +2002,7 @@
   {
     "actorCode": "BF86",
     "name": "Institut des sciences et des societes",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2048,7 +2048,7 @@
     "name": "Ministry of Environment and Sustainable Development",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 18391213.0159,
+    "totalBudget": 1017686933.0846,
     "totalBeneficiaries": 150000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2071,9 +2071,9 @@
   {
     "actorCode": "BF92",
     "name": "WOUOL",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
-    "totalBudget": 3791680,
+    "totalBudget": 3646480,
     "totalBeneficiaries": 2500,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -2087,13 +2087,34 @@
   {
     "actorCode": "BF93",
     "name": "Fédération des Diéma Tin Tua",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
     "projects": []
+  },
+  {
+    "actorCode": "BF94",
+    "name": "Solidarité des Productrices Agro-pastorales de Ouahigouya",
+    "type": "Producer/farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 22,
+    "beneficiaryFlagMultiple": true,
+    "collaborators": [
+      {
+        "actorCode": "UGA3",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L281",
+        "numCollaborators": 1
+      }
+    ]
   },
   {
     "actorCode": "BGD1",
@@ -2109,7 +2130,7 @@
   {
     "actorCode": "BJ1",
     "name": "National institute of agricultural research Benin",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2133,7 +2154,7 @@
     "name": "Canadian international development agency",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 4677985.2,
+    "totalBudget": 4498844.7,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2252,7 +2273,7 @@
     "name": "Société de coopération pour le développement international",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 28963958.1738,
+    "totalBudget": 27854801.6187,
     "totalBeneficiaries": 47600,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -2311,7 +2332,7 @@
   {
     "actorCode": "CBV1",
     "name": "Agricultural Research Council",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2324,7 +2345,7 @@
     "name": "Ministry of Forest Economy",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 14759114.4,
+    "totalBudget": 14193923.4,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2345,7 +2366,7 @@
     "name": "Ministry of Agriculture, Fisheries and Livestock",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 94792000,
+    "totalBudget": 91162000,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2364,7 +2385,7 @@
   {
     "actorCode": "CG3",
     "name": "Forum pour la Promotion des Groupes Ruraux",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2375,7 +2396,7 @@
   {
     "actorCode": "CHE1",
     "name": "Swiss Cooperation Office in Burkina Faso",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2386,7 +2407,7 @@
   {
     "actorCode": "CHE2",
     "name": "Fondation MAVA",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2432,7 +2453,7 @@
     "name": "Swiss Agency for Development and Cooperation",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 19975753.5,
+    "totalBudget": 19493319.0416,
     "totalBeneficiaries": 388000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2499,9 +2520,9 @@
   {
     "actorCode": "CHE7",
     "name": "Oak Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 1514312.6271,
+    "totalBudget": 1456322.9778,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2522,7 +2543,7 @@
     "name": "State Secretariat for Economic Affairs",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 5802115,
+    "totalBudget": 5736095.9526,
     "totalBeneficiaries": 5900,
     "beneficiaryFlagMultiple": true,
     "collaborators": [],
@@ -2562,7 +2583,7 @@
   {
     "actorCode": "CHE11",
     "name": "Institut de Recherche de l'Agriculture Biologique",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2682,7 +2703,7 @@
   {
     "actorCode": "CIV10",
     "name": "Communaute abel",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 2000000,
     "totalBeneficiaries": 0,
@@ -2792,7 +2813,7 @@
   {
     "actorCode": "CIV12",
     "name": "Centre ivoirien de recherches economiques et sociales",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 7000000,
     "totalBeneficiaries": 0,
@@ -2849,7 +2870,7 @@
   {
     "actorCode": "CIV13",
     "name": "Progamme national de formation au metiers ruraux",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -2860,20 +2881,25 @@
   {
     "actorCode": "CIV14",
     "name": "Centre suisse de recherches scientifiques en cote d'ivoire",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 238520625,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L286",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "CIV15",
     "name": "Fonds interprofessionel pour la recherche et le conseil agricoles",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 3791680,
+    "totalBudget": 3646480,
     "totalBeneficiaries": 51671,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -2958,7 +2984,7 @@
     "name": "Ministere de l'Agriculture et des ressources animales",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 574212019.2,
+    "totalBudget": 552222931.2,
     "totalBeneficiaries": 250000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -3046,7 +3072,7 @@
   {
     "actorCode": "CIV18",
     "name": "Organisation Centrale des Producteurs Exportateurs d'Ananas et de Bananes",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -3094,8 +3120,8 @@
   },
   {
     "actorCode": "CIV19",
-    "name": "Organisation des producteurs exportateurs des fruits bananes, ananas, mangues de Côte d’ivoire",
-    "type": "Producer/Farmer group",
+    "name": "Organisation des producteurs exportateurs des fruits bananes, ananas, mangues de Côte d'ivoire",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -3428,7 +3454,7 @@
   {
     "actorCode": "CIV25",
     "name": "Association Nationale des Aquaculteurs de Côte d'Ivoire",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 120,
@@ -3531,7 +3557,7 @@
     "name": "Ministere de l'Agriculture et du Developpement Rural",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 300184129.6,
+    "totalBudget": 289244035.6,
     "totalBeneficiaries": 60600,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -3574,10 +3600,10 @@
   {
     "actorCode": "CIV5",
     "name": "Centre national de recherches agronomiques",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 2000000,
-    "totalBeneficiaries": 50120,
+    "totalBudget": 287540393,
+    "totalBeneficiaries": 52120,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
@@ -3713,6 +3739,14 @@
       {
         "projectCode": "L072",
         "numCollaborators": 7
+      },
+      {
+        "projectCode": "L292",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L293",
+        "numCollaborators": 0
       }
     ]
   },
@@ -3721,7 +3755,7 @@
     "name": "Université Félix Houphouët-Boigny",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 9000000,
+    "totalBudget": 156364934,
     "totalBeneficiaries": 18,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -3805,6 +3839,10 @@
       },
       {
         "projectCode": "L195",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L294",
         "numCollaborators": 0
       }
     ]
@@ -3956,7 +3994,7 @@
     "name": "Agence Nationale d'Appui au Développement Rural",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 5791680,
+    "totalBudget": 140397028,
     "totalBeneficiaries": 51671,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -4097,6 +4135,10 @@
       {
         "projectCode": "L137",
         "numCollaborators": 1
+      },
+      {
+        "projectCode": "L289",
+        "numCollaborators": 0
       }
     ]
   },
@@ -4124,8 +4166,8 @@
   },
   {
     "actorCode": "CIV29",
-    "name": "Association des Pisciculteurs de Côte d’Ivoire",
-    "type": "Producer/Farmer group",
+    "name": "Association des Pisciculteurs de Côte d'Ivoire",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4149,7 +4191,7 @@
     "name": "Ministry of Environment and Sustainable Development",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 5687520,
+    "totalBudget": 5469720,
     "totalBeneficiaries": 15600,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -4182,7 +4224,7 @@
   },
   {
     "actorCode": "CIV33",
-    "name": "Foundation for the Parks and Reserves of Côte d’Ivoire",
+    "name": "Foundation for the Parks and Reserves of Côte d'Ivoire",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -4204,10 +4246,10 @@
   },
   {
     "actorCode": "CIV35",
-    "name": "Societe d’exploitation de Developpement Aeroportuaire Aeronautique Meteo",
+    "name": "Societe d'exploitation de Developpement Aeroportuaire Aeronautique Meteo",
     "type": "Private company",
     "email": null,
-    "totalBudget": 5687520,
+    "totalBudget": 5469720,
     "totalBeneficiaries": 15600,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -4243,7 +4285,7 @@
     "name": "Ministry of commerce and industry",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 559993219.2,
+    "totalBudget": 538548631.2,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -4272,7 +4314,7 @@
     "name": "Ministry of finance",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 189584000,
+    "totalBudget": 182324000,
     "totalBeneficiaries": 800000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [],
@@ -4284,9 +4326,57 @@
     ]
   },
   {
+    "actorCode": "CIV40",
+    "name": "Animation rurale de Korhogo",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 63520120,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L285",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "CIV41",
+    "name": "Inades formation",
+    "type": "Training/capacity building centre",
+    "email": null,
+    "totalBudget": 67837350,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L288",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
+    "actorCode": "CIV42",
+    "name": "Terre chaudes",
+    "type": "Private company",
+    "email": null,
+    "totalBudget": 126729645,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": [
+      {
+        "projectCode": "L291",
+        "numCollaborators": 0
+      }
+    ]
+  },
+  {
     "actorCode": "CMR1",
     "name": "Institut de Recherche Agricole pour le Developpement",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 7145232,
     "totalBeneficiaries": 50000,
@@ -4406,7 +4496,7 @@
   {
     "actorCode": "CMR10",
     "name": "Confederation Nationale des Producteurs du Coton du Cameroun",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4419,7 +4509,7 @@
     "name": "Mission d'Etudes pour l'Aménagement et le Développement de la Région du Nord, Cameroon",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 247407120,
+    "totalBudget": 237932820,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -4444,7 +4534,7 @@
   {
     "actorCode": "CMR13",
     "name": "CHASAAD",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 315232,
     "totalBeneficiaries": 0,
@@ -4481,7 +4571,7 @@
   {
     "actorCode": "CMR14",
     "name": "Centre africain de recherche sur bananiers plantains",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4492,7 +4582,7 @@
   {
     "actorCode": "CMR15",
     "name": "Programme d'amelioration de la competitivite des exploitations familiales agropatorales",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4503,7 +4593,7 @@
   {
     "actorCode": "CMR16",
     "name": "Appui a la formation professionnelle agropastorale",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4514,7 +4604,7 @@
   {
     "actorCode": "CMR2",
     "name": "Societe Cooperative avec Conseil d'Administration pour le Manioc",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4571,7 +4661,7 @@
     "name": "Ministry of the Economy, Planning and Regional Development",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 189584000,
+    "totalBudget": 182324000,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -4585,7 +4675,7 @@
   {
     "actorCode": "CMR8",
     "name": "Concertation nationale des organisations paysannes",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 10653674,
     "totalBeneficiaries": 0,
@@ -4676,7 +4766,7 @@
   {
     "actorCode": "CMR18",
     "name": "Societe de Developpement de la Cacaoculture",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -4766,7 +4856,7 @@
     "name": "Ministry of Environment, Protection of Nature and Sustainable Development",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 9462137.44,
+    "totalBudget": 9099790.84,
     "totalBeneficiaries": 8800,
     "beneficiaryFlagMultiple": true,
     "collaborators": [],
@@ -4840,9 +4930,9 @@
   {
     "actorCode": "CON1",
     "name": "Africa Rice Center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 47396000,
+    "totalBudget": 45581000,
     "totalBeneficiaries": 27000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -4940,7 +5030,7 @@
     "name": "African union",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 5120265423,
+    "totalBudget": 4924245423,
     "totalBeneficiaries": 24000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -4978,7 +5068,7 @@
   {
     "actorCode": "CON15",
     "name": "The African Forum for Agricultural Advisory Services",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 5000000,
     "totalBeneficiaries": 0,
@@ -5023,11 +5113,11 @@
   {
     "actorCode": "CON16",
     "name": "The African Agricultural Technology Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 8057320,
-    "totalBeneficiaries": 8000000,
-    "beneficiaryFlagMultiple": false,
+    "totalBudget": 7748770,
+    "totalBeneficiaries": 10005000,
+    "beneficiaryFlagMultiple": true,
     "collaborators": [
       {
         "actorCode": "GLO56",
@@ -5046,6 +5136,18 @@
       {
         "projectCode": "L052",
         "numCollaborators": 2
+      },
+      {
+        "projectCode": "L282",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L283",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L284",
+        "numCollaborators": 0
       }
     ]
   },
@@ -5074,9 +5176,9 @@
   {
     "actorCode": "CON19",
     "name": "West African Science Service Centre on Climate Change and Adapted Land Use",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 7000000,
+    "totalBudget": 8121841,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -5135,9 +5237,9 @@
   {
     "actorCode": "CON2",
     "name": "Alliance for a Green Revolution in Africa",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 64970436.8,
+    "totalBudget": 62482434.8,
     "totalBeneficiaries": 500000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -5166,7 +5268,7 @@
     "name": "African Development Bank",
     "type": "International finance institution",
     "email": null,
-    "totalBudget": 6073831534.0971,
+    "totalBudget": 5853235603.3353,
     "totalBeneficiaries": 190070710,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -5305,7 +5407,7 @@
   {
     "actorCode": "CON4",
     "name": "African Women in Agricultural Research and Development",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -5332,7 +5434,7 @@
   {
     "actorCode": "CON6",
     "name": "African Wildlife Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -5345,7 +5447,7 @@
     "name": "Ecologic Organic Agriculture Initiative in Africa",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 4360.432,
+    "totalBudget": 4193.452,
     "totalBeneficiaries": 3000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -5364,9 +5466,9 @@
   {
     "actorCode": "CON8",
     "name": "BioVision Africa Trust",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 4360.432,
+    "totalBudget": 4193.452,
     "totalBeneficiaries": 3000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -5385,7 +5487,7 @@
   {
     "actorCode": "CON9",
     "name": "Pan-African Farmers Organization",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 42700000,
     "totalBeneficiaries": 52000000,
@@ -5426,9 +5528,9 @@
   {
     "actorCode": "CON20",
     "name": "The Adaptation of African Agriculture Initiative",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 6635440,
+    "totalBudget": 6381340,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -5459,7 +5561,7 @@
     "name": "African Exporti-Import Bank",
     "type": "Banks and microfinance institutions",
     "email": null,
-    "totalBudget": 32229280,
+    "totalBudget": 30995080,
     "totalBeneficiaries": 150000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -5506,7 +5608,7 @@
   {
     "actorCode": "CON23",
     "name": "Eden Africa",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -5517,7 +5619,7 @@
   {
     "actorCode": "CON24",
     "name": "African plant resource institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -5558,7 +5660,7 @@
   },
   {
     "actorCode": "CON27",
-    "name": "Conférence Interafricaine des Marchés d’Assurances",
+    "name": "Conférence Interafricaine des Marchés d'Assurances",
     "type": "Intergovernmental organization",
     "email": null,
     "totalBudget": 0,
@@ -5614,7 +5716,7 @@
   {
     "actorCode": "CON32",
     "name": "African Centre of Excellence on Climate Change",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -5627,7 +5729,7 @@
     "name": "Coalition for african rice development",
     "type": null,
     "email": null,
-    "totalBudget": 202972232.496,
+    "totalBudget": 195199538.556,
     "totalBeneficiaries": 19999,
     "beneficiaryFlagMultiple": true,
     "collaborators": [],
@@ -5709,7 +5811,7 @@
     "name": "Agdevco",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 2091282.2487,
+    "totalBudget": 2109258.1714,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -5847,9 +5949,9 @@
   {
     "actorCode": "DEU10",
     "name": "Deutsche Gesellschaft fur Internationale Zusammenarbeit",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
-    "totalBudget": 990251120,
+    "totalBudget": 989851820,
     "totalBeneficiaries": 4061786,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -6024,7 +6126,7 @@
   {
     "actorCode": "DEU11",
     "name": "Leibniz center for agricutural landscape research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 8500000,
     "totalBeneficiaries": 0,
@@ -6139,7 +6241,7 @@
   {
     "actorCode": "DEU14",
     "name": "Health Focus",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6161,7 +6263,7 @@
   {
     "actorCode": "DEU2",
     "name": "German Ministry of Economic Cooperation and Development",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 10000000,
     "totalBeneficiaries": 0,
@@ -6294,7 +6396,7 @@
   {
     "actorCode": "DEU7",
     "name": "Max Planck Gesellschaft",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6321,7 +6423,7 @@
   {
     "actorCode": "DEU9",
     "name": "Naturland - Verband Fur Okologischen Landbau EV",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6482,7 +6584,7 @@
   {
     "actorCode": "DEU26",
     "name": "Institute of Plant Genetics and Crop Plant Research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6531,7 +6633,7 @@
   {
     "actorCode": "DEU30",
     "name": "Bavarian research alliance",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6542,7 +6644,7 @@
   {
     "actorCode": "DEU31",
     "name": "Karlsruhe Institute of Technology",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6602,7 +6704,7 @@
   {
     "actorCode": "DEU36",
     "name": "Leibniz Institute for Agricultural Engineering and Bioeconomy",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6613,7 +6715,7 @@
   {
     "actorCode": "DEU37",
     "name": "UNIQUE forestry and land use GmbH",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6651,7 +6753,7 @@
   {
     "actorCode": "DEU40",
     "name": "The Institute for Social-Ecological Research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6739,7 +6841,7 @@
   {
     "actorCode": "DRC3",
     "name": "Association Paysanne pour le Developpement Intégré au Sud-Kivu",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6750,7 +6852,7 @@
   {
     "actorCode": "DZA1",
     "name": "Centre de recherhce en economie appliquee pour le devleoppement",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6840,7 +6942,7 @@
   {
     "actorCode": "DZA3",
     "name": "Laboratory of Biomathematics, Biophysics, Biochemistry and Scientometry, Faculty of Life and Nature Sciences, University of Bejaia",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6895,7 +6997,7 @@
   {
     "actorCode": "DZA8",
     "name": "University of Tlemcen Abou Bekr Belkaïd",
-    "type": "Academic Institution",
+    "type": "Academic institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6906,7 +7008,7 @@
   {
     "actorCode": "DZA9",
     "name": "Technical Institute of Breeding Tlemcen",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6917,7 +7019,7 @@
   {
     "actorCode": "DZA10",
     "name": "Algeria National Agronomic Research institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6939,7 +7041,7 @@
   {
     "actorCode": "DZA12",
     "name": "Scientific and Technical Research Center on Arid Regions",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -6961,7 +7063,7 @@
   {
     "actorCode": "EGY2",
     "name": "National Research Centre, Water Pollution Research Department",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -7005,7 +7107,7 @@
   {
     "actorCode": "EGY6",
     "name": "Agricultural research center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -7016,7 +7118,7 @@
   {
     "actorCode": "ES1",
     "name": "Spanish national research council",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 9475332,
     "totalBeneficiaries": 0,
@@ -7125,7 +7227,7 @@
   {
     "actorCode": "ES3",
     "name": "Mediterranean Agronomic Institute of Zaragoza",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -7169,7 +7271,7 @@
   {
     "actorCode": "ES7",
     "name": "CARTIF",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 6947466,
     "totalBeneficiaries": 0,
@@ -7207,7 +7309,7 @@
   {
     "actorCode": "ES10",
     "name": "Centre for Research in Agricultural Genomics",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -7229,7 +7331,7 @@
   {
     "actorCode": "ET1",
     "name": "Ethiopian institute of agricultural research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -7264,7 +7366,7 @@
     "name": "European Union",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 628498100.1707,
+    "totalBudget": 620707849.1549,
     "totalBeneficiaries": 14483555,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -8112,7 +8214,7 @@
   {
     "actorCode": "EU9",
     "name": "institut europeen de cooperation et developpement",
-    "type": "Training/ capacity building centre",
+    "type": "Training/capacity building centre",
     "email": null,
     "totalBudget": 2000000,
     "totalBeneficiaries": 0,
@@ -8178,7 +8280,7 @@
     "name": "European bank for construction and development",
     "type": "Banks and microfinance institutions",
     "email": null,
-    "totalBudget": 208163232,
+    "totalBudget": 200191752,
     "totalBeneficiaries": 2200000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -8194,7 +8296,7 @@
     "name": "University of Helsinki",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 3933868,
+    "totalBudget": 3783223,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -8235,7 +8337,7 @@
     "name": "Natural resources institute Finland",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 11583868,
+    "totalBudget": 11433223,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -8308,7 +8410,7 @@
     "name": "Häme University of Applied Sciences",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 3933868,
+    "totalBudget": 3783223,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -8418,7 +8520,7 @@
   {
     "actorCode": "FRA1",
     "name": "Institut National de Recherche en Agriculture et Environment",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -8473,7 +8575,7 @@
   },
   {
     "actorCode": "FRA11",
-    "name": "Agence de l’Eau Rhône Méditerranée Corse",
+    "name": "Agence de l'Eau Rhône Méditerranée Corse",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -8484,7 +8586,7 @@
   },
   {
     "actorCode": "FRA12",
-    "name": "Conseil Départemental de l’Hérault",
+    "name": "Conseil Départemental de l'Hérault",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -8496,7 +8598,7 @@
   {
     "actorCode": "FRA13",
     "name": "Sustainable Initiatives for Water-Fonds Guillaume Tavernier pour l'Eau",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -8529,9 +8631,9 @@
   {
     "actorCode": "FRA16",
     "name": "Fonds Francais pour l'Environnement Mondial",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 7822555.2,
+    "totalBudget": 7643414.7,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -8582,9 +8684,9 @@
   {
     "actorCode": "FRA17",
     "name": "Agence Francaise de Developpement",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
-    "totalBudget": 955163802,
+    "totalBudget": 927227322,
     "totalBeneficiaries": 1055500,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -9360,7 +9462,7 @@
   {
     "actorCode": "FRA31",
     "name": "Institut de recherche et d'applications des methodes de developpement",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -9467,7 +9569,7 @@
   {
     "actorCode": "FRA38",
     "name": "Agence nationale de la recherche",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -9489,7 +9591,7 @@
   {
     "actorCode": "FRA40",
     "name": "French livestock insitute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -9522,7 +9624,7 @@
   {
     "actorCode": "FRA43",
     "name": "Groupe de Recherche en Agriculture Biologique",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -9544,7 +9646,7 @@
   {
     "actorCode": "FRA45",
     "name": "Supagro",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 1000000,
     "totalBeneficiaries": 0,
@@ -9571,10 +9673,10 @@
   {
     "actorCode": "FRA4",
     "name": "Agricultural Research Center for the Sustainable Development of Tropical and Mediterranean Regions",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 940448048.06,
-    "totalBeneficiaries": 2140120,
+    "totalBudget": 919333148.06,
+    "totalBeneficiaries": 2654820,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
       {
@@ -9994,13 +10096,17 @@
       {
         "projectCode": "L198",
         "numCollaborators": 0
+      },
+      {
+        "projectCode": "L296",
+        "numCollaborators": 0
       }
     ]
   },
   {
     "actorCode": "FRA5",
     "name": "French National Research Institute for Sustainable Development",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 12884570,
     "totalBeneficiaries": 120,
@@ -10166,7 +10272,7 @@
   {
     "actorCode": "FRA9",
     "name": "Fondation pour l'Agriculture et la Ruralite dans le Monde",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -10326,7 +10432,7 @@
     "name": "Government of Ghana",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 246478158.4,
+    "totalBudget": 237039432.4,
     "totalBeneficiaries": 105881,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -10414,7 +10520,7 @@
   {
     "actorCode": "GHA19",
     "name": "Peasant Farmers Association of Ghana",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -10436,7 +10542,7 @@
   {
     "actorCode": "GHA20",
     "name": "Shea Network Ghana",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -10513,7 +10619,7 @@
   {
     "actorCode": "GHA27",
     "name": "Council for scientific and industrial research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 378,
@@ -10627,7 +10733,7 @@
     "name": "Ministry of Food and Agriculture",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 215651800,
+    "totalBudget": 207393550,
     "totalBeneficiaries": 842000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -10931,7 +11037,7 @@
   {
     "actorCode": "GHA45",
     "name": "Cocoa research institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 7000000,
     "totalBeneficiaries": 50000,
@@ -11045,7 +11151,7 @@
     "name": "Tree Crops Development Authority",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 215651800,
+    "totalBudget": 207393550,
     "totalBeneficiaries": 842000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11157,7 +11263,7 @@
     "name": "Environmental Protection Agency",
     "type": "Government agency",
     "email": "info@epa.gov.gh",
-    "totalBudget": 53766022.4,
+    "totalBudget": 51707086.4,
     "totalBeneficiaries": 5881,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11190,7 +11296,7 @@
     "name": "Ghana Cocoa Board",
     "type": "Government agency",
     "email": "public_affairs@cocobod.gh",
-    "totalBudget": 215651800,
+    "totalBudget": 207393550,
     "totalBeneficiaries": 842000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11223,7 +11329,7 @@
     "name": "Ministry of Environment, Science, Technology and Innovation",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 53766022.4,
+    "totalBudget": 51707086.4,
     "totalBeneficiaries": 5881,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11320,7 +11426,7 @@
   {
     "actorCode": "GHA53",
     "name": "Nature Conservation Research Centre",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 150000,
@@ -11413,7 +11519,7 @@
   {
     "actorCode": "GHA59",
     "name": "Kuapa Kokoo farmers union",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -11435,7 +11541,7 @@
   {
     "actorCode": "GHA61",
     "name": "Institute for Environment and Sanitation Studies",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 20,
@@ -11464,7 +11570,7 @@
     "name": "Amaati",
     "type": "Private company",
     "email": null,
-    "totalBudget": 704005.9652,
+    "totalBudget": 677046.4997,
     "totalBeneficiaries": 6000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -11544,9 +11650,9 @@
   {
     "actorCode": "GLO1",
     "name": "International Food Policy Research Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 47396000,
+    "totalBudget": 45581000,
     "totalBeneficiaries": 378,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11649,9 +11755,9 @@
   {
     "actorCode": "GLO10",
     "name": "WorldFish",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 8269512.6271,
+    "totalBudget": 8295438.5824,
     "totalBeneficiaries": 5378,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11730,9 +11836,9 @@
   {
     "actorCode": "GLO11",
     "name": "Center for International Forestry Research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 6433868,
+    "totalBudget": 6745423,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11791,7 +11897,7 @@
   {
     "actorCode": "GLO12",
     "name": "International Rice Research Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -11802,7 +11908,7 @@
   {
     "actorCode": "GLO13",
     "name": "Climate Change, Agriculture and Food Security",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": " r.zougmore@cgiar.org;d.solomon@cgiar.org",
     "totalBudget": 0,
     "totalBeneficiaries": 450000,
@@ -11879,9 +11985,9 @@
   {
     "actorCode": "GLO14",
     "name": "International Potato Center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 47396000,
+    "totalBudget": 45581000,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -11942,7 +12048,7 @@
     "name": "Food and Agriculture Organzation of the United Nations",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 1635045198.6912,
+    "totalBudget": 1573293493.4645,
     "totalBeneficiaries": 48176635,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -12139,6 +12245,10 @@
       {
         "projectCode": "L259",
         "numCollaborators": 0
+      },
+      {
+        "projectCode": "L290",
+        "numCollaborators": 0
       }
     ]
   },
@@ -12147,7 +12257,7 @@
     "name": "World Food Program",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 202287444.6609,
+    "totalBudget": 194540974.2402,
     "totalBeneficiaries": 4412375,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -12252,7 +12362,7 @@
     "name": "International Fund for Agricultural Development",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 2057077054.7488,
+    "totalBudget": 1979937752.8168,
     "totalBeneficiaries": 64105219,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -12469,7 +12579,7 @@
     "name": "World Bank",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 2932125102.4,
+    "totalBudget": 2819841216.4,
     "totalBeneficiaries": 45035827,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -12688,9 +12798,9 @@
   {
     "actorCode": "GLO2",
     "name": "Alliance of Bioversity International and the International Center for Tropical Agriculture",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 55046000,
+    "totalBudget": 53231000,
     "totalBeneficiaries": 400000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -12847,9 +12957,9 @@
   {
     "actorCode": "GLO22",
     "name": "International Fertilizer Development Center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 64970436.8,
+    "totalBudget": 62482434.8,
     "totalBeneficiaries": 500000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -12901,7 +13011,7 @@
   {
     "actorCode": "GLO26",
     "name": "CGIAR Challenge Program on Water and Food",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -12914,7 +13024,7 @@
     "name": "United Nations Development Program",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 215438708.5319,
+    "totalBudget": 207188618.7356,
     "totalBeneficiaries": 5508375,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -13021,9 +13131,9 @@
   {
     "actorCode": "GLO28",
     "name": "Global Environment Facility",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 262588378.16,
+    "totalBudget": 252653140.76,
     "totalBeneficiaries": 14007481,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -13137,9 +13247,9 @@
   {
     "actorCode": "GLO3",
     "name": "International Institute of Tropical Agriculture",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 53896000,
+    "totalBudget": 52081000,
     "totalBeneficiaries": 40110000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -13275,7 +13385,7 @@
   {
     "actorCode": "GLO33",
     "name": "Harvest Plus",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -13288,7 +13398,7 @@
     "name": "Convention des Nations Unies sur la Lutte contre la Désertification",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 13555256000,
+    "totalBudget": 13036166000,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -13304,7 +13414,7 @@
     "name": "International Union for Conservation of Nature",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 114757604.5,
+    "totalBudget": 110940632.0763,
     "totalBeneficiaries": 40600000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -13365,7 +13475,7 @@
     "name": "AgriCord",
     "type": "Other",
     "email": null,
-    "totalBudget": 92771671,
+    "totalBudget": 89268721,
     "totalBeneficiaries": 40000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -13460,7 +13570,7 @@
   {
     "actorCode": "GLO37",
     "name": "Centre for Training and Integrated Research in ASAL Development",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -13473,7 +13583,7 @@
     "name": "Global Agriculture and Food Security Programme",
     "type": "Other",
     "email": null,
-    "totalBudget": 80772263.2,
+    "totalBudget": 77679140.2,
     "totalBeneficiaries": 828000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -13510,7 +13620,7 @@
     "name": "United Nations Environment Programme",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 803212087.3888,
+    "totalBudget": 772453585.8568,
     "totalBeneficiaries": 3900000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -13541,9 +13651,9 @@
   {
     "actorCode": "GLO4",
     "name": "International Maize and Wheat Improvement Center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 53896000,
+    "totalBudget": 52081000,
     "totalBeneficiaries": 40000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -13646,9 +13756,9 @@
   {
     "actorCode": "GLO40",
     "name": "OPEC Fund for International Development",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 63927724.8,
+    "totalBudget": 61479652.8,
     "totalBeneficiaries": 78240,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -13671,7 +13781,7 @@
   {
     "actorCode": "GLO41",
     "name": "CGIAR",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 378,
@@ -13716,7 +13826,7 @@
   {
     "actorCode": "GLO42",
     "name": "Farm to market alliance",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -13740,7 +13850,7 @@
     "name": "Green Climate Fund",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 1093063981.405,
+    "totalBudget": 1051205783.9569,
     "totalBeneficiaries": 170775700,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14019,7 +14129,7 @@
     "name": "Global Center on Adaptation",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 5367597000,
+    "totalBudget": 5162048250,
     "totalBeneficiaries": 174842010,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -14098,9 +14208,9 @@
   {
     "actorCode": "GLO5",
     "name": "International Center for Agricultural Research in the Dry Areas",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 47396000,
+    "totalBudget": 578981000,
     "totalBeneficiaries": 10000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14167,9 +14277,9 @@
   {
     "actorCode": "GLO50",
     "name": "International Centre of Insect Physiology and Ecology",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 6755200,
+    "totalBudget": 8530374.3187,
     "totalBeneficiaries": 505000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14214,7 +14324,7 @@
     "name": "United nations Peacebuilding",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 1862022.954,
+    "totalBudget": 1790717.9565,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14440,10 +14550,10 @@
   },
   {
     "actorCode": "GLO56",
-    "name": "Syngenta",
-    "type": "Foundation/ philanthropic organization",
+    "name": "Syngenta foundation",
+    "type": "Foundation/philanthropic organization",
     "email": null,
-    "totalBudget": 8057320,
+    "totalBudget": 7748770,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14510,9 +14620,9 @@
   {
     "actorCode": "GLO6",
     "name": "International Livestock Research Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 644450160,
+    "totalBudget": 621860355.2727,
     "totalBeneficiaries": 2070000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14658,9 +14768,9 @@
   {
     "actorCode": "GLO7",
     "name": "World Agroforestry",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 60764364.0416,
+    "totalBudget": 230632896.5176,
     "totalBeneficiaries": 1180000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -14833,15 +14943,19 @@
       {
         "projectCode": "L203",
         "numCollaborators": 0
+      },
+      {
+        "projectCode": "L287",
+        "numCollaborators": 0
       }
     ]
   },
   {
     "actorCode": "GLO8",
     "name": "International Crops Research Institute for the Semi-Arid Tropics",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 51443618.4,
+    "totalBudget": 49473617.4,
     "totalBeneficiaries": 1000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14920,9 +15034,9 @@
   {
     "actorCode": "GLO9",
     "name": "International Water Management Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 47396000,
+    "totalBudget": 45581000,
     "totalBeneficiaries": 20000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -14987,7 +15101,7 @@
     "name": "InsuResilience Global Partnership",
     "type": "Other",
     "email": null,
-    "totalBudget": 2165049280,
+    "totalBudget": 2082140080,
     "totalBeneficiaries": 297000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -15077,7 +15191,7 @@
   {
     "actorCode": "GLO62",
     "name": "Adaptation Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15101,7 +15215,7 @@
     "name": "World Meteorological Organization",
     "type": null,
     "email": null,
-    "totalBudget": 1002183.5,
+    "totalBudget": 990780.21,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -15221,7 +15335,7 @@
   {
     "actorCode": "GLO73",
     "name": "Resilience",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15234,7 +15348,7 @@
     "name": "UNESCO",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 3520566.3487,
+    "totalBudget": 3385748.4754,
     "totalBeneficiaries": 116960,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -15260,7 +15374,7 @@
   {
     "actorCode": "GLO75",
     "name": "Mastercard foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15282,9 +15396,9 @@
   {
     "actorCode": "GLO77",
     "name": "Centre for Agriculture and Bioscience International",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 657607.8188,
     "totalBeneficiaries": 5000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -15306,7 +15420,7 @@
   {
     "actorCode": "GLO78",
     "name": "Accelerating Impacts of CGIAR Climate Research for Africa",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15317,7 +15431,7 @@
   {
     "actorCode": "GLO79",
     "name": "World vegetable center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15377,7 +15491,7 @@
   {
     "actorCode": "GLO84",
     "name": "international atomic energy agency",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15395,7 +15509,7 @@
     "name": "Global Green Institute",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 1194323.2727,
+    "totalBudget": 1148587.4144,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -15446,7 +15560,7 @@
   {
     "actorCode": "GRC3",
     "name": "Benaki Phytopathological Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15479,7 +15593,7 @@
   {
     "actorCode": "GRC9",
     "name": "Institute of Plant Breeding and Genetic Resources",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15703,7 +15817,7 @@
   {
     "actorCode": "ITA3",
     "name": "centre international de hautes etudes agronomiques mediteraneennes Bari",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 7650000,
     "totalBeneficiaries": 0,
@@ -15752,7 +15866,7 @@
   {
     "actorCode": "ITA4",
     "name": "Italian national research council",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 7650000,
     "totalBeneficiaries": 0,
@@ -15850,7 +15964,7 @@
   {
     "actorCode": "ITA6",
     "name": "Institute of Bioscience and bioresources",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -15888,7 +16002,7 @@
   {
     "actorCode": "ITA9",
     "name": "Research center for genomics and bioinofrmatics",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 486000,
     "totalBeneficiaries": 0,
@@ -15952,7 +16066,7 @@
   {
     "actorCode": "ITA13",
     "name": "Euro-Mediterranean Center on Climate Change",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16018,7 +16132,7 @@
   {
     "actorCode": "ITA19",
     "name": "Council for Agricultural Research and Economics",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16040,7 +16154,7 @@
   {
     "actorCode": "ITA21",
     "name": "Instituto Nacional de Investigacion y Tecnologia Agraria y Alimentaria",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16051,7 +16165,7 @@
   {
     "actorCode": "ISR1",
     "name": "Volcani center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16084,7 +16198,7 @@
   {
     "actorCode": "JPN2",
     "name": "Japan International Cooperation Agency",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16106,7 +16220,7 @@
   {
     "actorCode": "KEN1",
     "name": "Kenya Agricultural & Livestock Research Organization",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16150,9 +16264,9 @@
   {
     "actorCode": "KEN5",
     "name": "African Population and Health Research Centre",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 1621825,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -16254,7 +16368,7 @@
   {
     "actorCode": "LBN1",
     "name": "Lebanese Agricultural Research Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16276,7 +16390,7 @@
   {
     "actorCode": "LSO1",
     "name": "Lesotho National Farmers Union",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16304,7 +16418,7 @@
   {
     "actorCode": "LSO10",
     "name": "Lesotho National Wool and Mohair Grower's Association",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16317,7 +16431,7 @@
     "name": "Bureau of statistics",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 473960,
+    "totalBudget": 455810,
     "totalBeneficiaries": 2905,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -16437,7 +16551,7 @@
     "name": "Ministry of Agriculture and Food Security",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 62511532.32,
+    "totalBudget": 60117692.52,
     "totalBeneficiaries": 252905,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -16489,7 +16603,7 @@
     "name": "Lesotho Meteorogical Services",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 60359952.9832,
+    "totalBudget": 58048506.5602,
     "totalBeneficiaries": 965000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16522,7 +16636,7 @@
     "name": "Ministry of Energy and Meteorology",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 20547312.9832,
+    "totalBudget": 19760466.5602,
     "totalBeneficiaries": 65000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16558,7 +16672,7 @@
     "name": "Ministry of Water",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 20547312.9832,
+    "totalBudget": 19760466.5602,
     "totalBeneficiaries": 65000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16632,7 +16746,7 @@
   {
     "actorCode": "LUX1",
     "name": "Agri-Business Capital Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16687,7 +16801,7 @@
   {
     "actorCode": "MALI1",
     "name": "National Coordination of Peasant Organizations / Coordination Nationale des Organizations Paysannes",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 482159,
     "totalBeneficiaries": 0,
@@ -16724,7 +16838,7 @@
   {
     "actorCode": "MALI10",
     "name": "Coordination Régionale des Organisations des Jeunes Ruraux de Segou",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16735,7 +16849,7 @@
   {
     "actorCode": "MALI11",
     "name": "Comité Local des Conseils Ruraux Yanfolila",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16748,7 +16862,7 @@
     "name": "Centre Régional de Santé Animale",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 615554160,
+    "totalBudget": 592939260,
     "totalBeneficiaries": 2070000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16817,7 +16931,7 @@
     "name": "Gouvernement du Mali",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 191655205.2,
+    "totalBudget": 184315889.7,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16864,7 +16978,7 @@
   {
     "actorCode": "MALI14",
     "name": "Federation nationale pour l'agriculture biologique",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -16888,7 +17002,7 @@
     "name": "Carrefour developpement",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 1862022.954,
+    "totalBudget": 1790717.9565,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16921,7 +17035,7 @@
     "name": "Tassaght",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 1862022.954,
+    "totalBudget": 1790717.9565,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16954,7 +17068,7 @@
     "name": "Groupe action recherche develppement local",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 1862022.954,
+    "totalBudget": 1790717.9565,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -16987,7 +17101,7 @@
     "name": "Agence de l'environnement et du developpement durable",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 13368752.74,
+    "totalBudget": 12856804.765,
     "totalBeneficiaries": 7200,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -17039,7 +17153,7 @@
     "name": "Agence Mali meteo",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 4677985.2,
+    "totalBudget": 4498844.7,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -17099,7 +17213,7 @@
     "name": "Ministère de la sécurité et de la protection civile",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 39101700,
+    "totalBudget": 37604325,
     "totalBeneficiaries": 5300000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -17293,7 +17407,7 @@
   {
     "actorCode": "MALI7",
     "name": "Association des Organisations Professionelles Paysannes",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 10500000,
     "totalBeneficiaries": 0,
@@ -17374,7 +17488,7 @@
   {
     "actorCode": "MALI8",
     "name": "L'Union Nationale des Coopératives de Planteurs et Maraichers du Mali",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 482159,
     "totalBeneficiaries": 0,
@@ -17411,7 +17525,7 @@
   {
     "actorCode": "MALI9",
     "name": "Coordination Régionale des Organisations des Jeunes Ruraux de Koulikoro",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17424,7 +17538,7 @@
     "name": "Ministry of Agriculture",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 61140840,
+    "totalBudget": 58799490,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -17454,7 +17568,7 @@
   {
     "actorCode": "MALI26",
     "name": "Mali Clmate Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17475,7 +17589,7 @@
   },
   {
     "actorCode": "MALI28",
-    "name": "Association pour la Protection et la Valorisation de l’Environnement",
+    "name": "Association pour la Protection et la Valorisation de l'Environnement",
     "type": "Development organization",
     "email": null,
     "totalBudget": 0,
@@ -17552,7 +17666,7 @@
   },
   {
     "actorCode": "MALI35",
-    "name": "Groupe d’Animation Action au Sahel-Mali",
+    "name": "Groupe d'Animation Action au Sahel-Mali",
     "type": "Development organization",
     "email": null,
     "totalBudget": 0,
@@ -17599,16 +17713,21 @@
     "name": "Association Malienne d'Éveil au Développement Durable",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 0,
-    "totalBeneficiaries": 0,
+    "totalBudget": 911620,
+    "totalBeneficiaries": 72000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
-    "projects": []
+    "projects": [
+      {
+        "projectCode": "L297",
+        "numCollaborators": 0
+      }
+    ]
   },
   {
     "actorCode": "MALI40",
     "name": "Agence des energie renouvelables du Mali",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17674,7 +17793,7 @@
   {
     "actorCode": "MALI46",
     "name": "Union des Sociétés Coopérative des Eleveurs de Tamani",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17685,7 +17804,7 @@
   {
     "actorCode": "MALI47",
     "name": "Union des Sociétés Coopérative des Eleveurs de Boidié",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17696,7 +17815,7 @@
   {
     "actorCode": "MALI48",
     "name": "Union des Sociétés Coopérative des Eleveurs de Dougoufé",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17707,7 +17826,7 @@
   {
     "actorCode": "MALI49",
     "name": "Union des Sociétés Coopérative des Eleveurs de Somo",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -17720,7 +17839,7 @@
     "name": "Ministry of Finance",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 61140840,
+    "totalBudget": 58799490,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -17737,6 +17856,17 @@
     ]
   },
   {
+    "actorCode": "MALI51",
+    "name": "Sahel eco",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "MLT1",
     "name": "Malta College of Arts, Science and Technology",
     "type": "Academic institution",
@@ -17749,7 +17879,7 @@
   },
   {
     "actorCode": "MOR1",
-    "name": "Etablissement de Coopération Intercommunal de la vallée de l’Arghen",
+    "name": "Etablissement de Coopération Intercommunal de la vallée de l'Arghen",
     "type": "Government agency",
     "email": "mdafkir@gmail.com",
     "totalBudget": 0,
@@ -17936,7 +18066,7 @@
   },
   {
     "actorCode": "MOR20",
-    "name": "l’Agence Nationale pour le Développement des Zones Oasiennes de l’Arganier",
+    "name": "l'Agence Nationale pour le Développement des Zones Oasiennes de l'Arganier",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -17950,7 +18080,7 @@
     "name": "Agence pour le Developpement Agricole",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 46637664,
+    "totalBudget": 44851704,
     "totalBeneficiaries": 26000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -17974,7 +18104,7 @@
   },
   {
     "actorCode": "MOR23",
-    "name": "Observatoires Régionaux de l’Environnement et du Développement Durable",
+    "name": "Observatoires Régionaux de l'Environnement et du Développement Durable",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -17986,9 +18116,9 @@
   {
     "actorCode": "MOR24",
     "name": "Institut National de Recherche Agronomique",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 91592717,
+    "totalBudget": 91492892,
     "totalBeneficiaries": 200,
     "beneficiaryFlagMultiple": true,
     "collaborators": [],
@@ -18003,6 +18133,10 @@
       },
       {
         "projectCode": "L127",
+        "numCollaborators": 0
+      },
+      {
+        "projectCode": "L295",
         "numCollaborators": 0
       }
     ]
@@ -18034,7 +18168,7 @@
     "name": "Ministry of Agriculture - Directorate of Irrigation",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 170625600,
+    "totalBudget": 164091600,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -18052,7 +18186,7 @@
   },
   {
     "actorCode": "MOR28",
-    "name": "Ecole Nationale d’Agriculture de Meknès",
+    "name": "Ecole Nationale d'Agriculture de Meknès",
     "type": "Academic institution",
     "email": null,
     "totalBudget": 0,
@@ -18156,7 +18290,7 @@
     "name": "Ministere de l'agriculture de l'equipement et de l'environnement",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 438425440,
+    "totalBudget": 433633840,
     "totalBeneficiaries": 994000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -18197,7 +18331,7 @@
     "name": "Ministry of Agriculture, Maritime Fisheries, Rural Development and Water and Forests",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 10379262480,
+    "totalBudget": 9993792780,
     "totalBeneficiaries": 994000,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -18240,7 +18374,7 @@
   {
     "actorCode": "MOR33",
     "name": "Union des fédérations des usagers de l'eau agricole",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18355,7 +18489,7 @@
   {
     "actorCode": "MOR6",
     "name": "Bureau Marocain des Etudes et Expertises",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": "bet.bmee@gmail.com",
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18430,7 +18564,7 @@
     "name": "Ministere de l'Economie et des Finances",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 189584000,
+    "totalBudget": 182324000,
     "totalBeneficiaries": 200000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -18499,7 +18633,7 @@
   {
     "actorCode": "MOR46",
     "name": "National Sheep and Goats Association",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18567,7 +18701,7 @@
     "name": "National Agency of Development of Oases and Argan",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 9450762.4,
+    "totalBudget": 9088851.4,
     "totalBeneficiaries": 40000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -18581,6 +18715,17 @@
   {
     "actorCode": "MOR55",
     "name": "R&D Maroc",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "MOR56",
+    "name": "Agrotec SM",
     "type": "Development organization",
     "email": null,
     "totalBudget": 0,
@@ -18647,7 +18792,7 @@
   {
     "actorCode": "MWI2",
     "name": "Chitedze Agricultural Research Station",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18766,7 +18911,7 @@
   {
     "actorCode": "NGA1",
     "name": "Cocoa research institute Nigeria",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18788,7 +18933,18 @@
   {
     "actorCode": "NGA3",
     "name": "Nigeria's intitute of agriucltural research",
-    "type": "Research Institution",
+    "type": "Research institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "NGA4",
+    "name": "national cereal research institute",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -18799,9 +18955,9 @@
   {
     "actorCode": "NLD1",
     "name": "Netherlands Development Agency",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
-    "totalBudget": 484349321.9492,
+    "totalBudget": 474879091.7237,
     "totalBeneficiaries": 4525670,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -18968,7 +19124,7 @@
   {
     "actorCode": "NLD12",
     "name": "The Turing Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19128,7 +19284,7 @@
   {
     "actorCode": "NLD2",
     "name": "BoP Innovation Center",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19139,7 +19295,7 @@
   {
     "actorCode": "NLD20",
     "name": "Science for global development",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 50000,
@@ -19251,7 +19407,7 @@
     "name": "Netherlands Ministry of Foreign Affairs",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 246080032,
+    "totalBudget": 236656552,
     "totalBeneficiaries": 378,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -19381,7 +19537,7 @@
     "name": "Wageningen University & Research",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 320825491.4,
+    "totalBudget": 320670490.4,
     "totalBeneficiaries": 140000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -19600,7 +19756,7 @@
   {
     "actorCode": "NLD28",
     "name": "Resilience",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19638,7 +19794,7 @@
   {
     "actorCode": "NOR1",
     "name": "NIBIO",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19651,7 +19807,7 @@
     "name": "Norwegian Agency for Development Cooperation",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 6755200,
+    "totalBudget": 6839115.6046,
     "totalBeneficiaries": 5000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -19712,7 +19868,7 @@
   {
     "actorCode": "NOR5",
     "name": "Norwegian Institute of Bioeconomy Research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19756,7 +19912,7 @@
   {
     "actorCode": "PK1",
     "name": "national agricultural research center",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19767,7 +19923,7 @@
   {
     "actorCode": "PRT1",
     "name": "Associação para Inovação e Desenvolvimento, Nova School of Science and Technology",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19860,7 +20016,7 @@
   {
     "actorCode": "PRT6",
     "name": "Centro Nacional de Competências dos Frutos Secos",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -19917,7 +20073,7 @@
     "name": "Comité Inter-Etats de Lutte contre la Sécheresse dans le Sahel",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 852959612,
+    "totalBudget": 822019307,
     "totalBeneficiaries": 2070000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -20085,7 +20241,7 @@
   {
     "actorCode": "REG14",
     "name": "East Africa Farmers Federation",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 42700000,
     "totalBeneficiaries": 52000000,
@@ -20126,7 +20282,7 @@
   {
     "actorCode": "REG15",
     "name": "Plateforme Sous-Régionale des Organisations Paysannes d'Afrique Centrale",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 53038442,
     "totalBeneficiaries": 52000000,
@@ -20198,8 +20354,8 @@
   },
   {
     "actorCode": "REG16",
-    "name": "Réseau des Organisations Paysannes et de Producteurs de l’Afrique de l’Ouest",
-    "type": "Producer/Farmer group",
+    "name": "Réseau des Organisations Paysannes et de Producteurs de l'Afrique de l'Ouest",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 73538442,
     "totalBeneficiaries": 52000000,
@@ -20320,7 +20476,7 @@
   {
     "actorCode": "REG17",
     "name": "Southern African Confederation of Agricultural Unions",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 42700000,
     "totalBeneficiaries": 52000000,
@@ -20360,8 +20516,8 @@
   },
   {
     "actorCode": "REG18",
-    "name": "Union Maghrébine et de l’Afrique du Nord des Agriculteurs",
-    "type": "Producer/Farmer group",
+    "name": "Union Maghrébine et de l'Afrique du Nord des Agriculteurs",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudget": 42700000,
     "totalBeneficiaries": 52000000,
@@ -20404,7 +20560,7 @@
     "name": "Observatoire du Sahara et du Sahel",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 28566706.704,
+    "totalBudget": 27472762.644,
     "totalBeneficiaries": 153151,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -20452,7 +20608,7 @@
     "name": "Union Economique et Monétaire Ouest Africaine",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 610554160,
+    "totalBudget": 587939260,
     "totalBeneficiaries": 2070000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -20543,7 +20699,7 @@
   {
     "actorCode": "REG28",
     "name": "Aride region institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -20554,7 +20710,7 @@
   {
     "actorCode": "REG29",
     "name": "Mountains of Research Collaborative Laboratory",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 1373757,
     "totalBeneficiaries": 0,
@@ -20572,7 +20728,7 @@
     "name": "Economic Community of West African States",
     "type": "Intergovernmental organization",
     "email": null,
-    "totalBudget": 634252160,
+    "totalBudget": 610729760,
     "totalBeneficiaries": 2967300,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -20751,9 +20907,9 @@
   {
     "actorCode": "REG7",
     "name": "Conseil Ouest Africain pour la Recherche et le Development Agricole",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 629081290,
+    "totalBudget": 606550305.6046,
     "totalBeneficiaries": 2125000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -20928,7 +21084,7 @@
   {
     "actorCode": "REG8",
     "name": "Southern African Science Service Centre for Climate Change and Adaptive Land Management",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -20952,7 +21108,7 @@
     "name": "West African Development Bank",
     "type": "Banks and microfinance institutions",
     "email": null,
-    "totalBudget": 32229280,
+    "totalBudget": 30995080,
     "totalBeneficiaries": 150000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21001,7 +21157,7 @@
     "name": "Intergovernmental Authority on Development",
     "type": "Trade organization",
     "email": null,
-    "totalBudget": 32229280,
+    "totalBudget": 30995080,
     "totalBeneficiaries": 150000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21081,7 +21237,7 @@
   {
     "actorCode": "REG30",
     "name": "International Centre for Advanced Mediterranean Agronomic Studies",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 6999185,
     "totalBeneficiaries": 0,
@@ -21097,7 +21253,7 @@
   {
     "actorCode": "REG31",
     "name": "Partnership for Research and Innovation in the Mediterranean Area",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21108,7 +21264,7 @@
   {
     "actorCode": "REG32",
     "name": "The African Institute of Mathematical Sciences",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21119,7 +21275,7 @@
   {
     "actorCode": "REG33",
     "name": "Brooke west africa",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21146,7 +21302,7 @@
   {
     "actorCode": "REG35",
     "name": "Waternet",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21157,7 +21313,7 @@
   {
     "actorCode": "REG36",
     "name": "One acre fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21177,9 +21333,20 @@
     "projects": []
   },
   {
+    "actorCode": "REG38",
+    "name": "West africa center for crop improvement",
+    "type": "Research institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "RWA1",
     "name": "Rwanda Agriculture and Animal Resource Development Board",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21223,7 +21390,7 @@
   {
     "actorCode": "RWA5",
     "name": "AKADEMIYA2063",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21247,7 +21414,7 @@
     "name": "Innovation environnement et developpement Afrique",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 3441930,
+    "totalBudget": 3471515.6131,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21270,7 +21437,7 @@
   {
     "actorCode": "SEN2",
     "name": "institut senegalais de recherche agronomique",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 17271930,
     "totalBeneficiaries": 0,
@@ -21365,7 +21532,7 @@
   },
   {
     "actorCode": "SEN4",
-    "name": "Compagnie Nationale d’Assurance Agricole du Sénégal",
+    "name": "Compagnie Nationale d'Assurance Agricole du Sénégal",
     "type": "Government agency",
     "email": null,
     "totalBudget": 0,
@@ -21434,7 +21601,7 @@
     "name": "Swedish University of Agricultural Sciences",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 314055200,
+    "totalBudget": 314139115.6046,
     "totalBeneficiaries": 5000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21543,7 +21710,7 @@
     "name": "We effect",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 11081943.052,
+    "totalBudget": 11053471.147,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21638,7 +21805,7 @@
   {
     "actorCode": "TGO2",
     "name": "Insitut togolais de recherche agronomique",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 50000,
@@ -21709,7 +21876,7 @@
   },
   {
     "actorCode": "TGO3",
-    "name": "Association pour la promotion des arbres fertilitaires, de l’agroforesterie et la foresterie",
+    "name": "Association pour la promotion des arbres fertilitaires, de l'agroforesterie et la foresterie",
     "type": "Development organization",
     "email": null,
     "totalBudget": 0,
@@ -21732,7 +21899,7 @@
   {
     "actorCode": "TUN2",
     "name": "National Institute of Field Crops",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21743,7 +21910,7 @@
   {
     "actorCode": "TUN3",
     "name": "Institut National de la Recherche Agronomique de Tunisie",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21765,7 +21932,7 @@
   {
     "actorCode": "TUN5",
     "name": "Center of Biotechnology of Borj Cédria",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21798,7 +21965,7 @@
   {
     "actorCode": "TUR1",
     "name": "Bati Akdeniz Agricultural Research Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21853,7 +22020,7 @@
   {
     "actorCode": "TZA3",
     "name": "Tanzania agricultural research institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21918,9 +22085,41 @@
     ]
   },
   {
+    "actorCode": "UGA3",
+    "name": "Action for Rural Women's Empowerment in Uganda",
+    "type": "Producer/farmer group",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 22,
+    "beneficiaryFlagMultiple": true,
+    "collaborators": [
+      {
+        "actorCode": "BF94",
+        "projectsShared": 1
+      }
+    ],
+    "projects": [
+      {
+        "projectCode": "L281",
+        "numCollaborators": 1
+      }
+    ]
+  },
+  {
+    "actorCode": "UGA4",
+    "name": "National Crops Resources Research Institute",
+    "type": "Research institution",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
     "actorCode": "UK1",
     "name": "Sigrid Rausing Trust",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21933,7 +22132,7 @@
     "name": "International Institute for Environment and Development",
     "type": "Think tank",
     "email": null,
-    "totalBudget": 95153210,
+    "totalBudget": 91679845.6131,
     "totalBeneficiaries": 40000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -21976,7 +22175,7 @@
   {
     "actorCode": "UK3",
     "name": "UK Aid",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -21989,7 +22188,7 @@
     "name": "University of Reading",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 9479200,
+    "totalBudget": 9116200,
     "totalBeneficiaries": 152000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -22194,7 +22393,7 @@
     "name": "Centre for Disaster Protection",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 32229280,
+    "totalBudget": 30995080,
     "totalBeneficiaries": 150000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -22257,7 +22456,7 @@
   {
     "actorCode": "UK11",
     "name": "CAB international",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -22301,7 +22500,7 @@
   {
     "actorCode": "UK15",
     "name": "Oxfam",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -22345,7 +22544,7 @@
   {
     "actorCode": "UK19",
     "name": "Natural Environment Research Council",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -22358,7 +22557,7 @@
     "name": "University of Oxford",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 8116900,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -22434,7 +22633,7 @@
     "name": "Crown agent bank",
     "type": "Banks and microfinance institutions",
     "email": null,
-    "totalBudget": 2091282.2487,
+    "totalBudget": 2109258.1714,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -22481,7 +22680,7 @@
     "name": "university of southampton",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 0,
+    "totalBudget": 260363670.9825,
     "totalBeneficiaries": 270000000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -22494,7 +22693,7 @@
   },
   {
     "actorCode": "UK30",
-    "name": "King’s College London",
+    "name": "King's College London",
     "type": "Academic institution",
     "email": null,
     "totalBudget": 0,
@@ -22517,9 +22716,9 @@
   {
     "actorCode": "USA1",
     "name": "United States Agency for International Development",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
-    "totalBudget": 81393939,
+    "totalBudget": 79270389,
     "totalBeneficiaries": 8106510,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -22681,7 +22880,7 @@
   {
     "actorCode": "USA11",
     "name": "Impact Research Institute",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -22692,7 +22891,7 @@
   {
     "actorCode": "USA12",
     "name": "Rockefeller Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -22703,7 +22902,7 @@
   {
     "actorCode": "USA13",
     "name": "Raikes foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -22770,7 +22969,7 @@
   {
     "actorCode": "USA16",
     "name": "World Coffee Research",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23022,7 +23221,7 @@
     "name": "Near East Foundation",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 3441930,
+    "totalBudget": 3471515.6131,
     "totalBeneficiaries": 17380,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -23083,7 +23282,7 @@
   {
     "actorCode": "USA9",
     "name": "Bill and Melinda Gates Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23223,7 +23422,7 @@
   {
     "actorCode": "USA32",
     "name": "Howard g Buffet foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23236,7 +23435,7 @@
     "name": "Technoserve",
     "type": "Development organization",
     "email": null,
-    "totalBudget": 2091282.2487,
+    "totalBudget": 2109258.1714,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -23270,7 +23469,7 @@
   {
     "actorCode": "USA35",
     "name": "McKnight Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23281,7 +23480,7 @@
   {
     "actorCode": "USA36",
     "name": "lutherian world relief",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 12274,
@@ -23297,9 +23496,9 @@
   {
     "actorCode": "USA37",
     "name": "NASA Harvest",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 4739600,
+    "totalBudget": 4558100,
     "totalBeneficiaries": 8200,
     "beneficiaryFlagMultiple": true,
     "collaborators": [],
@@ -23330,7 +23529,7 @@
     "name": "Rhode Island university",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 22750080,
+    "totalBudget": 21878880,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -23344,7 +23543,7 @@
   {
     "actorCode": "USA40",
     "name": "Environmental Justice Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23394,7 +23593,29 @@
   {
     "actorCode": "USA42",
     "name": "Global funds for women",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "USA43",
+    "name": "New markets lab",
+    "type": "Development organization",
+    "email": null,
+    "totalBudget": 0,
+    "totalBeneficiaries": 0,
+    "beneficiaryFlagMultiple": false,
+    "collaborators": [],
+    "projects": []
+  },
+  {
+    "actorCode": "USA44",
+    "name": "Arcadia biosciences",
+    "type": "Private company",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23416,7 +23637,7 @@
   {
     "actorCode": "ZA1",
     "name": "The Institute for Wine Biotechnology, Stellenbosch University",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23427,7 +23648,7 @@
   {
     "actorCode": "ZA2",
     "name": "Centre for Coordination of Agricultural Research and Development for Southern Africa",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23438,7 +23659,7 @@
   {
     "actorCode": "ZA3",
     "name": "Agricultural Research Council",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23594,7 +23815,7 @@
     "name": "Ministry of Agriculture",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 174038112,
+    "totalBudget": 167373432,
     "totalBeneficiaries": 3061800,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -23674,7 +23895,7 @@
   {
     "actorCode": "ZAM24",
     "name": "Kansanshi Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23874,7 +24095,7 @@
     "name": "Natural Resources Development College",
     "type": "Academic institution",
     "email": null,
-    "totalBudget": 6755200,
+    "totalBudget": 6839115.6046,
     "totalBeneficiaries": 5000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -23924,7 +24145,7 @@
   {
     "actorCode": "ZAM43",
     "name": "Zambia Alliance for Agroecology and Biodiversity",
-    "type": "Advocacy organization",
+    "type": "Advocacy organization/group",
     "email": null,
     "totalBudget": 0,
     "totalBeneficiaries": 0,
@@ -23959,7 +24180,7 @@
     "name": "Government of Zambia",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 1354816845.1001,
+    "totalBudget": 1302996257.4164,
     "totalBeneficiaries": 4104800,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -24054,7 +24275,7 @@
     "name": "Aller aqua zambia",
     "type": "Private company",
     "email": null,
-    "totalBudget": 6755200,
+    "totalBudget": 6839115.6046,
     "totalBeneficiaries": 5000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24181,9 +24402,9 @@
   {
     "actorCode": "ZAM53",
     "name": "Veterinary research station",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
-    "totalBudget": 6351064,
+    "totalBudget": 6107854,
     "totalBeneficiaries": 1800,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24215,7 +24436,7 @@
     "name": " Ministry of Green Economy and Environment",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 94792000,
+    "totalBudget": 91162000,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
@@ -24275,7 +24496,7 @@
     "name": "Government of Zimbabwe",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 56838597.965,
+    "totalBudget": 54661999.6169,
     "totalBeneficiaries": 2403600,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24348,7 +24569,7 @@
     "name": "\r\nMinistry of Lands, Agriculture, Water and Rural Resettlement of Zimbabwe\r\n",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 118734930.205,
+    "totalBudget": 114188050.7569,
     "totalBeneficiaries": 2480240,
     "beneficiaryFlagMultiple": true,
     "collaborators": [
@@ -24421,7 +24642,7 @@
     "name": "Ministry of Environment and Natural Resources Management, Zimbabwe",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 2031392.56,
+    "totalBudget": 1953601.66,
     "totalBeneficiaries": 1600,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24450,7 +24671,7 @@
     "name": "Meteorological Services Department",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 9479200,
+    "totalBudget": 9116200,
     "totalBeneficiaries": 102000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24503,7 +24724,7 @@
     "name": "Department of civil protection",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 9479200,
+    "totalBudget": 9116200,
     "totalBeneficiaries": 102000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24556,7 +24777,7 @@
     "name": "Ministry of Public Service, Labour and Social Welfare",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 9479200,
+    "totalBudget": 9116200,
     "totalBeneficiaries": 102000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24609,7 +24830,7 @@
     "name": "Department of Agricultural, Technical and Extension Services",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 9479200,
+    "totalBudget": 9116200,
     "totalBeneficiaries": 102000,
     "beneficiaryFlagMultiple": false,
     "collaborators": [
@@ -24713,7 +24934,7 @@
     "name": "Ministry of Tourism, Environment, and Hospitality",
     "type": "Government agency",
     "email": null,
-    "totalBudget": 54445646.9149,
+    "totalBudget": 52360685.1217,
     "totalBeneficiaries": 0,
     "beneficiaryFlagMultiple": false,
     "collaborators": [],
