@@ -11,8 +11,8 @@ interface GeoJsonFeatureProperties {
   beneficiaryUnits: string;
   budget: number;
   budgetCurrency: string;
-  budgetEuro: number;
-  budgetEuroLog: number;
+  budgetEUR: number;
+  budgetEURLog: number;
   locationId: string;
   locationName: string;
   latitude: number;

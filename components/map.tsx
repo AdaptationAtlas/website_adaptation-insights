@@ -41,8 +41,8 @@ function Map({
 
         // Assuming budgetEuroLog and beneficiariesLog are directly inside properties
         const features = json.features;
-        const minBudget = minBy(features, feature => feature.properties.budgetEuroLog)?.properties.budgetEuroLog;
-        const maxBudget = maxBy(features, feature => feature.properties.budgetEuroLog)?.properties.budgetEuroLog;
+        const minBudget = minBy(features, feature => feature.properties.budgetEURLog)?.properties.budgetEURLog;
+        const maxBudget = maxBy(features, feature => feature.properties.budgetEURLog)?.properties.budgetEURLog;
         const minBeneficiaries = minBy(features, feature => feature.properties.beneficiaryNumLog)?.properties.beneficiaryNumLog;
         const maxBeneficiaries = maxBy(features, feature => feature.properties.beneficiaryNumLog)?.properties.beneficiaryNumLog;
 
@@ -60,7 +60,7 @@ function Map({
 
   const layerStyle: CircleLayer = useMemo(() => {
     // Determine which fields and corresponding min/max values to use based on viewByBudget
-    const dataField = viewByBudget ? 'budgetEuroLog' : 'beneficiaryNumLog';
+    const dataField = viewByBudget ? 'budgetEURLog' : 'beneficiaryNumLog';
     const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
 
@@ -75,7 +75,7 @@ function Map({
             'case',
             ['!', ['to-boolean', selectedCountry]], 2, // If selectedCountry is null or undefined, show circle
             // Condition to check if projectScale matches selectedCountry
-            ['==', ['get', 'projectScale'], selectedCountry], 2, // If projectScale matches selectedCountry, show circle
+            ['==', ['get', 'country'], selectedCountry], 2, // If projectScale matches selectedCountry, show circle
             0 // If false, set radius to 0 to hide circle
           ],
           8, // Zoom level 8
@@ -83,7 +83,7 @@ function Map({
             'case',
             ['!', ['to-boolean', selectedCountry]], 6, // If selectedCountry is null or undefined, show circle
             // Condition to check if projectScale matches selectedCountry
-            ['==', ['get', 'projectScale'], selectedCountry], 6, // If projectScale matches selectedCountry, show circle
+            ['==', ['get', 'country'], selectedCountry], 6, // If projectScale matches selectedCountry, show circle
             0 // If false, set radius to 0 to hide circle
           ],
         ],

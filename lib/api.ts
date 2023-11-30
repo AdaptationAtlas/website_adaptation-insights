@@ -1,4 +1,5 @@
 import { orderBy } from 'lodash'
+import { ActorData, ProjectData } from '@/types/sidebar.types'
 
 export const fetchData = async (url: any) => {
   const response = await fetch(url);
@@ -7,6 +8,8 @@ export const fetchData = async (url: any) => {
   }
   return response.json();
 }
+
+// TODO - move sorting to a separate utils file
 
 export const sortActors = (data: any, viewByBudget: boolean) => {
   const orderField = viewByBudget ? 'totalBudget' : 'totalBeneficiaries';
@@ -31,16 +34,22 @@ export const sortProjects = (data: any, viewByBudget: boolean) => {
   return sortedData
 }
 
-export const filterByYear = (data: any[], year: number) => {
-  return data.filter(item => item.minStartDate <= year && item.maxEndDate >= year);
+// TODO - move filtering to a separate utils file
+
+export const filterByYear = (data: ProjectData[], year: number) => {
+  // Add checks to ensure minStartDate and maxEndDate are not null
+  return data.filter(item => 
+    (item.minStartDate !== null && item.minStartDate <= year) &&
+    (item.maxEndDate !== null && item.maxEndDate >= year)
+  )
 }
 
-export const filterByCountry = (data: any[], value: string) => {
-  return data.filter(item => item.projectScale === value);
+export const filterByCountry = (data: ProjectData[], country: string) => {
+  return data.filter(item => item.countries?.includes(country));
 }
 
-export const filterByType = (data: any[], value: string) => {
-  return data.filter(item => item.type === value);
+export const filterByType = (data: ActorData[], type: string) => {
+  return data.filter(item => item.type === type);
 }
 
 

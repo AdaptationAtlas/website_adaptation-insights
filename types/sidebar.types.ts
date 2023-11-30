@@ -51,7 +51,9 @@ export type ProjectData = {
   beyondFarmAdaptations: BeyondFarmAdaptations[] | null
   budget: number | null
   budgetCurrency: string | null
-  budgetEuro: number | null
+  budgetEUR: number | null
+  budgetUSD: number | null
+  countries: string[] | null
   maxEndDate: number | null
   minStartDate: number | null
   onFarmAdaptations: OnFarmAdaptations[] | null

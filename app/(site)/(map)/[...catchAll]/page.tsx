@@ -73,16 +73,21 @@ const MapPage = () => {
     setProjectsData(sortProjects(projectsRawData, viewByBudget))
   }, [viewByBudget, actorsRawData, projectsRawData])
 
+  // TODO - add a filteredActors and filteredProjects state rather than actorsRawData and projectsRawData
+
+  // Filter projects by year
   useEffect(() => {
     const filteredProjects = (selectedYear) ? filterByYear(projectsRawData, selectedYear) : projectsRawData
     setProjectsData(sortProjects(filteredProjects, viewByBudget))
   }, [selectedYear, viewByBudget, projectsRawData])
 
+  // Filter projects by country
   useEffect(() => {
     const filteredProjects = (selectedCountry) ? filterByCountry(projectsRawData, selectedCountry) : projectsRawData
     setProjectsData(sortProjects(filteredProjects, viewByBudget))
   }, [selectedCountry, viewByBudget, projectsRawData])
 
+  // Filter actors by type
   useEffect(() => {
     const filteredActors = (selectedType) ? filterByType(actorsRawData, selectedType) : actorsRawData
     setActorsData(sortActors(filteredActors, viewByBudget))

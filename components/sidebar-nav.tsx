@@ -70,7 +70,7 @@ const SidebarNav = ({
   const uniqueProjectYears = uniq(
     projectsRawData.flatMap(project => [project.minStartDate, project.maxEndDate])
   ).sort()
-  const uniqueProjectCountries = uniq(projectsRawData.flatMap(project => project.projectScale)).sort() // TODO - replace this with country
+  const uniqueProjectCountries = uniq(projectsRawData.flatMap(project => project.countries)).sort()
   const uniqueActorTypes = uniq(actorsRawData.flatMap(actor => actor.type)).sort()
 
   // Now using the imported utility functions
@@ -197,6 +197,7 @@ const SidebarNav = ({
             <p className='uppercase text-sm'>{actorsTotal} of {actorsTotal} partners</p>
           </div>
         }
+        {/* TODO - move sidebar list to parent component sidebar */}
         <SidebarList
           viewProjects={viewProjects}
           viewProjectsDetail={viewProjectsDetail}

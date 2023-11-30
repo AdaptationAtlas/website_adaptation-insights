@@ -99,7 +99,6 @@ const SidebarList = ({
         )
       })}
       {!viewProjects && actorsData.map((actor, index) => {
-        // TODO - sort partner list items by budget or beneficiaries
         const budget = (actor.totalBudget) ? '$' + formatNumberCommas(actor.totalBudget) : 'Unspecified'
         const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(actor.totalBeneficiaries) : 'Unspecified'
         const maxWidth = (index < 10) ? 'max-w-[230px]' : 'max-w-[430px]'
@@ -137,7 +136,6 @@ const SidebarList = ({
               <div className='flex items-center justify-between'>
                 <div className={maxWidth}>
                   <h3 className='uppercase text-sm mb-2'>{beneficiaries} Total beneficiaries</h3>
-                  {/* TODO - account for unspecified beneficiaries */}
                   <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
