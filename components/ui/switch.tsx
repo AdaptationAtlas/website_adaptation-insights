@@ -15,9 +15,9 @@ type Props = {
 
 const Switch = ({ switchToggled, setSwitchToggled, label, options, colors, isLarge }: Props) => {
   // Define class names for large and small sizes
-  const switchClass = isLarge ? 'w-[35px] h-[22px]' : 'w-[22px] h-[14px]';
+  const switchClass = isLarge ? 'w-[35px] h-[22px]' : 'w-[22px] h-[14px] bg-grey-200';
   const thumbClass = isLarge ? 'w-[16px] h-[16px] translate-x-[3px] data-[state=checked]:translate-x-[16px]' : 'w-[10px] h-[10px] translate-x-[2px] data-[state=checked]:translate-x-[10px]';
-  const labelClass = isLarge ? 'text-[20px]' : 'text-sm';
+  const labelClass = isLarge ? 'text-[20px] font-medium' : 'text-sm';
 
   const handleLabelClick = () => {
     setSwitchToggled(!switchToggled)
@@ -42,7 +42,7 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, colors, isLar
           checked={switchToggled}
           className={classNames(
             switchClass,
-            'mx-2 bg-grey-200 rounded-full relative outline-none cursor-pointer',
+            'mx-2 rounded-full relative outline-none cursor-pointer',
             { 'bg-brand-light-teal': colors && !switchToggled },
             { 'bg-brand-light-gold': colors && switchToggled }
           )}
@@ -51,8 +51,8 @@ const Switch = ({ switchToggled, setSwitchToggled, label, options, colors, isLar
           <SwitchPrimitive.Thumb className={classNames(
             thumbClass,
             // TODO - add transition animation back into the switch component
-            // 'block bg-black rounded-full transition-transform duration-100 will-change-transform'
-            'block bg-black rounded-full',
+            'block bg-black rounded-full transition-transform duration-100 will-change-transform',
+            // 'block bg-black rounded-full',
             { 'bg-brand-teal': colors && !switchToggled },
             { 'bg-brand-dark-gold': colors && switchToggled }
           )} />

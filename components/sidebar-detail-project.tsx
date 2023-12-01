@@ -122,20 +122,20 @@ const SidebarDetailProject = ({
         <ul>
           {projectScale &&
             <li className='flex items-center'>
-              <h4 className='w-32 mr-3 text-sm font-semibold'>Scale</h4>
-              <p>{projectScale} project</p>
+              <h4 className='w-[120px] mr-3 text-sm font-semibold'>Scale</h4>
+              <p className='w-[250px]'>{projectScale} project</p>
             </li>
           }
           {budgetText && currency &&
             <li className='flex items-center'>
-              <h4 className='w-32 mr-3 text-sm font-semibold'>Budget</h4>
-              <p className='font-semibold'>{budgetText} {currency}</p>
+              <h4 className='w-[120px] mr-3 text-sm font-semibold'>Budget</h4>
+              <p className='font-semibold w-[250px]'>{budgetText} {currency}</p>
             </li>
           }
           {(startDate || endDate) &&
             <li className='flex items-center'>
-              <h4 className='w-32 mr-3 text-sm font-semibold'>Date</h4>
-              <p>{startDate}-{endDate}{completed && <span className='text-brand-burgundy text-xs font-semibold ml-2'>Completed</span>}</p>
+              <h4 className='w-[120px] mr-3 text-sm font-semibold'>Date</h4>
+              <p className='w-[250px]'>{startDate}-{endDate}{completed && <span className='text-brand-burgundy text-xs font-semibold ml-2'>Completed</span>}</p>
             </li>
           }
         </ul>
@@ -151,13 +151,13 @@ const SidebarDetailProject = ({
           </div>
           <div className='flex items-baseline mb-4'>
             {beneficiaryNum &&
-              <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>{beneficiaryNumText} beneficiaries</h3>
+              <h3 className='w-[120px] mr-3 text-sm font-semibold uppercase'>{beneficiaryNumText} beneficiaries</h3>
             }
             {(!beneficiaryNum && targetedBeneficiaryCount > 0) &&
-              <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>Beneficiaries</h3>
+              <h3 className='w-[120px] mr-3 text-sm font-semibold uppercase'>Beneficiaries</h3>
             }
             {targetedBeneficiaryCount > 0 &&
-              <ul>
+              <ul className='w-[250px]'>
                 {targetedBeneficiaries && targetedBeneficiaries.map((beneficiary) => (
                   <li key={beneficiary.name} className='mb-1'>{beneficiary.name}</li>
                 ))}
@@ -166,8 +166,8 @@ const SidebarDetailProject = ({
           </div>
           {vulnerableGroupCount > 0 &&
             <div className='flex items-baseline'>
-              <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>Targeted vulnerable groups</h3>
-              <ul>
+              <h3 className='w-[120px] mr-3 text-sm font-semibold uppercase'>Targeted vulnerable groups</h3>
+              <ul className='w-[250px]'>
                 {vulnerableGroups && vulnerableGroups.map((group) => (
                   <li key={group} className='mb-1'>{group}</li>
                 ))}
@@ -187,8 +187,8 @@ const SidebarDetailProject = ({
 
         {valueChainCount > 0 &&
           <div className='flex items-baseline mb-4'>
-            <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>Targeted value chain</h3>
-            <ul>
+            <h3 className='w-[120px] mr-3 text-sm font-semibold uppercase'>Targeted value chain</h3>
+            <ul className='w-[250px]'>
               {valueChains && valueChains.map((chain) => (
                 <li key={chain.name} className='mb-1'>{chain.name}</li>
               ))}
@@ -198,8 +198,8 @@ const SidebarDetailProject = ({
 
         {onFarmCount > 0 &&
           <div className='flex items-baseline mb-4'>
-            <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>On the farm</h3>
-            <ul>
+            <h3 className='w-[120px] mr-3 text-sm font-semibold uppercase'>On the farm</h3>
+            <ul className='w-[250px]'>
               {onFarm && onFarm.map((adaptation) => (
                 <li key={adaptation.name} className='mb-1'>{adaptation.name}</li>
               ))}
@@ -209,8 +209,8 @@ const SidebarDetailProject = ({
 
         {beyondFarmCount > 0 &&
           <div className='flex items-baseline mb-4'>
-            <h3 className='w-32 mr-3 text-sm font-semibold uppercase'>Beyond the farm</h3>
-            <ul>
+            <h3 className='w-[120px] mr-3 text-sm font-semibold uppercase'>Beyond the farm</h3>
+            <ul className='w-[250px]'>
               {beyondFarm && beyondFarm.map((adaptation) => (
                 <li key={adaptation.name} className='mb-1'>{adaptation.name}</li>
               ))}

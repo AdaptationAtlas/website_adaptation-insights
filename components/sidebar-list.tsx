@@ -119,8 +119,8 @@ const SidebarList = ({
             onClick={() => { handleProjectSelect(project) }}
             className={classNames(
               'px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
-              'hover:border-b-brand-gold hover:border-t-brand-gold',
-              { 'bg-grey-lightest': project.projectCode === activeProject?.projectCode }
+              'hover:border-b-brand-gold hover:border-t-brand-gold transition',
+              { 'bg-grey-lightest pointer-events-none': project.projectCode === activeProject?.projectCode }
             )}
           >
             {viewByBudget &&
@@ -150,15 +150,15 @@ const SidebarList = ({
             onClick={() => { handleActorSelect(actor) }}
             className={classNames(
               'px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
-              'hover:border-b-brand-gold hover:border-t-brand-gold',
-              { 'bg-grey-lightest': actor.actorCode === activeActor?.actorCode }
+              'hover:border-b-brand-gold hover:border-t-brand-gold transition',
+              { 'bg-grey-lightest pointer-events-none': actor.actorCode === activeActor?.actorCode }
             )}
           >
             {viewByBudget &&
               <div className='flex items-center justify-between'>
                 <div className={maxWidth}>
                   <h3 className='uppercase text-sm mb-2'>{budget} Total budget</h3>
-                  <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
+                  <h2 className='text-[16px] font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
                   <div className='relative h-[132px] w-[132px]'>
@@ -182,7 +182,7 @@ const SidebarList = ({
               <div className='flex items-center justify-between'>
                 <div className={maxWidth}>
                   <h3 className='uppercase text-sm mb-2'>{beneficiaries} Total beneficiaries</h3>
-                  <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
+                  <h2 className='text-[17px] leading-tight font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
                   <div className='relative h-[132px] w-[132px]'>

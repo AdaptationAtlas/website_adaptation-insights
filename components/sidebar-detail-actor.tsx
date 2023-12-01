@@ -108,15 +108,15 @@ const SidebarDetailActor = ({
       <div className='mb-10'>
         <ul>
           {actor?.type &&
-            <li className='flex items-center'>
-              <h4 className='w-32 mr-3 text-sm font-semibold'>Type</h4>
-              <p>{actor?.type}</p>
+            <li className='flex'>
+              <h4 className='w-[120px] mr-3 text-sm font-semibold'>Type</h4>
+              <p className='w-[250px]'>{actor?.type}</p>
             </li>
           }
           {actor?.email &&
             <li className='flex items-center'>
-              <h4 className='w-32 mr-3 text-sm font-semibold'>Contact</h4>
-              <p>{actor?.email}</p>
+              <h4 className='w-[120px] mr-3 text-sm font-semibold'>Contact</h4>
+              <p className='w-[250px]'>{actor?.email}</p>
             </li>
           }
         </ul>
