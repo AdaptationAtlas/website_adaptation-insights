@@ -1334,6 +1334,10 @@
           "group": "project"
         },
         {
+          "id": "L135",
+          "group": "project"
+        },
+        {
           "id": "REG1",
           "group": "actor"
         },
@@ -1379,6 +1383,11 @@
         {
           "source": "BF33",
           "target": "L134",
+          "type": "rootProject"
+        },
+        {
+          "source": "BF33",
+          "target": "L135",
           "type": "rootProject"
         }
       ]
