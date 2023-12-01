@@ -65,8 +65,9 @@ function Map({
     const dataField = viewByBudget ? 'budgetEURLog' : 'beneficiaryNumLog';
     const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
-
     const bucketColors = ['#94D851', '#74CB6C', '#31C6AD', '#29B5D4', '#2290DF']
+    const circleRadiusMin = 2.5
+    const circleRadiusMax = 7
 
     // Function to generate the steps for the 'step' expression in Mapbox
     const generateColorSteps = (minValue: number | null | undefined, maxValue: number | null | undefined, colors: string[]) => {
@@ -100,7 +101,7 @@ function Map({
             ['all',
               ['!', ['to-boolean', selectedCountry]], // selectedCountry is null or undefined
               ["==", selectedYear, 0], // selectedCountry matches the country property
-            ], 2,
+            ], circleRadiusMin,
 
             // Both country and year selected
             [
@@ -114,7 +115,7 @@ function Map({
               ['!=', ['get', 'country'], null], // Ensure country exists
               ['==', ['get', 'country'], selectedCountry],
               // Then check if selectedCountry is null or matches the country property
-            ], 2, // Circle radius when both year and country conditions are met
+            ], circleRadiusMin, // Circle radius when both year and country conditions are met
 
             // Only country selected
             [
@@ -122,7 +123,7 @@ function Map({
               ["==", selectedYear, 0], // No year selected
               ['!=', ['get', 'country'], null], // Ensure country exists
               ['==', ['get', 'country'], selectedCountry],
-            ], 2, // Circle radius for only country selected
+            ], circleRadiusMin, // Circle radius for only country selected
 
             // Only year selected
             [
@@ -132,7 +133,7 @@ function Map({
               ["==", ["typeof", ["get", "dateEnd"]], "number"],
               ['>=', selectedYear, ['get', 'dateStart']],
               ['<=', selectedYear, ['get', 'dateEnd']],
-            ], 2, // Circle radius for only year selected
+            ], circleRadiusMin, // Circle radius for only year selected
 
             // Default case if none of the above conditions are met
             0 // Set radius to 0 to hide circle
@@ -144,7 +145,7 @@ function Map({
             ['all',
               ['!', ['to-boolean', selectedCountry]], // selectedCountry is null or undefined
               ["==", selectedYear, 0], // selectedCountry matches the country property
-            ], 6,
+            ], circleRadiusMax,
 
             // Both country and year selected
             [
@@ -158,7 +159,7 @@ function Map({
               ['!=', ['get', 'country'], null], // Ensure country exists
               ['==', ['get', 'country'], selectedCountry],
               // Then check if selectedCountry is null or matches the country property
-            ], 6, // Circle radius when both year and country conditions are met
+            ], circleRadiusMax, // Circle radius when both year and country conditions are met
 
             // Only country selected
             [
@@ -166,7 +167,7 @@ function Map({
               ["==", selectedYear, 0], // No year selected
               ['!=', ['get', 'country'], null], // Ensure country exists
               ['==', ['get', 'country'], selectedCountry],
-            ], 6, // Circle radius for only country selected
+            ], circleRadiusMax, // Circle radius for only country selected
 
             // Only year selected
             [
@@ -176,7 +177,7 @@ function Map({
               ["==", ["typeof", ["get", "dateEnd"]], "number"],
               ['>=', selectedYear, ['get', 'dateStart']],
               ['<=', selectedYear, ['get', 'dateEnd']],
-            ], 6, // Circle radius for only year selected
+            ], circleRadiusMax, // Circle radius for only year selected
 
             // Default case if none of the above conditions are met
             0 // Set radius to 0 to hide circle
@@ -248,8 +249,8 @@ function Map({
         latitude: 0,
         zoom: 2.8
       }}
-      minZoom={2}
-      maxZoom={8}
+      minZoom={2.5}
+      maxZoom={14}
       onMouseMove={onHover}
       interactiveLayerIds={['point']}
       style={{ width: '100%', height: '100%' }}

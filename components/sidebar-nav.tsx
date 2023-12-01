@@ -95,7 +95,8 @@ const SidebarNav = ({
           colors={true}
           isLarge={true}
         />
-        <p className='text-base mt-3 mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua. Ut enim ad minim veniam.</p>
+        {viewProjects && <p className='text-base mt-3 mb-5'>Adaptation projects vary in scope, targeting many types of beneficiaries and employing different interventions, tailored to where they take place.</p> }
+        {!viewProjects && <p className='text-base mt-3 mb-5'>Partners collaborate with one another on adaptation projects. This network is crucial to helping countries and communities prepare for climate change.</p> }
         <Switch
           switchToggled={viewByBudget}
           setSwitchToggled={setViewByBudget}
