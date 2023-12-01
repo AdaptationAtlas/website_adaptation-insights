@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { handleSelectedYear, handleSelectedCountry, handleSelectedType } from '@/utils/selectHandlers'
+import { handleSelectedYear, handleSelectedCountry, handleSelectedType, handleSelectedCurrency } from '@/utils/selectHandlers'
 
 type Props = {
   actorsData: ActorData[]
@@ -36,6 +36,8 @@ type Props = {
   setSelectedYear: React.Dispatch<React.SetStateAction<number | null | undefined>>
   setSelectedCountry: React.Dispatch<React.SetStateAction<string | null | undefined>>
   setSelectedType: React.Dispatch<React.SetStateAction<string | null | undefined>>
+  selectedCurrency: string
+  setSelectedCurrency: React.Dispatch<React.SetStateAction<string>>
 }
 
 const SidebarNav = ({
@@ -59,6 +61,8 @@ const SidebarNav = ({
   setSelectedYear,
   setSelectedCountry,
   setSelectedType,
+  selectedCurrency,
+  setSelectedCurrency,
 }: Props) => {
 
   // Store actor and project totals
@@ -77,6 +81,7 @@ const SidebarNav = ({
   const onSelectedYearChange = handleSelectedYear(setSelectedYear);
   const onSelectedCountryChange = handleSelectedCountry(setSelectedCountry);
   const onSelectedTypeChange = handleSelectedType(setSelectedType);
+  const onSelectedCurrencyChange = handleSelectedCurrency(setSelectedCurrency);
 
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
@@ -106,7 +111,7 @@ const SidebarNav = ({
             <Select onValueChange={onSelectedYearChange}>
               <SelectTrigger className="w-[180px]">
                 <span className='truncate'>
-                  <SelectValue placeholder="2023" />
+                  <SelectValue placeholder="All years" />
                 </span>
               </SelectTrigger>
               <SelectContent>
@@ -124,37 +129,35 @@ const SidebarNav = ({
         {viewProjects && viewByBudget &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>Currency</span>
-            <Select>
+            <Select onValueChange={onSelectedCurrencyChange}>
               <SelectTrigger className="w-[180px]">
                 <span className='truncate'>
                   <SelectValue placeholder="USD" />
                 </span>
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="usd">USD</SelectItem>
-                <SelectItem value="euro">Euro</SelectItem>
-                <SelectItem value="local">Local</SelectItem>
+                <SelectItem value="USD">USD</SelectItem>
+                <SelectItem value="EUR">Euro</SelectItem>
               </SelectContent>
             </Select>
           </div>
         }
-        {!viewProjects && viewByBudget &&
+        {/* {!viewProjects && viewByBudget &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>Currency</span>
-            <Select>
+            <Select onValueChange={onSelectedCurrencyChange}>
               <SelectTrigger className="w-[180px]">
                 <span className='truncate'>
                   <SelectValue placeholder="USD" />
                 </span>
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="usd">USD</SelectItem>
-                <SelectItem value="euro">Euro</SelectItem>
-                <SelectItem value="local">Local</SelectItem>
+                <SelectItem value="USD">USD</SelectItem>
+                <SelectItem value="EUR">Euro</SelectItem>
               </SelectContent>
             </Select>
           </div>
-        }
+        } */}
       </header>
       <div>
         {viewProjects &&
@@ -212,6 +215,7 @@ const SidebarNav = ({
           setActiveActor={setActiveActor}
           activeProject={activeProject}
           setActiveProject={setActiveProject}
+          selectedCurrency={selectedCurrency}
         />
       </div>
     </div>

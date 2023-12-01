@@ -28,9 +28,10 @@ const MapPage = () => {
   const [viewProjects, setViewProjects] = useState<boolean>(false)
   const [activeActor, setActiveActor] = useState<ActorData | null | undefined>(null)
   const [activeProject, setActiveProject] = useState<ProjectData | null | undefined>(null)
-  const [selectedYear, setSelectedYear] = useState<number | null | undefined>(null)
+  const [selectedYear, setSelectedYear] = useState<number | null | undefined>(0)
   const [selectedCountry, setSelectedCountry] = useState<string | null | undefined>(null)
   const [selectedType, setSelectedType] = useState<string | null | undefined>(null)
+  const [selectedCurrency, setSelectedCurrency] = useState<string>('USD')
 
   // // Selected year handler
   // const handleSelectedYear = (value: string) => {
@@ -112,11 +113,14 @@ const MapPage = () => {
         setSelectedYear={setSelectedYear}
         setSelectedCountry={setSelectedCountry}
         setSelectedType={setSelectedType}
+        selectedCurrency={selectedCurrency}
+        setSelectedCurrency={setSelectedCurrency}
       />
       <div className='relative w-full h-[calc(100vh-56px)]'>
         <Map
           viewByBudget={viewByBudget}
           selectedCountry={selectedCountry}
+          selectedYear={selectedYear}
         />
       </div>
     </div>

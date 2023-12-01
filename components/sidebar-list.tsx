@@ -20,6 +20,7 @@ type Props = {
   setActiveActor: React.Dispatch<React.SetStateAction<ActorData | null | undefined>>
   activeProject: ProjectData | null | undefined
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
+  selectedCurrency: string
 }
 
 const SidebarList = ({
@@ -35,7 +36,8 @@ const SidebarList = ({
   activeActor,
   setActiveActor,
   activeProject,
-  setActiveProject
+  setActiveProject,
+  selectedCurrency
 }: Props) => {
 
   // Set active actor to selected list item
@@ -58,17 +60,19 @@ const SidebarList = ({
 
   const maxBeneficiaries = maxBy(projectsData, 'beneficiaryNum')?.beneficiaryNum || 0;
   const minBeneficiaries = minBy(projectsData, p => p.beneficiaryNum || Infinity)?.beneficiaryNum || 0;
-
+  console.log(selectedCurrency);
 
   return (
     <div className='flex flex-col overflow-x-auto'>
       {viewProjects && projectsData.map(project => {
-        const budget = (project.budget) ? '$' + formatNumberCommas(project.budget) : 'Unspecified'
+        const budgetCurrency = (selectedCurrency === 'EUR') ? project.budgetEUR : project.budgetUSD
+        const currencySymbol = (selectedCurrency === 'EUR') ? '€' : '$'
+        const budget = (budgetCurrency && currencySymbol) ? currencySymbol + formatNumberCommas(budgetCurrency) : 'Unspecified'
         const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(project.beneficiaryNum) : 'Unspecified'
-        // const colorBudget = project.budget ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
-        // const colorBeneficiaries = project.beneficiaryNum ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
-        const colorBudget = project.budget ? '#73B959' : '#B7B7B7'
-        const colorBeneficiaries = project.beneficiaryNum ? '#009ADB' : '#B7B7B7'
+        const colorBudget = project.budget ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
+        const colorBeneficiaries = project.beneficiaryNum ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
+        // const colorBudget = project.budget ? '#73B959' : '#B7B7B7'
+        // const colorBeneficiaries = project.beneficiaryNum ? '#009ADB' : '#B7B7B7'
         const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
         const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
 

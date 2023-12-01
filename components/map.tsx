@@ -9,6 +9,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 type Props = {
   viewByBudget: boolean
   selectedCountry: string | null | undefined
+  selectedYear: number | null | undefined
 }
 
 type HoverInfo = {
@@ -23,7 +24,8 @@ type HoverInfo = {
 
 function Map({
   viewByBudget,
-  selectedCountry
+  selectedCountry,
+  selectedYear,
 }: Props) {
   const [locationData, setLocationData] = useState<GeoJsonFeatureCollection | null>(null);
   const [hoverInfo, setHoverInfo] = useState<HoverInfo>(null);
@@ -63,6 +65,7 @@ function Map({
     const dataField = viewByBudget ? 'budgetEURLog' : 'beneficiaryNumLog';
     const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
+    console.log(selectedYear)
 
     return {
       id: 'point',
@@ -73,20 +76,93 @@ function Map({
           2, // Zoom level 2
           [
             'case',
-            ['!', ['to-boolean', selectedCountry]], 2, // If selectedCountry is null or undefined, show circle
-            // Condition to check if projectScale matches selectedCountry
-            ['==', ['get', 'country'], selectedCountry], 2, // If projectScale matches selectedCountry, show circle
-            0 // If false, set radius to 0 to hide circle
+            // Neither country nor year selected
+            ['all',
+              ['!', ['to-boolean', selectedCountry]], // selectedCountry is null or undefined
+              ["==", selectedYear, 0], // selectedCountry matches the country property
+            ], 2,
+
+            // Both country and year selected
+            [
+              'all',
+              // ['!', ['to-boolean', selectedCountry]], // Country selected
+              // ["!=", selectedYear, 0], // selectedYear is not 0 (or null)
+              ["==", ["typeof", ["get", "dateStart"]], "number"],
+              ["==", ["typeof", ["get", "dateEnd"]], "number"],
+              ['>=', ['get', 'dateStart'], selectedYear],
+              ['<=', ['get', 'dateEnd'], selectedYear],
+              ['!=', ['get', 'country'], null], // Ensure country exists
+              ['==', ['get', 'country'], selectedCountry],
+              // Then check if selectedCountry is null or matches the country property
+            ], 2, // Circle radius when both year and country conditions are met
+
+            // Only country selected
+            [
+              'all',
+              ["==", selectedYear, 0], // No year selected
+              ['!=', ['get', 'country'], null], // Ensure country exists
+              ['==', ['get', 'country'], selectedCountry],
+            ], 2, // Circle radius for only country selected
+
+            // Only year selected
+            [
+              'all',
+              ['!', ['to-boolean', selectedCountry]], // No country selected
+              ["==", ["typeof", ["get", "dateStart"]], "number"],
+              ["==", ["typeof", ["get", "dateEnd"]], "number"],
+              ['>=', selectedYear, ['get', 'dateStart']],
+              ['<=', selectedYear, ['get', 'dateEnd']],
+            ], 2, // Circle radius for only year selected
+
+            // Default case if none of the above conditions are met
+            0 // Set radius to 0 to hide circle
           ],
           8, // Zoom level 8
           [
             'case',
-            ['!', ['to-boolean', selectedCountry]], 6, // If selectedCountry is null or undefined, show circle
-            // Condition to check if projectScale matches selectedCountry
-            ['==', ['get', 'country'], selectedCountry], 6, // If projectScale matches selectedCountry, show circle
-            0 // If false, set radius to 0 to hide circle
+            // Neither country nor year selected
+            ['all',
+              ['!', ['to-boolean', selectedCountry]], // selectedCountry is null or undefined
+              ["==", selectedYear, 0], // selectedCountry matches the country property
+            ], 6,
+
+            // Both country and year selected
+            [
+              'all',
+              // ['!', ['to-boolean', selectedCountry]], // Country selected
+              // ["!=", selectedYear, 0], // selectedYear is not 0 (or null)
+              ["==", ["typeof", ["get", "dateStart"]], "number"],
+              ["==", ["typeof", ["get", "dateEnd"]], "number"],
+              ['>=', ['get', 'dateStart'], selectedYear],
+              ['<=', ['get', 'dateEnd'], selectedYear],
+              ['!=', ['get', 'country'], null], // Ensure country exists
+              ['==', ['get', 'country'], selectedCountry],
+              // Then check if selectedCountry is null or matches the country property
+            ], 6, // Circle radius when both year and country conditions are met
+
+            // Only country selected
+            [
+              'all',
+              ["==", selectedYear, 0], // No year selected
+              ['!=', ['get', 'country'], null], // Ensure country exists
+              ['==', ['get', 'country'], selectedCountry],
+            ], 6, // Circle radius for only country selected
+
+            // Only year selected
+            [
+              'all',
+              ['!', ['to-boolean', selectedCountry]], // No country selected
+              ["==", ["typeof", ["get", "dateStart"]], "number"],
+              ["==", ["typeof", ["get", "dateEnd"]], "number"],
+              ['>=', selectedYear, ['get', 'dateStart']],
+              ['<=', selectedYear, ['get', 'dateEnd']],
+            ], 6, // Circle radius for only year selected
+
+            // Default case if none of the above conditions are met
+            0 // Set radius to 0 to hide circle
           ],
         ],
+
         'circle-color': [
           'case',
           ['==', ['get', dataField], null],
@@ -100,7 +176,7 @@ function Map({
         ],
       },
     };
-  }, [viewByBudget, selectedCountry, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);
+  }, [viewByBudget, selectedCountry, selectedYear, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);
 
   const onHover = useCallback((event: any) => {
     const features = event.features;

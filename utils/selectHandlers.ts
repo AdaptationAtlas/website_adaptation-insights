@@ -1,6 +1,6 @@
 // Function to handle year selection
 export const handleSelectedYear = (setSelectedYear: any) => (value: string) => {
-  const selected = (value === 'all') ? null : parseInt(value)
+  const selected = (value === 'all') ? 0 : parseInt(value)
   setSelectedYear(selected)
 }
 
@@ -14,4 +14,10 @@ export const handleSelectedCountry = (setSelectedCountry: any) => (value: string
 export const handleSelectedType = (setSelectedType: any) => (value: string) => {
   const selected = (value === 'all') ? null : value
   setSelectedType(selected)
+}
+
+// Function to handle currency selection
+export const handleSelectedCurrency = (setSelectedCurrency: any) => (value: string) => {
+  const selected = (value === 'USD') ? 'USD' : value
+  setSelectedCurrency(selected)
 }

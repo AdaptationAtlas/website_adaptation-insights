@@ -24,6 +24,8 @@ type Props = {
   setSelectedYear: React.Dispatch<React.SetStateAction<number | null | undefined>>
   setSelectedCountry: React.Dispatch<React.SetStateAction<string | null | undefined>>
   setSelectedType: React.Dispatch<React.SetStateAction<string | null | undefined>>
+  selectedCurrency: string
+  setSelectedCurrency: React.Dispatch<React.SetStateAction<string>>
 }
 
 const Sidebar = ({
@@ -43,6 +45,8 @@ const Sidebar = ({
   setSelectedYear,
   setSelectedCountry,
   setSelectedType,
+  selectedCurrency,
+  setSelectedCurrency,
 }: Props) => {
   // const router = useRouter()
   // const pathname = usePathname()
@@ -98,6 +102,8 @@ const Sidebar = ({
         setSelectedYear={setSelectedYear}
         setSelectedCountry={setSelectedCountry}
         setSelectedType={setSelectedType}
+        selectedCurrency={selectedCurrency}
+        setSelectedCurrency={setSelectedCurrency}
       />
       <SidebarDetail
         actorsData={actorsData}
