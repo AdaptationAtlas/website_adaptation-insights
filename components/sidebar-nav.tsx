@@ -38,6 +38,7 @@ type Props = {
   setSelectedType: React.Dispatch<React.SetStateAction<string | null | undefined>>
   selectedCurrency: string
   setSelectedCurrency: React.Dispatch<React.SetStateAction<string>>
+  selectedType: string | null | undefined
 }
 
 const SidebarNav = ({
@@ -63,6 +64,7 @@ const SidebarNav = ({
   setSelectedType,
   selectedCurrency,
   setSelectedCurrency,
+  selectedType,
 }: Props) => {
 
   // Store actor and project totals
@@ -217,6 +219,7 @@ const SidebarNav = ({
           activeProject={activeProject}
           setActiveProject={setActiveProject}
           selectedCurrency={selectedCurrency}
+          selectedType={selectedType}
         />
       </div>
     </div>

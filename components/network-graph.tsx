@@ -22,7 +22,7 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsData, projectsData, 
   const actorSize = 4
   const projectSize = 6
   const enableDrag = (type === 'detail') ? true : false
-  const cooldown = (type === 'detail') ? 15000 : 15000
+  const cooldown = (type === 'detail') ? 15000 : 1000
 
   // Custom node canvas object to style nodes
   const nodeCanvasObject = (node: any, ctx: any) => {
@@ -73,7 +73,7 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsData, projectsData, 
 
       // Set zoom to fit on list item thumbnails
       if (type === 'list' && forceGraphRef.current) {
-        setTimeout(() => fg.zoomToFit(400, 20), 500); // Adjust the numbers as needed
+        setTimeout(() => fg.zoomToFit(250, 21), 1000); // Adjust the numbers as needed
       }
     }
     

@@ -1,10 +1,11 @@
-import Link from 'next/link'
+import React, { useState, useEffect } from 'react';
 import { formatNumberCommas } from '@/lib/utils'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
 import { colorRange } from '@/utils/color'
 import { minBy, maxBy } from 'lodash'
 import classNames from 'classnames'
+import Spinner from './ui/spinner'
 
 type Props = {
   viewProjects: boolean
@@ -21,6 +22,7 @@ type Props = {
   activeProject: ProjectData | null | undefined
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
   selectedCurrency: string
+  selectedType: string | null | undefined
 }
 
 const SidebarList = ({
@@ -37,8 +39,23 @@ const SidebarList = ({
   setActiveActor,
   activeProject,
   setActiveProject,
-  selectedCurrency
+  selectedCurrency,
+  selectedType,
 }: Props) => {
+  // State to track loading of network graphs
+  const [isGraphLoading, setIsGraphLoading] = useState(true);
+
+  // Handle the loading state of the graphs
+  useEffect(() => {
+    setIsGraphLoading(true);
+    // Set a timeout to change the loading state after 1500 milliseconds
+    const timeout = setTimeout(() => {
+      setIsGraphLoading(false);
+    }, 1500);
+
+    // Cleanup the timeout when component unmounts
+    return () => clearTimeout(timeout);
+  }, [viewProjects, viewByBudget, selectedType]); // Change loading state when panel state changes
 
   // Set active actor to selected list item
   const handleActorSelect = (actor: ActorData) => {
@@ -144,15 +161,20 @@ const SidebarList = ({
                   <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
-                  <NetworkGraph
-                    actorCode={actor.actorCode}
-                    networksData={networksData}
-                    actorsData={actorsData}
-                    projectsData={projectsData}
-                    width={132}
-                    height={132}
-                    type={'list'}
-                  />
+                  <div className='relative h-[132px] w-[132px]'>
+                    <div className={`${isGraphLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-500'}`}>
+                      <NetworkGraph
+                        actorCode={actor.actorCode}
+                        networksData={networksData}
+                        actorsData={actorsData}
+                        projectsData={projectsData}
+                        width={132}
+                        height={132}
+                        type={'list'}
+                      />
+                    </div>
+                    <div className={`absolute top-0 left-0 h-full w-full bg-pink flex justify-center items-center transition-opacity duration-100 ${isGraphLoading ? 'opacity-100' : 'opacity-0'}`}><Spinner /></div>
+                  </div>
                 }
               </div>
             }
@@ -163,15 +185,20 @@ const SidebarList = ({
                   <h2 className='text-lg font-bold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
-                  <NetworkGraph
-                    actorCode={actor.actorCode}
-                    networksData={networksData}
-                    actorsData={actorsData}
-                    projectsData={projectsData}
-                    width={132}
-                    height={132}
-                    type={'list'}
-                  />
+                  <div className='relative h-[132px] w-[132px]'>
+                    <div className={`${isGraphLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-500'}`}>
+                      <NetworkGraph
+                        actorCode={actor.actorCode}
+                        networksData={networksData}
+                        actorsData={actorsData}
+                        projectsData={projectsData}
+                        width={132}
+                        height={132}
+                        type={'list'}
+                      />
+                    </div>
+                    <div className={`absolute top-0 left-0 h-full w-full bg-pink flex justify-center items-center transition-opacity duration-100 ${isGraphLoading ? 'opacity-100' : 'opacity-0'}`}><Spinner /></div>
+                  </div>
                 }
               </div>
             }
