@@ -6,6 +6,7 @@ import Map from '@/components/map'
 import { orderBy } from 'lodash'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { fetchData, sortActors, sortProjects, filterByYear, filterByCountry, filterByType } from '@/lib/api'
+import MapLegend from '@/components/map-legend'
 
 // type Props = {
 //   params: { catchAll: string[] }
@@ -121,6 +122,10 @@ const MapPage = () => {
           viewByBudget={viewByBudget}
           selectedCountry={selectedCountry}
           selectedYear={selectedYear}
+        />
+        <MapLegend
+          viewByBudget={viewByBudget}
+          selectedCurrency={selectedCurrency}
         />
       </div>
     </div>

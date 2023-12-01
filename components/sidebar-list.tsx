@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { formatNumberCommas } from '@/lib/utils'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
-import { interpolateColor } from '@/utils/color'
+import { colorRange } from '@/utils/color'
 import { minBy, maxBy } from 'lodash'
 import classNames from 'classnames'
 
@@ -54,25 +54,45 @@ const SidebarList = ({
     setActiveProject(project)
   }
 
-  // Assuming projectsData is an array of projects
-  const maxBudget = maxBy(projectsData, 'budget')?.budget || 0;
-  const minBudget = minBy(projectsData, p => p.budget || Infinity)?.budget || 0;
+  // Generate color stops for colorRange function
 
-  const maxBeneficiaries = maxBy(projectsData, 'beneficiaryNum')?.beneficiaryNum || 0;
-  const minBeneficiaries = minBy(projectsData, p => p.beneficiaryNum || Infinity)?.beneficiaryNum || 0;
-  console.log(selectedCurrency);
+  // Helper function to calculate logarithm with base 10
+  const log10 = (value: number) => Math.log10(value || 1)
+
+  // Function to generate logarithmic buckets
+  const generateLogarithmicBuckets = (minValue: number, maxValue: number, numBuckets: number) => {
+    const logMin = log10(minValue)
+    const logMax = log10(maxValue)
+    const step = (logMax - logMin) / (numBuckets - 1)
+
+    const buckets = []
+    for (let i = 0; i < numBuckets; i++) {
+      buckets.push(Math.pow(10, logMin + step * i))
+    }
+    return buckets
+  }
+
+  // Assuming projectsData is an array of projects
+  const maxBudget = maxBy(projectsData, 'budget')?.budget || 1 // Ensure non-zero
+  const minBudget = minBy(projectsData, p => p.budget || Infinity)?.budget || 1
+
+  const maxBeneficiaries = maxBy(projectsData, 'beneficiaryNum')?.beneficiaryNum || 1
+  const minBeneficiaries = minBy(projectsData, p => p.beneficiaryNum || Infinity)?.beneficiaryNum || 1
+
+  // Generate buckets
+  const budgetBuckets = generateLogarithmicBuckets(minBudget, maxBudget, 5)
+  const beneficiariesBuckets = generateLogarithmicBuckets(minBeneficiaries, maxBeneficiaries, 5)
+  const bucketColors = ['#73BA5A', '#6EB17C', '#62A99D', '#4BA2BD', '#019BDC']
 
   return (
     <div className='flex flex-col overflow-x-auto'>
       {viewProjects && projectsData.map(project => {
         const budgetCurrency = (selectedCurrency === 'EUR') ? project.budgetEUR : project.budgetUSD
         const currencySymbol = (selectedCurrency === 'EUR') ? '€' : '$'
-        const budget = (budgetCurrency && currencySymbol) ? currencySymbol + formatNumberCommas(budgetCurrency) : 'Unspecified'
-        const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(project.beneficiaryNum) : 'Unspecified'
-        const colorBudget = project.budget ? interpolateColor(project.budget, minBudget, maxBudget, '#73B959', '#009ADB', true) : '#B7B7B7'
-        const colorBeneficiaries = project.beneficiaryNum ? interpolateColor(project.beneficiaryNum, minBeneficiaries, maxBeneficiaries, '#73B959', '#009ADB', true) : '#B7B7B7'
-        // const colorBudget = project.budget ? '#73B959' : '#B7B7B7'
-        // const colorBeneficiaries = project.beneficiaryNum ? '#009ADB' : '#B7B7B7'
+        const budget = (budgetCurrency && currencySymbol) ? currencySymbol + formatNumberCommas(Math.round(budgetCurrency)) : 'Unspecified'
+        const beneficiaries = (project.beneficiaryNum) ? formatNumberCommas(Math.round(project.beneficiaryNum)) : 'Unspecified'
+        const colorBudget = project.budget ? colorRange(project.budget, budgetBuckets, bucketColors) : '#B7B7B7'
+        const colorBeneficiaries = project.beneficiaryNum ? colorRange(project.beneficiaryNum, beneficiariesBuckets, bucketColors) : '#B7B7B7'
         const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
         const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
 
@@ -103,8 +123,8 @@ const SidebarList = ({
         )
       })}
       {!viewProjects && actorsData.map((actor, index) => {
-        const budget = (actor.totalBudget) ? '$' + formatNumberCommas(actor.totalBudget) : 'Unspecified'
-        const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(actor.totalBeneficiaries) : 'Unspecified'
+        const budget = (actor.totalBudget) ? '$' + formatNumberCommas(Math.round(actor.totalBudget)) : 'Unspecified'
+        const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(Math.round(actor.totalBeneficiaries)) : 'Unspecified'
         const maxWidth = (index < 10) ? 'max-w-[230px]' : 'max-w-[430px]'
 
         return (

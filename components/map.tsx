@@ -56,6 +56,8 @@ function Map({
       .catch(err => console.error('Could not load data', err));
   }, []);
 
+
+
   const data = useMemo(() => {
     return locationData;
   }, [locationData]);
@@ -65,7 +67,9 @@ function Map({
     const dataField = viewByBudget ? 'budgetEURLog' : 'beneficiaryNumLog';
     const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
-    console.log(selectedYear)
+
+    const bucketColors = ['#73BA5A', '#6EB17C', '#62A99D', '#4BA2BD', '#019BDC']
+    const bucketSteps = (viewByBudget) ? [100000, 500000, 1000000, 5000000, 10000000] : [100000, 500000, 1000000, 5000000, 10000000]
 
     return {
       id: 'point',
@@ -174,6 +178,15 @@ function Map({
             maxDataValue, '#009ADB',
           ]
         ],
+        // 'circle-color': [
+        //   'step',
+        //   ['get', dataField],
+        //   bucketColors[0], bucketSteps[0], // First color and step
+        //   bucketColors[1], bucketSteps[1], // Second color and step
+        //   bucketColors[2], bucketSteps[2], // Third color and step
+        //   bucketColors[3], bucketSteps[3], // Fourth color and step
+        //   bucketColors[4], bucketSteps[4]  // Fifth color and step
+        // ]
       },
     };
   }, [viewByBudget, selectedCountry, selectedYear, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);
