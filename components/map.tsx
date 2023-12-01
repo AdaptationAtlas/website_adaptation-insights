@@ -56,8 +56,6 @@ function Map({
       .catch(err => console.error('Could not load data', err));
   }, []);
 
-
-
   const data = useMemo(() => {
     return locationData;
   }, [locationData]);
@@ -68,8 +66,26 @@ function Map({
     const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
 
-    const bucketColors = ['#73BA5A', '#6EB17C', '#62A99D', '#4BA2BD', '#019BDC']
-    const bucketSteps = (viewByBudget) ? [100000, 500000, 1000000, 5000000, 10000000] : [100000, 500000, 1000000, 5000000, 10000000]
+    const bucketColors = ['#94D851', '#74CB6C', '#31C6AD', '#29B5D4', '#2290DF']
+
+    // Function to generate the steps for the 'step' expression in Mapbox
+    const generateColorSteps = (minValue: number | null | undefined, maxValue: number | null | undefined, colors: string[]) => {
+      const steps = [];
+
+      if (minValue && maxValue) {
+        const numSteps = colors.length;
+        const stepSize = (maxValue - minValue) / (numSteps - 1);
+
+        for (let i = 0; i < numSteps; i++) {
+          const value = minValue + stepSize * i;
+          steps.push(value, colors[i]);
+        }
+      }
+
+      return steps;
+    };
+
+    const colorSteps = generateColorSteps(minDataValue, maxDataValue, bucketColors);
 
     return {
       id: 'point',
@@ -167,26 +183,29 @@ function Map({
           ],
         ],
 
+        // 'circle-color': [
+        //   'case',
+        //   ['==', ['get', dataField], null],
+        //   '#636363', // Color for null values
+        //   ['interpolate',
+        //     ['linear'],
+        //     ['get', dataField],
+        //     minDataValue, '#73B959',
+        //     maxDataValue, '#009ADB',
+        //   ]
+        // ],
         'circle-color': [
           'case',
-          ['==', ['get', dataField], null],
-          '#636363', // Color for null values
-          ['interpolate',
-            ['linear'],
+          ['==', ['get', dataField], null], // Check if the dataField is null
+          '#636363', // Default color if dataField is null
+          // If dataField is not null, apply the step expression
+          ['step',
             ['get', dataField],
-            minDataValue, '#73B959',
-            maxDataValue, '#009ADB',
+            '#636363', // Default color for the lowest range (you can adjust this if needed)
+            ...colorSteps
           ]
-        ],
-        // 'circle-color': [
-        //   'step',
-        //   ['get', dataField],
-        //   bucketColors[0], bucketSteps[0], // First color and step
-        //   bucketColors[1], bucketSteps[1], // Second color and step
-        //   bucketColors[2], bucketSteps[2], // Third color and step
-        //   bucketColors[3], bucketSteps[3], // Fourth color and step
-        //   bucketColors[4], bucketSteps[4]  // Fifth color and step
-        // ]
+        ]
+
       },
     };
   }, [viewByBudget, selectedCountry, selectedYear, minBudgetLog, maxBudgetLog, minBeneficiariesLog, maxBeneficiariesLog]);

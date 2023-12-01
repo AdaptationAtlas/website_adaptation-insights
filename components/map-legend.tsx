@@ -10,11 +10,11 @@ const MapLegend = ({ viewByBudget, selectedCurrency }: Props) => {
   const bucketColors = ['bg-bucket-100', 'bg-bucket-200', 'bg-bucket-300', 'bg-bucket-400', 'bg-bucket-500']
 
   return (
-    <div className='absolute w-[280px] z-50 right-3 bottom-7 p-3 pb-2 bg-off-white'>
+    <div className='absolute w-[250px] z-50 right-3 bottom-7 p-3 pb-2 bg-off-white'>
       <h1 className='text-sm uppercase mb-3'>{title}</h1>
       <div className='flex items-center justify-between mb-1'>
         {bucketColors && bucketColors.map((color) => (
-          <i key={color} className={`${color} block w-1/5 h-5`}></i>
+          <i key={color} className={`${color} block w-1/5 h-3`}></i>
         ))}
       </div>
       {(viewByBudget && selectedCurrency && selectedCurrency === 'USD') &&
