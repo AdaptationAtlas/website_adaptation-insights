@@ -20,8 +20,8 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'image',
-      title: 'Headshot',
+      name: 'heroImage',
+      title: 'About page hero image',
       type: 'image',
       options: {
         hotspot: true,
@@ -33,11 +33,6 @@ export default defineType({
           type: 'string',
         }
       ]
-    }),
-    defineField({
-      name: 'bio',
-      title: 'Bio',
-      type: 'text',
     }),
   ],
 })

@@ -74,3 +74,20 @@ export async function getHomeContent(slug: string): Promise<Home> {
     }`
   )
 }
+
+// Function for getting the about page content
+export async function getAboutContent(slug: string): Promise<Home> {
+  const client = createClient({
+    projectId,
+    dataset,
+    apiVersion
+  });
+
+  // Use groq to query the database
+  return client.fetch(
+    groq`*[_type == "about" && _id == "about"][0] {
+      title,
+      'heroImage': heroImage.asset->url
+    }`
+  )
+}

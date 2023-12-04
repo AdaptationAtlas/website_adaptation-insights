@@ -38,11 +38,16 @@ const Menu = () => {
               'text-white text-4xl bold uppercase tracking-wide',
               'transition duration-300 delay-[100ms] ease-in-out',
             )}><Link onClick={handleToggleMenu} href='/projects'>Projects</Link></li>
+            {/* <li className={cn(
+              menuListClass,
+              'text-white text-4xl bold uppercase tracking-wide',
+              'transition duration-300 delay-[150ms] ease-in-out',
+            )}><Link onClick={handleToggleMenu} href='/tools'>Our tools</Link></li> */}
             <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
               'transition duration-300 delay-[150ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/tools'>Our tools</Link></li>
+            )}>Our tools</li>
             <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
