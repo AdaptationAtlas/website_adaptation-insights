@@ -40,7 +40,7 @@ export default async function Home() {
         </div>
 
         <div className='px-[100px]'>
-          <p className='text-4xl font-bold leading-normal max-w-[900px] mb-20 mt-20'>{homeContent.introText}</p>
+          <p className='text-4xl font-bold leading-normal max-w-[960px] mb-20 mt-20'>{homeContent.introText}</p>
           <p className='text-lg uppercase mb-5'>Choose an area to explore</p>
         </div>
 
