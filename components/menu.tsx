@@ -26,8 +26,8 @@ const Menu = () => {
           'fixed top-0 right-0 bottom-0 left-0 bg-brand-green transition duration-400',
         )}
       >
-        <div className='flex items-center justify-center transition-opacity duration-300 ease-in-out h-full w-full absolute top-0'>
-          <ul className='flex flex-col gap-14'>
+        <div className='flex items-center transition-opacity duration-300 ease-in-out h-full w-full absolute top-0'>
+          <ul className='flex flex-col gap-14 ml-[300px]'>
             <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
@@ -47,7 +47,7 @@ const Menu = () => {
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
               'transition duration-300 delay-[150ms] ease-in-out',
-            )}>Our tools</li>
+            )}>Tools</li>
             <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
@@ -69,7 +69,7 @@ const Menu = () => {
         <div className='fixed right-0 bottom-0 left-0 z-50'>
           {/* TODO - replace with footer component - pass prop for dark or light */}
           <footer className='flex justify-between w-full p-5 text-white'>
-            <p>© 2023 CGIAR</p>
+            <p>©2023 AAA & CGIAR</p>
             <p>Share</p>
           </footer>
         </div>
