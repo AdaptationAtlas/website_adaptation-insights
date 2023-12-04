@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useRouter, usePathname } from 'next/navigation'
 import cn from 'classnames'
+import Menu from './menu'
 
 const Header = () => {
   // const router = useRouter()
@@ -21,17 +22,13 @@ const Header = () => {
       {/* Don't render site logo on homepage */}
       {!isHome && (
         <Link href='/'>
-          <h1 className='text-brand-green text-lg font-semibold uppercase transition-colors'>
+          <h1 className='text-brand-green text-lg font-semibold uppercase ml-10'>
             African Agriculture Adaptation Tracking Tool
           </h1>
         </Link>
       )}
 
-      <div className="flex items-center gap-5 text-md text-black">
-        <Link href='/projects' className="hover:underline">Projects</Link>
-        <Link href='/partners' className="hover:underline">Partners</Link>
-        <Link href='/about' className="hover:underline">About</Link>
-      </div>
+      <Menu />
     </header>
   )
 }
