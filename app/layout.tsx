@@ -5,8 +5,8 @@ import { Open_Sans } from 'next/font/google'
 const inter = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'The African Agriculture Adaptation Tracking Tool',
-  description: 'Lorem ipsum dolor sit amet',
+  title: 'African Agriculture Adaptation Tracking Tool',
+  description: 'Explore the work being done to adapt to climate change in Africa',
 }
 
 export default function RootLayout({

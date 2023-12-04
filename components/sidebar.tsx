@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import SidebarNav from '@/components/sidebar-nav'
 import SidebarDetail from '@/components/sidebar-detail'
-// import { useRouter, usePathname } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { orderBy } from 'lodash'
 
@@ -50,7 +50,7 @@ const Sidebar = ({
   setSelectedCurrency,
   selectedType,
 }: Props) => {
-  // const router = useRouter()
+  const router = useRouter()
   // const pathname = usePathname()
   const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
   const [viewProjectsDetail, setViewProjectsDetail] = useState<boolean>(false)
@@ -58,22 +58,10 @@ const Sidebar = ({
   // Reference: How to make Radix UI Tabs URL based in NextJS
   // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
   // TODO - consider using query parameters here to test for performance
-  // TODO - try using next/router for better performance (what's the difference?)
-  // TODO - implement project/partner routing with entity deep links
-
-  // const handleSwitchToggle = (checked: boolean) => {
-  //   const view = checked ? '/projects' : '/partners';
-  //   setViewProjects(checked)
-  //   router.push(view)
-  // }
-
-  // // if the query parameter changes, update the state
-  // useEffect(() => {
-  //   const view = (pathname == '/projects') ? true : false;
-  //   setViewProjects(view)
-  // }, [pathname])
 
   const handleSwitchToggle = (checked: boolean) => {
+    // const view = checked ? '/projects' : '/partners'; // determine updated view
+    // router.push(view) // push updated view to router
     setViewProjects(checked)
     setDetailPanelActive(false)
     // TODO - add a set timeout to account for panel transition
