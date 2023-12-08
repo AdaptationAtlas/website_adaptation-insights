@@ -6,6 +6,7 @@ import { ActorData, ProjectData } from '@/types/sidebar.types'
 import { find, filter } from 'lodash'
 import { formatNumberCommas } from '@/lib/utils'
 import { currentYear } from '@/utils/time'
+import { getActor, getActorName } from '@/utils/data-helpers'
 
 type Props = {
   viewProjects: boolean
@@ -43,18 +44,6 @@ const SidebarDetailProject = ({
 
   // Store active project for quick reference
   const project = activeProject
-
-  // Utility function to look up project based on projectCode
-  const getProject = (projectCode: string) => {
-    const project = find(projectsRawData, { 'projectCode': projectCode })
-    return project
-  }
-
-  // Utility function to look up actor based on actorCode
-  const getActor = (actorCode: string) => {
-    const actor = find(actorsRawData, { 'actorCode': actorCode })
-    return actor
-  }
 
   // Store project data
   const projectName = project?.projectName
@@ -234,8 +223,8 @@ const SidebarDetailProject = ({
               <h3 className='text-sm font-semibold uppercase mb-1'>{primaryPartnerCount} project {getPartnerPlural(primaryPartnerCount)}</h3>
               <ul>
                 {primaryPartners && primaryPartners.map((partner) => {
-                  const actor = getActor(partner.actorCode)
-                  return <li key={partner.actorCode} className='mb-1 cursor-pointer' onClick={() => handleActorSelect(actor)}>{getActor(partner.actorCode)?.name}</li>
+                  const actor = getActor(partner.actorCode, actorsRawData)
+                  return <li key={partner.actorCode} className='mb-1 cursor-pointer' onClick={() => handleActorSelect(actor)}>{getActorName(partner.actorCode, actorsRawData)}</li>
                 })}
               </ul>
             </div>
@@ -246,7 +235,7 @@ const SidebarDetailProject = ({
               <h3 className='text-sm font-semibold uppercase mb-1'>{fundingPartnerCount} funding {getPartnerPlural(fundingPartnerCount)}</h3>
               <ul>
                 {fundingPartners && fundingPartners.map((partner) => (
-                  <li key={partner.actorCode} className='mb-1'>{getActor(partner.actorCode)?.name}</li>
+                  <li key={partner.actorCode} className='mb-1'>{getActorName(partner.actorCode, actorsRawData)}</li>
                 ))}
               </ul>
             </div>
@@ -257,7 +246,7 @@ const SidebarDetailProject = ({
               <h3 className='text-sm font-semibold uppercase mb-1'>{implementationPartnerCount} implementation {getPartnerPlural(implementationPartnerCount)}</h3>
               <ul>
                 {implementationPartners && implementationPartners.map((partner) => (
-                  <li key={partner.actorCode} className='mb-1'>{getActor(partner.actorCode)?.name}</li>
+                  <li key={partner.actorCode} className='mb-1'>{getActorName(partner.actorCode, actorsRawData)}</li>
                 ))}
               </ul>
             </div>

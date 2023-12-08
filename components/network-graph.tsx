@@ -1,9 +1,10 @@
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
-import React, { useRef, useEffect, memo, useCallback } from 'react'
+import React, { useRef, useEffect, memo, useMemo, useCallback, useState } from 'react'
 import ForceGraph2D from 'react-force-graph-2d'
 import { find, cloneDeep } from 'lodash'
 import cn from 'classnames'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { getProjectName, getActorName } from '@/utils/data-helpers'
 
 type Props = {
   actorCode: string
@@ -13,11 +14,11 @@ type Props = {
   width: number
   height: number
   type: string
+  detailPanelRef: React.RefObject<HTMLDivElement>
 }
 
-const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRawData, width, height, type }: Props) => {
+const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRawData, width, height, type, detailPanelRef }: Props) => {
 
-  // TODO - only apply the tooltip on detail panel graphs, not list graphs
   // TODO - add a hover state to the nodes - update border color
 
   const rootColor = '#387B94'
@@ -28,12 +29,16 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   const projectSize = 6
   const cooldown = (type === 'detail') ? 15000 : 1000
   const displayTooltip = (type === 'detail') ? true : false
-  const tooltipRef = useRef<any>(null)
-  const tooltipHeaderRef = useRef<any>(null)
-  const tooltipSubheadRef = useRef<any>(null)
+  // const tooltipRef = useRef<any>(null)
+  // const tooltipHeaderRef = useRef<any>(null)
+  // const tooltipSubheadRef = useRef<any>(null)
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()!
+  const [tooltipContent, setTooltipContent] = useState({ title: '', subtitle: '', group: '', visible: false });
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+  const [tooltipHeight, setTooltipHeight] = useState(0)
+  const tooltipRef = useRef<HTMLDivElement>(null)
 
   // Get a new searchParams string by merging the current
   // searchParams with a provided key/value pair
@@ -41,50 +46,27 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
     (name: string, value: string) => {
       const params = new URLSearchParams(searchParams)
       params.set(name, value)
- 
+
       return params.toString()
     },
     [searchParams]
   )
 
-  // TODO - move this to utils
-  const getProjectName = (projectCode: string) => {
-    const project = find(projectsRawData, { 'projectCode': projectCode })
-    return project?.projectName;
-  }
-
-  // TODO - move this to utils
-  const getActorName = (actorCode: string) => {
-    const actor = find(actorsRawData, { 'actorCode': actorCode })
-    return actor?.name;
-  }
-
-  const handleNodeClick = (node: any) => {
-    // Use nextjs router to handle node navigation
-    router.push(pathname + '?' + createQueryString('project', node.id))
-  }
+  const handleNodeClick = useCallback((node: any) => {
+    router.push(pathname + '?' + createQueryString('project', node.id));
+  }, [router, pathname, createQueryString]);
 
   // Handle node hover
-  const handleNodeHover = (node: any) => {
+  const handleNodeHover = useCallback((node: any) => {
+    console.log(node)
     if (node) {
-      const headerTitle = (node.group === 'project') ? getProjectName(node.id) : getActorName(node.id)
-      const subheadTitle = (node.group === 'project') ? 'Project' : 'Partner'
-      const subheadColor = (node.group === 'project') ? '#DFA524' : '#D3412A'
-      // Update tooltip content and styling
-      if (tooltipHeaderRef.current) {
-        tooltipHeaderRef.current.textContent = `${headerTitle}`;
-      }
-      if (tooltipSubheadRef.current) {
-        tooltipSubheadRef.current.textContent = `${subheadTitle}`;
-        tooltipSubheadRef.current.style.color = subheadColor;
-      }
-      if (tooltipRef.current) {
-        tooltipRef.current.style.opacity = 1;
-      }
-    } else if (tooltipRef.current) {
-      tooltipRef.current.style.opacity = 0
+      const headerTitle = (node.group === 'project') ? getProjectName(node.id, projectsRawData) : getActorName(node.id, actorsRawData)
+      const subheadTitle = (node.group === 'project') ? 'Project' : 'Partner';
+      setTooltipContent({ title: headerTitle, subtitle: subheadTitle, group: node.group, visible: true });
+    } else {
+      setTooltipContent({ ...tooltipContent, visible: false });
     }
-  }
+  }, [actorsRawData, projectsRawData, tooltipContent]);
 
 
   // Custom node canvas object to style nodes
@@ -103,15 +85,15 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
     ctx.stroke()
   }
 
-  // Utility function to look up project based on projectCode
-  const getNetwork = (actorCode: string) => {
-    const network = find(networksData, { 'actorCode': actorCode })
-    return network
-  }
-
-  // Get the network based on the actor code prop
-  const networkData = getNetwork(actorCode)
-  const data = cloneDeep(networkData?.network) // Create a deep copy of the data
+  const processedNetworkData = useMemo(() => {
+    // Utility function to look up project based on projectCode
+    const getNetwork = (actorCode: string) => {
+      const network = find(networksData, { 'actorCode': actorCode })
+      return network
+    }
+    const network = getNetwork(actorCode);
+    return cloneDeep(network?.network);
+  }, [actorCode, networksData]);
 
   const forceGraphRef = useRef() // Ref to access the force graph instance
 
@@ -141,29 +123,46 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
   }, [type, forceGraphRef]) // Run only once after initial render
 
-  // Tooltip follows the cursor
+  // Measure tooltip height
+  useEffect(() => {
+    if (tooltipRef.current) {
+      const tooltipHeight = tooltipRef.current.offsetHeight;
+      // Save the tooltip height in the state or a ref
+      setTooltipHeight(tooltipHeight);
+    }
+  }, [tooltipContent]);
+
+  // Handle mouse move logic
   useEffect(() => {
     const handleMouseMove = (event: any) => {
-      if (tooltipRef.current) {
-        const offsetX = -530
-        const offsetY = -300
-        tooltipRef.current.style.left = `${event.clientX + offsetX}px`
-        tooltipRef.current.style.top = `${event.clientY + offsetY}px`
-      }
-    }
+      const offsetX = -515; // Adjust as needed
+  
+        // Offset Y to position the tooltip above the cursor
+        // Use the tooltipHeight to adjust the position above the cursor
+        const offsetY = -70 - tooltipHeight; // Adjust the base offset as needed
+  
+        const scrollX = detailPanelRef?.current?.scrollLeft;
+        const scrollY = detailPanelRef?.current?.scrollTop;
+  
+        const relativeX = event.clientX + scrollX + offsetX;
+        const relativeY = event.clientY + scrollY + offsetY;
+  
+        setTooltipPosition({ x: relativeX, y: relativeY });
+    };
+  
+    document.addEventListener('mousemove', handleMouseMove);
+    return () => document.removeEventListener('mousemove', handleMouseMove);
+  }, [tooltipContent.visible, detailPanelRef, tooltipHeight]); // Add tooltipHeight as a dependency
+  
 
-    document.addEventListener('mousemove', handleMouseMove)
 
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
+
 
   return (
     <div className='relative'>
       <ForceGraph2D
         ref={forceGraphRef}
-        graphData={data}
+        graphData={processedNetworkData}
         width={width}
         height={height}
         enablePanInteraction={false}
@@ -174,16 +173,29 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
         onNodeHover={handleNodeHover}
         onNodeClick={handleNodeClick}
       />
-      {displayTooltip &&
-        <div ref={tooltipRef}
+
+      {displayTooltip && (
+        <div
           className={cn(
-            'absolute z-[999] w-[200px] p-4 rounded-[3px] pointer-events-none bg-white border shadow opacity-0',
-            'transition-opacity duration-150 delay-150'
-          )}>
-            <h2 ref={tooltipSubheadRef} className='text-xs font-medium text-brand-burgundy mb-2'></h2>
-            <h1 ref={tooltipHeaderRef} className='text-base font-medium'></h1>
+            'fixed z-[999] w-[200px] p-4 rounded-[3px] pointer-events-none bg-white border shadow',
+            'transition-opacity duration-300',
+            { 'opacity-0 delay-300': !tooltipContent.visible, 'opacity-100': tooltipContent.visible }
+          )}
+          style={{ left: tooltipPosition.x, top: tooltipPosition.y }}
+          ref={tooltipRef}
+        >
+          <h2 className={cn(
+            'text-xs font-medium mb-2',
+            {
+              'text-brand-teal': tooltipContent.group === 'root',
+              'text-brand-dark-gold': tooltipContent.group === 'project',
+              'text-brand-dark-red': tooltipContent.group === 'actor'
+            }
+          )}>{tooltipContent.subtitle}</h2>
+          <h1 className='text-base font-medium'>{tooltipContent.title}</h1>
         </div>
-      }
+      )}
+
     </div>
   )
 })

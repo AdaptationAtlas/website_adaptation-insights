@@ -100,6 +100,7 @@ const SidebarDetail = ({
           activeProject={activeProject}
           setActiveProject={setActiveProject}
           scrollToTop={scrollToTop}
+          detailPanelRef={detailPanelRef}
         />
       }
       {viewProjectsDetail &&

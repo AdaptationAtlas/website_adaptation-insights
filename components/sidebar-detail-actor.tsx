@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import { find } from 'lodash'
 import NetworkGraph from './network-graph'
+import { getActor, getProject } from '@/utils/data-helpers'
 
 type Props = {
   viewProjects: boolean
@@ -23,6 +24,7 @@ type Props = {
   activeProject: ProjectData | null | undefined
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
   scrollToTop: () => void
+  detailPanelRef: React.RefObject<HTMLDivElement>
 }
 
 const SidebarDetailActor = ({
@@ -42,21 +44,8 @@ const SidebarDetailActor = ({
   activeProject,
   setActiveProject,
   scrollToTop,
+  detailPanelRef,
 }: Props) => {
-
-  // Utility function to look up project based on projectCode
-  // TODO - move this to utils
-  const getProject = (projectCode: string) => {
-    const project = find(projectsRawData, { 'projectCode': projectCode })
-    return project;
-  }
-
-  // Utility function to look up actor based on actorCode
-  // TODO - move this to utils
-  const getActor = (actorCode: string) => {
-    const actor = find(actorsRawData, { 'actorCode': actorCode })
-    return actor;
-  }
 
   // Store the active actor for quick reference
   const actor = activeActor
@@ -69,7 +58,7 @@ const SidebarDetailActor = ({
 
   // Parse the known network intro text
   const firstProjectCode = actor?.projects?.[0]?.projectCode;
-  const firstProjectData = firstProjectCode ? getProject(firstProjectCode) : null;
+  const firstProjectData = firstProjectCode ? getProject(firstProjectCode, projectsRawData) : null;
   const collabProjectText = projectCount && projectCount > 1
     ? `on ${projectCount} projects`
     : projectCount === 1
@@ -137,6 +126,7 @@ const SidebarDetailActor = ({
               width={374}
               height={374}
               type={'detail'}
+              detailPanelRef={detailPanelRef}
             />
           </div>
           <div>
@@ -153,7 +143,7 @@ const SidebarDetailActor = ({
         <div className='mb-8'>
           <h3 className='text-sm font-semibold uppercase mb-2 text-brand-dark-gold'>{projectHeader}</h3>
           {projects && projects.map((project) => {
-            const projectData = getProject(project.projectCode)
+            const projectData = getProject(project.projectCode, projectsRawData)
             const numCollaborators = project.numCollaborators
             const projectPlural = (numCollaborators > 1) ? 'collaborators' : 'collaborator'
             return (
@@ -179,7 +169,7 @@ const SidebarDetailActor = ({
         <div className='mb-8'>
           <h3 className='text-sm font-semibold uppercase mb-2 text-brand-red'>{collabHeader}</h3>
           {collaborators && collaborators?.map((collaborator) => {
-            const collaboratorData = getActor(collaborator.actorCode)
+            const collaboratorData = getActor(collaborator.actorCode, actorsRawData)
             const projectsShared = collaborator.projectsShared
             const projectPlural = (projectsShared > 1) ? 'projects' : 'project'
             return (
