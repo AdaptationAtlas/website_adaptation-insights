@@ -1,8 +1,9 @@
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
-import React, { useRef, useEffect, memo } from 'react'
+import React, { useRef, useEffect, memo, useCallback } from 'react'
 import ForceGraph2D from 'react-force-graph-2d'
 import { find, cloneDeep } from 'lodash'
 import cn from 'classnames'
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
 type Props = {
   actorCode: string
@@ -30,6 +31,21 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   const tooltipRef = useRef<any>(null)
   const tooltipHeaderRef = useRef<any>(null)
   const tooltipSubheadRef = useRef<any>(null)
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()!
+
+  // Get a new searchParams string by merging the current
+  // searchParams with a provided key/value pair
+  const createQueryString = useCallback(
+    (name: string, value: string) => {
+      const params = new URLSearchParams(searchParams)
+      params.set(name, value)
+ 
+      return params.toString()
+    },
+    [searchParams]
+  )
 
   // TODO - move this to utils
   const getProjectName = (projectCode: string) => {
@@ -41,6 +57,11 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   const getActorName = (actorCode: string) => {
     const actor = find(actorsRawData, { 'actorCode': actorCode })
     return actor?.name;
+  }
+
+  const handleNodeClick = (node: any) => {
+    // Use nextjs router to handle node navigation
+    router.push(pathname + '?' + createQueryString('project', node.id))
   }
 
   // Handle node hover
@@ -151,6 +172,7 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
         cooldownTime={cooldown}
         nodeCanvasObject={nodeCanvasObject}
         onNodeHover={handleNodeHover}
+        onNodeClick={handleNodeClick}
       />
       {displayTooltip &&
         <div ref={tooltipRef}
