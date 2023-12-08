@@ -131,9 +131,9 @@ const SidebarDetailActor = ({
           <div className='mb-6'>
             <NetworkGraph
               actorCode={actorCode}
-              actorsData={actorsData}
-              projectsData={projectsData}
               networksData={networksData}
+              actorsRawData={actorsRawData}
+              projectsRawData={projectsRawData}
               width={374}
               height={374}
               type={'detail'}
