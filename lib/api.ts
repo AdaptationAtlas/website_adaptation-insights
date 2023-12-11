@@ -12,7 +12,7 @@ export const fetchData = async (url: any) => {
 // TODO - move sorting to a separate utils file
 
 export const sortActors = (data: any, viewByBudget: boolean) => {
-  const orderField = viewByBudget ? 'totalBudget' : 'totalBeneficiaries';
+  const orderField = viewByBudget ? 'totalBudgetUSD' : 'totalBeneficiaries';
   const sortedData = orderBy(
     data,
     [orderField, 'name'], // Fallback to 'name' if you want to sort by name when values are equal

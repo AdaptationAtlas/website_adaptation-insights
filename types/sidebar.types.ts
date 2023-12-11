@@ -21,7 +21,8 @@ export type ActorData = {
   name: string
   projects: Project[] | null
   totalBeneficiaries: number | null
-  totalBudget: number | null
+  totalBudgetUSD: number | null
+  totalBudgetEUR: number | null
   type: string | null
 }
 

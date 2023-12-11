@@ -127,6 +127,8 @@ const MapPage = () => {
         selectedCurrency={selectedCurrency}
         setSelectedCurrency={setSelectedCurrency}
         selectedType={selectedType}
+        selectedCountry={selectedCountry}
+        selectedYear={selectedYear}
       />
       <div className='relative w-full h-[calc(100vh-56px)]'>
         <Map

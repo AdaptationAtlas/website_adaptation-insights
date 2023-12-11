@@ -23,6 +23,8 @@ type Props = {
   setActiveProject: React.Dispatch<React.SetStateAction<ProjectData | null | undefined>>
   selectedCurrency: string
   selectedType: string | null | undefined
+  selectedCountry: string | null | undefined
+  selectedYear: number | null | undefined
 }
 
 const SidebarList = ({
@@ -41,9 +43,11 @@ const SidebarList = ({
   setActiveProject,
   selectedCurrency,
   selectedType,
+  selectedCountry,
+  selectedYear,
 }: Props) => {
   // State to track loading of network graphs
-  const [isGraphLoading, setIsGraphLoading] = useState(true);
+  const [isGraphLoading, setIsGraphLoading] = useState(true)
 
   // Handle the loading state of the graphs
   useEffect(() => {
@@ -102,8 +106,8 @@ const SidebarList = ({
   const bucketColors = ['#73BA5A', '#6EB17C', '#62A99D', '#4BA2BD', '#019BDC']
 
   return (
-    <div className='flex flex-col overflow-x-auto'>
-      {viewProjects && projectsData.map(project => {
+    <div className='flex flex-col'>
+      {viewProjects && projectsData.map((project, index) => {
         const budgetCurrency = (selectedCurrency === 'EUR') ? project.budgetEUR : project.budgetUSD
         const currencySymbol = (selectedCurrency === 'EUR') ? '€' : '$'
         const budget = (budgetCurrency && currencySymbol) ? currencySymbol + formatNumberCommas(Math.round(budgetCurrency)) : 'Unspecified'
@@ -112,16 +116,20 @@ const SidebarList = ({
         const colorBeneficiaries = project.beneficiaryNum ? colorRange(project.beneficiaryNum, beneficiariesBuckets, bucketColors) : '#B7B7B7'
         const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
         const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
+        const delay = (index + 2) * 100 // Calculate the delay for each list item
+        // Change the key to force a re-render
+        const combinedKey = `${project.projectCode}-budget-${viewByBudget}-type-${selectedType}-country-${selectedCountry}-year-${selectedYear}`
 
         return (
           <div
-            key={project.projectCode}
+            key={combinedKey}
             onClick={() => { handleProjectSelect(project) }}
             className={classNames(
-              'px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
-              'hover:border-b-brand-gold hover:border-t-brand-gold transition',
+              'opacity-0 px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
+              'hover:border-b-brand-gold hover:border-t-brand-gold transition animate-fade-in-up',
               { 'bg-grey-lightest pointer-events-none': project.projectCode === activeProject?.projectCode }
             )}
+            style={{ animationDelay: `${delay}ms` }}
           >
             {viewByBudget &&
               <div>
@@ -140,19 +148,23 @@ const SidebarList = ({
         )
       })}
       {!viewProjects && actorsData.map((actor, index) => {
-        const budget = (actor.totalBudget) ? '$' + formatNumberCommas(Math.round(actor.totalBudget)) : 'Unspecified'
+        const budget = (actor.totalBudgetUSD) ? '$' + formatNumberCommas(Math.round(actor.totalBudgetUSD)) : 'Unspecified'
         const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(Math.round(actor.totalBeneficiaries)) : 'Unspecified'
         const maxWidth = (index < 10) ? 'max-w-[230px]' : 'max-w-[430px]'
+        const delay = (index + 2) * 100 // Calculate the delay for each list item
+        // Change the key to force a re-render
+        const combinedKey = `${actor.actorCode}-budget-${viewByBudget}-type-${selectedType}`
 
         return (
           <div
-            key={actor.actorCode}
+            key={combinedKey}
             onClick={() => { handleActorSelect(actor) }}
             className={classNames(
-              'px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
-              'hover:border-b-brand-gold hover:border-t-brand-gold transition',
+              'opacity-0 px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
+              'hover:border-b-brand-gold hover:border-t-brand-gold transition animate-fade-in-up',
               { 'bg-grey-lightest pointer-events-none': actor.actorCode === activeActor?.actorCode }
             )}
+            style={{ animationDelay: `${delay}ms` }}
           >
             {viewByBudget &&
               <div className='flex items-center justify-between'>
@@ -166,8 +178,6 @@ const SidebarList = ({
                       <NetworkGraph
                         actorCode={actor.actorCode}
                         networksData={networksData}
-                        actorsData={actorsData}
-                        projectsData={projectsData}
                         width={132}
                         height={132}
                         type={'list'}
@@ -190,8 +200,6 @@ const SidebarList = ({
                       <NetworkGraph
                         actorCode={actor.actorCode}
                         networksData={networksData}
-                        actorsData={actorsData}
-                        projectsData={projectsData}
                         width={132}
                         height={132}
                         type={'list'}

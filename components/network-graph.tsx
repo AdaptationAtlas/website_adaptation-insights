@@ -9,12 +9,12 @@ import { getProjectName, getActorName } from '@/utils/data-helpers'
 type Props = {
   actorCode: string
   networksData: NetworkData[]
-  actorsRawData: ActorData[]
-  projectsRawData: ProjectData[]
   width: number
   height: number
   type: string
-  detailPanelRef: React.RefObject<HTMLDivElement>
+  actorsRawData?: ActorData[]; // Optional
+  projectsRawData?: ProjectData[]; // Optional
+  detailPanelRef?: React.RefObject<HTMLDivElement>; // Optional
 }
 
 const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRawData, width, height, type, detailPanelRef }: Props) => {
@@ -58,7 +58,6 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
   // Handle node hover
   const handleNodeHover = useCallback((node: any) => {
-    console.log(node)
     if (node) {
       const headerTitle = (node.group === 'project') ? getProjectName(node.id, projectsRawData) : getActorName(node.id, actorsRawData)
       const subheadTitle = (node.group === 'project') ? 'Project' : 'Partner';
