@@ -28,7 +28,7 @@ export default async function Home() {
               objectFit='cover'
             />
           )}
-          <div className='relative z-10 ml-40'>
+          <div className='relative z-10 ml-[100px]'>
             <h1 className='flex flex-col text-white text-6xl leading-tight font-bold uppercase mb-12 max-w-[900px]'>
               AFRICAN AGRICULTURE ADAPTATION TRACKING TOOL
             </h1>
@@ -44,7 +44,8 @@ export default async function Home() {
           <p className='text-lg uppercase mb-5'>Choose an area to explore</p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 mb-[80px] md:h-[350px] lg:h-[450px]'>
+        {/* <div className='grid grid-cols-1 md:grid-cols-3 mb-[80px] md:h-[350px] lg:h-[450px]'> */}
+        <div className='grid grid-cols-3 mb-[80px] h-[450px]'>
           <Link href='/map?view=partners'>
             <div className='relative flex items-end p-8 h-full overflow-hidden'>
               {homeContent.partnersLinkImage && (
