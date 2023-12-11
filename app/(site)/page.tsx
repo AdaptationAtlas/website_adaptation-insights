@@ -70,7 +70,7 @@ export default async function Home() {
               )}
               <div className='relative z-10 pointer-events-none'>
                 <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Partners</h3>
-                <p className='text-lg text-white font-medium leading-tight'>Explore the people doing projects and their networks.</p>
+                <p className='text-lg text-white font-medium leading-tight'>Explore the organizations implementing projects and their networks.</p>
               </div>
             </div>
           </Link>
@@ -89,7 +89,7 @@ export default async function Home() {
               )}
               <div className='relative z-10 pointer-events-none'>
                 <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Projects</h3>
-                <p className='text-lg text-white font-medium leading-tight'>Learn about targeted adaptation work and where it is being done.</p>
+                <p className='text-lg text-white font-medium leading-tight'>Learn about targeted adaptation projects, their scope and locations.</p>
               </div>
             </div>
           </Link>
@@ -108,7 +108,7 @@ export default async function Home() {
               )}
               <div className='relative z-10 pointer-events-none'>
                 <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Tools</h3>
-                <p className='text-lg text-white font-medium leading-tight'>Explore adaptation partners, projects, and processes in detail.</p>
+                <p className='text-lg text-white font-medium leading-tight'>Explore practical approaches to adaptation tracking.</p>
               </div>
             </div>
           </Link>
