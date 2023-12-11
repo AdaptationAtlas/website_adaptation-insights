@@ -45,7 +45,7 @@ export default async function Home() {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-3 mb-[80px] md:h-[350px] lg:h-[450px]'>
-          <Link href='/partners'>
+          <Link href='/map?view=partners'>
             <div className='relative flex items-end p-8 h-full overflow-hidden'>
               {homeContent.partnersLinkImage && (
                 <Image
@@ -64,7 +64,7 @@ export default async function Home() {
             </div>
           </Link>
 
-          <Link href='/projects'>
+          <Link href='/map?view=projects'>
             <div className='relative flex items-end p-8 h-full overflow-hidden'>
               {homeContent.projectsLinkImage && (
                 <Image

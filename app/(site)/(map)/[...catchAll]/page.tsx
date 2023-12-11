@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { useRouter, usePathname } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 import Sidebar from '@/components/sidebar'
 import Map from '@/components/map'
 import { orderBy } from 'lodash'
@@ -36,13 +36,13 @@ const MapPage = () => {
   const [selectedCurrency, setSelectedCurrency] = useState<string>('USD')
 
   // Get the pathname from the URL
-  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
   // Update viewProjects based on the pathname
   useEffect(() => {
-    const view = (pathname == '/projects') ? true : false;
+    const view = (searchParams.get('view') == 'projects') ? true : false;
     setViewProjects(view)
-  }, [pathname])
+  }, [searchParams])
 
   // // Selected year handler
   // const handleSelectedYear = (value: string) => {
@@ -59,7 +59,6 @@ const MapPage = () => {
   // const [page, slug] = params.catchAll; // get the page and slug from catchAll params
 
   // Fetch actors data
-  // TODO - fix item sorting for actors
   // TODO - consolidate filtering and sorting
   // TODO - move fetch calls into a separarate file
   useEffect(() => {

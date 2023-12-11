@@ -32,17 +32,17 @@ const Menu = () => {
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
               'transition duration-300 delay-[50ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/partners'>Partners</Link></li>
+            )}><Link onClick={handleToggleMenu} href='/map?view=partners'>Partners</Link></li>
             <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
               'transition duration-300 delay-[100ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/projects'>Projects</Link></li>
+            )}><Link onClick={handleToggleMenu} href='/map?view=projects'>Projects</Link></li>
             {/* <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',
               'transition duration-300 delay-[150ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/tools'>Our tools</Link></li> */}
+            )}><Link onClick={handleToggleMenu} href='/tools'>Tools</Link></li> */}
             <li className={cn(
               menuListClass,
               'text-white text-4xl bold uppercase tracking-wide',

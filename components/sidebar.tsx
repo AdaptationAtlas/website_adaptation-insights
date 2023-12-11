@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useCallback } from 'react'
 import SidebarNav from '@/components/sidebar-nav'
 import SidebarDetail from '@/components/sidebar-detail'
-import { useRouter, usePathname } from 'next/navigation'
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { orderBy } from 'lodash'
 
@@ -54,18 +54,27 @@ const Sidebar = ({
   selectedCountry,
   selectedYear,
 }: Props) => {
-  const router = useRouter()
-  // const pathname = usePathname()
   const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
   const [viewProjectsDetail, setViewProjectsDetail] = useState<boolean>(false)
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
-  // Reference: How to make Radix UI Tabs URL based in NextJS
-  // https://dev.to/yinks/how-to-make-radix-ui-tabs-url-based-in-nextjs-2nfn
-  // TODO - consider using query parameters here to test for performance
+  // Get a new searchParams string by merging the current
+  // searchParams with a provided key/value pair
+  const createQueryString = useCallback(
+    (name: string, value: string) => {
+      const params = new URLSearchParams(searchParams)
+      params.set(name, value)
+
+      return params.toString()
+    },
+    [searchParams]
+  )
 
   const handleSwitchToggle = (checked: boolean) => {
-    // const view = checked ? '/projects' : '/partners'; // determine updated view
-    // router.push(view) // push updated view to router
+    const view = checked ? 'projects' : 'partners'; // determine updated view
+    router.push(pathname + '?' + createQueryString('view', view)) // push updated view to router
     setViewProjects(checked)
     setDetailPanelActive(false)
     // TODO - add a set timeout to account for panel transition
