@@ -76,7 +76,7 @@ const SidebarDetail = ({
       ref={detailPanelRef}
       className={classNames(
         detailPanelClass,
-        'absolute z-30 top-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-200 will-change-transform'
+        'absolute z-30 top-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-300 will-change-transform'
       )}
     >
       <button onClick={closeDetailPanel} className='absolute top-3 right-3 cursor-pointer'><BiX className='scale-150' /></button>

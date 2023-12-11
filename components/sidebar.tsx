@@ -29,6 +29,10 @@ type Props = {
   selectedType: string | null | undefined
   selectedCountry: string | null | undefined
   selectedYear: number | null | undefined
+  viewProjectsDetail: boolean
+  setViewProjectsDetail: React.Dispatch<React.SetStateAction<boolean>>
+  detailPanelActive: boolean
+  setDetailPanelActive: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const Sidebar = ({
@@ -53,9 +57,11 @@ const Sidebar = ({
   selectedType,
   selectedCountry,
   selectedYear,
+  viewProjectsDetail,
+  setViewProjectsDetail,
+  detailPanelActive,
+  setDetailPanelActive,
 }: Props) => {
-  const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
-  const [viewProjectsDetail, setViewProjectsDetail] = useState<boolean>(false)
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -73,14 +79,35 @@ const Sidebar = ({
   )
 
   const handleSwitchToggle = (checked: boolean) => {
-    const view = checked ? 'projects' : 'partners'; // determine updated view
-    router.push(pathname + '?' + createQueryString('view', view)) // push updated view to router
-    setViewProjects(checked)
-    setDetailPanelActive(false)
-    // TODO - add a set timeout to account for panel transition
+    const view = checked ? 'projects' : 'partners' // determine updated view
+
+    // Create a new URLSearchParams object based on the current search params
+    const params = new URLSearchParams(searchParams)
+
+    // Set the 'view' parameter
+    params.set('view', view)
+
+    // Remove 'project' and 'actor' parameters
+    if (checked) {
+      params.delete('partner')
+    } else {
+      params.delete('project')
+    }
+
+    // Construct the new URL string
+    const newUrl = `${pathname}?${params.toString()}`
+    // Push the updated URL to the router
+    router.push(newUrl)
+    // Nullify active actor and project
     setActiveActor(null)
     setActiveProject(null)
+
+    // Close the detail panel
+    setViewProjects(checked)
+    setDetailPanelActive(false)
+    setViewProjectsDetail(checked)
   }
+
 
   return (
     <div className='relative'>

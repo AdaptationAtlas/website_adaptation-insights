@@ -8,6 +8,8 @@ import { orderBy } from 'lodash'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { fetchData, sortActors, sortProjects, filterByYear, filterByCountry, filterByType } from '@/lib/api'
 import MapLegend from '@/components/map-legend'
+import { getActor, getProject } from '@/utils/data-helpers'
+import project from '@/sanity/schemas/project'
 
 // type Props = {
 //   params: { catchAll: string[] }
@@ -34,15 +36,31 @@ const MapPage = () => {
   const [selectedCountry, setSelectedCountry] = useState<string | null | undefined>(null)
   const [selectedType, setSelectedType] = useState<string | null | undefined>(null)
   const [selectedCurrency, setSelectedCurrency] = useState<string>('USD')
+  const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
+  const [viewProjectsDetail, setViewProjectsDetail] = useState<boolean>(false)
 
-  // Get the pathname from the URL
+  // Get the search params from the URL
   const searchParams = useSearchParams()
 
-  // Update viewProjects based on the pathname
+  // Update app state based on the search params
   useEffect(() => {
-    const view = (searchParams.get('view') == 'projects') ? true : false;
-    setViewProjects(view)
-  }, [searchParams])
+    const viewProj = (searchParams.get('view') == 'projects') ? true : false;
+    const actorCode = searchParams.get('partner')
+    const projectCode = searchParams.get('project')
+    if (actorCode) {
+      const actor = getActor(actorCode, actorsRawData)
+      setActiveActor(actor)
+      setDetailPanelActive(true)
+      setViewProjectsDetail(viewProj)
+    }
+    if (projectCode) {
+      const project = getProject(projectCode, projectsRawData)
+      setActiveProject(project)
+      setDetailPanelActive(true)
+      setViewProjectsDetail(viewProj)
+    }
+    setViewProjects(viewProj)
+  }, [searchParams, actorsRawData, projectsRawData])
 
   // // Selected year handler
   // const handleSelectedYear = (value: string) => {
@@ -128,6 +146,10 @@ const MapPage = () => {
         selectedType={selectedType}
         selectedCountry={selectedCountry}
         selectedYear={selectedYear}
+        detailPanelActive={detailPanelActive}
+        setDetailPanelActive={setDetailPanelActive}
+        viewProjectsDetail={viewProjectsDetail}
+        setViewProjectsDetail={setViewProjectsDetail}
       />
       <div className='relative w-full h-[calc(100vh-56px)]'>
         <Map

@@ -53,8 +53,25 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   )
 
   const handleNodeClick = useCallback((node: any) => {
-    router.push(pathname + '?' + createQueryString('project', node.id));
-  }, [router, pathname, createQueryString]);
+    // Create a new URLSearchParams object based on the current search params
+    const params = new URLSearchParams(searchParams);
+
+    if (node.group === 'project') {
+      params.delete('partner')
+      params.set('project', node.id);
+      params.set('view', 'projects');
+    } else {
+      params.delete('project')
+      params.set('partner', node.id);
+      params.set('view', 'partners');
+    }
+
+    // Construct the new URL string
+    const newUrl = `${pathname}?${params.toString()}`;
+
+    // Push the updated URL to the router
+    router.push(newUrl);
+  }, [router, pathname, searchParams]);
 
   // Handle node hover
   const handleNodeHover = useCallback((node: any) => {
@@ -96,7 +113,6 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
   const forceGraphRef = useRef() // Ref to access the force graph instance
 
-  // TODO - add loading animation to actor list thumbnails
   useEffect(() => {
     if (forceGraphRef.current) {
       // Directly cast forceGraphRef.current to 'any' to access d3Force and zoomToFit
@@ -135,24 +151,24 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   useEffect(() => {
     const handleMouseMove = (event: any) => {
       const offsetX = -515; // Adjust as needed
-  
-        // Offset Y to position the tooltip above the cursor
-        // Use the tooltipHeight to adjust the position above the cursor
-        const offsetY = -70 - tooltipHeight; // Adjust the base offset as needed
-  
-        const scrollX = detailPanelRef?.current?.scrollLeft;
-        const scrollY = detailPanelRef?.current?.scrollTop;
-  
-        const relativeX = event.clientX + scrollX + offsetX;
-        const relativeY = event.clientY + scrollY + offsetY;
-  
-        setTooltipPosition({ x: relativeX, y: relativeY });
+
+      // Offset Y to position the tooltip above the cursor
+      // Use the tooltipHeight to adjust the position above the cursor
+      const offsetY = -70 - tooltipHeight; // Adjust the base offset as needed
+
+      const scrollX = detailPanelRef?.current?.scrollLeft;
+      const scrollY = detailPanelRef?.current?.scrollTop;
+
+      const relativeX = event.clientX + scrollX + offsetX;
+      const relativeY = event.clientY + scrollY + offsetY;
+
+      setTooltipPosition({ x: relativeX, y: relativeY });
     };
-  
+
     document.addEventListener('mousemove', handleMouseMove);
     return () => document.removeEventListener('mousemove', handleMouseMove);
   }, [tooltipContent.visible, detailPanelRef, tooltipHeight]); // Add tooltipHeight as a dependency
-  
+
 
 
 

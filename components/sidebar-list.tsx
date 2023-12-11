@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { formatNumberCommas } from '@/lib/utils'
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
 import { colorRange } from '@/utils/color'
@@ -48,6 +49,21 @@ const SidebarList = ({
 }: Props) => {
   // State to track loading of network graphs
   const [isGraphLoading, setIsGraphLoading] = useState(true)
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  // Get a new searchParams string by merging the current
+  // searchParams with a provided key/value pair
+  const createQueryString = useCallback(
+    (name: string, value: string) => {
+      const params = new URLSearchParams(searchParams)
+      params.set(name, value)
+
+      return params.toString()
+    },
+    [searchParams]
+  )
 
   // Handle the loading state of the graphs
   useEffect(() => {
@@ -65,6 +81,7 @@ const SidebarList = ({
   const handleActorSelect = (actor: ActorData) => {
     if (!detailPanelActive) { setDetailPanelActive(true) }
     if (viewProjectsDetail) { setViewProjectsDetail(false) }
+    router.push(pathname + '?' + createQueryString('partner', actor.actorCode)) // push updated view to router
     setActiveActor(actor)
   }
 
@@ -72,6 +89,7 @@ const SidebarList = ({
   const handleProjectSelect = (project: ProjectData) => {
     if (!detailPanelActive) { setDetailPanelActive(true) }
     if (!viewProjectsDetail) { setViewProjectsDetail(true) }
+    router.push(pathname + '?' + createQueryString('project', project.projectCode)) // push updated view to router
     setActiveProject(project)
   }
 
