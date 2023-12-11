@@ -7,7 +7,8 @@ import category from './schemas/category'
 import blockContent from './schemas/block-content'
 import home from './schemas/home'
 import about from './schemas/about'
+import tools from './schemas/tools'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [page, post, project, category, blockContent, home, about ],
+  types: [page, post, project, category, blockContent, home, about, tools ],
 }

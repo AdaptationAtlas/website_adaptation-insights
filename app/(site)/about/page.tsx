@@ -34,14 +34,14 @@ export default async function About() {
           <p className='text-[24px] text-grey-700 tracking-normal leading-wide mb-5'>We inventory organizations and actions to identify partnerships for advancing African agriculture adaptation.</p>
         </div>
 
-        <div className='mb-16'>
+        <div className='mb-24'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Metrics Mapping & Evaluation</h3>
           <p className='text-[24px] text-grey-700 tracking-normal leading-wide mb-5'>We operationalize iceberg thinking for agricultural adaptation tracking. That is, we provide accessible tools for stakeholders to put actions and metrics in context, simplifying their application of adaptation concepts and providing entry points for improving coherence and consistency of information. The preliminary tools released include sets of generic impact pathways relevant for major types of agricultural adaptation actions, creating strawpersons for stakeholders to modify and create adaptation rationales and impact pathways. Indicator lists that align to the impact pathways help narrow down from long lists to short lists of indicators allowing users to more quickly determine priorities. This first set of tools build on the rich history of developments in agricultural adaptation monitoring and evaluation and recent contributions to adaptation tracking thinking.</p>
         </div>
 
         <h2 className='text-[42px] text-grey-700 font-bold tracking-wide leading-tight mb-5'>Partners</h2>
 
-        <div className='mb-16'>
+        <div className='mb-24'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Implementation</h3>
           <p className='text-[24px] text-grey-700 tracking-normal leading-wide mb-5'>The African Agriculture Adaptation Tracking Tool is implemented through a collaboration between the Adaptation of African Agriculture Initiative (AAA) and the Alliance of Bioversity International and International Center on Tropical Agriculture (Alliance of Bioversity-CIAT). The project has benefited from the oversight of SDG-Action. Financial support has so far been provided by GIZ and the Global Center on Adaptation (GCA).</p>
         </div>
@@ -55,7 +55,7 @@ export default async function About() {
           <p className='text-[24px] text-grey-700 tracking-normal leading-wide mb-5'>As new projects were added, we identified new actors. This iterative process allows us to continually update the databases, and ensure the inclusion of as many projects as possible related to agricultural adaptations to a changing climate.</p>
         </div>
 
-        <div className='mb-16'>
+        <div className='mb-24'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Defining Actions, Impact Pathways, and Indicators</h3>
           <p className='text-[24px] text-grey-700 tracking-normal leading-wide mb-5'>To define key adaptation actions, the approximately 100 investments listed in the 10 Climate-Smart Agriculture Investment Plans (CSAIPs) were classified into broad, distinct categories through a systematic analysis of activities. An impact pathway was drawn out for each broad category of investment based on the scientific literature and project documents. Candidate indicators for each impact pathway were identified from the CSAIPs and major indicator compilations, enabling the alignment of specific indicators with each impact pathway. The result was a streamlined and relevant set of actions, impact pathways, and indicators that can kickstart the development of improved adaptation tracking plans and implementation.</p>
         </div>

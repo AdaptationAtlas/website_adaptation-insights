@@ -3,6 +3,7 @@ import { apiVersion, dataset, projectId } from '@/sanity/env'
 import { Project } from '@/types/Project'
 import { Home } from '@/types/Home'
 import { About } from '@/types/About'
+import { Tools } from '@/types/Tools'
 
 // Utility function to get projects from sanity database
 // createClient allows us to read data from the admin
@@ -70,13 +71,14 @@ export async function getHomeContent(slug: string): Promise<Home> {
       'heroImage': heroImage.asset->url,
       'partnersLinkImage': partnersLinkImage.asset->url,
       'projectsLinkImage': projectsLinkImage.asset->url,
-      'wikiLinkImage': wikiLinkImage.asset->url
+      'wikiLinkImage': wikiLinkImage.asset->url,
+      'networkGraphicImage': networkGraphicImage.asset->url
     }`
   )
 }
 
 // Function for getting the about page content
-export async function getAboutContent(slug: string): Promise<Home> {
+export async function getAboutContent(slug: string): Promise<About> {
   const client = createClient({
     projectId,
     dataset,
@@ -86,6 +88,23 @@ export async function getAboutContent(slug: string): Promise<Home> {
   // Use groq to query the database
   return client.fetch(
     groq`*[_type == "about" && _id == "about"][0] {
+      title,
+      'heroImage': heroImage.asset->url
+    }`
+  )
+}
+
+// Function for getting the tools page content
+export async function getToolsContent(slug: string): Promise<Tools> {
+  const client = createClient({
+    projectId,
+    dataset,
+    apiVersion
+  });
+
+  // Use groq to query the database
+  return client.fetch(
+    groq`*[_type == "tools" && _id == "tools"][0] {
       title,
       'heroImage': heroImage.asset->url
     }`

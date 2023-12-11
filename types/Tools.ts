@@ -1,4 +1,4 @@
-export type About = {
+export type Tools = {
   _id: string;
   _createdAt: Date;
   title: string;

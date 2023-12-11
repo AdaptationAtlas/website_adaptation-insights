@@ -47,7 +47,15 @@ const config = defineConfig({
                           .id('about')
                           .schemaType('about')
                           .documentId('about')
-                      )
+                      ),
+                    S.listItem()
+                      .title('Tools')
+                      .child(
+                        S.editor()
+                          .id('tools')
+                          .schemaType('tools')
+                          .documentId('tools')
+                      ),
                   ]),
               ),
             S.documentTypeListItem('post').title('Posts'), // Add Posts to content menu

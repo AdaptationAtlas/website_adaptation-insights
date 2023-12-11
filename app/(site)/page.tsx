@@ -28,19 +28,29 @@ export default async function Home() {
               objectFit='cover'
             />
           )}
-          <div className='relative z-10 ml-[100px]'>
+          {homeContent.networkGraphicImage && (
+            <Image
+              src={homeContent.networkGraphicImage}
+              alt={homeContent.title}
+              width={340}
+              height={300}
+              className='absolute z-10 top-[80px] right-[80px]'
+            />
+          )}
+          <div className='relative z-20 ml-[100px]'>
             <h1 className='flex flex-col text-white text-6xl leading-tight font-bold uppercase mb-12 max-w-[900px]'>
               AFRICAN AGRICULTURE ADAPTATION TRACKING TOOL
             </h1>
             <div className='flex items-center'>
-              {/* <div className='h-[3px] w-[180px] bg-white mr-4 -mt-11'></div> */}
-              <p className='text-white text-3xl leading-normal max-w-[640px]'>{homeContent.heroText}</p>
+              {/* <p className='text-white text-3xl leading-normal max-w-[640px]'>{homeContent.heroText}</p> */}
+              <p className='text-white text-3xl leading-normal max-w-[640px]'>Explore the work being done to adapt to climate change in Africa.</p>
             </div>
           </div>
         </div>
 
         <div className='px-[100px]'>
-          <p className='text-4xl font-bold leading-normal max-w-[960px] mb-20 mt-20'>{homeContent.introText}</p>
+          {/* <p className='text-4xl font-bold leading-normal max-w-[960px] mb-20 mt-20'>{homeContent.introText}</p> */}
+          <p className='text-4xl font-bold leading-normal max-w-[960px] mb-20 mt-20'>The African Agriculture Adaptation Tracking Tool is the go-to-hub for information on agricultural adaptation actions from across Africa. Discover key organizations, partnerships, their projects and a suite of tools to aid future adaptation tracking efforts.</p>
           <p className='text-lg uppercase mb-5'>Choose an area to explore</p>
         </div>
 

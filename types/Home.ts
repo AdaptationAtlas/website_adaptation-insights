@@ -9,4 +9,5 @@ export type Home = {
   partnersLinkImage: string;
   projectsLinkImage: string;
   wikiLinkImage: string;
+  networkGraphicImage: string;
 }

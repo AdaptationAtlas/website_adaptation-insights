@@ -89,6 +89,21 @@ export default defineType({
         }
       ]
     }),
+    defineField({
+      name: 'networkGraphicImage',
+      title: 'Network graphic image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt text',
+          type: 'string',
+        }
+      ]
+    }),
   ],
 })
 
