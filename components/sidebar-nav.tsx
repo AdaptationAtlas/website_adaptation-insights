@@ -73,6 +73,8 @@ const SidebarNav = ({
   // Store actor and project totals
   const actorsTotal = actorsData?.length
   const projectsTotal = projectsData?.length
+  const actorsRawTotal = actorsRawData?.length
+  const projectsRawTotal = projectsRawData?.length
 
   // Get unique values for years, countries and actor types
   // TODO - combine the filter logic to allow for filter combinations like "projects in Ghana in 2012"
@@ -90,6 +92,7 @@ const SidebarNav = ({
 
   return (
     <div className='relative z-40 top-0 left-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100'>
+
       <header className='p-5 pt-7'>
         <p className='uppercase text-sm'>Explore</p>
         <Switch
@@ -110,7 +113,7 @@ const SidebarNav = ({
           colors={false}
           isLarge={false}
         />
-        {/* TODO - use "page" param instead of viewProjects for conditional rendering */}
+
         {viewProjects &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>During</span>
@@ -132,6 +135,7 @@ const SidebarNav = ({
             </Select>
           </div>
         }
+
         {viewProjects && viewByBudget &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>Currency</span>
@@ -148,24 +152,10 @@ const SidebarNav = ({
             </Select>
           </div>
         }
-        {/* {!viewProjects && viewByBudget &&
-          <div className='flex items-center'>
-            <span className='uppercase text-sm mr-4'>Currency</span>
-            <Select onValueChange={onSelectedCurrencyChange}>
-              <SelectTrigger className="w-[180px]">
-                <span className='truncate'>
-                  <SelectValue placeholder="USD" />
-                </span>
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="USD">USD</SelectItem>
-                <SelectItem value="EUR">Euro</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-        } */}
       </header>
+
       <div>
+
         {viewProjects &&
           <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
             <Select onValueChange={onSelectedCountryChange}>
@@ -183,9 +173,10 @@ const SidebarNav = ({
                 })}
               </SelectContent>
             </Select>
-            <p className='uppercase text-sm'>{projectsTotal} of {projectsTotal} projects</p>
+            <p className='uppercase text-sm'>{projectsTotal} of {projectsRawTotal} projects</p>
           </div>
         }
+
         {!viewProjects &&
           <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
             <Select onValueChange={onSelectedTypeChange}>
@@ -203,9 +194,10 @@ const SidebarNav = ({
                 })}
               </SelectContent>
             </Select>
-            <p className='uppercase text-sm'>{actorsTotal} of {actorsTotal} partners</p>
+            <p className='uppercase text-sm'>{actorsTotal} of {actorsRawTotal} partners</p>
           </div>
         }
+
         {/* TODO - move sidebar list to parent component sidebar */}
         <SidebarList
           viewProjects={viewProjects}

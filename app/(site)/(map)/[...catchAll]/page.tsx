@@ -96,6 +96,14 @@ const MapPage = () => {
     loadData();
   }, []);
 
+  // Reset filters when viewProjects changes
+  useEffect(() => {
+    // Reset filters
+    setSelectedType(null)
+    setSelectedCountry(null)
+    setSelectedYear(0)
+  }, [viewProjects])
+
   useEffect(() => {
     // Sort data when viewByBudget changes
     setActorsData(sortActors(actorsRawData, viewByBudget))
