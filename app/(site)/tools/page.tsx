@@ -10,7 +10,7 @@ export default async function Tools() {
     <div className='relative pt-[70px]'>
       <div className='max-w-[960px] mx-auto mb-[100px]'>
         <h1 className='text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-10'>Tools</h1>
-        <h4 className='text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+        <h4 className='text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>The development of comprehensive tracking plans is vital for the success of adaptation tracking efforts.</h4>
       </div>
 
       <div className='relative w-full mb-[100px]'>

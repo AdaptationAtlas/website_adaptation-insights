@@ -224,7 +224,7 @@ const SidebarDetailProject = ({
               <ul>
                 {primaryPartners && primaryPartners.map((partner) => {
                   const actor = getActor(partner.actorCode, actorsRawData)
-                  return <li key={partner.actorCode} className='mb-1.5 cursor-pointer' onClick={() => handleActorSelect(actor)}>{getActorName(partner.actorCode, actorsRawData)}</li>
+                  return <li key={partner.actorCode} className='mb-1.5 cursor-pointer transition-colors hover:text-brand-teal' onClick={() => handleActorSelect(actor)}>{getActorName(partner.actorCode, actorsRawData)}</li>
                 })}
               </ul>
             </div>
