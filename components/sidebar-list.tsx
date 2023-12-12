@@ -143,25 +143,25 @@ const SidebarList = ({
             key={combinedKey}
             onClick={() => { handleProjectSelect(project) }}
             className={classNames(
-              'opacity-0 px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
-              'hover:border-b-brand-gold hover:border-t-brand-gold transition animate-fade-in-up',
+              'opacity-0 px-5 py-3 border-b border-b-grey-200 cursor-pointer',
+              'hover:bg-grey-lightest transition duration-300 animate-fade-in-up',
               { 'bg-grey-lightest pointer-events-none': project.projectCode === activeProject?.projectCode }
             )}
             style={{ animationDelay: `${delay}ms` }}
           >
             {viewByBudget &&
               <div>
-                <h3 className='uppercase text-sm mb-1'>Budget</h3>
-                <p className={`text-5xl uppercase ${classBudget}`} style={{ color: colorBudget }}>{budget}</p>
+                <h3 className='uppercase text-sm'>Budget</h3>
+                <p className={`text-[45px] uppercase leading-tight font-semibold ${classBudget}`} style={{ color: colorBudget }}>{budget}</p>
               </div>
             }
             {!viewByBudget &&
               <div>
-                <h3 className='uppercase text-sm mb-1'>Beneficiaries</h3>
-                <p className={`text-5xl uppercase ${classBeneficiaries}`} style={{ color: colorBeneficiaries }}>{beneficiaries}</p>
+                <h3 className='uppercase text-sm'>Beneficiaries</h3>
+                <p className={`text-[45px] uppercase leading-tight font-semibold ${classBeneficiaries}`} style={{ color: colorBeneficiaries }}>{beneficiaries}</p>
               </div>
             }
-            <p className='text-base mt-3 text-ellipsis whitespace-nowrap overflow-hidden'>{project.projectName}</p>
+            <p className='text-base mt-1 text-ellipsis whitespace-nowrap overflow-hidden'>{project.projectName}</p>
           </div>
         )
       })}
@@ -178,16 +178,16 @@ const SidebarList = ({
             key={combinedKey}
             onClick={() => { handleActorSelect(actor) }}
             className={classNames(
-              'opacity-0 px-5 py-5 border-b border-t border-b-grey-200 border-t-grey-200 cursor-pointer',
-              'hover:border-b-brand-gold hover:border-t-brand-gold transition animate-fade-in-up',
+              'opacity-0 px-5 border-b border-b-grey-200 cursor-pointer',
+              'hover:bg-grey-lightest transition duration-300 animate-fade-in-up',
               { 'bg-grey-lightest pointer-events-none': actor.actorCode === activeActor?.actorCode }
             )}
             style={{ animationDelay: `${delay}ms` }}
           >
             {viewByBudget &&
-              <div className='flex items-center justify-between'>
-                <div className={maxWidth}>
-                  <h3 className='uppercase text-sm mb-2'>{budget} Total budget</h3>
+              <div className='flex justify-between'>
+                <div className={`${maxWidth} my-4`}>
+                  <h3 className='uppercase text-sm mb-2'>{budget} budget</h3>
                   <h2 className='text-[16px] font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
@@ -207,9 +207,9 @@ const SidebarList = ({
               </div>
             }
             {!viewByBudget &&
-              <div className='flex items-center justify-between'>
-                <div className={maxWidth}>
-                  <h3 className='uppercase text-sm mb-2'>{beneficiaries} Total beneficiaries</h3>
+              <div className='flex justify-between'>
+                <div className={`${maxWidth} my-4`}>
+                  <h3 className='uppercase text-sm mb-2'>{beneficiaries} beneficiaries</h3>
                   <h2 className='text-[17px] leading-tight font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&

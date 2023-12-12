@@ -90,7 +90,7 @@ const SidebarDetailActor = ({
   return (
     <div className='p-5'>
       <header className='mb-5'>
-        <p className='uppercase text-sm text-brand-teal mb-1'>Partner detail</p>
+        <p className='uppercase font-medium text-sm text-brand-teal mb-1'>Partner detail</p>
         <h1 className='text-xl font-semibold'>{actor?.name}</h1>
       </header>
 
@@ -112,7 +112,7 @@ const SidebarDetailActor = ({
       </div>
 
       {projectCount > 0 &&
-        <div className='mb-10'>
+        <div className='mb-14'>
           <div className='mb-6'>
             <h2 className='text-xl font-semibold mb-3'>Known Network</h2>
             <p>{actor?.name} works {collabProjectText} with {collabText}.</p>
@@ -140,18 +140,18 @@ const SidebarDetailActor = ({
       }
 
       {(projectCount > 0) &&
-        <div className='mb-8'>
-          <h3 className='text-sm font-semibold uppercase mb-2 text-brand-dark-gold'>{projectHeader}</h3>
+        <div className='mb-14'>
+          <h3 className='text-sm font-semibold uppercase mb-3 text-brand-dark-gold'>{projectHeader}</h3>
           {projects && projects.map((project) => {
             const projectData = getProject(project.projectCode, projectsRawData)
             const numCollaborators = project.numCollaborators
             const projectPlural = (numCollaborators > 1) ? 'collaborators' : 'collaborator'
             return (
               <div key={project.projectCode} className='mb-7 cursor-pointer' onClick={() => handleProjectSelect(projectData)}>
-                <h4 className='font-semibold mb-2'>{projectData?.projectName}</h4>
+                <h4 className='font-semibold mb-1'>{projectData?.projectName}</h4>
                 {numCollaborators > 0 &&
                   <div className='flex items-center'>
-                    <p className='mr-3 w-32'>{numCollaborators} {projectPlural}</p>
+                    <p className='mr-4'>{numCollaborators} {projectPlural}</p>
                     <div className='flex items-center gap-2 flex-wrap'>
                       {Array.from({ length: numCollaborators }).map((_, i) => (
                         <span key={i} className='block w-4 h-4 rounded-full bg-brand-red'></span>
@@ -166,18 +166,18 @@ const SidebarDetailActor = ({
       }
 
       {collabCount > 0 &&
-        <div className='mb-8'>
-          <h3 className='text-sm font-semibold uppercase mb-2 text-brand-red'>{collabHeader}</h3>
+        <div className='mb-14'>
+          <h3 className='text-sm font-semibold uppercase mb-3 text-brand-red'>{collabHeader}</h3>
           {collaborators && collaborators?.map((collaborator) => {
             const collaboratorData = getActor(collaborator.actorCode, actorsRawData)
             const projectsShared = collaborator.projectsShared
             const projectPlural = (projectsShared > 1) ? 'projects' : 'project'
             return (
               <div key={collaborator.actorCode} className='mb-7 cursor-pointer' onClick={() => handleCollaboratorSelect(collaboratorData)}>
-                <h4 className='font-semibold mb-2'>{collaboratorData?.name}</h4>
+                <h4 className='font-semibold mb-1'>{collaboratorData?.name}</h4>
                 {projectsShared > 0 &&
                   <div className='flex items-center'>
-                    <p className='mr-3 w-40'>{projectsShared} {projectPlural} together</p>
+                    <p className='mr-4'>{projectsShared} {projectPlural} together</p>
                     <div className='flex items-center gap-2 flex-wrap'>
                       {Array.from({ length: projectsShared }).map((_, i) => (
                         <span key={i} className='block w-4 h-4 rounded-full bg-brand-gold'></span>

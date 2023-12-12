@@ -103,7 +103,7 @@ const SidebarDetailProject = ({
   return (
     <div className='p-5'>
       <header className='mb-5'>
-        <p className='uppercase text-sm text-brand-dark-gold mb-1'>Project detail</p>
+        <p className='uppercase font-medium text-sm text-brand-dark-gold mb-1'>Project detail</p>
         <h1 className='text-xl font-semibold'>{projectName}</h1>
       </header>
 
@@ -219,34 +219,34 @@ const SidebarDetailProject = ({
           </div>
 
           {primaryPartnerCount > 0 &&
-            <div className='mb-4'>
-              <h3 className='text-sm font-semibold uppercase mb-1'>{primaryPartnerCount} project {getPartnerPlural(primaryPartnerCount)}</h3>
+            <div className='mb-7'>
+              <h3 className='text-sm font-semibold uppercase mb-1.5'>{primaryPartnerCount} project {getPartnerPlural(primaryPartnerCount)}</h3>
               <ul>
                 {primaryPartners && primaryPartners.map((partner) => {
                   const actor = getActor(partner.actorCode, actorsRawData)
-                  return <li key={partner.actorCode} className='mb-1 cursor-pointer' onClick={() => handleActorSelect(actor)}>{getActorName(partner.actorCode, actorsRawData)}</li>
+                  return <li key={partner.actorCode} className='mb-1.5 cursor-pointer' onClick={() => handleActorSelect(actor)}>{getActorName(partner.actorCode, actorsRawData)}</li>
                 })}
               </ul>
             </div>
           }
 
           {fundingPartnerCount > 0 &&
-            <div className='mb-4'>
-              <h3 className='text-sm font-semibold uppercase mb-1'>{fundingPartnerCount} funding {getPartnerPlural(fundingPartnerCount)}</h3>
+            <div className='mb-7'>
+              <h3 className='text-sm font-semibold uppercase mb-1.5'>{fundingPartnerCount} funding {getPartnerPlural(fundingPartnerCount)}</h3>
               <ul>
                 {fundingPartners && fundingPartners.map((partner) => (
-                  <li key={partner.actorCode} className='mb-1'>{getActorName(partner.actorCode, actorsRawData)}</li>
+                  <li key={partner.actorCode} className='mb-1.5'>{getActorName(partner.actorCode, actorsRawData)}</li>
                 ))}
               </ul>
             </div>
           }
 
           {implementationPartnerCount > 0 &&
-            <div className='mb-4'>
-              <h3 className='text-sm font-semibold uppercase mb-1'>{implementationPartnerCount} implementation {getPartnerPlural(implementationPartnerCount)}</h3>
+            <div className='mb-7'>
+              <h3 className='text-sm font-semibold uppercase mb-1.5'>{implementationPartnerCount} implementation {getPartnerPlural(implementationPartnerCount)}</h3>
               <ul>
                 {implementationPartners && implementationPartners.map((partner) => (
-                  <li key={partner.actorCode} className='mb-1'>{getActorName(partner.actorCode, actorsRawData)}</li>
+                  <li key={partner.actorCode} className='mb-1.5'>{getActorName(partner.actorCode, actorsRawData)}</li>
                 ))}
               </ul>
             </div>
