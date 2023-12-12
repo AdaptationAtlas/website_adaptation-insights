@@ -65,7 +65,7 @@ function Map({
     const dataField = viewByBudget ? 'budgetEURLog' : 'beneficiaryNumLog';
     const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
-    const bucketColors = ['#94D851', '#74CB6C', '#31C6AD', '#29B5D4', '#2290DF']
+    const bucketColors = ['#73BA5A', '#6EB17C', '#62A99D', '#4BA2BD', '#019BDC']
     const circleRadiusMin = 2.5
     const circleRadiusMax = 7
 
