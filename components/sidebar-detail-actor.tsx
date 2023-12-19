@@ -148,7 +148,7 @@ const SidebarDetailActor = ({
             const projectPlural = (numCollaborators > 1) ? 'collaborators' : 'collaborator'
             return (
               <div key={project.projectCode} className='mb-7'>
-                <h4 className='font-semibold mb-1 cursor-pointer transition-colors hover:text-brand-red' onClick={() => handleProjectSelect(projectData)}>{projectData?.projectName}</h4>
+                <h4 className='font-semibold mb-1 cursor-pointer transition-colors hover:text-brand-dark-gold' onClick={() => handleProjectSelect(projectData)}>{projectData?.projectName}</h4>
                 {numCollaborators > 0 &&
                   <div className='flex items-center'>
                     <p className='mr-4'>{numCollaborators} {projectPlural}</p>
@@ -174,7 +174,7 @@ const SidebarDetailActor = ({
             const projectPlural = (projectsShared > 1) ? 'projects' : 'project'
             return (
               <div key={collaborator.actorCode} className='mb-7'>
-                <h4 className='font-semibold mb-1 cursor-pointer transition-colors hover:text-brand-dark-gold' onClick={() => handleCollaboratorSelect(collaboratorData)}>{collaboratorData?.name}</h4>
+                <h4 className='font-semibold mb-1 cursor-pointer transition-colors hover:text-brand-red' onClick={() => handleCollaboratorSelect(collaboratorData)}>{collaboratorData?.name}</h4>
                 {projectsShared > 0 &&
                   <div className='flex items-center'>
                     <p className='mr-4'>{projectsShared} {projectPlural} together</p>
