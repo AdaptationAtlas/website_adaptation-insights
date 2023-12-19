@@ -44,6 +44,91 @@
     }
   },
   {
+    "actorCode": "AUT3",
+    "network": {
+      "nodes": [
+        {
+          "id": "AUT3",
+          "group": "root"
+        },
+        {
+          "id": "G113",
+          "group": "project"
+        },
+        {
+          "id": "G114",
+          "group": "project"
+        },
+        {
+          "id": "G116",
+          "group": "project"
+        },
+        {
+          "id": "G117",
+          "group": "project"
+        },
+        {
+          "id": "GLO16",
+          "group": "actor"
+        },
+        {
+          "id": "BF74",
+          "group": "actor"
+        },
+        {
+          "id": "BF33",
+          "group": "actor"
+        },
+        {
+          "id": "BF107",
+          "group": "actor"
+        }
+      ],
+      "links": [
+        {
+          "source": "AUT3",
+          "target": "G113",
+          "type": "rootProject"
+        },
+        {
+          "source": "GLO16",
+          "target": "G113",
+          "type": "actorProject"
+        },
+        {
+          "source": "AUT3",
+          "target": "G114",
+          "type": "rootProject"
+        },
+        {
+          "source": "BF74",
+          "target": "G114",
+          "type": "actorProject"
+        },
+        {
+          "source": "AUT3",
+          "target": "G116",
+          "type": "rootProject"
+        },
+        {
+          "source": "BF33",
+          "target": "G116",
+          "type": "actorProject"
+        },
+        {
+          "source": "AUT3",
+          "target": "G117",
+          "type": "rootProject"
+        },
+        {
+          "source": "BF107",
+          "target": "G117",
+          "type": "actorProject"
+        }
+      ]
+    }
+  },
+  {
     "actorCode": "BEL1",
     "network": {
       "nodes": [
@@ -75,6 +160,223 @@
     }
   },
   {
+    "actorCode": "BEL2",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL2",
+          "group": "root"
+        },
+        {
+          "id": "L306",
+          "group": "project"
+        },
+        {
+          "id": "L308",
+          "group": "project"
+        },
+        {
+          "id": "L316",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL2",
+          "target": "L306",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL2",
+          "target": "L308",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL2",
+          "target": "L316",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BEL6",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL6",
+          "group": "root"
+        },
+        {
+          "id": "L311",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL6",
+          "target": "L311",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BEL11",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL11",
+          "group": "root"
+        },
+        {
+          "id": "L299",
+          "group": "project"
+        },
+        {
+          "id": "L300",
+          "group": "project"
+        },
+        {
+          "id": "L301",
+          "group": "project"
+        },
+        {
+          "id": "L302",
+          "group": "project"
+        },
+        {
+          "id": "L315",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL11",
+          "target": "L299",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL11",
+          "target": "L300",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL11",
+          "target": "L301",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL11",
+          "target": "L302",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL11",
+          "target": "L315",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BEL14",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL14",
+          "group": "root"
+        },
+        {
+          "id": "L304",
+          "group": "project"
+        },
+        {
+          "id": "L309",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL14",
+          "target": "L304",
+          "type": "rootProject"
+        },
+        {
+          "source": "BEL14",
+          "target": "L309",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BEL16",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL16",
+          "group": "root"
+        },
+        {
+          "id": "L307",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL16",
+          "target": "L307",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BEL17",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL17",
+          "group": "root"
+        },
+        {
+          "id": "L312",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL17",
+          "target": "L312",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BEL8",
+    "network": {
+      "nodes": [
+        {
+          "id": "BEL8",
+          "group": "root"
+        },
+        {
+          "id": "L314",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "BEL8",
+          "target": "L314",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
     "actorCode": "BF1",
     "network": {
       "nodes": [
@@ -99,6 +401,10 @@
           "group": "project"
         },
         {
+          "id": "G115",
+          "group": "project"
+        },
+        {
           "id": "REG1",
           "group": "actor"
         },
@@ -116,6 +422,10 @@
         },
         {
           "id": "GLO17",
+          "group": "actor"
+        },
+        {
+          "id": "CHE12",
           "group": "actor"
         }
       ],
@@ -164,6 +474,16 @@
           "source": "BF1",
           "target": "L133",
           "type": "rootProject"
+        },
+        {
+          "source": "BF1",
+          "target": "G115",
+          "type": "rootProject"
+        },
+        {
+          "source": "CHE12",
+          "target": "G115",
+          "type": "actorProject"
         }
       ]
     }
@@ -364,6 +684,10 @@
           "group": "project"
         },
         {
+          "id": "L298",
+          "group": "project"
+        },
+        {
           "id": "GLO18",
           "group": "actor"
         },
@@ -419,6 +743,11 @@
           "source": "GLO15",
           "target": "L240",
           "type": "actorProject"
+        },
+        {
+          "source": "BF2",
+          "target": "L298",
+          "type": "rootProject"
         }
       ]
     }
@@ -1334,6 +1663,10 @@
           "group": "project"
         },
         {
+          "id": "G116",
+          "group": "project"
+        },
+        {
           "id": "REG1",
           "group": "actor"
         },
@@ -1347,6 +1680,10 @@
         },
         {
           "id": "BF44",
+          "group": "actor"
+        },
+        {
+          "id": "AUT3",
           "group": "actor"
         }
       ],
@@ -1379,6 +1716,16 @@
         {
           "source": "BF33",
           "target": "L134",
+          "type": "rootProject"
+        },
+        {
+          "source": "AUT3",
+          "target": "G116",
+          "type": "actorProject"
+        },
+        {
+          "source": "BF33",
+          "target": "G116",
           "type": "rootProject"
         }
       ]
@@ -1553,6 +1900,37 @@
         {
           "source": "BF52",
           "target": "G007",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "BF74",
+    "network": {
+      "nodes": [
+        {
+          "id": "BF74",
+          "group": "root"
+        },
+        {
+          "id": "G114",
+          "group": "project"
+        },
+        {
+          "id": "AUT3",
+          "group": "actor"
+        }
+      ],
+      "links": [
+        {
+          "source": "AUT3",
+          "target": "G114",
+          "type": "actorProject"
+        },
+        {
+          "source": "BF74",
+          "target": "G114",
           "type": "rootProject"
         }
       ]
@@ -2275,6 +2653,37 @@
     }
   },
   {
+    "actorCode": "BF107",
+    "network": {
+      "nodes": [
+        {
+          "id": "BF107",
+          "group": "root"
+        },
+        {
+          "id": "G117",
+          "group": "project"
+        },
+        {
+          "id": "AUT3",
+          "group": "actor"
+        }
+      ],
+      "links": [
+        {
+          "source": "AUT3",
+          "target": "G117",
+          "type": "actorProject"
+        },
+        {
+          "source": "BF107",
+          "target": "G117",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
     "actorCode": "CAN2",
     "network": {
       "nodes": [
@@ -2764,6 +3173,37 @@
         {
           "source": "CHE11",
           "target": "L093",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "CHE12",
+    "network": {
+      "nodes": [
+        {
+          "id": "CHE12",
+          "group": "root"
+        },
+        {
+          "id": "G115",
+          "group": "project"
+        },
+        {
+          "id": "BF1",
+          "group": "actor"
+        }
+      ],
+      "links": [
+        {
+          "source": "BF1",
+          "target": "G115",
+          "type": "actorProject"
+        },
+        {
+          "source": "CHE12",
+          "target": "G115",
           "type": "rootProject"
         }
       ]
@@ -12957,6 +13397,10 @@
           "group": "project"
         },
         {
+          "id": "L305",
+          "group": "project"
+        },
+        {
           "id": "EU1",
           "group": "actor"
         },
@@ -13121,6 +13565,11 @@
         {
           "source": "FRA22",
           "target": "L205",
+          "type": "rootProject"
+        },
+        {
+          "source": "FRA22",
+          "target": "L305",
           "type": "rootProject"
         }
       ]
@@ -17710,6 +18159,10 @@
           "group": "project"
         },
         {
+          "id": "L313",
+          "group": "project"
+        },
+        {
           "id": "GLO35",
           "group": "actor"
         },
@@ -18098,6 +18551,11 @@
           "source": "GLO15",
           "target": "L290",
           "type": "rootProject"
+        },
+        {
+          "source": "GLO15",
+          "target": "L313",
+          "type": "rootProject"
         }
       ]
     }
@@ -18151,6 +18609,10 @@
           "group": "project"
         },
         {
+          "id": "G113",
+          "group": "project"
+        },
+        {
           "id": "GLO44",
           "group": "actor"
         },
@@ -18200,6 +18662,10 @@
         },
         {
           "id": "UK4",
+          "group": "actor"
+        },
+        {
+          "id": "AUT3",
           "group": "actor"
         }
       ],
@@ -18322,6 +18788,16 @@
         {
           "source": "GLO16",
           "target": "L275",
+          "type": "rootProject"
+        },
+        {
+          "source": "AUT3",
+          "target": "G113",
+          "type": "actorProject"
+        },
+        {
+          "source": "GLO16",
+          "target": "G113",
           "type": "rootProject"
         }
       ]
@@ -32786,6 +33262,37 @@
         {
           "source": "UK10",
           "target": "L094",
+          "type": "rootProject"
+        }
+      ]
+    }
+  },
+  {
+    "actorCode": "UK15",
+    "network": {
+      "nodes": [
+        {
+          "id": "UK15",
+          "group": "root"
+        },
+        {
+          "id": "L303",
+          "group": "project"
+        },
+        {
+          "id": "L310",
+          "group": "project"
+        }
+      ],
+      "links": [
+        {
+          "source": "UK15",
+          "target": "L303",
+          "type": "rootProject"
+        },
+        {
+          "source": "UK15",
+          "target": "L310",
           "type": "rootProject"
         }
       ]
