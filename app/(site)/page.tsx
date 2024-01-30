@@ -115,7 +115,7 @@ export default async function Home() {
         </div>
 
         <div className='px-[100px]'>
-          <p className='flex items-center text-lg uppercase'>Or say hello and provide feedback <BiArrowBack className='ml-2 rotate-180' /></p>
+          <a href='mailto:t.rosenstock@cgiar.org' className='flex items-center text-lg uppercase'>Or say hello and provide feedback <BiArrowBack className='ml-2 rotate-180' /></a>
         </div>
       </div>
       <Footer />
