@@ -18,11 +18,12 @@ const Footer = () => {
     } catch (err) {
       console.error('Failed to copy URL: ', err);
     }
-  };
+  }
 
   return (
     <footer className='flex justify-between w-full p-5'>
       <p>©2023 AAA & CGIAR</p>
+      {/* TODO: make this a component */}
       <div className='relative'>
         <button
           onClick={handleCopyToClipboard}

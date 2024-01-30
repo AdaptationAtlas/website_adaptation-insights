@@ -7,7 +7,7 @@ export default async function Tools() {
   const content = await getToolsContent('tools')
 
   return (
-    <div className='relative pt-[70px]'>
+    <div className='relative pt-[125px]'>
       <div className='max-w-[960px] mx-auto mb-[100px]'>
         <h1 className='text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-10'>Tools</h1>
         <h4 className='text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>The development of comprehensive tracking plans is vital for the success of adaptation tracking efforts.</h4>

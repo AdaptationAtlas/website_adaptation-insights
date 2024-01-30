@@ -1,24 +1,52 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import cn from 'classnames'
 import { BiX, BiMenu } from 'react-icons/bi'
 
 const Menu = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false)
-  const menuClass = (menuActive) ? 'opacity-100 pointer-events-default' : 'opacity-0 pointer-events-none'
-  const menuListClass = (menuActive) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+  const menuClass = menuActive ? 'opacity-100 pointer-events-default' : 'opacity-0 pointer-events-none'
+  const menuListClass = menuActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
 
   const handleToggleMenu = () => {
     setMenuActive(!menuActive)
   }
 
+  const menuLinks = [
+    { link: '/map?view=partners', title: 'Partners' },
+    { link: '/map?view=projects', title: 'Projects' },
+    { link: '/tools', title: 'Tools' },
+    { link: '/about', title: 'About this site' }
+  ]
+
+  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const handleCopyToClipboard = async () => {
+    const url = window.location.origin;  // Get the root URL of the application
+
+    try {
+      await navigator.clipboard.writeText(url);
+      // Temporarily display a confirmation tooltip
+      setTooltipVisible(true);
+      setTimeout(() => {
+        setTooltipVisible(false);
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy URL: ', err);
+    }
+  }
+
   return (
     <nav className='flex justify-between p-5'>
       <button
-        className='absolute top-0 left-0 bg-off-white p-4 h-[54px]'
+        className={
+          cn(
+            'fixed top-0 left-0 bg-off-white text-brand-green p-4 h-[54px] cursor-pointer',
+            'hover:bg-brand-green hover:text-white transition-colors duration-300 ease-in-out'
+          )
+        }
         onClick={handleToggleMenu}
       >
-        <BiMenu className='text-brand-green h-6 w-6' />
+        <BiMenu className='h-6 w-6' />
       </button>
       <div
         className={cn(
@@ -26,50 +54,68 @@ const Menu = () => {
           'fixed top-0 right-0 bottom-0 left-0 bg-brand-green transition duration-400',
         )}
       >
-        <div className='flex items-center transition-opacity duration-300 ease-in-out h-full w-full absolute top-0'>
+        <div className='flex items-center h-full w-full absolute top-0'>
           <ul className='flex flex-col gap-14 ml-[300px]'>
-            <li className={cn(
-              menuListClass,
-              'text-white text-4xl bold uppercase tracking-wide',
-              'transition duration-300 delay-[50ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/map?view=partners'>Partners</Link></li>
-            <li className={cn(
-              menuListClass,
-              'text-white text-4xl bold uppercase tracking-wide',
-              'transition duration-300 delay-[100ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/map?view=projects'>Projects</Link></li>
-            <li className={cn(
-              menuListClass,
-              'text-white text-4xl bold uppercase tracking-wide',
-              'transition duration-300 delay-[150ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/tools'>Tools</Link></li>
-            <li className={cn(
-              menuListClass,
-              'text-white text-4xl bold uppercase tracking-wide',
-              'transition duration-300 delay-[200ms] ease-in-out',
-            )}><Link onClick={handleToggleMenu} href='/about'>About this site</Link></li>
+            {/* Menu Items */}
+            {menuLinks.map((item, index) => (
+              <li key={item.link} className={cn(
+                menuListClass,
+                'text-white text-4xl bold uppercase tracking-wide',
+                'transition-opacity duration-300 ease-in-out',
+                { 'delay-[50ms]': index === 0, 'delay-[100ms]': index === 1, 'delay-[150ms]': index === 2, 'delay-[200ms]': index === 3 },
+              )}>
+                <Link href={item.link} legacyBehavior>
+                  <a
+                    onClick={handleToggleMenu}
+                    className='hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+                  >
+                    {item.title}
+                  </a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
-        <Link onClick={handleToggleMenu} href='/'>
-          <h1 className='relative z-50 text-white text-lg font-medium uppercase text-center mt-4 tracking-wide'>
+        <Link href='/' legacyBehavior>
+          <h1 onClick={handleToggleMenu} className={
+            cn(
+              'relative z-50 text-white text-lg font-medium uppercase text-center mt-4 tracking-wide cursor-pointer',
+              'hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+            )
+          }>
             African Agriculture Adaptation Tracking Tool
           </h1>
         </Link>
         <button
-          className='absolute top-2 left-2'
+          className='absolute z-50 top-2 left-2 hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
           onClick={handleToggleMenu}
         >
           <BiX className='text-white h-10 w-10' />
         </button>
         <div className='fixed right-0 bottom-0 left-0 z-50'>
-          {/* TODO - replace with footer component - pass prop for dark or light */}
+          {/* Footer */}
           <footer className='flex justify-between w-full p-5 text-white'>
             <p>©2023 AAA & CGIAR</p>
-            <p>Share</p>
+            {/* TODO: make this a component */}
+            <div className='relative'>
+              <button
+                onClick={handleCopyToClipboard}
+                className='font-medium hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+              >
+                Share
+              </button>
+              <div className={cn(
+                'absolute -top-8 left-1/2 transform -translate-x-1/2 pointer-events-none',
+                'bg-grey-700 text-white text-xs rounded px-2 py-1',
+                'transition-all duration-500 ease-in-out',
+                tooltipVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
+              )}>
+                Copied
+              </div>
+            </div>
           </footer>
         </div>
       </div>
-
     </nav>
   )
 }

@@ -8,8 +8,12 @@ import Menu from './menu'
 const Header = () => {
   // const router = useRouter()
   const pathname = usePathname()
-  const isHome = (pathname === '/') ? true : false
-  const headerClass = (isHome) ? 'absolute' : 'relative bg-off-white border-b border-grey-100'
+  const isHome = pathname === '/'
+  const isMap = pathname === '/map'
+  const headerClass =
+    (isHome) ? 'fixed' :
+      (isMap) ? 'relative bg-off-white border-b border-grey-100' :
+        'fixed bg-off-white border-b border-grey-100'
 
   return (
     <header
