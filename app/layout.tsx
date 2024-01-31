@@ -7,8 +7,8 @@ import type { Metadata } from 'next'
 // const inter = IBM_Plex_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'African Agriculture Adaptation Tracking Tool',
-  description: 'Explore the work being done to adapt to climate change in Africa',
+  title: 'African Adaptation Tracking Tool',
+  description: 'Explore the work being done to adapt to climate change in Africa.',
 }
 
 export default function RootLayout({
@@ -17,6 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">{children}</html>
+    <html lang="en">
+      {children}
+    </html>
   )
 }
