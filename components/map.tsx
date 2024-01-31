@@ -271,7 +271,7 @@ function Map({
           closeButton={false}
           closeOnClick={false}
           anchor={"bottom"}
-          className='min-w-[200px]'
+          className='custom-popup min-w-[200px]'
         >
           <div className="pt-1 px-2">
             {hoverInfo.dateEnd && hoverInfo.ongoing && <p className='text-xs font-medium text-brand-blue mb-2'>Ongoing</p>}
