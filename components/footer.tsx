@@ -4,7 +4,8 @@ import { useState } from 'react'
 import cn from 'classnames'
 
 const Footer = () => {
-  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const [tooltipVisible, setTooltipVisible] = useState(false)
+  const year = new Date().getFullYear() // TODO: move into separate component
   const handleCopyToClipboard = async () => {
     const url = window.location.origin;  // Get the root URL of the application
 
@@ -22,7 +23,7 @@ const Footer = () => {
 
   return (
     <footer className='flex justify-between w-full p-5'>
-      <p>©2023 AAA & CGIAR</p>
+      <p>© {year} AAA & CGIAR</p>
       {/* TODO: make this a component */}
       <div className='relative'>
         <button

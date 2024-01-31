@@ -19,7 +19,8 @@ const Menu = () => {
     { link: '/about', title: 'About this site' }
   ]
 
-  const [tooltipVisible, setTooltipVisible] = useState(false);
+  const [tooltipVisible, setTooltipVisible] = useState(false)
+  const year = new Date().getFullYear() // TODO: move into separate component
   const handleCopyToClipboard = async () => {
     const url = window.location.origin;  // Get the root URL of the application
 
@@ -95,7 +96,7 @@ const Menu = () => {
         <div className='fixed right-0 bottom-0 left-0 z-50'>
           {/* Footer */}
           <footer className='flex justify-between w-full p-5 text-white'>
-            <p>©2023 AAA & CGIAR</p>
+            <p>© {year} AAA & CGIAR</p>
             {/* TODO: make this a component */}
             <div className='relative'>
               <button
