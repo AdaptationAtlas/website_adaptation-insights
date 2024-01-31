@@ -136,7 +136,7 @@ const SidebarNav = ({
           </div>
         }
 
-        {viewProjects && viewByBudget &&
+        {viewByBudget &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>Currency</span>
             <Select onValueChange={onSelectedCurrencyChange}>

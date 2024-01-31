@@ -166,7 +166,9 @@ const SidebarList = ({
         )
       })}
       {!viewProjects && actorsData.map((actor, index) => {
-        const budget = (actor.totalBudgetUSD) ? '$' + formatNumberCommas(Math.round(actor.totalBudgetUSD)) : 'Unspecified'
+        const budgetCurrency = (selectedCurrency === 'EUR') ? actor.totalBudgetEUR : actor.totalBudgetUSD
+        const currencySymbol = (selectedCurrency === 'EUR') ? '€' : '$'
+        const budget = (budgetCurrency && currencySymbol) ? currencySymbol + formatNumberCommas(Math.round(budgetCurrency)) : 'Unspecified'
         const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(Math.round(actor.totalBeneficiaries)) : 'Unspecified'
         const maxWidth = (index < 10) ? 'max-w-[230px]' : 'max-w-[430px]'
         const delay = (index + 2) * 100 // Calculate the delay for each list item
