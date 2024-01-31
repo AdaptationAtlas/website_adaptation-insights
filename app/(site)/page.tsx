@@ -54,61 +54,72 @@ export default async function Home() {
           <p className='text-lg uppercase mb-5'>Choose an area to explore</p>
         </div>
 
-        {/* <div className='grid grid-cols-1 md:grid-cols-3 mb-[80px] md:h-[350px] lg:h-[450px]'> */}
-        <div className='grid grid-cols-3 mb-[80px] h-[450px]'>
+        <div className='grid grid-cols-3 mb-[80px]'>
           <Link href='/map?view=partners'>
-            <div className='relative flex items-end p-8 h-full overflow-hidden'>
-              {homeContent.partnersLinkImage && (
-                <Image
-                  src={homeContent.partnersLinkImage}
-                  alt={homeContent.title}
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition='top'
-                  className={'transition-transform duration-500 ease-in-out hover:scale-105'}
-                />
-              )}
-              <div className='relative z-10 pointer-events-none'>
-                <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Partners</h3>
-                <p className='text-lg text-white font-medium leading-tight'>Explore the organizations implementing projects and their networks.</p>
+            <div className='relative w-full overflow-hidden'>
+              <div className='pb-[100%] relative'> {/* Square Aspect Ratio */}
+                <div className='absolute inset-0 flex items-end p-8'>
+                  {homeContent.partnersLinkImage && (
+                    <Image
+                      src={homeContent.partnersLinkImage}
+                      alt="Partners"
+                      layout='fill'
+                      objectFit='cover'
+                      objectPosition='top'
+                      className='transition-transform duration-500 ease-in-out hover:scale-105'
+                    />
+                  )}
+                  <div className='relative z-10 pointer-events-none'>
+                    <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Partners</h3>
+                    <p className='text-lg text-white font-medium leading-tight'>Explore the organizations implementing projects and their networks.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Link>
 
           <Link href='/map?view=projects'>
-            <div className='relative flex items-end p-8 h-full overflow-hidden'>
-              {homeContent.projectsLinkImage && (
-                <Image
-                  src={homeContent.projectsLinkImage}
-                  alt={homeContent.title}
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition='top'
-                  className={'transition-transform duration-500 ease-in-out hover:scale-105'}
-                />
-              )}
-              <div className='relative z-10 pointer-events-none'>
-                <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Projects</h3>
-                <p className='text-lg text-white font-medium leading-tight'>Learn about targeted adaptation projects, their scope and locations.</p>
+            <div className='relative w-full overflow-hidden'>
+              <div className='pb-[100%] relative'> {/* Square Aspect Ratio */}
+                <div className='absolute inset-0 flex items-end p-8'>
+                  {homeContent.projectsLinkImage && (
+                    <Image
+                      src={homeContent.projectsLinkImage}
+                      alt="Projects"
+                      layout='fill'
+                      objectFit='cover'
+                      objectPosition='top'
+                      className='transition-transform duration-500 ease-in-out hover:scale-105'
+                    />
+                  )}
+                  <div className='relative z-10 pointer-events-none'>
+                    <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Projects</h3>
+                    <p className='text-lg text-white font-medium leading-tight'>Learn about targeted adaptation projects, their scope and locations.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Link>
 
           <Link href='/tools'>
-            <div className='relative flex items-end p-8 h-full overflow-hidden'>
-              {homeContent.wikiLinkImage && (
-                <Image
-                  src={homeContent.wikiLinkImage}
-                  alt={homeContent.title}
-                  layout='fill'
-                  objectFit='cover'
-                  objectPosition='top'
-                  className={'transition-transform duration-500 ease-in-out hover:scale-105'}
-                />
-              )}
-              <div className='relative z-10 pointer-events-none'>
-                <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Tools</h3>
-                <p className='text-lg text-white font-medium leading-tight'>Explore practical approaches to adaptation tracking.</p>
+            <div className='relative w-full overflow-hidden'>
+              <div className='pb-[100%] relative'> {/* Square Aspect Ratio */}
+                <div className='absolute inset-0 flex items-end p-8'>
+                  {homeContent.wikiLinkImage && (
+                    <Image
+                      src={homeContent.wikiLinkImage}
+                      alt="Tools"
+                      layout='fill'
+                      objectFit='cover'
+                      objectPosition='top'
+                      className='transition-transform duration-500 ease-in-out hover:scale-105'
+                    />
+                  )}
+                  <div className='relative z-10 pointer-events-none'>
+                    <h3 className='text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Tools</h3>
+                    <p className='text-lg text-white font-medium leading-tight'>Explore practical approaches to adaptation tracking.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Link>
