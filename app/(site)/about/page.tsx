@@ -92,7 +92,7 @@ export default async function About() {
         </div>
 
         <div className='max-w-[960px] mx-auto mb-[100px]'>
-          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>The data visualization was designed and developed in partnership with Periscopic.</p>
+          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>The data visualization was designed and developed in partnership with <a href="https://periscopic.com/#!/" rel='noreferrer nofollow' target='_blank' className='underline hover:text-brand-green transition-colors'>Periscopic</a>.</p>
         </div>
       </div>
       <Footer />
