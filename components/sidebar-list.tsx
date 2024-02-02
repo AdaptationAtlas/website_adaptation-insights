@@ -7,6 +7,7 @@ import { colorRange } from '@/utils/color'
 import { minBy, maxBy } from 'lodash'
 import classNames from 'classnames'
 import Spinner from './ui/spinner'
+import Info from './ui/info';
 
 type Props = {
   viewProjects: boolean
@@ -134,6 +135,7 @@ const SidebarList = ({
         const colorBeneficiaries = project.beneficiaryNum ? colorRange(project.beneficiaryNum, beneficiariesBuckets, bucketColors) : '#B7B7B7'
         const classBudget = (project.budget) ? 'font-bold' : 'font-normal'
         const classBeneficiaries = (project.beneficiaryNum) ? 'font-bold' : 'font-normal'
+        const beneficiaryFlagMultiple = project.beneficiaryFlagMultiple
         const delay = (index + 2) * 100 // Calculate the delay for each list item
         // Change the key to force a re-render
         const combinedKey = `${project.projectCode}-budget-${viewByBudget}-type-${selectedType}-country-${selectedCountry}-year-${selectedYear}`
@@ -143,8 +145,12 @@ const SidebarList = ({
             key={combinedKey}
             onClick={() => { handleProjectSelect(project) }}
             className={classNames(
-              'opacity-0 px-5 py-3 border-b border-b-grey-200 cursor-pointer',
-              'hover:bg-grey-lightest transition duration-300 animate-fade-in-up',
+              // TODO: add the staggered fade in animation below back in
+              // NOTE: this was causing some z-index bug with the info tooltips
+              // 'opacity-0 px-5 py-3 border-b border-b-grey-200 cursor-pointer',
+              // 'hover:bg-grey-lightest transition duration-300 animate-fade-in-up',
+              'px-5 py-3 border-b border-b-grey-200 cursor-pointer',
+              'hover:bg-grey-lightest transition duration-300',
               { 'bg-grey-lightest pointer-events-none': project.projectCode === activeProject?.projectCode }
             )}
             style={{ animationDelay: `${delay}ms` }}
@@ -157,7 +163,14 @@ const SidebarList = ({
             }
             {!viewByBudget &&
               <div>
-                <h3 className='uppercase text-sm'>Beneficiaries</h3>
+                <div className='flex items-center'>
+                  <h3 className='uppercase text-sm'>Beneficiaries</h3>
+                  {beneficiaryFlagMultiple &&
+                    <Info
+                      tooltipContent='Multiple people may make up a single beneficiary in this project.'
+                    />
+                  }
+                </div>
                 <p className={`text-[45px] uppercase leading-tight font-semibold ${classBeneficiaries}`} style={{ color: colorBeneficiaries }}>{beneficiaries}</p>
               </div>
             }
@@ -170,6 +183,7 @@ const SidebarList = ({
         const currencySymbol = (selectedCurrency === 'EUR') ? '€' : '$'
         const budget = (budgetCurrency && currencySymbol) ? currencySymbol + formatNumberCommas(Math.round(budgetCurrency)) : 'Unspecified'
         const beneficiaries = (actor.totalBeneficiaries) ? formatNumberCommas(Math.round(actor.totalBeneficiaries)) : 'Unspecified'
+        const beneficiaryFlagMultiple = actor.beneficiaryFlagMultiple
         const maxWidth = (index < 10) ? 'max-w-[230px]' : 'max-w-[430px]'
         const delay = (index + 2) * 100 // Calculate the delay for each list item
         // Change the key to force a re-render
@@ -180,8 +194,12 @@ const SidebarList = ({
             key={combinedKey}
             onClick={() => { handleActorSelect(actor) }}
             className={classNames(
-              'opacity-0 px-5 border-b border-b-grey-200 cursor-pointer',
-              'hover:bg-grey-lightest transition duration-300 animate-fade-in-up',
+              // TODO: add the staggered fade in animation below back in
+              // NOTE: this was causing some z-index bug with the info tooltips
+              // 'opacity-0 px-5 border-b border-b-grey-200 cursor-pointer',
+              // 'hover:bg-grey-lightest transition duration-300 animate-fade-in-up',
+              'px-5 border-b border-b-grey-200 cursor-pointer',
+              'hover:bg-grey-lightest transition duration-300',
               { 'bg-grey-lightest pointer-events-none': actor.actorCode === activeActor?.actorCode }
             )}
             style={{ animationDelay: `${delay}ms` }}
@@ -211,7 +229,14 @@ const SidebarList = ({
             {!viewByBudget &&
               <div className='flex justify-between'>
                 <div className={`${maxWidth} my-4`}>
-                  <h3 className='uppercase text-sm mb-2'>{beneficiaries} beneficiaries</h3>
+                  <div className='flex items-center mb-2'>
+                    <h3 className='uppercase text-sm'>{beneficiaries} beneficiaries</h3>
+                    {beneficiaryFlagMultiple &&
+                      <Info
+                        tooltipContent='This partner has worked on projects where multiple people may make up a single beneficiary.'
+                      />
+                    }
+                  </div>
                   <h2 className='text-[17px] leading-tight font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&

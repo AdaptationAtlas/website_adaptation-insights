@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // keyframes and animation properties for staggered fade in animation of list items
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },

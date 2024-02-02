@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Switch from '@/components/ui/switch'
+import Info from '@/components/ui/info'
 import SidebarList from '@/components/sidebar-list'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import { uniq } from 'lodash'
@@ -103,16 +104,23 @@ const SidebarNav = ({
           colors={true}
           isLarge={true}
         />
-        {viewProjects && <p className='text-base mt-3 mb-5'>Adaptation projects vary in scope, targeting many types of beneficiaries and employing different interventions, tailored to where they take place.</p> }
-        {!viewProjects && <p className='text-base mt-3 mb-5'>Partners collaborate with one another on adaptation projects. This network is crucial to helping countries and communities prepare for climate change.</p> }
-        <Switch
-          switchToggled={viewByBudget}
-          setSwitchToggled={setViewByBudget}
-          label={'View by'}
-          options={['Beneficiaries', 'Budget']}
-          colors={false}
-          isLarge={false}
-        />
+        {viewProjects && <p className='text-base mt-3 mb-5'>Adaptation projects vary in scope, targeting many types of beneficiaries and employing different interventions, tailored to where they take place.</p>}
+        {!viewProjects && <p className='text-base mt-3 mb-5'>Partners collaborate with one another on adaptation projects. This network is crucial to helping countries and communities prepare for climate change.</p>}
+        <div className='flex items-center'>
+          <Switch
+            switchToggled={viewByBudget}
+            setSwitchToggled={setViewByBudget}
+            label={'View by'}
+            options={['Beneficiaries', 'Budget']}
+            colors={false}
+            isLarge={false}
+          />
+          {viewByBudget &&
+            <Info
+              tooltipContent='Budget refers to the sum of total project budgets a partner has worked on with others – not the individual contribution of a partner.'
+            />
+          }
+        </div>
 
         {viewProjects &&
           <div className='flex items-center'>
