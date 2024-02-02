@@ -2,6 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer'
 import { getAboutContent } from '@/sanity/sanity-utils'
+import imgLogoAAA from '@/public/images/logos/AAA.png'
+import imgLogoAAI from '@/public/images/logos/AAI.png'
+import imgLogoABC from '@/public/images/logos/ABC.png'
+import imgLogoGCA from '@/public/images/logos/GCA.png'
+import imgLogoGIZ from '@/public/images/logos/GIZ.png'
 
 export default async function About() {
   const content = await getAboutContent('about')
@@ -34,37 +39,65 @@ export default async function About() {
           <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>We inventory organizations and actions to identify partnerships for advancing African agriculture adaptation.</p>
         </div>
 
-        <div id='callout-box' className='bg-off-white py-12 border-b border-t border-grey-400 mb-16'>
+        {/* <div id='callout-box' className='bg-off-white py-12 border-b border-t border-grey-400 mb-16'>
           <div className='max-w-[960px] mx-auto'>
             <h3 className='text-[24px] text-grey-500 font-bold tracking-wide leading-tight mb-3'>Lorem ipsum dolor sit amet</h3>
             <p className='text-[24px] text-grey-500 tracking-normal leading-[40px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-        </div>
+        </div> */}
 
         <div className='max-w-[960px] mx-auto mb-24'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Metrics Mapping & Evaluation</h3>
-          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>We operationalize iceberg thinking for agricultural adaptation tracking. That is, we provide accessible tools for stakeholders to put actions and metrics in context, simplifying their application of adaptation concepts and providing entry points for improving coherence and consistency of information. The preliminary tools released include sets of generic impact pathways relevant for major types of agricultural adaptation actions, creating strawpersons for stakeholders to modify and create adaptation rationales and impact pathways. Indicator lists that align to the impact pathways help narrow down from long lists to short lists of indicators allowing users to more quickly determine priorities. This first set of tools build on the rich history of developments in agricultural adaptation monitoring and evaluation and recent contributions to adaptation tracking thinking.</p>
+          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>We operationalize <i>iceberg thinking</i> for agricultural adaptation tracking. That is, we provide accessible tools for stakeholders to put actions and metrics in context, simplifying their application of adaptation concepts and providing entry points for improving coherence and consistency of information. The preliminary tools released include sets of generic impact pathways relevant for major types of agricultural adaptation actions, creating strawpersons for stakeholders to modify and create adaptation rationales and impact pathways. Indicator lists that align to the impact pathways help narrow down from long lists to short lists of indicators allowing users to more quickly determine priorities. This first set of tools build on the rich history of developments in agricultural adaptation monitoring and evaluation and recent contributions to adaptation tracking thinking.</p>
         </div>
 
         <h2 className='max-w-[960px] mx-auto text-[42px] text-grey-700 font-bold tracking-wide leading-tight mb-5'>Partners</h2>
 
-        <div className='max-w-[960px] mx-auto mb-24'>
+        <div className='max-w-[960px] mx-auto mb-20'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Implementation</h3>
           <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>The African Agriculture Adaptation Tracking Tool is implemented through a collaboration between the Adaptation of African Agriculture Initiative (AAA) and the Alliance of Bioversity International and International Center on Tropical Agriculture (Alliance of Bioversity-CIAT). The project has benefited from the oversight of SDG-Action. Financial support has so far been provided by GIZ and the Global Center on Adaptation (GCA).</p>
+        </div>
+
+        <div className='max-w-[960px] mx-auto mb-24 flex justify-center flex-wrap items-center gap-20'>
+          <Image
+            src={imgLogoAAA}
+            alt='Adaptation of African Agriculture Initiative logo'
+            className='h-fit'
+          />
+          <Image
+            src={imgLogoAAI}
+            alt='AAI logo'
+            className='h-fit'
+          />
+          <Image
+            src={imgLogoABC}
+            alt='ABC logo'
+            className='h-fit'
+          />
+          <Image
+            src={imgLogoGCA}
+            alt='Global Center on Adaptation logo'
+            className='h-fit'
+          />
+          <Image
+            src={imgLogoGIZ}
+            alt='GIZ logo'
+            className='h-fit'
+          />
         </div>
 
         <h2 className='max-w-[960px] mx-auto text-[42px] text-grey-700 font-bold tracking-wide leading-tight mb-5'>Methods and Sources</h2>
 
         <div className='max-w-[960px] mx-auto mb-16'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Identifying Actors and Actions</h3>
-          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>A structured approach was employed utilizing two interconnected databases—one for actors and one for projects. Existing stakeholders maps were reviewed  to identify key stakeholders in targeted countries, building the actors database. This database served as a foundation for identifying projects initiated by stakeholders. Project details were sourced from official websites, reports, or articles and collected through google forms.</p>
-          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>These included partners, funders, budget, target value chains, beneficiaries, and specific methods implemented like on-farm adaptations(manure management, water harvesting, diversification, pest and disease management …) and beyond-farm adaptations(training, research, policy, finance …). Precise coordinates of the project locations were extracted as well to give a clear and detailed overview of each project‘s scope.</p>
+          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>A structured approach was employed utilizing two interconnected databases—one for actors and one for projects. Existing stakeholders maps were reviewed to identify key stakeholders in targeted countries, building the actors database. This database served as a foundation for identifying projects initiated by stakeholders. Project details were sourced from official websites, reports, or articles and collected through google forms. </p>
+          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>These included partners, funders, budget, target value chains, beneficiaries, and specific methods implemented like on-farm adaptations (manure management, water harvesting, diversification, pest and disease management …) and beyond-farm adaptations (training, research, policy, finance …). Precise coordinates of the project locations were extracted as well to give a clear and detailed overview of each project’s scope.</p>
           <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>As new projects were added, we identified new actors. This iterative process allows us to continually update the databases, and ensure the inclusion of as many projects as possible related to agricultural adaptations to a changing climate.</p>
         </div>
 
         <div className='max-w-[960px] mx-auto mb-24'>
           <h3 className='text-[24px] text-grey-700 font-bold tracking-wide leading-tight mb-3'>Defining Actions, Impact Pathways, and Indicators</h3>
-          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>To define key adaptation actions, the approximately 100 investments listed in the 10 Climate-Smart Agriculture Investment Plans (CSAIPs) were classified into broad, distinct categories through a systematic analysis of activities. An impact pathway was drawn out for each broad category of investment based on the scientific literature and project documents. Candidate indicators for each impact pathway were identified from the CSAIPs and major indicator compilations, enabling the alignment of specific indicators with each impact pathway. The result was a streamlined and relevant set of actions, impact pathways, and indicators that can kickstart the development of improved adaptation tracking plans and implementation.</p>
+          <p className='text-[24px] text-grey-700 tracking-normal leading-[40px] mb-5'>To define key adaptation actions, the approximately 80 investments listed in the 10 Climate-Smart Agriculture Investment Plans (CSAIPs) were classified into broad, distinct categories through a systematic analysis of the activities included. An impact pathway was drawn out for each broad category of investment based on the scientific literature and project documents. Candidate indicators for each impact pathway were identified from the CSAIPs and major indicator compilations, enabling the alignment of specific indicators with each impact pathway. The result was a streamlined and relevant set of actions, impact pathways, and indicators that can kickstart the development of improved adaptation tracking plans and implementation.</p>
         </div>
 
         <h2 className='max-w-[960px] mx-auto text-[42px] text-grey-700 font-bold tracking-wide leading-tight mb-5'>Data visualization</h2>
