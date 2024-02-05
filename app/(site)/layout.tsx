@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <body className={`${ibmPlexSans.className} min-w-[1200px]`}>
+    <body className={`${ibmPlexSans.className}`}>
       <Header />
       <main>{children}</main>
     </body>
