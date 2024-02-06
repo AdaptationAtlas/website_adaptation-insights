@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <div>
       <div className='pb-[100px] lg:pb-[175px]'>
-        <div className='w-full h-[250px] lg:h-screen overflow-hidden relative flex items-center'>
+        <div className='w-full h-[250px] md:h-screen overflow-hidden relative flex items-center'>
           {homeContent.heroImage && (
             <Image
               src={homeContent.heroImage}
@@ -34,23 +34,23 @@ export default async function Home() {
               alt={homeContent.title}
               width={340}
               height={300}
-              className='hidden lg:block absolute z-10 top-[80px] right-[80px]'
+              className='hidden xl:block absolute z-10 top-[80px] right-[80px]'
             />
           )}
           <div className='relative z-20 p-5 lg:ml-[100px]'>
-            <h1 className='hidden lg:block text-white text-6xl leading-tight font-bold uppercase mb-12 max-w-[900px]'>
+            <h1 className='hidden md:block text-white text-5xl leading-tight lg:text-6xl lg:leading-tight font-bold uppercase mb-12 max-w-[700px] lg:max-w-[900px]'>
               AFRICAN AGRICULTURE ADAPTATION TRACKING TOOL
             </h1>
             <div className='flex items-center'>
               {/* <p className='text-white text-3xl leading-normal max-w-[640px]'>{homeContent.heroText}</p> */}
-              <p className='text-white text-xl lg:text-3xl leading-normal max-w-[640px]'>Explore the work being done to adapt to climate change in Africa.</p>
+              <p className='text-white text-2xl leading-normal lg:text-3xl lg:leading-normal max-w-[500px] lg:max-w-[640px]'>Explore the work being done to adapt to climate change in Africa.</p>
             </div>
           </div>
         </div>
 
         <div className='px-5 lg:px-[100px]'>
           {/* <p className='text-4xl font-bold leading-normal max-w-[960px] mb-20 mt-20'>{homeContent.introText}</p> */}
-          <p className='text-[22px] lg:text-4xl font-bold leading-normal max-w-[960px] my-10 lg:my-20'>The African Agriculture Adaptation Tracking Tool is the go-to-hub for information on agricultural adaptation actions from across Africa. Discover key organizations, partnerships, their projects and a suite of tools to aid future adaptation tracking efforts.</p>
+          <p className='text-2xl lg:text-4xl font-bold leading-normal max-w-[960px] my-10 lg:my-20'>The African Agriculture Adaptation Tracking Tool is the go-to-hub for information on agricultural adaptation actions from across Africa. Discover key organizations, partnerships, their projects and a suite of tools to aid future adaptation tracking efforts.</p>
           <p className='text-base lg:text-lg uppercase mb-5'>Choose an area to explore</p>
         </div>
 

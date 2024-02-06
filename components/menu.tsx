@@ -6,7 +6,7 @@ import { BiX, BiMenu } from 'react-icons/bi'
 const Menu = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false)
   const menuClass = menuActive ? 'opacity-100 pointer-events-default' : 'opacity-0 pointer-events-none'
-  const menuListClass = menuActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+  const menuListClass = menuActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-15'
 
   const handleToggleMenu = () => {
     setMenuActive(!menuActive)
@@ -41,7 +41,7 @@ const Menu = () => {
       <button
         className={
           cn(
-            'fixed top-0 left-0 bg-off-white text-brand-green p-4 h-[54px] cursor-pointer',
+            'fixed top-0 left-0 bg-off-white text-brand-green p-2 md:p-4 md:h-[55px] cursor-pointer',
             'hover:bg-brand-green hover:text-white transition-colors duration-300 ease-in-out'
           )
         }
@@ -56,19 +56,19 @@ const Menu = () => {
         )}
       >
         <div className='flex items-center h-full w-full absolute top-0'>
-          <ul className='flex flex-col gap-14 ml-[300px]'>
+          <ul className='flex flex-col gap-7 md:gap-14 ml-[45px] md:ml-[300px]'>
             {/* Menu Items */}
             {menuLinks.map((item, index) => (
               <li key={item.link} className={cn(
                 menuListClass,
-                'text-white text-4xl bold uppercase tracking-wide',
-                'transition-opacity duration-300 ease-in-out',
+                'text-white text-2xl md:text-4xl bold uppercase tracking-wide',
+                'transition duration-300 ease-in-out',
                 { 'delay-[50ms]': index === 0, 'delay-[100ms]': index === 1, 'delay-[150ms]': index === 2, 'delay-[200ms]': index === 3 },
               )}>
                 <Link href={item.link} legacyBehavior>
                   <a
                     onClick={handleToggleMenu}
-                    className='hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+                    className='hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'
                   >
                     {item.title}
                   </a>
@@ -80,15 +80,16 @@ const Menu = () => {
         <Link href='/' legacyBehavior>
           <h1 onClick={handleToggleMenu} className={
             cn(
-              'relative z-50 text-white text-lg font-medium uppercase text-center mt-4 tracking-wide cursor-pointer',
-              'hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+              'relative z-50 text-white text-lg font-medium uppercase text-center p-1.5 md:p-3 tracking-wide cursor-pointer',
+              'hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'
             )
           }>
-            African Agriculture Adaptation Tracking Tool
+            <span className='hidden md:block'>African Agriculture Adaptation Tracking Tool</span>
+            <span className='block md:hidden'>Adaptation Insights</span>
           </h1>
         </Link>
         <button
-          className='absolute z-50 top-2 left-2 hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+          className='absolute z-50 top-2 left-2 hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'
           onClick={handleToggleMenu}
         >
           <BiX className='text-white h-10 w-10' />
@@ -101,7 +102,7 @@ const Menu = () => {
             <div className='relative'>
               <button
                 onClick={handleCopyToClipboard}
-                className='font-medium hover:opacity-100 opacity-80 transition-opacity duration-300 ease-in-out'
+                className='font-medium hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'
               >
                 Share
               </button>
