@@ -10,6 +10,7 @@ import { fetchData, sortActors, sortProjects, filterByYear, filterByCountry, fil
 import MapLegend from '@/components/map-legend'
 import { getActor, getProject } from '@/utils/data-helpers'
 import project from '@/sanity/schemas/project'
+import { useMediaQuery } from '@/lib/hooks'
 
 // type Props = {
 //   params: { catchAll: string[] }
@@ -38,6 +39,9 @@ const MapPage = () => {
   const [selectedCurrency, setSelectedCurrency] = useState<string>('USD')
   const [detailPanelActive, setDetailPanelActive] = useState<boolean>(false)
   const [viewProjectsDetail, setViewProjectsDetail] = useState<boolean>(false)
+
+  // Set the tablet breakpoint
+  const isTablet = useMediaQuery(768)
 
   // Get the search params from the URL
   const searchParams = useSearchParams()
@@ -159,17 +163,20 @@ const MapPage = () => {
         viewProjectsDetail={viewProjectsDetail}
         setViewProjectsDetail={setViewProjectsDetail}
       />
-      <div className='relative w-full h-[calc(100vh-56px)]'>
-        <Map
-          viewByBudget={viewByBudget}
-          selectedCountry={selectedCountry}
-          selectedYear={selectedYear}
-        />
-        <MapLegend
-          viewByBudget={viewByBudget}
-          selectedCurrency={selectedCurrency}
-        />
-      </div>
+
+      {isTablet &&
+        <div className='relative w-full h-[calc(100vh-56px)]'>
+          <Map
+            viewByBudget={viewByBudget}
+            selectedCountry={selectedCountry}
+            selectedYear={selectedYear}
+          />
+          <MapLegend
+            viewByBudget={viewByBudget}
+            selectedCurrency={selectedCurrency}
+          />
+        </div>
+      }
     </div>
   )
 }
