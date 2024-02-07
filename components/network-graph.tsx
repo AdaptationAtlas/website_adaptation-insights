@@ -5,6 +5,7 @@ import { find, cloneDeep } from 'lodash'
 import cn from 'classnames'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { getProjectName, getActorName } from '@/utils/data-helpers'
+import { useMediaQuery } from '@/lib/hooks'
 
 type Props = {
   actorCode: string
@@ -39,6 +40,7 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
   const [tooltipHeight, setTooltipHeight] = useState(0)
   const tooltipRef = useRef<HTMLDivElement>(null)
+  const isTablet = useMediaQuery(768)
 
   // Get a new searchParams string by merging the current
   // searchParams with a provided key/value pair
@@ -150,7 +152,7 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   // Handle mouse move logic
   useEffect(() => {
     const handleMouseMove = (event: any) => {
-      const offsetX = -515; // Adjust as needed
+      const offsetX = isTablet ? -515 : -100
 
       // Offset Y to position the tooltip above the cursor
       // Use the tooltipHeight to adjust the position above the cursor
@@ -167,14 +169,14 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
     document.addEventListener('mousemove', handleMouseMove);
     return () => document.removeEventListener('mousemove', handleMouseMove);
-  }, [tooltipContent.visible, detailPanelRef, tooltipHeight]); // Add tooltipHeight as a dependency
+  }, [tooltipContent.visible, detailPanelRef, tooltipHeight, isTablet]); // Add tooltipHeight as a dependency
 
 
 
 
 
   return (
-    <div className='relative'>
+    <div className='relative flex justify-center'>
       <ForceGraph2D
         ref={forceGraphRef}
         graphData={processedNetworkData}

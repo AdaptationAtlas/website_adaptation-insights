@@ -135,7 +135,7 @@ const MapPage = () => {
   }, [selectedType, viewByBudget, actorsRawData])
 
   return (
-    <div className='flex'>
+    <div className='block md:flex'>
       <Sidebar
         actorsData={actorsData}
         projectsData={projectsData}

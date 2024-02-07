@@ -25,3 +25,28 @@ export const useMediaQuery = (width: number) => {
   return targetReached
 }
 
+export const useWindowWidth = () => {
+  // Initialize state with undefined to account for server-side rendering,
+  // where window object is not available.
+  const [windowWidth, setWindowWidth] = useState(typeof window !== "undefined" ? window.innerWidth : undefined)
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Update the window width state with the current window width
+      setWindowWidth(window.innerWidth)
+    }
+
+    // Set up event listener for window resize
+    window.addEventListener('resize', handleResize)
+
+    // Call handleResize immediately to set the initial width
+    handleResize()
+
+    // Cleanup function to remove event listener
+    return () => window.removeEventListener('resize', handleResize)
+  }, []) // Empty array ensures this effect runs only on mount and unmount
+
+  return windowWidth
+}
+
+

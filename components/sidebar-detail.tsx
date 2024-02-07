@@ -43,7 +43,7 @@ const SidebarDetail = ({
   setActiveProject
 }: Props) => {
   const detailPanelRef = useRef<HTMLDivElement>(null)
-  const detailPanelClass = (detailPanelActive) ? 'translate-x-[415px]' : 'translate-x-0'
+  const detailPanelClass = (detailPanelActive) ? 'translate-x-0 md:translate-x-[415px]' : '-translate-x-full md:translate-x-0'
 
   // Method to scroll detail panel to top when partner or project is clicked
   const scrollToTop = () => {
@@ -76,7 +76,7 @@ const SidebarDetail = ({
       ref={detailPanelRef}
       className={classNames(
         detailPanelClass,
-        'absolute z-30 top-0 w-[415px] h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-300 will-change-transform'
+        'absolute z-40 md:z-30 top-0 w-full md:w-[415px] h-[calc(100vh-40px)] md:h-[calc(100vh-56px)] overflow-y-scroll bg-off-white border-r border-grey-100 transition-transform duration-300 will-change-transform'
       )}
     >
       <button onClick={closeDetailPanel} className='absolute top-3 right-3 cursor-pointer'><BiX className='scale-150' /></button>
