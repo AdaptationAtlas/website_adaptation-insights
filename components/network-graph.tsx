@@ -4,7 +4,7 @@ import ForceGraph2D from 'react-force-graph-2d'
 import { find, cloneDeep } from 'lodash'
 import cn from 'classnames'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
-import { getProjectName, getActorName } from '@/utils/data-helpers'
+import { getProjectName, getActorName } from '@/utils/data.utils'
 import { useMediaQuery } from '@/lib/hooks'
 
 type Props = {

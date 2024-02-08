@@ -7,8 +7,8 @@ import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import { apiVersion, dataset, projectId } from './sanity/env'
-import { schema } from './sanity/schema'
+import { apiVersion, dataset, projectId } from './lib/env'
+import { schema } from './lib/sanity-schema'
 
 const config = defineConfig({
   basePath: '/admin',
@@ -58,8 +58,6 @@ const config = defineConfig({
                       ),
                   ]),
               ),
-            S.documentTypeListItem('post').title('Posts'), // Add Posts to content menu
-            S.documentTypeListItem('project').title('Projects') // Add Projects to content menu
           ])
     }),
     // Vision is a tool that lets you query your content with GROQ in the studio

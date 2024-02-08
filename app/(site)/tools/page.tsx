@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer'
-import { getToolsContent } from '@/sanity/sanity-utils'
+import { getToolsContent } from '@/lib/sanity-utils'
 
 export default async function Tools() {
   const content = await getToolsContent('tools')

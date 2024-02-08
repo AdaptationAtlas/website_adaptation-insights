@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import ReactMapGL, { Source, Layer, Popup } from 'react-map-gl'
 import type { CircleLayer } from 'react-map-gl'
-import { currentYear } from '@/utils/time'
+import { currentYear } from '@/utils/time.utils'
 import { minBy, maxBy } from 'lodash'
 import { GeoJsonFeatureCollection } from '@/types/map.types'
 import 'mapbox-gl/dist/mapbox-gl.css'

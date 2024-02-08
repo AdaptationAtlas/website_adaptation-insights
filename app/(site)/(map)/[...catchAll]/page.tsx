@@ -8,8 +8,8 @@ import { orderBy } from 'lodash'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { fetchData, sortActors, sortProjects, filterByYear, filterByCountry, filterByType } from '@/lib/api'
 import MapLegend from '@/components/map-legend'
-import { getActor, getProject } from '@/utils/data-helpers'
-import project from '@/sanity/schemas/project'
+import { getActor, getProject } from '@/utils/data.utils'
+import project from '@/schemas/project.schema'
 import { useMediaQuery } from '@/lib/hooks'
 
 // type Props = {

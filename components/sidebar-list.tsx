@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { formatNumberCommas } from '@/lib/utils'
+import { formatNumberCommas } from '@/utils/numbers.utils'
 import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import NetworkGraph from './network-graph'
-import { colorRange } from '@/utils/color'
+import { colorRange } from '@/utils/color.utils'
 import { minBy, maxBy } from 'lodash'
 import classNames from 'classnames'
 import Spinner from './ui/spinner'

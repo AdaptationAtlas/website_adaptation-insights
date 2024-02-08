@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { handleSelectedYear, handleSelectedCountry, handleSelectedType, handleSelectedCurrency } from '@/utils/select-handlers'
+import { handleSelectedYear, handleSelectedCountry, handleSelectedType, handleSelectedCurrency } from '@/utils/select.utils'
 
 type Props = {
   actorsData: ActorData[]

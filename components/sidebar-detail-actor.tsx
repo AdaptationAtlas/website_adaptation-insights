@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { ActorData, ProjectData, NetworkData } from '@/types/sidebar.types'
 import { find } from 'lodash'
 import NetworkGraph from './network-graph'
-import { getActor, getProject } from '@/utils/data-helpers'
+import { getActor, getProject } from '@/utils/data.utils'
 
 type Props = {
   viewProjects: boolean

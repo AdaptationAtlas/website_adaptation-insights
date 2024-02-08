@@ -4,9 +4,9 @@ import React, { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import { ActorData, ProjectData } from '@/types/sidebar.types'
 import { find, filter } from 'lodash'
-import { formatNumberCommas } from '@/lib/utils'
-import { currentYear } from '@/utils/time'
-import { getActor, getActorName } from '@/utils/data-helpers'
+import { formatNumberCommas } from '@/utils/numbers.utils'
+import { currentYear } from '@/utils/time.utils'
+import { getActor, getActorName } from '@/utils/data.utils'
 
 type Props = {
   viewProjects: boolean

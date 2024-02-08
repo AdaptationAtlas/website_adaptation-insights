@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer'
-import { getAboutContent } from '@/sanity/sanity-utils'
+import { getAboutContent } from '@/lib/sanity-utils'
 import imgLogoAAA from '@/public/images/logos/AAA.png'
 import imgLogoAAI from '@/public/images/logos/AAI.png'
 import imgLogoABC from '@/public/images/logos/ABC.png'
