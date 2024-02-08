@@ -131,9 +131,9 @@ const SidebarDetailActor = ({
           </div>
           <div>
             <ul className='flex items-center gap-5'>
-              <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-teal mr-1.5'></span>Selected Partner</li>
-              <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-red mr-1.5'></span>Collaborator</li>
-              <li className='text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-gold mr-1.5'></span>Project</li>
+              <li className='text-[13px] md:text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-teal mr-1.5'></span>Selected Partner</li>
+              <li className='text-[13px] md:text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-red mr-1.5'></span>Collaborator</li>
+              <li className='text-[13px] md:text-sm font-medium flex items-center'><span className='block w-4 h-4 bg-brand-gold mr-1.5'></span>Project</li>
             </ul>
           </div>
         </div>

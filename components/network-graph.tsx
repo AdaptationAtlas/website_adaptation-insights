@@ -13,9 +13,9 @@ type Props = {
   width: number
   height: number
   type: string
-  actorsRawData?: ActorData[]; // Optional
-  projectsRawData?: ProjectData[]; // Optional
-  detailPanelRef?: React.RefObject<HTMLDivElement>; // Optional
+  actorsRawData?: ActorData[] // Optional
+  projectsRawData?: ProjectData[] // Optional
+  detailPanelRef?: React.RefObject<HTMLDivElement> // Optional
 }
 
 const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRawData, width, height, type, detailPanelRef }: Props) => {
@@ -36,8 +36,8 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()!
-  const [tooltipContent, setTooltipContent] = useState({ title: '', subtitle: '', group: '', visible: false });
-  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
+  const [tooltipContent, setTooltipContent] = useState({ title: '', subtitle: '', group: '', visible: false })
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 })
   const [tooltipHeight, setTooltipHeight] = useState(0)
   const tooltipRef = useRef<HTMLDivElement>(null)
   const isTablet = useMediaQuery(768)
@@ -56,35 +56,35 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
   const handleNodeClick = useCallback((node: any) => {
     // Create a new URLSearchParams object based on the current search params
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(searchParams)
 
     if (node.group === 'project') {
       params.delete('partner')
-      params.set('project', node.id);
-      params.set('view', 'projects');
+      params.set('project', node.id)
+      params.set('view', 'projects')
     } else {
       params.delete('project')
-      params.set('partner', node.id);
-      params.set('view', 'partners');
+      params.set('partner', node.id)
+      params.set('view', 'partners')
     }
 
     // Construct the new URL string
-    const newUrl = `${pathname}?${params.toString()}`;
+    const newUrl = `${pathname}?${params.toString()}`
 
     // Push the updated URL to the router
-    router.push(newUrl);
-  }, [router, pathname, searchParams]);
+    router.push(newUrl)
+  }, [router, pathname, searchParams])
 
   // Handle node hover
   const handleNodeHover = useCallback((node: any) => {
     if (node) {
       const headerTitle = (node.group === 'project') ? getProjectName(node.id, projectsRawData) : getActorName(node.id, actorsRawData)
-      const subheadTitle = (node.group === 'project') ? 'Project' : 'Partner';
-      setTooltipContent({ title: headerTitle, subtitle: subheadTitle, group: node.group, visible: true });
+      const subheadTitle = (node.group === 'project') ? 'Project' : 'Partner'
+      setTooltipContent({ title: headerTitle, subtitle: subheadTitle, group: node.group, visible: true })
     } else {
-      setTooltipContent({ ...tooltipContent, visible: false });
+      setTooltipContent({ ...tooltipContent, visible: false })
     }
-  }, [actorsRawData, projectsRawData, tooltipContent]);
+  }, [actorsRawData, projectsRawData, tooltipContent])
 
 
   // Custom node canvas object to style nodes
@@ -109,9 +109,9 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
       const network = find(networksData, { 'actorCode': actorCode })
       return network
     }
-    const network = getNetwork(actorCode);
-    return cloneDeep(network?.network);
-  }, [actorCode, networksData]);
+    const network = getNetwork(actorCode)
+    return cloneDeep(network?.network)
+  }, [actorCode, networksData])
 
   const forceGraphRef = useRef() // Ref to access the force graph instance
 
@@ -143,40 +143,42 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   // Measure tooltip height
   useEffect(() => {
     if (tooltipRef.current) {
-      const tooltipHeight = tooltipRef.current.offsetHeight;
+      const tooltipHeight = tooltipRef.current.offsetHeight
       // Save the tooltip height in the state or a ref
-      setTooltipHeight(tooltipHeight);
+      setTooltipHeight(tooltipHeight)
     }
-  }, [tooltipContent]);
+  }, [tooltipContent])
 
   // Handle mouse move logic
   useEffect(() => {
-    const handleMouseMove = (event: any) => {
-      const offsetX = isTablet ? -515 : -100
-
-      // Offset Y to position the tooltip above the cursor
-      // Use the tooltipHeight to adjust the position above the cursor
-      const offsetY = -70 - tooltipHeight; // Adjust the base offset as needed
-
-      const scrollX = detailPanelRef?.current?.scrollLeft;
-      const scrollY = detailPanelRef?.current?.scrollTop;
-
-      const relativeX = event.clientX + scrollX + offsetX;
-      const relativeY = event.clientY + scrollY + offsetY;
-
-      setTooltipPosition({ x: relativeX, y: relativeY });
-    };
-
-    document.addEventListener('mousemove', handleMouseMove);
-    return () => document.removeEventListener('mousemove', handleMouseMove);
-  }, [tooltipContent.visible, detailPanelRef, tooltipHeight, isTablet]); // Add tooltipHeight as a dependency
+    if (isTablet) {
+      const handleMouseMove = (event: any) => {
+        const offsetX = -515
+  
+        // Offset Y to position the tooltip above the cursor
+        // Use the tooltipHeight to adjust the position above the cursor
+        const offsetY = -70 - tooltipHeight // Adjust the base offset as needed
+  
+        const scrollX = detailPanelRef?.current?.scrollLeft
+        const scrollY = detailPanelRef?.current?.scrollTop
+  
+        const relativeX = event.clientX + scrollX + offsetX
+        const relativeY = event.clientY + scrollY + offsetY
+  
+        setTooltipPosition({ x: relativeX, y: relativeY })
+      }
+  
+      document.addEventListener('mousemove', handleMouseMove)
+      return () => document.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [tooltipContent.visible, detailPanelRef, tooltipHeight, isTablet]) // Add tooltipHeight as a dependency
 
 
 
 
 
   return (
-    <div className='relative flex justify-center'>
+    <div className='relative flex justify-center pointer-events-none md:pointer-events-auto'>
       <ForceGraph2D
         ref={forceGraphRef}
         graphData={processedNetworkData}

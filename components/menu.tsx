@@ -85,7 +85,7 @@ const Menu = () => {
             )
           }>
             <span className='hidden md:block'>African Agriculture Adaptation Tracking Tool</span>
-            <span className='block md:hidden'>Adaptation Insights</span>
+            <span className='block md:hidden'>Adaptation Tracking</span>
           </h1>
         </Link>
         <button

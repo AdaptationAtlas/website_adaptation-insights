@@ -27,7 +27,7 @@ const Header = () => {
         <Link href='/' className='hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'>
           <h1 className='block md:hidden text-white text-lg font-medium uppercase text-center md:p-3 tracking-wide ml-10'>
             <span className='hidden md:block'>African Agriculture Adaptation Tracking Tool</span>
-            <span className='block md:hidden'>Adaptation Insights</span>
+            <span className='block md:hidden'>Adaptation Tracking</span>
           </h1>
         </Link>
       )}
@@ -37,7 +37,7 @@ const Header = () => {
         <Link href='/'>
           <h1 className='text-brand-green text-lg font-medium uppercase text-center md:p-3 tracking-wide ml-10'>
             <span className='hidden md:block'>African Agriculture Adaptation Tracking Tool</span>
-            <span className='block md:hidden'>Adaptation Insights</span>
+            <span className='block md:hidden'>Adaptation Tracking</span>
           </h1>
         </Link>
       )}

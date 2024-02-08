@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <div>
       <div className='pb-[100px] lg:pb-[175px]'>
-        <div className='w-full h-[250px] md:h-screen overflow-hidden relative flex items-center'>
+        <div className='w-full h-[300px] md:h-screen overflow-hidden relative flex items-center'>
           {homeContent.heroImage && (
             <Image
               src={homeContent.heroImage}
@@ -57,22 +57,21 @@ export default async function Home() {
         <div className='sm:grid sm:grid-cols-3 mb-[40px] lg:mb-[80px]'>
           <Link href='/map?view=partners'>
             <div className='relative w-full overflow-hidden'>
-              <div className='pb-[100%] relative'> {/* Square Aspect Ratio */}
-                <div className='absolute inset-0 flex items-end px-5 lg:px-8 py-8'>
-                  {homeContent.partnersLinkImage && (
-                    <Image
-                      src={homeContent.partnersLinkImage}
-                      alt="Partners"
-                      layout='fill'
-                      objectFit='cover'
-                      objectPosition='top'
-                      className='transition-transform duration-500 ease-in-out lg:hover:scale-105'
-                    />
-                  )}
-                  <div className='relative z-10 pointer-events-none'>
-                    <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Partners</h3>
-                    <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Explore the organizations implementing projects and their networks.</p>
-                  </div>
+              <div className='flex items-end'>
+                {homeContent.partnersLinkImage && (
+                  <Image
+                    src={homeContent.partnersLinkImage}
+                    alt='Partners'
+                    width={500}
+                    height={500}
+                    objectFit='cover'
+                    objectPosition='top'
+                    className='w-full relative transition-transform duration-500 ease-in-out lg:hover:scale-105'
+                  />
+                )}
+                <div className='absolute left-5 right-5 lg:right-8 bottom-8 z-10 pointer-events-none'>
+                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Partners</h3>
+                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Explore the organizations implementing projects and their networks.</p>
                 </div>
               </div>
             </div>
@@ -80,22 +79,21 @@ export default async function Home() {
 
           <Link href='/map?view=projects'>
             <div className='relative w-full overflow-hidden'>
-              <div className='pb-[100%] relative'> {/* Square Aspect Ratio */}
-                <div className='absolute inset-0 flex items-end px-5 lg:px-8 py-8'>
-                  {homeContent.projectsLinkImage && (
-                    <Image
-                      src={homeContent.projectsLinkImage}
-                      alt="Projects"
-                      layout='fill'
-                      objectFit='cover'
-                      objectPosition='top'
-                      className='transition-transform duration-500 ease-in-out lg:hover:scale-105'
-                    />
-                  )}
-                  <div className='relative z-10 pointer-events-none'>
-                    <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Projects</h3>
-                    <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Learn about targeted adaptation projects, their scope and locations.</p>
-                  </div>
+              <div className='flex items-end'>
+                {homeContent.projectsLinkImage && (
+                  <Image
+                    src={homeContent.projectsLinkImage}
+                    alt='Partners'
+                    width={500}
+                    height={500}
+                    objectFit='cover'
+                    objectPosition='top'
+                    className='w-full relative transition-transform duration-500 ease-in-out lg:hover:scale-105'
+                  />
+                )}
+                <div className='absolute left-5 right-5 lg:right-8 bottom-8 z-10 pointer-events-none'>
+                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Projects</h3>
+                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Learn about targeted adaptation projects, their scope and locations.</p>
                 </div>
               </div>
             </div>
@@ -103,22 +101,21 @@ export default async function Home() {
 
           <Link href='/tools'>
             <div className='relative w-full overflow-hidden'>
-              <div className='pb-[100%] relative'> {/* Square Aspect Ratio */}
-                <div className='absolute inset-0 flex items-end px-5 lg:px-8 py-8'>
-                  {homeContent.wikiLinkImage && (
-                    <Image
-                      src={homeContent.wikiLinkImage}
-                      alt="Tools"
-                      layout='fill'
-                      objectFit='cover'
-                      objectPosition='top'
-                      className='transition-transform duration-500 ease-in-out lg:hover:scale-105'
-                    />
-                  )}
-                  <div className='relative z-10 pointer-events-none'>
-                    <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Tools</h3>
-                    <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Explore practical approaches to adaptation tracking.</p>
-                  </div>
+              <div className='flex items-end'>
+                {homeContent.wikiLinkImage && (
+                  <Image
+                    src={homeContent.wikiLinkImage}
+                    alt='Partners'
+                    width={500}
+                    height={500}
+                    objectFit='cover'
+                    objectPosition='top'
+                    className='w-full relative transition-transform duration-500 ease-in-out lg:hover:scale-105'
+                  />
+                )}
+                <div className='absolute left-5 right-5 lg:right-8 bottom-8 z-10 pointer-events-none'>
+                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Tools</h3>
+                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Explore practical approaches to adaptation tracking.</p>
                 </div>
               </div>
             </div>

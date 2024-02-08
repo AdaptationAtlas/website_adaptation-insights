@@ -7,7 +7,8 @@ import { colorRange } from '@/utils/color'
 import { minBy, maxBy } from 'lodash'
 import classNames from 'classnames'
 import Spinner from './ui/spinner'
-import Info from './ui/info';
+import Info from './ui/info'
+import { useMediaQuery } from '@/lib/hooks';
 
 type Props = {
   viewProjects: boolean
@@ -53,6 +54,7 @@ const SidebarList = ({
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  const isTablet = useMediaQuery(768)
 
   // Get a new searchParams string by merging the current
   // searchParams with a provided key/value pair
@@ -158,7 +160,7 @@ const SidebarList = ({
             {viewByBudget &&
               <div>
                 <h3 className='uppercase text-sm'>Budget</h3>
-                <p className={`text-[45px] uppercase leading-tight font-semibold ${classBudget}`} style={{ color: colorBudget }}>{budget}</p>
+                <p className={`text-[40px] md:text-[45px] uppercase leading-tight font-semibold ${classBudget}`} style={{ color: colorBudget }}>{budget}</p>
               </div>
             }
             {!viewByBudget &&
@@ -171,7 +173,7 @@ const SidebarList = ({
                     />
                   }
                 </div>
-                <p className={`text-[45px] uppercase leading-tight font-semibold ${classBeneficiaries}`} style={{ color: colorBeneficiaries }}>{beneficiaries}</p>
+                <p className={`text-[40px] md:text-[45px] uppercase leading-tight font-semibold ${classBeneficiaries}`} style={{ color: colorBeneficiaries }}>{beneficiaries}</p>
               </div>
             }
             <p className='text-base mt-1 text-ellipsis whitespace-nowrap overflow-hidden'>{project.projectName}</p>
@@ -231,7 +233,7 @@ const SidebarList = ({
                 <div className={`${maxWidth} my-4`}>
                   <div className='flex items-center mb-2'>
                     <h3 className='uppercase text-sm'>{beneficiaries} beneficiaries</h3>
-                    {beneficiaryFlagMultiple &&
+                    {(beneficiaryFlagMultiple && isTablet) &&
                       <Info
                         tooltipContent='This partner has worked on projects where multiple people may make up a single beneficiary.'
                       />

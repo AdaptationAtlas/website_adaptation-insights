@@ -188,7 +188,7 @@ const SidebarNav = ({
         {!viewProjects &&
           <div className='flex justify-between items-center px-5 pb-2 border-b border-b-grey-200'>
             <Select onValueChange={onSelectedTypeChange}>
-              <SelectTrigger className="w-[180px] truncate text-left">
+              <SelectTrigger className="w-[170px] md:w-[180px] truncate text-left">
                 <span className='truncate'>
                   <SelectValue placeholder="All partners" />
                 </span>
