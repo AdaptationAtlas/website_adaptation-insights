@@ -9,19 +9,7 @@ import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { fetchData, sortActors, sortProjects, filterByYear, filterByCountry, filterByType } from '@/lib/api'
 import MapLegend from '@/components/map-legend'
 import { getActor, getProject } from '@/utils/data.utils'
-import project from '@/schemas/project.schema'
 import { useMediaQuery } from '@/lib/hooks'
-
-// type Props = {
-//   params: { catchAll: string[] }
-// }
-
-// export async function generateStaticParams() {
-//   return [
-//     { data: ['map', 'partners'] }, // -> /map/partners/
-//     { data: ['map', 'projects'] }, // -> /map/projects/
-//   ];
-// }
 
 const MapPage = () => {
   const [viewByBudget, setViewByBudget] = useState<boolean>(false)
@@ -65,20 +53,6 @@ const MapPage = () => {
     }
     setViewProjects(viewProj)
   }, [searchParams, actorsRawData, projectsRawData])
-
-  // // Selected year handler
-  // const handleSelectedYear = (value: string) => {
-  //   const selected = (value === 'all') ? null : parseInt(value)
-  //   setSelectedYear(selected)
-  // }
-
-  // // Selected country handler
-  // const handleSelectedCountry = (value: string) => {
-  //   const selected = (value === 'all') ? null : value
-  //   setSelectedCountry(selected)
-  // }
-
-  // const [page, slug] = params.catchAll; // get the page and slug from catchAll params
 
   // Fetch actors data
   // TODO - consolidate filtering and sorting
