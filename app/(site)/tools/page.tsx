@@ -22,6 +22,18 @@ export default async function Tools() {
             height={500}
             layout='responsive'
             objectFit='contain'
+            className='hidden md:block'
+          />
+        )}
+        {content.heroImageMobile && (
+          <Image
+            src={content.heroImageMobile}
+            alt={content.title}
+            width={500}
+            height={500}
+            layout='responsive'
+            objectFit='contain'
+            className='block md:hidden'
           />
         )}
       </div>

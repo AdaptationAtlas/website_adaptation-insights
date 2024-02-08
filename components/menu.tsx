@@ -89,7 +89,7 @@ const Menu = () => {
           </h1>
         </Link>
         <button
-          className='absolute z-50 top-2 left-2 hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'
+          className='absolute z-50 top-1 left-1 md:top-2 md:left-2 hover:opacity-100 opacity-90 transition-opacity duration-300 ease-in-out'
           onClick={handleToggleMenu}
         >
           <BiX className='text-white h-10 w-10' />

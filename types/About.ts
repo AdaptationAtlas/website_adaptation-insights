@@ -4,4 +4,5 @@ export type About = {
   title: string;
   slug: string;
   heroImage: string;
+  heroImageMobile: string;
 }

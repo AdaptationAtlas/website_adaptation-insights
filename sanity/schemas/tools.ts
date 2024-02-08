@@ -34,6 +34,21 @@ export default defineType({
         }
       ]
     }),
+    defineField({
+      name: 'heroImageMobile',
+      title: 'Tools hero image mobile',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt text',
+          type: 'string',
+        }
+      ]
+    }),
   ],
 })
 

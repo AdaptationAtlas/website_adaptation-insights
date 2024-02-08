@@ -89,7 +89,8 @@ export async function getAboutContent(slug: string): Promise<About> {
   return client.fetch(
     groq`*[_type == "about" && _id == "about"][0] {
       title,
-      'heroImage': heroImage.asset->url
+      'heroImage': heroImage.asset->url,
+      'heroImageMobile': heroImageMobile.asset->url
     }`
   )
 }
@@ -106,7 +107,8 @@ export async function getToolsContent(slug: string): Promise<Tools> {
   return client.fetch(
     groq`*[_type == "tools" && _id == "tools"][0] {
       title,
-      'heroImage': heroImage.asset->url
+      'heroImage': heroImage.asset->url,
+      'heroImageMobile': heroImageMobile.asset->url
     }`
   )
 }

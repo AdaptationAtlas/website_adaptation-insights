@@ -4,4 +4,5 @@ export type Tools = {
   title: string;
   slug: string;
   heroImage: string;
+  heroImageMobile: string;
 }
