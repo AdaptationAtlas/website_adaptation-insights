@@ -1,3 +1,5 @@
+import React from 'react'
+import {Box} from '@sanity/ui'
 import { defineType, defineArrayMember } from 'sanity'
 
 /**
@@ -46,7 +48,7 @@ export default defineType({
           { title: 'Emphasis', value: 'em' },
           { title: 'Code', value: 'code' },
           { title: 'Underline', value: 'underline' },
-          { title: 'Strike', value: 'strike-through' }
+          { title: 'Strike', value: 'strike-through' },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -83,6 +85,9 @@ export default defineType({
           type: 'string',
         }
       ]
+    }),
+    defineArrayMember({
+      type: 'callout',
     }),
   ],
 })

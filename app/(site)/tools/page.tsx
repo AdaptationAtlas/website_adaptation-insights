@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer'
 import { getToolsContent } from '@/lib/sanity-utils'
+import { PortableText } from '@portabletext/react'
+import { portableTextComponents } from '@/lib/portable-text'
 
 export default async function Tools() {
   const content = await getToolsContent('tools')
@@ -39,6 +41,10 @@ export default async function Tools() {
       </div>
 
       <div className='mb-[100px]'>
+        <PortableText value={content.content} components={portableTextComponents} />
+      </div>
+
+      {/* <div className='mb-[100px]'>
 
         <div className='max-w-[960px] mx-5 lg:mx-auto mb-10 md:mb-16'>
           <p className='text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-5'>Adaptation tracking is an essential component of climate change responses. It enables organizations, governments, and communities to assess progress in implementing adaptation measures and their effectiveness, ensuring that actions lead to tangible benefits and increased resilience. Traditional adaptation monitoring and evaluation (M&E) approaches focus on assessing implementation and effects of isolated projects or intervention. Tracking adaptation involves assessing progress and effectiveness of adaptation across scales – communities, projects, programs, sector, national – and over time.</p>
@@ -88,7 +94,8 @@ export default async function Tools() {
           <p className='text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-5'>Moreover, the tracking plan requires mechanisms for regular review and updates. Adaptation to climate change is a dynamic process, and the strategies and tools used for tracking need to evolve in response to new insights and changing circumstances.</p>
           <p className='text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-5'>In essence, the development of comprehensive tracking plans is vital for the success of adaptation tracking efforts. By encompassing detailed analysis of data systems, role clarity, and collaborative frameworks, these plans ensure that adaptation strategies are not only implemented effectively but are also continuously refined and optimized.</p>
         </div>
-      </div>
+      </div> */}
+
       <Footer />
     </div>
   )

@@ -2,11 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/footer'
 import { getAboutContent } from '@/lib/sanity-utils'
-import imgLogoAAA from '@/public/images/logos/AAA.png'
-import imgLogoAAI from '@/public/images/logos/AAI.png'
-import imgLogoABC from '@/public/images/logos/ABC.png'
-import imgLogoGCA from '@/public/images/logos/GCA.png'
-import imgLogoGIZ from '@/public/images/logos/GIZ.png'
+import { PortableText } from '@portabletext/react'
+import { portableTextComponents } from '@/lib/portable-text'
+// import imgLogoAAA from '@/public/images/logos/AAA.png'
+// import imgLogoAAI from '@/public/images/logos/AAI.png'
+// import imgLogoABC from '@/public/images/logos/ABC.png'
+// import imgLogoGCA from '@/public/images/logos/GCA.png'
+// import imgLogoGIZ from '@/public/images/logos/GIZ.png'
 
 export default async function About() {
   const content = await getAboutContent('about')
@@ -44,19 +46,16 @@ export default async function About() {
       </div>
 
       <div className='mb-[100px]'>
+        <PortableText value={content.content} components={portableTextComponents} />
+      </div>
+
+      {/* <div className='mb-[100px]'>
         <h2 className='max-w-[960px] mx-5 lg:mx-auto text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight mb-8'>Objectives</h2>
 
         <div className='max-w-[960px] mx-5 lg:mx-auto mb-10 md:mb-16'>
           <h3 className='text-[18px] md:text-[24px] text-grey-700 font-bold tracking-wide leading-normal mb-3'>Map Actors</h3>
           <p className='text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-5'>We inventory organizations and actions to identify partnerships for advancing African agriculture adaptation.</p>
         </div>
-
-        {/* <div id='callout-box' className='bg-off-white py-12 border-b border-t border-grey-400 mb-10 md:mb-16'>
-          <div className='max-w-[960px] mx-5 lg:mx-auto'>
-            <h3 className='text-[18px] md:text-[24px] text-grey-500 font-bold tracking-wide leading-normal mb-3'>Lorem ipsum dolor sit amet</h3>
-            <p className='text-[18px] md:text-[24px] text-grey-500 tracking-normal leading-[40px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div> */}
 
         <div className='max-w-[960px] mx-5 lg:mx-auto mb-16 md:mb-24'>
           <h3 className='text-[18px] md:text-[24px] text-grey-700 font-bold tracking-wide leading-normal mb-3'>Metrics Mapping & Evaluation</h3>
@@ -139,7 +138,8 @@ export default async function About() {
         <div className='max-w-[960px] mx-5 lg:mx-auto mb-[100px]'>
           <p className='text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-5'>The data visualization was designed and developed in partnership with <a href="https://periscopic.com/#!/" rel='noreferrer nofollow' target='_blank' className='underline hover:text-brand-green transition-colors'>Periscopic</a>.</p>
         </div>
-      </div>
+      </div> */}
+
       <Footer />
     </div>
   )
