@@ -1,7 +1,40 @@
-import { ImageUrlBuilder } from 'sanity'
+import Image from 'next/image'
+import { client } from './sanity-client'
+import imageUrlBuilder from "@sanity/image-url";
+
+ const builder = imageUrlBuilder(client);
+
+function urlFor(source: any) {
+  return builder.image(source)
+}
+
+// Barebones lazy-loaded image component
+const LogoImageComponent = ({ value }: any) => {
+  const imageUrl = urlFor(value)
+  console.log(imageUrl.width(200).url());
+
+  return (
+    // <Image
+    //   src={urlBuilder()
+    //     .image(value)
+    //     .width(300)
+    //     .fit('max')
+    //     .auto('format')
+    //     .url()}
+    //   alt={value.alt}
+    //   width={300}
+    //   height={300}
+    // />
+    <img
+      src={imageUrl.width(200).url()}
+      alt={value.alt}
+    />
+  )
+}
 
 export const portableTextComponents = {
   types: {
+    image: LogoImageComponent,
     callout: ({ value }: any) =>
     (
       <div id='callout-box' className='bg-off-white py-8 md:py-12 border-b border-t border-grey-400 mb-10 md:mb-16'>
@@ -11,12 +44,6 @@ export const portableTextComponents = {
         </div>
       </div>
     ),
-    // callToAction: ({value, isInline}: any) =>
-    //   isInline ? (
-    //     <a href={value.url}>{value.text}</a>
-    //   ) : (
-    //     <div className='callToAction'>{value.text}</div>
-    //   ),
   },
 
   block: {
