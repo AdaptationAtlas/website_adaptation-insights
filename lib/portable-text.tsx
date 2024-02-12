@@ -2,14 +2,13 @@ import Image from 'next/image'
 import { client } from './sanity-client'
 import imageUrlBuilder from "@sanity/image-url";
 
- const builder = imageUrlBuilder(client);
+const builder = imageUrlBuilder(client);
 
 function urlFor(source: any) {
   return builder.image(source)
 }
 
-// Barebones lazy-loaded image component
-const LogoImageComponent = ({ value }: any) => {
+const ImageComponent = ({ value, className }: any) => {
   const imageUrl = urlFor(value)
 
   return (
@@ -18,14 +17,26 @@ const LogoImageComponent = ({ value }: any) => {
       alt={value.alt}
       width={300}
       height={300}
-      className='w-[200px]'
+      className={className}
     />
   )
 }
 
 export const portableTextComponents = {
   types: {
-    image: LogoImageComponent,
+    // image: ImageComponent,
+    gallery: ({ value }: any) => {
+      return (
+        <div id='gallery' className='max-w-[960px] mx-5 lg:mx-auto mb-16 md:mb-24 flex justify-center flex-wrap items-center gap-20'>
+          {value.images.map((image: any) => (
+            ImageComponent({
+              value: image,
+              className: 'w-[200px] h-fit'
+            })
+          ))}
+        </div>
+      )
+    },
     callout: ({ value }: any) =>
     (
       <div id='callout-box' className='bg-off-white py-8 md:py-12 border-b border-t border-grey-400 mb-10 md:mb-16'>
