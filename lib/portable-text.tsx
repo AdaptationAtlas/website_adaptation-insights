@@ -11,23 +11,14 @@ function urlFor(source: any) {
 // Barebones lazy-loaded image component
 const LogoImageComponent = ({ value }: any) => {
   const imageUrl = urlFor(value)
-  console.log(imageUrl.width(200).url());
 
   return (
-    // <Image
-    //   src={urlBuilder()
-    //     .image(value)
-    //     .width(300)
-    //     .fit('max')
-    //     .auto('format')
-    //     .url()}
-    //   alt={value.alt}
-    //   width={300}
-    //   height={300}
-    // />
-    <img
-      src={imageUrl.width(200).url()}
+    <Image
+      src={imageUrl.width(300).url()}
       alt={value.alt}
+      width={300}
+      height={300}
+      className='w-[200px]'
     />
   )
 }
