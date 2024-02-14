@@ -16,7 +16,7 @@ export default async function Tools() {
         <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>{content.description}</h4>
       </div>
 
-      <div className='relative w-full mb-[100px]'>
+      <div className='relative w-full mb-12 md:mb-[100px]'>
         {content.heroImage && (
           <Image
             src={content.heroImage}
