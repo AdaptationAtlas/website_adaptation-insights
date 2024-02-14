@@ -50,11 +50,10 @@ export const portableTextComponents = {
 
   block: {
     h2: ({ children }: any) => <h2 className='max-w-[960px] mx-5 lg:mx-auto text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight mb-8'>{children}</h2>,
-    h3: ({ children }: any) => <h3 className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 font-bold tracking-wide leading-normal mb-3'>{children}</h3>,
+    h3: ({ children }: any) => <h3 className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 font-bold tracking-wide leading-normal mb-3 mt-8'>{children}</h3>,
     normal: ({ children }: any) => {
       if (children[0]) {
-        // return <p className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-6'>{children}</p>
-        return <p className='max-w-[960px] mx-5 lg:mx-auto text-2xl text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-6'>{children}</p>
+        return <p className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-6'>{children}</p>
       } else {
         return <br />
       }
