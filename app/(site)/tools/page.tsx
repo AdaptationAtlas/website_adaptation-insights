@@ -7,13 +7,12 @@ import { portableTextComponents } from '@/lib/portable-text'
 
 export default async function Tools() {
   const content = await getToolsContent('tools')
-  console.log(content)
 
   return (
     <div className='relative pt-[80px] md:pt-[125px]'>
       <div className='max-w-[960px] mx-5 lg:mx-auto mb-12 md:mb-[100px]'>
-        <h1 className='text-2xl md:text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-5 md:mb-10'>{content.heading}</h1>
-        <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>{content.description}</h4>
+        <h1 className='text-2xl md:text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-5 md:mb-10'>Tools</h1>
+        <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>The development of comprehensive tracking plans is vital for evaluating adaptation effectiveness.</h4>
       </div>
 
       <div className='relative w-full mb-12 md:mb-[100px]'>

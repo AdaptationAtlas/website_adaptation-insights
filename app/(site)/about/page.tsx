@@ -7,13 +7,12 @@ import { portableTextComponents } from '@/lib/portable-text'
 
 export default async function About() {
   const content = await getAboutContent('about')
-  console.log(content)
 
   return (
     <div className='relative pt-[80px] md:pt-[125px]'>
       <div className='max-w-[960px] mx-5 lg:mx-auto mb-12 md:mb-[100px]'>
-        <h1 className='text-2xl md:text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-5 md:mb-10'>{content.heading}</h1>
-        <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>{content.description}</h4>
+        <h1 className='text-2xl md:text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-5 md:mb-10'>About The African Agriculture Adaptation<br />Tracking Tool</h1>
+        <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>Empowering African agriculture stakeholders with tools for tracking implementation and effectiveness of adaptation actions and enabling partnerships.</h4>
       </div>
 
       <div className='relative w-full mb-12 md:mb-[100px]'>
