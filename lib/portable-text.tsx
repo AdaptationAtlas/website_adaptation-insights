@@ -53,7 +53,7 @@ export const portableTextComponents = {
     h3: ({ children }: any) => <h3 className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 font-bold tracking-wide leading-normal mb-3'>{children}</h3>,
     normal: ({ children }: any) => {
       if (children[0]) {
-        return <p className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-5'>{children}</p>
+        return <p className='max-w-[960px] mx-5 lg:mx-auto text-[18px] md:text-[24px] text-grey-700 tracking-normal leading-[30px] md:leading-[40px] mb-6'>{children}</p>
       } else {
         return <br />
       }
