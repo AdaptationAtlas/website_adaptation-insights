@@ -42,14 +42,14 @@ export default async function Home() {
             </h1>
             <div className='flex items-center'>
               {/* <p className='text-white text-3xl leading-normal max-w-[640px]'>{homeContent.heroText}</p> */}
-              <p className='text-white text-2xl leading-normal lg:text-3xl lg:leading-normal max-w-[500px] lg:max-w-[640px]'>Explore the work being done to adapt to climate change in Africa.</p>
+              <p className='text-white text-2xl leading-normal lg:text-3xl lg:leading-normal max-w-[500px] lg:max-w-[640px]'>{homeContent.heroText}</p>
             </div>
           </div>
         </div>
 
         <div className='px-5 lg:px-[100px]'>
           {/* <p className='text-4xl font-bold leading-normal max-w-[960px] mb-20 mt-20'>{homeContent.introText}</p> */}
-          <p className='text-2xl lg:text-4xl font-bold leading-normal max-w-[960px] my-10 lg:my-20'>The African Agriculture Adaptation Tracking Tool is the go-to-hub for information on agricultural adaptation actions from across Africa. Discover key organizations, partnerships, their projects and a suite of tools to aid future adaptation tracking efforts.</p>
+          <p className='text-2xl lg:text-4xl font-bold leading-normal lg:leading-normal max-w-[960px] my-10 lg:my-20'>{homeContent.introText}</p>
           <p className='text-base lg:text-lg uppercase mb-5'>Choose an area to explore</p>
         </div>
 
@@ -57,9 +57,9 @@ export default async function Home() {
           <Link href='/map?view=partners'>
             <div className='relative w-full overflow-hidden'>
               <div className='flex items-end'>
-                {homeContent.partnersLinkImage && (
+                {homeContent.homepageLinks.partnersLink.image && (
                   <Image
-                    src={homeContent.partnersLinkImage}
+                    src={homeContent.homepageLinks.partnersLink.image}
                     alt='Partners'
                     width={500}
                     height={500}
@@ -69,8 +69,8 @@ export default async function Home() {
                   />
                 )}
                 <div className='absolute left-5 right-5 lg:right-8 bottom-8 z-10 pointer-events-none'>
-                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Partners</h3>
-                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Explore the organizations implementing projects and their networks.</p>
+                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>{homeContent.homepageLinks.partnersLink.title}</h3>
+                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>{homeContent.homepageLinks.partnersLink.subtitle}</p>
                 </div>
               </div>
             </div>
@@ -79,9 +79,9 @@ export default async function Home() {
           <Link href='/map?view=projects'>
             <div className='relative w-full overflow-hidden'>
               <div className='flex items-end'>
-                {homeContent.projectsLinkImage && (
+                {homeContent.homepageLinks.projectsLink.image && (
                   <Image
-                    src={homeContent.projectsLinkImage}
+                    src={homeContent.homepageLinks.projectsLink.image}
                     alt='Partners'
                     width={500}
                     height={500}
@@ -91,8 +91,8 @@ export default async function Home() {
                   />
                 )}
                 <div className='absolute left-5 right-5 lg:right-8 bottom-8 z-10 pointer-events-none'>
-                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Projects</h3>
-                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Learn about targeted adaptation projects, their scope and locations.</p>
+                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>{homeContent.homepageLinks.projectsLink.title}</h3>
+                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>{homeContent.homepageLinks.projectsLink.subtitle}</p>
                 </div>
               </div>
             </div>
@@ -101,9 +101,9 @@ export default async function Home() {
           <Link href='/tools'>
             <div className='relative w-full overflow-hidden'>
               <div className='flex items-end'>
-                {homeContent.wikiLinkImage && (
+                {homeContent.homepageLinks.toolsLink.image && (
                   <Image
-                    src={homeContent.wikiLinkImage}
+                    src={homeContent.homepageLinks.toolsLink.image}
                     alt='Partners'
                     width={500}
                     height={500}
@@ -113,8 +113,8 @@ export default async function Home() {
                   />
                 )}
                 <div className='absolute left-5 right-5 lg:right-8 bottom-8 z-10 pointer-events-none'>
-                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>Tools</h3>
-                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>Explore practical approaches to adaptation tracking.</p>
+                  <h3 className='text-base lg:text-2xl text-white uppercase mb-2 font-semibold tracking-normal'>{homeContent.homepageLinks.toolsLink.title}</h3>
+                  <p className='text-sm lg:text-lg text-white font-medium leading-tight'>{homeContent.homepageLinks.toolsLink.subtitle}</p>
                 </div>
               </div>
             </div>

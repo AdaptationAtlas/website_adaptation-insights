@@ -5,12 +5,12 @@ export default defineType({
   type: 'document',
   title: 'Home',
   fields: [
-    defineField({
+    {
       name: 'title',
-      title: 'Title',
+      title: 'Page title',
       type: 'string',
-    }),
-    defineField({
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -18,8 +18,18 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
-    }),
-    defineField({
+    },
+    {
+      name: 'heroText',
+      title: 'Hero text',
+      type: 'string',
+    },
+    {
+      name: 'introText',
+      title: 'Intro text',
+      type: 'text',
+    },
+    {
       name: 'heroImage',
       title: 'Hero image',
       type: 'image',
@@ -33,62 +43,7 @@ export default defineType({
           type: 'string',
         }
       ]
-    }),
-    defineField({
-      name: 'heroText',
-      title: 'Hero text',
-      type: 'text',
-    }),
-    defineField({
-      name: 'introText',
-      title: 'Intro text',
-      type: 'text',
-    }),
-    defineField({
-      name: 'partnersLinkImage',
-      title: 'Partners link image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alt text',
-          type: 'string',
-        }
-      ]
-    }),
-    defineField({
-      name: 'projectsLinkImage',
-      title: 'Projects link image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alt text',
-          type: 'string',
-        }
-      ]
-    }),
-    defineField({
-      name: 'wikiLinkImage',
-      title: 'Wiki link image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          title: 'Alt text',
-          type: 'string',
-        }
-      ]
-    }),
+    },
     defineField({
       name: 'networkGraphicImage',
       title: 'Network graphic image',
@@ -104,6 +59,105 @@ export default defineType({
         }
       ]
     }),
+    {
+      type: 'object',
+      name: 'homepageLinks',
+      title: 'Homepage splash links',
+      fieldsets: [
+        {name: 'partnersLink', title: 'Partners link'},
+        {name: 'projectsLink', title: 'Projects link'},
+        {name: 'toolsLink', title: 'Tools link'},
+      ],
+      fields: [
+        // Partners link
+        {
+          name: 'partnersLinkTitle',
+          title: 'Partners link title',
+          type: 'string',
+          fieldset: 'partnersLink',
+        },
+        {
+          name: 'partnersLinkSubtitle',
+          title: 'Partners link subtitle',
+          type: 'string',
+          fieldset: 'partnersLink',
+        },
+        {
+          name: 'partnersLinkImage',
+          title: 'Partners link image',
+          type: 'image',
+          fieldset: 'partnersLink',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              title: 'Alt text',
+              type: 'string',
+            }
+          ]
+        },
+        // Projects link
+        {
+          name: 'projectsLinkTitle',
+          title: 'Projects link title',
+          type: 'string',
+          fieldset: 'projectsLink',
+        },
+        {
+          name: 'projectsLinkSubtitle',
+          title: 'Projects link subtitle',
+          type: 'string',
+          fieldset: 'projectsLink',
+        },
+        {
+          name: 'projectsLinkImage',
+          title: 'Projects link image',
+          type: 'image',
+          fieldset: 'projectsLink',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              title: 'Alt text',
+              type: 'string',
+            }
+          ]
+        },
+        // Tools link
+        {
+          name: 'toolsLinkTitle',
+          title: 'Tools link title',
+          type: 'string',
+          fieldset: 'toolsLink',
+        },
+        {
+          name: 'toolsLinkSubtitle',
+          title: 'Tools link subtitle',
+          type: 'string',
+          fieldset: 'toolsLink',
+        },
+        {
+          name: 'toolsLinkImage',
+          title: 'Tools link image',
+          type: 'image',
+          fieldset: 'toolsLink',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              title: 'Alt text',
+              type: 'string',
+            }
+          ]
+        }
+      ]
+    },
   ],
 })
 
