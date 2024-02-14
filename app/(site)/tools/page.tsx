@@ -11,8 +11,8 @@ export default async function Tools() {
   return (
     <div className='relative pt-[80px] md:pt-[125px]'>
       <div className='max-w-[960px] mx-5 lg:mx-auto mb-12 md:mb-[100px]'>
-        <h1 className='text-2xl md:text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-5 md:mb-10'>Tools</h1>
-        <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>The development of comprehensive tracking plans is vital for evaluating adaptation effectiveness.</h4>
+        <h1 className='text-2xl md:text-[60px] text-brand-green uppercase font-semibold tracking-wide leading-tight mb-5 md:mb-10'>{content.heading}</h1>
+        <h4 className='text-2xl md:text-[42px] text-grey-700 font-bold tracking-wide leading-tight'>{content.description}</h4>
       </div>
 
       <div className='relative w-full mb-12 md:mb-[100px]'>
@@ -40,7 +40,7 @@ export default async function Tools() {
         )}
       </div>
 
-      <div className='mb-[100px]'>
+      <div id='tools-content' className='mb-[100px]'>
         <PortableText value={content.content} components={portableTextComponents} />
       </div>
 
