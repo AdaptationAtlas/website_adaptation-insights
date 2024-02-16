@@ -70,8 +70,7 @@ export async function getAboutContent(slug: string): Promise<About> {
     }`,
     {},
     {next: {
-      // revalidate: 3600 // look for updates to revalidate cache every hour
-      revalidate: 30
+      revalidate: 3600 // look for updates to revalidate cache every hour
     }}
   )
 }
