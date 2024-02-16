@@ -42,7 +42,11 @@ export async function getHomeContent(slug: string): Promise<Home> {
           'image': homepageLinks.toolsLinkImage.asset->url
         }
       }
-    }`
+    }`,
+    {},
+    {next: {
+      revalidate: 3600 // look for updates to revalidate cache every hour
+    }}
   )
 }
 
@@ -63,7 +67,12 @@ export async function getAboutContent(slug: string): Promise<About> {
       description,
       'heroImage': heroImage.asset->url,
       'heroImageMobile': heroImageMobile.asset->url
-    }`
+    }`,
+    {},
+    {next: {
+      // revalidate: 3600 // look for updates to revalidate cache every hour
+      revalidate: 30
+    }}
   )
 }
 
@@ -84,6 +93,10 @@ export async function getToolsContent(slug: string): Promise<Tools> {
       content,
       'heroImage': heroImage.asset->url,
       'heroImageMobile': heroImageMobile.asset->url
-    }`
+    }`,
+    {},
+    {next: {
+      revalidate: 3600 // look for updates to revalidate cache every hour
+    }}
   )
 }
