@@ -63,7 +63,8 @@ function Map({
   const layerStyle: CircleLayer = useMemo(() => {
     // Determine which fields and corresponding min/max values to use based on viewByBudget
     const dataField = viewByBudget ? 'budgetEURLog' : 'beneficiaryNumLog';
-    const minDataValue = viewByBudget ? minBudgetLog : minBeneficiariesLog;
+    // If min beneficiaries is 0, set to 1 to fix circle color bug
+    const minDataValue = viewByBudget ? minBudgetLog : (minBeneficiariesLog && minBeneficiariesLog > 0) ? minBeneficiariesLog : 1;
     const maxDataValue = viewByBudget ? maxBudgetLog : maxBeneficiariesLog;
     const bucketColors = ['#73BA5A', '#6EB17C', '#62A99D', '#4BA2BD', '#019BDC']
     const circleRadiusMin = 2.5
