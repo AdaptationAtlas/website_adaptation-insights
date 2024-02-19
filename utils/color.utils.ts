@@ -14,3 +14,21 @@ export function colorRange(value: number, buckets: number[], colors: string[]): 
   // If value exceeds all buckets, use the last color
   return colors[colors.length - 1];
 }
+
+// Generate color stops for colorRange function
+
+// Helper function to calculate logarithm with base 10
+const log10 = (value: number) => Math.log10(value || 1)
+
+// Function to generate logarithmic buckets
+export const generateLogarithmicBuckets = (minValue: number, maxValue: number, numBuckets: number) => {
+  const logMin = log10(minValue)
+  const logMax = log10(maxValue)
+  const step = (logMax - logMin) / (numBuckets - 1)
+
+  const buckets = []
+  for (let i = 0; i < numBuckets; i++) {
+    buckets.push(Math.pow(10, logMin + step * i))
+  }
+  return buckets
+}
