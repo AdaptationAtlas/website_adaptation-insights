@@ -115,11 +115,11 @@ const SidebarNav = ({
             colors={false}
             isLarge={false}
           />
-          {viewByBudget &&
+          {/* {viewByBudget &&
             <Info
               tooltipContent='Budget refers to the sum of total project budgets a partner has worked on with others – not the individual contribution of a partner.'
             />
-          }
+          } */}
         </div>
 
         {viewProjects &&
@@ -144,7 +144,7 @@ const SidebarNav = ({
           </div>
         }
 
-        {viewByBudget &&
+        {(viewByBudget && viewProjects) &&
           <div className='flex items-center'>
             <span className='uppercase text-sm mr-4'>Currency</span>
             <Select onValueChange={onSelectedCurrencyChange}>

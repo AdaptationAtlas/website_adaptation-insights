@@ -209,7 +209,7 @@ const SidebarList = ({
             {viewByBudget &&
               <div className='flex justify-between'>
                 <div className={`${maxWidth} my-4`}>
-                  <h3 className='uppercase text-sm mb-2'>{budget} budget</h3>
+                  {/* <h3 className='uppercase text-sm mb-2'>{budget} budget</h3> */}
                   <h2 className='text-[16px] font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
@@ -231,14 +231,14 @@ const SidebarList = ({
             {!viewByBudget &&
               <div className='flex justify-between'>
                 <div className={`${maxWidth} my-4`}>
-                  <div className='flex items-center mb-2'>
+                  {/* <div className='flex items-center mb-2'>
                     <h3 className='uppercase text-sm'>{beneficiaries} beneficiaries</h3>
                     {(beneficiaryFlagMultiple && isTablet) &&
                       <Info
                         tooltipContent='This partner has worked on projects where multiple people may make up a single beneficiary.'
                       />
                     }
-                  </div>
+                  </div> */}
                   <h2 className='text-[17px] leading-tight font-semibold text-black line-clamp-3'>{actor.name}</h2>
                 </div>
                 {index < 10 &&
