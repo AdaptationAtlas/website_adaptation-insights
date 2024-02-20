@@ -983,7 +983,7 @@
   },
   {
     "actorCode": "BEN4",
-    "name": "National Centre of Management of Fauna Reserves, Benin",
+    "name": "National Center of Management of Fauna Reserves, Benin",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -1739,18 +1739,6 @@
     "actorCode": "BF46",
     "name": "Orange Burkina Faso",
     "type": "Private company",
-    "email": null,
-    "totalBudgetEUR": 0,
-    "totalBudgetUSD": 0,
-    "totalBeneficiaries": 0,
-    "beneficiaryFlagMultiple": false,
-    "collaborators": [],
-    "projects": []
-  },
-  {
-    "actorCode": "BF47",
-    "name": "Ministry of Animal and Fisheries Resources, Burkina Faso",
-    "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3449,7 +3437,7 @@
   },
   {
     "actorCode": "CAN9",
-    "name": "Centre for International Studies and Cooperation",
+    "name": "Center for International Studies and Cooperation",
     "type": "Development organization",
     "email": null,
     "totalBudgetEUR": 67036709,
@@ -4426,7 +4414,7 @@
   },
   {
     "actorCode": "CIV1",
-    "name": "Ministry of Salubrity, Environment and Sustainable Development, Cote d'Ivoire",
+    "name": "Ministry of Salubrity, Environment and Sustainable Development, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -4462,7 +4450,7 @@
   },
   {
     "actorCode": "CIV12",
-    "name": "Ivorian Centre of Economics and Social Sciences",
+    "name": "Ivorian Center of Economics and Social Sciences",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -4525,7 +4513,7 @@
   },
   {
     "actorCode": "CIV16",
-    "name": "Ministry of Animal and Fisheries Resources, Cote d'Ivoire",
+    "name": "Ministry of Animal and Fisheries Resources, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 282948616,
@@ -4713,7 +4701,7 @@
   },
   {
     "actorCode": "CIV4",
-    "name": "Ministry of Agriculture and Rural Development, Cote d'Ivoire",
+    "name": "Ministry of Agriculture and Rural Development, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 289244036,
@@ -4863,7 +4851,7 @@
   },
   {
     "actorCode": "CIV27",
-    "name": "Ministry of Water and Forests, Cote d'Ivoire",
+    "name": "Ministry of Water and Forests, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -4911,7 +4899,7 @@
   },
   {
     "actorCode": "CIV31",
-    "name": "Ministry of Environment and Sustainable Development, Cote d'Ivoire",
+    "name": "Ministry of Environment and Sustainable Development, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 5469720,
@@ -4949,7 +4937,7 @@
   },
   {
     "actorCode": "CIV33",
-    "name": "Foundation for the Parks and Reserves of Côte d'Ivoire",
+    "name": "Foundation for the Parks and Reserves of Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -4961,7 +4949,7 @@
   },
   {
     "actorCode": "CIV34",
-    "name": "Ministry for Economic Cooperation and Development, Cote d'Ivoire",
+    "name": "Ministry for Economic Cooperation and Development, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -5011,7 +4999,7 @@
   },
   {
     "actorCode": "CIV38",
-    "name": "Ministry of Commerce and Industry, Cote d'Ivoire",
+    "name": "Ministry of Commerce and Industry, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 269274316,
@@ -5037,7 +5025,7 @@
   },
   {
     "actorCode": "CIV39",
-    "name": "Ministry of Finance, Cote d'Ivoire",
+    "name": "Ministry of Finance, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 182324000,
@@ -5364,7 +5352,7 @@
   },
   {
     "actorCode": "CIV64",
-    "name": "Ministry of Economy, Planning, and Development, Cote d'Ivoire",
+    "name": "Ministry of Planning and Development, Ivory Coast",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -6360,7 +6348,7 @@
   },
   {
     "actorCode": "CON19",
-    "name": "West African Science Service Centre on Climate Change and Adapted Land Use",
+    "name": "West African Science Service Center on Climate Change and Adapted Land Use",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 752530,
@@ -6918,7 +6906,7 @@
   },
   {
     "actorCode": "CON32",
-    "name": "African Centre of Excellence on Climate Change",
+    "name": "African Center of Excellence on Climate Change",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -7003,7 +6991,7 @@
   },
   {
     "actorCode": "CON35",
-    "name": "African Centre of Meteorological Application for Development",
+    "name": "African Center of Meteorological Application for Development",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -7147,7 +7135,7 @@
   },
   {
     "actorCode": "CON45",
-    "name": "IGAD Centre of Excellence for Climate Adaptation and Environmental Protection",
+    "name": "IGAD Center of Excellence for Climate Adaptation and Environmental Protection",
     "type": null,
     "email": null,
     "totalBudgetEUR": 0,
@@ -7195,7 +7183,7 @@
   },
   {
     "actorCode": "CON49",
-    "name": "African Centre for Biodiversity",
+    "name": "African Center for Biodiversity",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -8309,7 +8297,7 @@
   },
   {
     "actorCode": "DZA1",
-    "name": "Research Centre for Applied Economics for Development",
+    "name": "Research Center for Applied Economics for Development",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -8321,7 +8309,7 @@
   },
   {
     "actorCode": "DZA2",
-    "name": "University Centre of Tipaza Morsli Abdellah",
+    "name": "University Center of Tipaza Morsli Abdellah",
     "type": "Academic institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -8489,7 +8477,7 @@
   },
   {
     "actorCode": "EGY2",
-    "name": "National Research Centre, Water Pollution Research Department",
+    "name": "National Research Center, Water Pollution Research Department",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -8672,7 +8660,7 @@
   },
   {
     "actorCode": "ES10",
-    "name": "Centre for Research in Agricultural Genomics",
+    "name": "Center for Research in Agricultural Genomics",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -9327,7 +9315,7 @@
   },
   {
     "actorCode": "EU14",
-    "name": "Joint Research Centre Science Hub",
+    "name": "Joint Research Center Science Hub",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -11189,7 +11177,7 @@
   },
   {
     "actorCode": "GHA23",
-    "name": "Centre for Energy, Environment and Sustainable Development",
+    "name": "Center for Energy, Environment and Sustainable Development",
     "type": "Development organization",
     "email": null,
     "totalBudgetEUR": 0,
@@ -11875,7 +11863,7 @@
   },
   {
     "actorCode": "GHA53",
-    "name": "Nature Conservation Research Centre",
+    "name": "Nature Conservation Research Center",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -12310,7 +12298,7 @@
   },
   {
     "actorCode": "GLO11",
-    "name": "Centre for International Forestry Research",
+    "name": "Center for International Forestry Research",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 6593267,
@@ -12841,11 +12829,11 @@
         "projectsShared": 1
       },
       {
-        "actorCode": "MOR31",
+        "actorCode": "BF1",
         "projectsShared": 1
       },
       {
-        "actorCode": "BF1",
+        "actorCode": "MOR31",
         "projectsShared": 1
       },
       {
@@ -13582,7 +13570,7 @@
   },
   {
     "actorCode": "GLO37",
-    "name": "Centre for Training and Integrated Research in ASAL Development",
+    "name": "Center for Training and Integrated Research in ASAL Development",
     "type": "Bilateral development agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -13666,7 +13654,7 @@
   },
   {
     "actorCode": "GLO4",
-    "name": "International Maize and Wheat Improvement Centre",
+    "name": "International Maize and Wheat Improvement Center",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 6500000,
@@ -14060,7 +14048,7 @@
   },
   {
     "actorCode": "GLO5",
-    "name": "International Centre for Agricultural Research in the Dry Areas",
+    "name": "International Center for Agricultural Research in the Dry Areas",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 357805,
@@ -14081,7 +14069,7 @@
   },
   {
     "actorCode": "GLO50",
-    "name": "International Centre of Insect Physiology and Ecology",
+    "name": "International Center of Insect Physiology and Ecology",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 2473454,
@@ -14764,7 +14752,7 @@
   },
   {
     "actorCode": "GLO73",
-    "name": "Resilience Research Centre",
+    "name": "Resilience Research Center",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -14841,7 +14829,7 @@
   },
   {
     "actorCode": "GLO77",
-    "name": "Centre for Agriculture and Bioscience International",
+    "name": "Center for Agriculture and Bioscience International",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 657608,
@@ -14866,7 +14854,7 @@
   },
   {
     "actorCode": "GLO79",
-    "name": "World Vegetable Centre",
+    "name": "World Vegetable Center",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -14878,7 +14866,7 @@
   },
   {
     "actorCode": "GLO80",
-    "name": "International Trade Centre",
+    "name": "International Trade Center",
     "type": "Trade organization",
     "email": null,
     "totalBudgetEUR": 0,
@@ -15483,7 +15471,7 @@
   },
   {
     "actorCode": "ITA3",
-    "name": "International Centre for Advanced Mediterranean Agronomic Studies, Bari",
+    "name": "International Center for Advanced Mediterranean Agronomic Studies, Bari",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -15560,7 +15548,7 @@
   },
   {
     "actorCode": "ITA9",
-    "name": "Council for Agricultural Research and  Economics, Centre for Genomics and Bioinformatics",
+    "name": "Council for Agricultural Research and  Economics, Center for Genomics and Bioinformatics",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 486000,
@@ -15628,7 +15616,7 @@
   },
   {
     "actorCode": "ITA13",
-    "name": "Euro-Mediterranean Centre on Climate Change",
+    "name": "Euro-Mediterranean Center on Climate Change",
     "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
@@ -15832,7 +15820,7 @@
   },
   {
     "actorCode": "KEN5",
-    "name": "African Population and Health Research Centre",
+    "name": "African Population and Health Research Center",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 1087920,
@@ -16469,7 +16457,7 @@
   },
   {
     "actorCode": "MALI12",
-    "name": "Regional Animal Health Centre, Mali",
+    "name": "Regional Animal Health Center, Mali",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
@@ -17964,7 +17952,7 @@
   },
   {
     "actorCode": "MOR31",
-    "name": "Ministere de l'Agriculture, de l'Equipement et de l'Environnement, Morocco",
+    "name": "Ministry of Agriculture, Equipment, and Environment, Morocco",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 616383840,
@@ -19933,7 +19921,7 @@
   },
   {
     "actorCode": "REG11",
-    "name": "Mudabarat Platform at the Internation Union for the Conservation of Nature, Centre for Mediterranean Cooperation",
+    "name": "Mudabarat Platform at the Internation Union for the Conservation of Nature, Center for Mediterranean Cooperation",
     "type": "Development organization",
     "email": null,
     "totalBudgetEUR": 2893417,
@@ -19954,7 +19942,7 @@
   },
   {
     "actorCode": "REG12",
-    "name": "The Internation Union for Conservation of Nature's Centre for Mediterranean Cooperation",
+    "name": "The Internation Union for Conservation of Nature's Center for Mediterranean Cooperation",
     "type": "Development organization",
     "email": null,
     "totalBudgetEUR": 0,
@@ -20534,7 +20522,7 @@
   },
   {
     "actorCode": "REG8",
-    "name": "Southern African Science Service Centre for Climate Change and Adaptive Land Management",
+    "name": "Southern African Science Service Center for Climate Change and Adaptive Land Management",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -20694,7 +20682,7 @@
   },
   {
     "actorCode": "REG30",
-    "name": "International Centre for Advanced Mediterranean Agronomic Studies",
+    "name": "International Center for Advanced Mediterranean Agronomic Studies",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 6999185,
@@ -21496,7 +21484,7 @@
   },
   {
     "actorCode": "TUN5",
-    "name": "Centre of Biotechnology of Borj Cédria",
+    "name": "Center of Biotechnology of Borj Cédria",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -21872,7 +21860,7 @@
   },
   {
     "actorCode": "UK9",
-    "name": "Centre for Disaster Protection",
+    "name": "Center for Disaster Protection",
     "type": "Development organization",
     "email": null,
     "totalBudgetEUR": 0,
@@ -23352,7 +23340,7 @@
   },
   {
     "actorCode": "ZA2",
-    "name": "Centre for Coordination of Agricultural Research and Development for Southern Africa",
+    "name": "Center for Coordination of Agricultural Research and Development for Southern Africa",
     "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -23594,7 +23582,7 @@
   },
   {
     "actorCode": "ZAM22",
-    "name": "Kalweo Information Centre",
+    "name": "Kalweo Information Center",
     "type": "Farmer/pastoralist organization/cooperative",
     "email": null,
     "totalBudgetEUR": 0,
@@ -23642,7 +23630,7 @@
   },
   {
     "actorCode": "ZAM26",
-    "name": "Kasisi Agricultural Training Centre",
+    "name": "Kasisi Agricultural Training Center",
     "type": "Academic institution",
     "email": null,
     "totalBudgetEUR": 0,
@@ -23846,7 +23834,7 @@
   },
   {
     "actorCode": "ZAM44",
-    "name": "National Remote Sensing Centre, Zambia",
+    "name": "National Remote Sensing Center, Zambia",
     "type": "Government agency",
     "email": null,
     "totalBudgetEUR": 0,
