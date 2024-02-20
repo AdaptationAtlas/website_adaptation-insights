@@ -240,10 +240,6 @@
         "type": "primary"
       },
       {
-        "actorCode": "NLD5",
-        "type": "funding"
-      },
-      {
         "actorCode": "BF46",
         "type": "implementation"
       },

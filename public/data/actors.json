@@ -439,7 +439,7 @@
   {
     "actorCode": "BEL6",
     "name": "Belgian Development Agency",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudgetEUR": 35609391,
     "totalBudgetUSD": 39061660,
@@ -526,7 +526,7 @@
   {
     "actorCode": "BEL11",
     "name": "Académie de Recherche et d’Enseignement Supérieur",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 699454,
     "totalBudgetUSD": 767265,
@@ -828,7 +828,7 @@
   {
     "actorCode": "BEL28",
     "name": "Collibri Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -912,7 +912,7 @@
   {
     "actorCode": "BEL35",
     "name": "La Via Campesina",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -1916,7 +1916,7 @@
   {
     "actorCode": "BF59",
     "name": "Friends of Nature Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2519,7 +2519,7 @@
   {
     "actorCode": "BF95",
     "name": "Groupe de Recherche et d’Action sur le Foncier",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2567,7 +2567,7 @@
   {
     "actorCode": "BF99",
     "name": "Comité Interprofessionel du Riz du Burkina Faso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2591,7 +2591,7 @@
   {
     "actorCode": "BF101",
     "name": "Cooperative Rizicole et Maraichere de Mogtédo",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2603,7 +2603,7 @@
   {
     "actorCode": "BF102",
     "name": "Union des Etuveuses de Riz du Mogtedo",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2615,7 +2615,7 @@
   {
     "actorCode": "BF103",
     "name": "Groupement Pre-Cooperative de Zoungou",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2627,7 +2627,7 @@
   {
     "actorCode": "BF104",
     "name": "Cooperative Rizicole Kiswendsida de Boulbi",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2639,7 +2639,7 @@
   {
     "actorCode": "BF105",
     "name": "Coopérative de Commercialisation d'Intrants et de Matériels Agricoles",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2697,7 +2697,7 @@
   {
     "actorCode": "BF109",
     "name": "Federation Nununa",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2709,7 +2709,7 @@
   {
     "actorCode": "BF110",
     "name": "Network of Shea Butter Producers of Hauts-Bassins et Cascades",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2757,7 +2757,7 @@
   {
     "actorCode": "BF114",
     "name": "Association of Mango Professionals of Burkina Faso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2946,7 +2946,7 @@
   {
     "actorCode": "BF125",
     "name": "Cooperative TON",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2958,7 +2958,7 @@
   {
     "actorCode": "BF126",
     "name": "Agricultural Cooperative of Kénédougou",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2970,7 +2970,7 @@
   {
     "actorCode": "BF127",
     "name": "Union des Cooperatives de Productrices de Produits Karite du Houet",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2982,7 +2982,7 @@
   {
     "actorCode": "BF128",
     "name": "Union of Cooperative Societies with Board of Directors of Organic and Fair Trade Mango Producers in the Hautes Bassins Region",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -2994,7 +2994,7 @@
   {
     "actorCode": "BF129",
     "name": "Paoline",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3006,7 +3006,7 @@
   {
     "actorCode": "BF130",
     "name": "Coopérative des Producteurs de Légumes Et de Fruits",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3018,7 +3018,7 @@
   {
     "actorCode": "BF131",
     "name": "UNION Sowdjoma",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3030,7 +3030,7 @@
   {
     "actorCode": "BF132",
     "name": "L’Union des Groupements Féminins Ce Dwane Nyee",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3042,7 +3042,7 @@
   {
     "actorCode": "BF133",
     "name": "Association Songtaab Yalgre",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3066,7 +3066,7 @@
   {
     "actorCode": "BF146",
     "name": "Centre d’Etudes et de Recherches sur le Droit de l’Environement",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -3264,7 +3264,7 @@
   {
     "actorCode": "CAN2",
     "name": "Canadian International Development Agency",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudgetEUR": 4498845,
     "totalBudgetUSD": 4935000,
@@ -3302,7 +3302,7 @@
   {
     "actorCode": "CAN3",
     "name": "Union des Producteurs Agricoles - International Development",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 21989321,
     "totalBudgetUSD": 24121148,
@@ -3540,7 +3540,7 @@
   {
     "actorCode": "CAN12",
     "name": "Canadian International Food Security Research Fund",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -4157,7 +4157,7 @@
   {
     "actorCode": "CHE22",
     "name": "Appenzell Ausserrhoden Lottery Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -4241,7 +4241,7 @@
   {
     "actorCode": "CHE29",
     "name": "Jacobs Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -4319,7 +4319,7 @@
   {
     "actorCode": "CHE33",
     "name": "Swisspeace",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -4379,7 +4379,7 @@
   {
     "actorCode": "CHE38",
     "name": "Däster Schild Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -4391,7 +4391,7 @@
   {
     "actorCode": "CHE39",
     "name": "Fagus Lucida",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -4415,7 +4415,7 @@
   {
     "actorCode": "CHE41",
     "name": "Save Our Seas Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5101,7 +5101,7 @@
   {
     "actorCode": "CIV43",
     "name": "Union des Entreprises et Cooperatives Saint Paul",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5125,7 +5125,7 @@
   {
     "actorCode": "CIV45",
     "name": "Societe Cooperative des Producteurs de Cacao Biologique de la Me",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5137,7 +5137,7 @@
   {
     "actorCode": "CIV46",
     "name": "Association Ivoire Eco-Responsable",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5149,7 +5149,7 @@
   {
     "actorCode": "CIV48",
     "name": "Coopérative Agricole Mawobé de Yére Yére",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5173,7 +5173,7 @@
   {
     "actorCode": "CIV47",
     "name": "Coop CAKF",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5185,7 +5185,7 @@
   {
     "actorCode": "CIV49",
     "name": "Entreprise Coopérative des Agriculteurs de Méagui",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5293,7 +5293,7 @@
   {
     "actorCode": "CIV58",
     "name": "Inprobois",
-    "type": "Private Company",
+    "type": "Private company",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -5975,7 +5975,7 @@
   {
     "actorCode": "CMR32",
     "name": "Confederation Nationale des Producteurs de Cacao du Cameroun",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -6205,7 +6205,7 @@
   {
     "actorCode": "CON10",
     "name": "Monitoring of the Environment for Security in Africa Project",
-    "type": "Project/Programme",
+    "type": "Project/programme",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -7196,7 +7196,7 @@
   {
     "actorCode": "CON49",
     "name": "African Centre for Biodiversity",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -8178,7 +8178,7 @@
   {
     "actorCode": "DEU44",
     "name": "Global Nature Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -8298,7 +8298,7 @@
   {
     "actorCode": "DRC4",
     "name": "Cocoa Cooperative Cocama",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -8430,7 +8430,7 @@
   {
     "actorCode": "DZA11",
     "name": "CIRTA Club Semence",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -8466,7 +8466,7 @@
   {
     "actorCode": "ECU2",
     "name": "Unión de Organizaciones Campesinas Cacaoteras",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -9304,7 +9304,7 @@
   {
     "actorCode": "EU12",
     "name": "Biodiversa+ European Biodiversity Partnership",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -9328,7 +9328,7 @@
   {
     "actorCode": "EU14",
     "name": "Joint Research Centre Science Hub",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -10752,7 +10752,7 @@
   {
     "actorCode": "FRA49",
     "name": "Fondation de France",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -10764,7 +10764,7 @@
   {
     "actorCode": "FRA50",
     "name": "Comité Francais pour la Solidarité Internationale",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -10776,7 +10776,7 @@
   {
     "actorCode": "FRA51",
     "name": "Max Havelaar France",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -10836,7 +10836,7 @@
   {
     "actorCode": "FRA57",
     "name": "Moringa Partnership",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12135,7 +12135,7 @@
   {
     "actorCode": "GHA68",
     "name": "Amansie West Cocoa Cooperative Union",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12147,7 +12147,7 @@
   {
     "actorCode": "GHA69",
     "name": "Asunafo North Cocoa Cooperative Union",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12159,7 +12159,7 @@
   {
     "actorCode": "GHA70",
     "name": "ABOCFA Organic Cocoa Cooperative",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12171,7 +12171,7 @@
   {
     "actorCode": "GHA71",
     "name": "Akoma Cooperative Multipurpose Society",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12183,7 +12183,7 @@
   {
     "actorCode": "GHA72",
     "name": "Cooperative Abanga",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12195,7 +12195,7 @@
   {
     "actorCode": "GHA73",
     "name": "ACCOPS and  AMOPPA",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12207,7 +12207,7 @@
   {
     "actorCode": "GHA74",
     "name": "Fanteakwa Union",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12219,7 +12219,7 @@
   {
     "actorCode": "GHA75",
     "name": "Fairtrade Ghana Network",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -12231,7 +12231,7 @@
   {
     "actorCode": "GHA76",
     "name": "Ghanaman Trust Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -13978,7 +13978,7 @@
   },
   {
     "actorCode": "GLO49",
-    "name": "Global Centre on Adaptation",
+    "name": "Global Center on Adaptation",
     "type": "Development organization",
     "email": null,
     "totalBudgetEUR": 5131053170,
@@ -14830,7 +14830,7 @@
   {
     "actorCode": "GLO78",
     "name": "Accelerating Impacts of CGIAR Climate Research for Africa",
-    "type": "Project/Programme",
+    "type": "Project/programme",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -14982,7 +14982,7 @@
   {
     "actorCode": "GLO87",
     "name": "International Barcode of Life",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -15136,7 +15136,7 @@
   {
     "actorCode": "GLO98",
     "name": "You Foundation - Education for Children in Need through Big Dutchman",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -15196,7 +15196,7 @@
   {
     "actorCode": "GLO103",
     "name": "Consortium for the Conservation of the Atlantic Humpback Dolphin",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -15208,7 +15208,7 @@
   {
     "actorCode": "GLO104",
     "name": "International Tree Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -15561,7 +15561,7 @@
   {
     "actorCode": "ITA9",
     "name": "Council for Agricultural Research and  Economics, Centre for Genomics and Bioinformatics",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 486000,
     "totalBudgetUSD": 533117,
@@ -15773,7 +15773,7 @@
   {
     "actorCode": "JPN4",
     "name": "Japan Fund for the Global Environment",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17340,7 +17340,7 @@
   {
     "actorCode": "MALI58",
     "name": "Associations Professionnelles des Femmes Rurales",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17352,7 +17352,7 @@
   {
     "actorCode": "MALI60",
     "name": "National Platform of Rice Farmers in Mali",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17364,7 +17364,7 @@
   {
     "actorCode": "MALI61",
     "name": "Interprofession de la Filliere du Riz au Mali",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17400,7 +17400,7 @@
   {
     "actorCode": "MALI64",
     "name": "L’Union des Sociétés Coopératives des Planteurs de Yanfolila",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17412,7 +17412,7 @@
   {
     "actorCode": "MALI65",
     "name": "Cooperatives des Productrices de Beurre de Karité de Zantiébougou",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17424,7 +17424,7 @@
   {
     "actorCode": "MALI66",
     "name": "Union Locale des Producteurs de Karité de Sanankoroba - Yirwasso",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17436,7 +17436,7 @@
   {
     "actorCode": "MALI67",
     "name": "Union Locale des Producteurs de Karité de Dioila",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -17532,7 +17532,7 @@
   {
     "actorCode": "MALI75",
     "name": "National Federation of Milk Producers of Mali",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -18458,7 +18458,7 @@
   {
     "actorCode": "MOR58",
     "name": "Association Nationale Ovine et Caprine",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -18470,7 +18470,7 @@
   {
     "actorCode": "MOR59",
     "name": "Pastoralist Knowledge Hub",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -18482,7 +18482,7 @@
   {
     "actorCode": "MOR60",
     "name": "La Fédération Interprofessionnelle Marocaine d’Apiculture",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -18494,7 +18494,7 @@
   {
     "actorCode": "MOR61",
     "name": "Association Marocaine de la Filière des Productions Biologiques",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -18506,7 +18506,7 @@
   {
     "actorCode": "MOR62",
     "name": "La Société Marocaine des Plantes Aromatiques et Médicinales",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -18600,7 +18600,7 @@
   {
     "actorCode": "MYS1",
     "name": "Third World Network",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -19369,7 +19369,7 @@
   {
     "actorCode": "NLD31",
     "name": "DOB Ecology",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -19393,7 +19393,7 @@
   {
     "actorCode": "NLD33",
     "name": "Anton Jurgens Charitable Trust",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -19549,7 +19549,7 @@
   {
     "actorCode": "NOR9",
     "name": "Development Fund of Norway",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -19573,7 +19573,7 @@
   {
     "actorCode": "PER1",
     "name": "APROCAM",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -20813,7 +20813,7 @@
   {
     "actorCode": "REG39",
     "name": "Joint Action for Farmer's Organisations in West Africa",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -20837,7 +20837,7 @@
   {
     "actorCode": "REG41",
     "name": "Eastern and Southern Africa Small Scale Farmers Forum",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -20873,7 +20873,7 @@
   {
     "actorCode": "REG44",
     "name": "Reseau Bilateral Maroobe",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -21087,7 +21087,7 @@
   {
     "actorCode": "SEN6",
     "name": "Fédération des Producteurs du Bassin de l'Anambé",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -21099,7 +21099,7 @@
   {
     "actorCode": "SLV1",
     "name": "Latin American and Caribbean Network of Fairtrade Small Producers and Workers",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 14000000,
     "totalBudgetUSD": 15357276,
@@ -21341,7 +21341,7 @@
   {
     "actorCode": "SWE8",
     "name": "Swedish International Development Cooperation Agency",
-    "type": "Bilateral Development agency",
+    "type": "Bilateral development agency",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -21425,7 +21425,7 @@
   {
     "actorCode": "TGO5",
     "name": "Atsemawoe Cooperative",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -21437,7 +21437,7 @@
   {
     "actorCode": "TGO6",
     "name": "Fucoprat Cooperative",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -21605,7 +21605,7 @@
   {
     "actorCode": "UAE1",
     "name": "Mohamed Bin Zayed Species Conservation Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22218,7 +22218,7 @@
   {
     "actorCode": "UK31",
     "name": "Fairtrade Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22254,7 +22254,7 @@
   {
     "actorCode": "UK34",
     "name": "Lorna Young Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22266,7 +22266,7 @@
   {
     "actorCode": "UK35",
     "name": "Greendale Charitable Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22278,7 +22278,7 @@
   {
     "actorCode": "UK36",
     "name": "Miva Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22290,7 +22290,7 @@
   {
     "actorCode": "UK37",
     "name": "The Rufford Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22302,7 +22302,7 @@
   {
     "actorCode": "UK38",
     "name": "Synchronicity Earth",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -22326,7 +22326,7 @@
   {
     "actorCode": "UK40",
     "name": "Worktop Express",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -23115,7 +23115,7 @@
   {
     "actorCode": "USA46",
     "name": "Open Society Foundation",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -23257,7 +23257,7 @@
   {
     "actorCode": "USA57",
     "name": "Society for Marine Mammalogy Conservation Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -23269,7 +23269,7 @@
   {
     "actorCode": "USA58",
     "name": "Oceans 5",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -23293,7 +23293,7 @@
   {
     "actorCode": "USA60",
     "name": "Chicago Zoological Society administered Chicago Board of Trade Endangered Species Fund",
-    "type": "Foundation/ philanthropic organization",
+    "type": "Foundation/philanthropic organization",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -23389,7 +23389,7 @@
   {
     "actorCode": "ZAF2",
     "name": "Public Service Accountability Monitor",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -24099,7 +24099,7 @@
   {
     "actorCode": "ZAM58",
     "name": "Malimba Multi-Purpose Cooperative",
-    "type": "Producer/Farmer group",
+    "type": "Producer/farmer group",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
@@ -24742,7 +24742,7 @@
   {
     "actorCode": "ZIM22",
     "name": "Participatory Organic Research Extension and Training",
-    "type": "Research Institution",
+    "type": "Research institution",
     "email": null,
     "totalBudgetEUR": 0,
     "totalBudgetUSD": 0,
