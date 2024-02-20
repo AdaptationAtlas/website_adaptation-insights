@@ -81,7 +81,7 @@ const SidebarList = ({
       {/* Projects list */}
       {viewProjects && projectsData.map((project, index) => {
         return <SidebarListProject
-          key={index}
+          key={project.projectCode}
           project={project}
           projectsData={projectsData}
           handleProjectSelect={handleProjectSelect}
@@ -97,7 +97,7 @@ const SidebarList = ({
       {/* Actors list */}
       {!viewProjects && actorsData.map((actor, index) => {
         return <SidebarListActor
-          key={index}
+          key={actor.actorCode}
           index={index}
           actor={actor}
           handleActorSelect={handleActorSelect}

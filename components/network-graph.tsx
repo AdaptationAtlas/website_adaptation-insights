@@ -22,17 +22,25 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
   // TODO - add a hover state to the nodes - update border color
 
+  // Node color
   const rootColor = '#387B94'
   const actorColor = '#EC5A47'
   const projectColor = '#FFC84F'
-  const rootSize = 12
-  const actorSize = 4
-  const projectSize = 6
-  const cooldown = (type === 'detail') ? 15000 : 1000
+  // Node size
+  const rootSize = type === 'list' ? 4.5 : 13
+  const actorSize = type === 'list' ? 2.5 : 5
+  const projectSize = type === 'list' ? 3.5 : 7
+  // Link distance
+  const rootLink = type === 'list' ? 10 : 30
+  const actorLink = type === 'list' ? 5 : 10
+  // Charge strength
+  const rootCharge = type === 'list' ? -7 : -30
+  const actorCharge = type === 'list' ? -7 : -30
+  const projectCharge = type === 'list' ? -10 : -40
+
+  // Other variables
+  const cooldown = (type === 'detail') ? 15000 : 2000
   const displayTooltip = (type === 'detail') ? true : false
-  // const tooltipRef = useRef<any>(null)
-  // const tooltipHeaderRef = useRef<any>(null)
-  // const tooltipSubheadRef = useRef<any>(null)
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()!
@@ -41,18 +49,6 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
   const [tooltipHeight, setTooltipHeight] = useState(0)
   const tooltipRef = useRef<HTMLDivElement>(null)
   const isTablet = useMediaQuery(768)
-
-  // Get a new searchParams string by merging the current
-  // searchParams with a provided key/value pair
-  const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams)
-      params.set(name, value)
-
-      return params.toString()
-    },
-    [searchParams]
-  )
 
   const handleNodeClick = useCallback((node: any) => {
     // Create a new URLSearchParams object based on the current search params
@@ -122,23 +118,33 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
 
       // Change the link distance based on the group
       fg.d3Force('link').distance((link: any) => {
-        const source = link.source.group
-        if (source === 'root') {
-          return 25
+        const type = link.type
+        if (type === 'actorProject') {
+          return actorLink
+        } else if (type === 'rootProject') {
+          return rootLink
+        }
+      })
+
+      // Change the link distance based on the group
+      fg.d3Force('charge').strength((charge: any) => {
+        const source = charge.group
+        if (source === 'project') {
+          return projectCharge
         } else if (source === 'actor') {
-          return 10
+          return actorCharge
         } else {
-          return 20
+          return rootCharge
         }
       })
 
       // Set zoom to fit on list item thumbnails
-      if (type === 'list' && forceGraphRef.current) {
-        setTimeout(() => fg.zoomToFit(250, 21), 1000) // Adjust the numbers as needed
-      }
+      // if (type === 'list' && forceGraphRef.current) {
+      //   // setTimeout(() => fg.zoomToFit(250, 21), 1000) // Adjust the numbers as needed
+      // }
     }
 
-  }, [type, forceGraphRef]) // Run only once after initial render
+  }, [type, forceGraphRef, actorLink, rootLink, projectCharge, actorCharge, rootCharge]) // Run only once after initial render
 
   // Measure tooltip height
   useEffect(() => {
@@ -154,20 +160,20 @@ const NetworkGraph = memo(({ actorCode, networksData, actorsRawData, projectsRaw
     if (isTablet) {
       const handleMouseMove = (event: any) => {
         const offsetX = -515
-  
+
         // Offset Y to position the tooltip above the cursor
         // Use the tooltipHeight to adjust the position above the cursor
         const offsetY = -70 - tooltipHeight // Adjust the base offset as needed
-  
+
         const scrollX = detailPanelRef?.current?.scrollLeft
         const scrollY = detailPanelRef?.current?.scrollTop
-  
+
         const relativeX = event.clientX + scrollX + offsetX
         const relativeY = event.clientY + scrollY + offsetY
-  
+
         setTooltipPosition({ x: relativeX, y: relativeY })
       }
-  
+
       document.addEventListener('mousemove', handleMouseMove)
       return () => document.removeEventListener('mousemove', handleMouseMove)
     }
