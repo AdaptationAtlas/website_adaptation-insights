@@ -13,6 +13,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'African Adaptation Tracking Tool',
   description: 'Explore the work being done to adapt to climate change in Africa.',
+  metadataBase: new URL('https://africanagricultureadaptation.org'),
 }
 
 export default function RootLayout({
