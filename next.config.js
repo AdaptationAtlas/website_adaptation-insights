@@ -8,7 +8,8 @@ const nextConfig = {
         port: '',
       }
     ]
-  }
+  },
+  output: 'standalone',
 }
 
 module.exports = nextConfig

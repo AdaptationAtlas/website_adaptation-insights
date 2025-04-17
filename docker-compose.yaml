@@ -1,0 +1,15 @@
+services:
+  adaptation-insights-client:
+    build:
+      context: .
+      dockerfile: docker/node.Dockerfile
+    ports:
+      - "3001:3000"
+    mem_limit: 1g
+    mem_reservation: 700m
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:3000/"]
+      interval: 30s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
