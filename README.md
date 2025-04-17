@@ -29,6 +29,35 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Build and Deploy with Docker
+
+This project includes Dockerfiles for both Node and Bun, located in the `docker/` directory.
+These can be used standalone, but we also include `docker-compose.yaml`, which defaults to using the Node version.
+
+To build and deploy using Docker Compose, follow these steps:
+
+1. Ensure Docker Compose is installed on your system.
+
+2. **Build the Docker image**:
+
+   ```bash
+   docker-compose build
+   ```
+
+3. **Start the application**:
+
+   ```bash
+   docker-compose up
+   ```
+
+   The app will be accessible at `http://localhost:3001`.
+
+4. **Stop the container**:
+
+   ```bash
+   docker-compose down
+   ```
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
