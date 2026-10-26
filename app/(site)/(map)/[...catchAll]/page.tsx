@@ -2,8 +2,11 @@
 
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
-import Sidebar from '@/components/sidebar'
+import dynamic from 'next/dynamic'
 import Map from '@/components/map'
+
+// Sidebar pulls in force-graph, which touches window at import time. Render it client-only.
+const Sidebar = dynamic(() => import('@/components/sidebar'), { ssr: false })
 import { orderBy } from 'lodash'
 import { ActorData, NetworkData, ProjectData } from '@/types/sidebar.types'
 import { fetchData, sortActors, sortProjects, filterByYear, filterByCountry, filterByType } from '@/lib/api'
